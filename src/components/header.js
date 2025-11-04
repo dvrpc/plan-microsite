@@ -1,5 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import Dvrpc from "../images/dvrpc-mini.svg"
 import Connections from "../images/connections-2050.svg"
 

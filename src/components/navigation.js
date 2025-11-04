@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react"
+import { Menu, MenuButton, MenuItems } from "@headlessui/react"
 import { Link } from "gatsby"
 
 const Dropdown = ({ label, children }) => {

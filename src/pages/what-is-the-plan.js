@@ -1,31 +1,10 @@
 import * as React from "react"
 import { Link } from "gatsby"
-
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
-import Connections from "../images/connections-2050.svg"
-import RegionOutline from "../images/region-outline.svg"
-
-import Purple from "../images/purple.svg"
-import Pink from "../images/pink.svg"
-import Blue from "../images/blue.svg"
-import Green from "../images/green.svg"
-import Turq from "../images/turq.svg"
-import Hero from "../images/home-image.png"
-
 import Dot from "../images/dot.svg"
-
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import PlanProcess from "../images/plan-process@4x.png"
-
-const ExploreLink = ({ children }) => {
-  return (
-    <div className="flex items-center space-x-4">
-      <Dot width="7%" />
-      {children}
-    </div>
-  )
-}
 
 const WhatIsThePlan = () => {
   return (
