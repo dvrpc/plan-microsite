@@ -1,9 +1,130 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
+import Bg from "../images/bg.png"
+import Connections from "../images/connections-2050.svg"
+import RegionOutline from "../images/region-outline.svg"
 
-const IndexPage = () => <Layout></Layout>
+import Purple from "../images/purple.svg"
+import Pink from "../images/pink.svg"
+import Blue from "../images/blue.svg"
+import Green from "../images/green.svg"
+import Turq from "../images/turq.svg"
+import Hero from "../images/home-image.png"
+
+import Dot from "../images/dot.svg"
+
+const Bubbles = () => {
+  return (
+    <div className="flex space-x-2 [&>*]:w-1/5 [&>*]:relative w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center">
+      <div>
+        <Purple width="100%" className="absolute z-10" />
+        <p className="z-50 w-[90%]">
+          A safe, modern, multimodal{" "}
+          <span className="font-bold underline">Transportation</span> network
+          for all
+        </p>
+      </div>
+      <div>
+        <Pink width="100%" className="absolute z-10" />
+        <p className="z-50 w-[90%]">
+          An innovative and connected{" "}
+          <span className="font-bold underline">Economy</span> with opportunity
+          and shared prosperity for all
+        </p>
+      </div>
+      <div>
+        <Blue width="100%" className="absolute z-10" />
+        <p className="z-50 w-[90%]">
+          Integrated, healthy, walkable{" "}
+          <span className="font-bold underline">Communities</span>
+        </p>
+      </div>
+      <div>
+        <Green width="100%" className="absolute z-10" />
+        <p className="z-50 w-[90%]">
+          A preserved and restored natural{" "}
+          <span className="font-bold underline">Environment</span> and healthy
+          ecological systems
+        </p>
+      </div>
+      <div>
+        <Turq width="100%" className="absolute z-10" />
+        <p className="z-50 w-[90%]">
+          Clean, reliable and affordable{" "}
+          <span className="font-bold underline">Infrastructure</span> and{" "}
+          <span className="font-bold underline">Utility Services</span>
+          resilient to the effects of extreme weather
+        </p>
+      </div>
+    </div>
+  )
+}
+
+const ExploreLink = ({ children }) => {
+  return (
+    <div className="flex items-center space-x-4">
+      <Dot width="7%" />
+      {children}
+    </div>
+  )
+}
+
+const IndexPage = () => {
+  return (
+    <Layout>
+      <div className="bg-[#cce5f3] flex flex-col items-center relative">
+        <img src={Bg} className="absolute" />
+        <Connections width="50%" fill="#dfebf5" className="z-10 my-24" />
+        <div className="text-[#dfebf5] mx-auto w-[70%] bg-[#0c2e39] flex flex-col items-center text-center relative">
+          <RegionOutline className="absolute top-[15%] z-10" width="50%" />
+          <p className="text-2xl p-12 pb-0 z-50">
+            <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span>{" "}
+            is Greater Philadelphia's Long-Range Plan (Plan). Built around a
+            regional Vision for 2050, it serves as a blueprint for prioritizing
+            $73 billion for capital transportation investment in the region over
+            the coming decades.
+          </p>
+          <h2 className="text-5xl w-2/3 z-50 my-24">
+            The Regional Vision for 2050 is a Greater Philadephia that provides:
+          </h2>
+          <div className="-ml-[5%] -mr-[5%] my-24">
+            <Bubbles />
+          </div>
+          <Link className="text-2xl underline my-6">
+            Learn more about the Vision
+          </Link>
+        </div>
+        <div className="w-[68%] bg-[#eef4fb] relative ml-[2%] border-l-4 border-[#0c2e39] h-[90vh]">
+          <h2 className="text-2xl bg-[#0c2e39] text-white font-bold p-4 mt-12 mb-6 -ml-[3%]">
+            Explore the Plan
+          </h2>
+          <div className="flex flex-col underline text-2xl space-y-6 w-2/5 -ml-[1.5%]">
+            <ExploreLink>
+              <Link>What is the Plan?</Link>
+            </ExploreLink>
+            <ExploreLink>
+              <Link>What's Shaping Our Future?</Link>
+            </ExploreLink>
+            <ExploreLink>
+              <Link>What will Transportation Look Like in 2050?</Link>
+            </ExploreLink>
+            <ExploreLink>
+              <Link>How Will We Fund the Future?</Link>
+            </ExploreLink>
+            <ExploreLink>
+              <Link>How Can We Make It Happen?</Link>
+            </ExploreLink>
+          </div>
+          <img
+            src={Hero}
+            class="right-0 absolute top-[20%] w-1/2 -right-[10%]"
+          />
+        </div>
+      </div>
+    </Layout>
+  )
+}
 
 export default IndexPage

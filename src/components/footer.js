@@ -6,7 +6,7 @@ import Connections from "../images/connections-2050.svg"
 const Footer = () => {
   return (
     <footer className="text-[#dfebf5]">
-      <div className="bg-[#0c2e39] grid grid-cols-3 justify-items-center text-2xl text-center underline">
+      <div className="bg-[#0c2e39] grid grid-cols-3 justify-items-center text-xl text-center underline py-8 px-[15%]">
         <Link>Download the Plan</Link>
         <Link>View Major Regional Projects</Link>
         <Link>Get Involved</Link>

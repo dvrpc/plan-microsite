@@ -21,13 +21,15 @@ const Dropdown = ({ label, children }) => {
 
 const Navigation = () => {
   return (
-    <div className="bg-[#dfebf5] grid grid-cols-6 justify-items-center text-xl text-center text-[#093447] font-[Roboto] underline">
-      <Link>About</Link>
-      <Link>Trends & Forces</Link>
-      <Link>Vision</Link>
-      <Link>Projects</Link>
-      <Link>Take Action</Link>
-      <Link>Documents & Resources</Link>
+    <div className="bg-[#dfebf5]">
+      <div className="w-[80%] grid grid-cols-6 justify-items-center text-xl text-center text-[#093447] font-[Roboto] underline mx-auto py-2">
+        <Link>About</Link>
+        <Link>Trends & Forces</Link>
+        <Link>Vision</Link>
+        <Link>Projects</Link>
+        <Link>Take Action</Link>
+        <Link>Documents & Resources</Link>
+      </div>
     </div>
   )
 }

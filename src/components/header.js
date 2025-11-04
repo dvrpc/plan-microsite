@@ -7,9 +7,9 @@ const Header = ({ siteTitle }) => {
   return (
     <header className="bg-[#0c2e39] flex p-6">
       {/* TODO: add link to dvrpc home */}
-      <Dvrpc fill="#dfebf5" width="20%" />
+      <Dvrpc fill="#dfebf5" width="10%" />
       <div className="min-h-full w-0.5 mx-4 my-2 bg-[#dfebf5]" />
-      <Connections fill="#dfebf5" width="20%" />
+      <Connections fill="#dfebf5" width="10%" />
     </header>
   )
 }
