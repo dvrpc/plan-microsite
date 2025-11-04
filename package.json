@@ -7,6 +7,7 @@
   "dependencies": {
     "@headlessui/react": "^2.2.9",
     "@heroicons/react": "^2.2.0",
+    "@types/mapbox-gl": "^3.4.1",
     "gatsby": "^5.14.6",
     "gatsby-plugin-image": "^3.14.0",
     "gatsby-plugin-manifest": "^5.14.0",
@@ -14,8 +15,10 @@
     "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-source-filesystem": "^5.14.0",
     "gatsby-transformer-sharp": "^5.14.0",
+    "mapbox-gl": "^3.16.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-map-gl": "^8.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
