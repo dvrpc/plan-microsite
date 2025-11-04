@@ -1,3 +1,13 @@
+/*TODO: fix import*/
+@import url("https://fonts.googleapis.com/css?family=Inclusive+Sans");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+body {
+  margin: 0;
+  font-family: "Inclusive Sans" !important;
+}
