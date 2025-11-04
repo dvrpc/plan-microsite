@@ -14,6 +14,7 @@ module.exports = {
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
+  pathPrefix: `/plan-microsite`,
   plugins: [
     `gatsby-plugin-postcss`,
     `gatsby-plugin-image`,
