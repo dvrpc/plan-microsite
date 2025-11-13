@@ -5,7 +5,7 @@ import Bg from "../images/bg.png"
 import Dot from "../images/dot.svg"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import TransportationMeans from "../images/transportation-means.png"
-import Ai from "../images/ai@4x.png"
+import Ai from "../images/ai.png"
 import Tp from "../images/tp@4x.png"
 import Accordion from "../components/accordion"
 
@@ -121,7 +121,7 @@ const Trends = () => {
               <h4 className="mx-auto text-[#16819a] font-bold text-lg">
                 AI PROCESSING FOR TRANSPORTAION
               </h4>
-              <img src={Ai} className="w-3/5 mx-auto" />
+              <img src={Ai} className="mx-auto" />
             </Accordion>
           </div>
         </div>
