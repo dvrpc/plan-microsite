@@ -1,6 +1,7 @@
 /*TODO: fix import*/
 @import url("https://fonts.googleapis.com/css?family=Inclusive+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
 
 @tailwind base;
 @tailwind components;
@@ -10,4 +11,8 @@ html,
 body {
   margin: 0;
   font-family: "Inclusive Sans" !important;
+}
+
+p {
+  font-family: "Source Sans 3" !important;
 }
