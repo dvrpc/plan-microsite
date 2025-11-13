@@ -2,7 +2,7 @@ import React from "react"
 
 const Legend = ({ selectedLayer }) => {
   return (
-    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:w-1/2 [&>*]:m-3 [&>*]:text-sm">
+    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:w-1/2 [&>*]:m-3 [&>*]:text-xs">
       {selectedLayer === "pop" && (
         <div class="flex flex-col z-[100] absolute">
           <h3 class="legend-h3">People</h3>

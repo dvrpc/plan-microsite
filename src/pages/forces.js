@@ -26,11 +26,13 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         selectedIndex={selectedIndex}
         onChange={setSelectedIndex}
       >
-        <TabList className="flex gap-4 bg-[#16819a] text-white p-3">
-          <Tab className="px-3 focus:font-bold" autoFocus>
+        <TabList className="flex text-white">
+          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white">
             Population Forecasts
           </Tab>
-          <Tab className="px-3 focus:font-bold">Employment Forecasts</Tab>
+          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white">
+            Employment Forecasts
+          </Tab>
         </TabList>
         <TabPanels className="bg-[#093446] p-3 text-white flex-1">
           <TabPanel className="p-3">
