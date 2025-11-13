@@ -16,7 +16,7 @@ const Trends = () => {
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
-            <Link>Home</Link>
+            <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
             <Link>Trends</Link>
           </div>

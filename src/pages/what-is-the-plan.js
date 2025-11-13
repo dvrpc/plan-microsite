@@ -5,6 +5,7 @@ import Bg from "../images/bg.png"
 import Dot from "../images/dot.svg"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import PlanProcess from "../images/plan-process@4x.png"
+import DvrpcMap from "../components/dvrpcmap"
 
 const WhatIsThePlan = () => {
   return (
@@ -13,7 +14,7 @@ const WhatIsThePlan = () => {
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
-            <Link>Home</Link>
+            <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
             <Link>What is the Plan?</Link>
           </div>
@@ -44,6 +45,7 @@ const WhatIsThePlan = () => {
             </h2>
           </div>
           <div className="flex flex-col space-y-6 m-6 ">
+            <DvrpcMap />
             <p>
               Greater Philadelphia is one of the nation’s most historic and
               dynamic regions. Once an industrial powerhouse, it has evolved

@@ -29,6 +29,7 @@ const DVRPCMap = ({ children, features }) => {
   return (
     <div className="h-[500px] w-full">
       <Map
+        mapStyle="mapbox://styles/crvanpollard/ck5fpyqti0v971itf7edp2eyd"
         interactiveLayerIds={["trail-lines"]}
         ref={mapRef}
         initialViewState={{ bounds: maxExtent }}
@@ -51,7 +52,7 @@ const DVRPCMap = ({ children, features }) => {
             source-layer="county"
             paint={{
               "fill-color": "#B6C1C6",
-              "fill-opacity": 0.2,
+              "fill-opacity": 0.8,
             }}
             filter={["!=", "dvrpc", "Yes"]}
           />
