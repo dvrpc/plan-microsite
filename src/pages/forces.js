@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
-import PopEmpMap from "../components/popempmap"
+import PopEmpMap, { secondaryMapLayers } from "../components/popempmap"
 import {
   Tab,
   TabGroup,
@@ -16,14 +16,21 @@ import {
   MenuItems,
 } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/16/solid"
+import Legend from "../components/legend"
 
-const Tabs = ({ selectedLayer }) => {
+const Tabs = ({ selectedIndex, setSelectedIndex }) => {
   return (
     <div className="flex justify-center z-100 h-full">
-      <TabGroup className="w-full h-full flex flex-col">
+      <TabGroup
+        className="w-full h-full flex flex-col"
+        selectedIndex={selectedIndex}
+        onChange={setSelectedIndex}
+      >
         <TabList className="flex gap-4 bg-[#16819a] text-white p-3">
-          <Tab className="px-3">Population Forecasts</Tab>
-          <Tab className="px-3">Employment Forecasts</Tab>
+          <Tab className="px-3 focus:font-bold" autoFocus>
+            Population Forecasts
+          </Tab>
+          <Tab className="px-3 focus:font-bold">Employment Forecasts</Tab>
         </TabList>
         <TabPanels className="bg-[#093446] p-3 text-white flex-1">
           <TabPanel className="p-3">
@@ -50,7 +57,7 @@ const Tabs = ({ selectedLayer }) => {
 
 const WhatIsThePlan = () => {
   const [selectedLayer, setSelectedLayer] = useState("popABS")
-  const layers = ["popABS", "popPER", "pop"]
+  const [selectedTab, setSelectedTab] = useState(0)
 
   return (
     <Layout>
@@ -83,52 +90,93 @@ const WhatIsThePlan = () => {
               Explore the web map to view absolute change, percent change, and
               total forecasted population by municipality throughout the region.
             </p>
+
             <div className="relative h-full">
-              <div className="absolute z-[100] h-full w-1/4">
-                <Tabs />
+              <div className="absolute z-[100] h-full w-1/4 flex">
+                <Tabs
+                  selectedLayer={selectedLayer}
+                  selectedIndex={selectedTab}
+                  setSelectedIndex={setSelectedTab}
+                />
+
+                <Legend selectedLayer={selectedLayer} />
               </div>
               <PopEmpMap selectedLayer={selectedLayer} />
-              <div className="absolute right-0 top-0 w-52">
+              <div className="absolute right-0 top-0 w-52 m-3">
                 <Menu>
                   <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full">
                     Select Layer
                     <ChevronDownIcon className="ml-auto size-4 fill-black" />
                   </MenuButton>
 
-                  <MenuItems
-                    transition
-                    anchor="bottom end"
-                    className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
-                  >
-                    <MenuItem>
-                      <button
-                        className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                        onClick={() => setSelectedLayer("popABS")}
-                      >
-                        Absolute Change in Population
-                      </button>
-                    </MenuItem>
-                    <MenuItem>
-                      <button
-                        className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                        onClick={() => setSelectedLayer("popPER")}
-                      >
-                        Percent Change in Population
-                      </button>
-                    </MenuItem>
-                    <MenuItem>
-                      <button
-                        className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                        onClick={() => setSelectedLayer("pop")}
-                      >
-                        2050 Population Forecast
-                      </button>
-                    </MenuItem>
-                  </MenuItems>
+                  {selectedTab === 0 && (
+                    <MenuItems
+                      transition
+                      anchor="bottom end"
+                      className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
+                    >
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("popABS")}
+                        >
+                          Absolute Change in Population
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("popPER")}
+                        >
+                          Percent Change in Population
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("pop")}
+                        >
+                          2050 Population Forecast
+                        </button>
+                      </MenuItem>
+                    </MenuItems>
+                  )}
+                  {selectedTab === 1 && (
+                    <MenuItems
+                      transition
+                      anchor="bottom end"
+                      className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
+                    >
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("empABS")}
+                        >
+                          Absolute Change in Employment
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("empPER")}
+                        >
+                          Percent Change in Employment
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("emp")}
+                        >
+                          2050 Employment Forecast
+                        </button>
+                      </MenuItem>
+                    </MenuItems>
+                  )}
                 </Menu>
               </div>
             </div>
-            {(selectedLayer === "popPER" || selectedLayer === "popABS") && (
+            {selectedTab === 0 && (
               <>
                 <p>
                   Most new residents will live in the region’s cities, but the
@@ -157,7 +205,7 @@ const WhatIsThePlan = () => {
                 </p>
               </>
             )}
-            {selectedLayer === "pop" && (
+            {selectedTab === 1 && (
               <>
                 <p>
                   The healthcare and social services sector will remain the

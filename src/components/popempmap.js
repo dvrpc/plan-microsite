@@ -1,6 +1,14 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import DvrpcMap from "./dvrpcmap"
 import { Source, Layer } from "react-map-gl/mapbox"
+import Legend from "./legend"
+
+let emp0 = "#CCCCCC"
+let emp1 = "#dadaeb"
+let emp2 = "#bcbddc"
+let emp3 = "#9e9ac8"
+let emp4 = "#756bb1"
+let emp5 = "#54278f"
 
 let popColor = [
   "step",
@@ -42,7 +50,63 @@ let popColor3 = [
   "#0078AE",
 ]
 
-const secondaryMapLayers = [
+let empColor = [
+  "step",
+  ["get", "emp50"],
+  emp1,
+  5000,
+  emp2,
+  10000,
+  emp3,
+  20000,
+  emp4,
+  40000,
+  emp5,
+]
+let empColorABS = [
+  "step",
+  ["get", "empabs50"],
+  emp0,
+  0,
+  emp1,
+  1000,
+  emp2,
+  2000,
+  emp3,
+  3000,
+  emp4,
+]
+let empColorPER = [
+  "step",
+  ["get", "emppct50"],
+  emp1,
+  5,
+  emp2,
+  25,
+  emp3,
+  50,
+  emp4,
+]
+
+export const secondaryMapLayers = [
+  {
+    id: "pop",
+    type: "fill",
+    source: "MCD",
+    layout: {},
+    paint: {
+      "fill-outline-color": "#748388",
+      "fill-opacity": {
+        base: 9,
+        stops: [
+          [10, 0.9],
+          [12, 0.7],
+          [13, 0.6],
+        ],
+      },
+      "fill-color": popColor,
+    },
+  },
   {
     id: "popABS",
     type: "fill",
@@ -79,8 +143,9 @@ const secondaryMapLayers = [
       "fill-color": popColor3,
     },
   },
+
   {
-    id: "pop",
+    id: "emp",
     type: "fill",
     source: "MCD",
     layout: {},
@@ -94,7 +159,43 @@ const secondaryMapLayers = [
           [13, 0.6],
         ],
       },
-      "fill-color": popColor,
+      "fill-color": empColor,
+    },
+  },
+  {
+    id: "empABS",
+    type: "fill",
+    source: "MCD",
+    layout: {},
+    paint: {
+      "fill-outline-color": "#748388",
+      "fill-opacity": {
+        base: 9,
+        stops: [
+          [10, 0.9],
+          [12, 0.7],
+          [13, 0.6],
+        ],
+      },
+      "fill-color": empColorABS,
+    },
+  },
+  {
+    id: "empPER",
+    type: "fill",
+    source: "MCD",
+    layout: {},
+    paint: {
+      "fill-outline-color": "#748388",
+      "fill-opacity": {
+        base: 9,
+        stops: [
+          [10, 0.9],
+          [12, 0.7],
+          [13, 0.6],
+        ],
+      },
+      "fill-color": empColorPER,
     },
   },
 ]
