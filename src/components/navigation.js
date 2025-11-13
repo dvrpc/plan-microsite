@@ -1,17 +1,15 @@
 import * as React from "react"
-import { Menu, MenuButton, MenuItems } from "@headlessui/react"
+import { Menu, MenuButton, MenuItems, MenuItem } from "@headlessui/react"
 import { Link } from "gatsby"
 
 const Dropdown = ({ label, children }) => {
   return (
     <Menu>
-      <MenuButton className="inline-flex items-center gap-2 rounded-md bg-gray-800 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:not-data-focus:outline-none data-focus:outline data-focus:outline-white data-hover:bg-gray-700 data-open:bg-gray-700">
-        {label}
-      </MenuButton>
+      <MenuButton className="inline-flex">{label}</MenuButton>
       <MenuItems
         transition
         anchor="bottom end"
-        className="w-52 origin-top-right rounded-xl border bg-transparent p-1 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:--spacing(1)] focus:outline-none"
+        className="flex flex-col text-[#093447] font-[Roboto] underline text-xl bg-[#dfebf5] w-48 divide-y gap-2 p-2 mt-2 transition duration-100 ease-out z-50"
       >
         {children}
       </MenuItems>
@@ -22,9 +20,16 @@ const Dropdown = ({ label, children }) => {
 const Navigation = () => {
   return (
     <div className="bg-[#dfebf5]">
-      <div className="w-[80%] grid grid-cols-6 justify-items-center text-xl text-center text-[#093447] font-[Roboto] underline mx-auto py-2">
-        <Link>About</Link>
-        <Link>Trends & Forces</Link>
+      <div className="w-[80%] grid grid-cols-6 justify-items-center text-xl text-center text-[#093447] font-[Roboto] underline mx-auto py-2 whitespace-nowrap">
+        <Link to="/what-is-the-plan">About</Link>
+        <Dropdown label="Trends & Forces">
+          <MenuItem>
+            <Link to="/trends">Trends</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/forces">Forces</Link>
+          </MenuItem>
+        </Dropdown>
         <Link>Vision</Link>
         <Link>Projects</Link>
         <Link>Take Action</Link>
