@@ -10,7 +10,7 @@ const Accordion = ({ label, children }) => {
   return (
     <div className="w-full">
       <Disclosure as="div">
-        <DisclosureButton className="group flex w-full items-center gap-2">
+        <DisclosureButton className="group flex w-full items-center gap-2 font-bold">
           <span>{label}</span>
           <PlusIcon className="size-4 open:rotate-180" />
         </DisclosureButton>

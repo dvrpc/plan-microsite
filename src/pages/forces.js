@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
-import PopEmpMap, { secondaryMapLayers } from "../components/popempmap"
+import PopEmpMap from "../components/popempmap"
 import {
   Tab,
   TabGroup,
@@ -16,7 +16,7 @@ import {
   MenuItems,
 } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/16/solid"
-import Legend from "../components/legend"
+import { Legend } from "../components/popempmap"
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
   return (
@@ -27,10 +27,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         onChange={setSelectedIndex}
       >
         <TabList className="flex text-white">
-          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white">
+          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white w-1/2">
             Population Forecasts
           </Tab>
-          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white">
+          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white w-1/2">
             Employment Forecasts
           </Tab>
         </TabList>
