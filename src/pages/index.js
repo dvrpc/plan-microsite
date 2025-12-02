@@ -23,7 +23,7 @@ const IndexPage = () => {
       <div className="bg-[#cce5f3] flex flex-col items-center relative">
         <img src={Bg} className="absolute" />
         <Connections width="50%" fill="#dfebf5" className="z-10 my-24" />
-        <div className="text-[#dfebf5] mx-auto w-[70%] bg-[#0c2e39] flex flex-col items-center text-center relative">
+        <div className="text-[#dfebf5] mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative px-[16%]">
           <RegionOutline className="absolute top-[15%] z-10" width="50%" />
           <p className="text-2xl p-12 pb-0 z-50">
             <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span>{" "}
@@ -38,35 +38,37 @@ const IndexPage = () => {
           <div className="-ml-[5%] -mr-[5%] my-24">
             <Bubbles />
           </div>
-          <Link className="text-2xl underline my-6">
-            Learn more about the Vision
-          </Link>
         </div>
-        <div className="w-[68%] bg-[#eef4fb] relative ml-[2%] border-l-4 border-[#0c2e39] h-[90vh]">
-          <h2 className="text-2xl bg-[#0c2e39] text-white font-bold p-4 mt-12 mb-6 -ml-[3%]">
+        <Link className="text-2xl underline my-6 p-2 bg-[#0c2e39] text-white">
+          Learn more about the Vision
+        </Link>
+        <div className="w-full bg-[#eef4fb]">
+          <h2 className="text-2xl bg-[#0c2e39] text-white font-bold p-4 pl-[16%]">
             Explore the Plan
           </h2>
-          <div className="flex flex-col underline text-2xl space-y-6 w-2/5 -ml-[1.5%]">
-            <ExploreLink>
-              <Link>What is the Plan?</Link>
-            </ExploreLink>
-            <ExploreLink>
-              <Link>What's Shaping Our Future?</Link>
-            </ExploreLink>
-            <ExploreLink>
-              <Link>What will Transportation Look Like in 2050?</Link>
-            </ExploreLink>
-            <ExploreLink>
-              <Link>How Will We Fund the Future?</Link>
-            </ExploreLink>
-            <ExploreLink>
-              <Link>How Can We Make It Happen?</Link>
-            </ExploreLink>
+          <div className="w-[68%] relative border-l-4 border-[#0c2e39] h-[90vh] mx-auto pt-4">
+            <div className="flex flex-col underline text-2xl space-y-6 w-2/5 -ml-[1.5%]">
+              <ExploreLink>
+                <Link>What is the Plan?</Link>
+              </ExploreLink>
+              <ExploreLink>
+                <Link>What's Shaping Our Future?</Link>
+              </ExploreLink>
+              <ExploreLink>
+                <Link>What will Transportation Look Like in 2050?</Link>
+              </ExploreLink>
+              <ExploreLink>
+                <Link>How Will We Fund the Future?</Link>
+              </ExploreLink>
+              <ExploreLink>
+                <Link>How Can We Make It Happen?</Link>
+              </ExploreLink>
+            </div>
+            <img
+              src={Hero}
+              class="right-0 absolute top-[20%] w-1/2 -right-[10%]"
+            />
           </div>
-          <img
-            src={Hero}
-            class="right-0 absolute top-[20%] w-1/2 -right-[10%]"
-          />
         </div>
       </div>
     </Layout>
