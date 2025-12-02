@@ -1,7 +1,8 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
+import Dot from "../images/dot.svg"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import PopEmpMap from "../components/popempmap"
 import {
@@ -27,22 +28,26 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         onChange={setSelectedIndex}
       >
         <TabList className="flex text-white">
-          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white w-1/2">
-            Population Forecasts
+          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#0078af] data-[selected]:text-[#0078af] [&:not([data-selected])]:text-white w-1/2">
+            Population
           </Tab>
-          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white w-1/2">
-            Employment Forecasts
+          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#704775] data-[selected]:text-[#704775] [&:not([data-selected])]:text-white w-1/2">
+            Employment
           </Tab>
         </TabList>
-        <TabPanels className="bg-[#093446] p-3 text-white flex-1">
-          <TabPanel className="p-3">
+        <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2">
+          <p className="italic">
+            Explore the web map to view absolute change, percent change, and
+            total forecasted population by municipality throughout the region.
+          </p>
+          <TabPanel>
             <p>
               By 2050, the Greater Philadelphia region is projected to add about
               450,000 new residents, bringing the total population to more than
               6.3 million—a 7% increase since 2020.
             </p>
           </TabPanel>
-          <TabPanel className="p-3">
+          <TabPanel>
             <p>
               By 2050, the region is expected to gain 356,000 new jobs, an
               increase of more than 10% since 2020, with growth across a wide
@@ -61,9 +66,14 @@ const WhatIsThePlan = () => {
   const [selectedLayer, setSelectedLayer] = useState("popABS")
   const [selectedTab, setSelectedTab] = useState(0)
 
+  useEffect(() => {
+    if (selectedTab === 0) setSelectedLayer("popABS")
+    else if (selectedTab === 1) setSelectedLayer("empABS")
+  }, [selectedTab])
+
   return (
     <Layout>
-      <div className="bg-[#cce5f3] flex flex-col items-center">
+      <div className="bg-[#eaf3fb] flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
@@ -72,112 +82,118 @@ const WhatIsThePlan = () => {
             <Link>Forces</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] mx-auto w-[70%] bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
-          <h2 className="text-3xl font-bold">Where Are We Headed?</h2>
-          <p className="text-2xl pb-0 z-50">
-            Forecasts help planners understand how the Greater Philadelphia
-            region might grow in the coming decades and how that growth will
-            affect housing, transportation, jobs, and quality of life.
-          </p>
-          <p className="text-2xl pb-0 z-50">
-            While no one can predict the future, population and employment
-            forecasts give us a roadmap to make smarter investments in roads,
-            buses, trains, and communities. Overall, the region is expected to
-            see steady growth in both people and jobs through 2050.
-          </p>
-        </div>
-        <div className="w-[68%] bg-[#eef4fb] relative ml-[2%] border-l-4 border-[#0c2e39]">
-          <div className="flex flex-col space-y-6 m-6 ">
-            <p>
-              Explore the web map to view absolute change, percent change, and
-              total forecasted population by municipality throughout the region.
+        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
+          <div className="w-[70%] mx-auto space-y-4">
+            <h2 className="text-3xl font-bold">Where Are We Headed?</h2>
+            <p className="text-2xl pb-0 z-50">
+              Forecasts help planners understand how the Greater Philadelphia
+              region might grow in the coming decades and how that growth will
+              affect housing, transportation, jobs, and quality of life.
             </p>
+            <p className="text-2xl pb-0 z-50">
+              While no one can predict the future, population and employment
+              forecasts give us a roadmap to make smarter investments in roads,
+              buses, trains, and communities. Overall, the region is expected to
+              see steady growth in both people and jobs through 2050.
+            </p>
+          </div>
+        </div>
+        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446]">
+          <div className="flex items-center w-full p-4 relative">
+            <Dot width="3%" className="absolute -left-[1.5%]" />
+            <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              Explore the Forecasts in Maps
+            </h2>
+          </div>
+        </div>
+        <div className="relative h-full w-full">
+          <div className="absolute z-[100] flex h-full w-1/3 pl-[17%] bg-[#063446]">
+            <Tabs
+              selectedLayer={selectedLayer}
+              selectedIndex={selectedTab}
+              setSelectedIndex={setSelectedTab}
+            />
 
-            <div className="relative h-full">
-              <div className="absolute z-[100] h-full w-1/4 flex">
-                <Tabs
-                  selectedLayer={selectedLayer}
-                  selectedIndex={selectedTab}
-                  setSelectedIndex={setSelectedTab}
-                />
+            <Legend selectedLayer={selectedLayer} />
+          </div>
+          <PopEmpMap selectedLayer={selectedLayer} />
+          <div className="absolute right-0 top-0 w-52 m-3">
+            <Menu>
+              <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full">
+                Select Layer
+                <ChevronDownIcon className="ml-auto size-4 fill-black" />
+              </MenuButton>
 
-                <Legend selectedLayer={selectedLayer} />
-              </div>
-              <PopEmpMap selectedLayer={selectedLayer} />
-              <div className="absolute right-0 top-0 w-52 m-3">
-                <Menu>
-                  <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full">
-                    Select Layer
-                    <ChevronDownIcon className="ml-auto size-4 fill-black" />
-                  </MenuButton>
-
-                  {selectedTab === 0 && (
-                    <MenuItems
-                      transition
-                      anchor="bottom end"
-                      className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
+              {selectedTab === 0 && (
+                <MenuItems
+                  transition
+                  anchor="bottom end"
+                  className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
+                >
+                  <MenuItem>
+                    <button
+                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                      onClick={() => setSelectedLayer("popABS")}
                     >
-                      <MenuItem>
-                        <button
-                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("popABS")}
-                        >
-                          Absolute Change in Population
-                        </button>
-                      </MenuItem>
-                      <MenuItem>
-                        <button
-                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("popPER")}
-                        >
-                          Percent Change in Population
-                        </button>
-                      </MenuItem>
-                      <MenuItem>
-                        <button
-                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("pop")}
-                        >
-                          2050 Population Forecast
-                        </button>
-                      </MenuItem>
-                    </MenuItems>
-                  )}
-                  {selectedTab === 1 && (
-                    <MenuItems
-                      transition
-                      anchor="bottom end"
-                      className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
+                      Absolute Change in Population
+                    </button>
+                  </MenuItem>
+                  <MenuItem>
+                    <button
+                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                      onClick={() => setSelectedLayer("popPER")}
                     >
-                      <MenuItem>
-                        <button
-                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("empABS")}
-                        >
-                          Absolute Change in Employment
-                        </button>
-                      </MenuItem>
-                      <MenuItem>
-                        <button
-                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("empPER")}
-                        >
-                          Percent Change in Employment
-                        </button>
-                      </MenuItem>
-                      <MenuItem>
-                        <button
-                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("emp")}
-                        >
-                          2050 Employment Forecast
-                        </button>
-                      </MenuItem>
-                    </MenuItems>
-                  )}
-                </Menu>
-              </div>
-            </div>
+                      Percent Change in Population
+                    </button>
+                  </MenuItem>
+                  <MenuItem>
+                    <button
+                      className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                      onClick={() => setSelectedLayer("pop")}
+                    >
+                      2050 Population Forecast
+                    </button>
+                  </MenuItem>
+                </MenuItems>
+              )}
+              {selectedTab === 1 && (
+                <MenuItems
+                  transition
+                  anchor="bottom end"
+                  className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
+                >
+                  <MenuItem>
+                    <button
+                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                      onClick={() => setSelectedLayer("empABS")}
+                    >
+                      Absolute Change in Employment
+                    </button>
+                  </MenuItem>
+                  <MenuItem>
+                    <button
+                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                      onClick={() => setSelectedLayer("empPER")}
+                    >
+                      Percent Change in Employment
+                    </button>
+                  </MenuItem>
+                  <MenuItem>
+                    <button
+                      className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                      onClick={() => setSelectedLayer("emp")}
+                    >
+                      2050 Employment Forecast
+                    </button>
+                  </MenuItem>
+                </MenuItems>
+              )}
+            </Menu>
+          </div>
+        </div>
+
+        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#0c2e39]">
+          <div className="flex flex-col space-y-6 m-6 text-[#063446]">
             {selectedTab === 0 && (
               <>
                 <p>
