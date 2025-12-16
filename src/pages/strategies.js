@@ -61,6 +61,20 @@ const WhatIsThePlan = () => {
       label: "Regional Transmission Organizations",
     },
   ]
+  const elementHex = {
+    Transportation: "#423d59",
+    Economy: "#711e53",
+    Communities: "#004c6d",
+    Environment: "#006227",
+    "Infrastructure & Utility Services": "#147272",
+  }
+  const elementSecHex = {
+    Transportation: "#d3dbef",
+    Economy: "#ddd4e0",
+    Communities: "#cce7f6",
+    Environment: "#d7eade",
+    "Infrastructure & Utility Services": "#c7e6e9",
+  }
   const [filteredStrategies, setFilteredStrategies] = useState()
   const [filter, setFilter] = useState("")
   useEffect(() => {
@@ -129,6 +143,17 @@ const WhatIsThePlan = () => {
               isMulti
               value={element}
               onChange={setElement}
+              styles={{
+                multiValue: (provided, { data }) => ({
+                  ...provided,
+                  backgroundColor: elementHex[data.value],
+                  color: "#ffffff",
+                }),
+                multiValueLabel: (provided, { data }) => ({
+                  ...provided,
+                  color: "#ffffff",
+                }),
+              }}
             />
             <span>Responsible Parties</span>
             <Select
@@ -136,6 +161,17 @@ const WhatIsThePlan = () => {
               isMulti
               value={party}
               onChange={setParty}
+              styles={{
+                multiValue: (provided, { data }) => ({
+                  ...provided,
+                  backgroundColor: "#063446",
+                  color: "#ffffff",
+                }),
+                multiValueLabel: (provided, { data }) => ({
+                  ...provided,
+                  color: "#ffffff",
+                }),
+              }}
             />
             <span>Keyword</span>
             <input
@@ -149,56 +185,71 @@ const WhatIsThePlan = () => {
 
         <div className="w-full bg-[#eaf3fb] relative">
           <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
-            <div className="flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
-                Strategies for Achieving Our Goals
-              </h2>
-            </div>
             <div className="flex flex-col space-y-6 p-6 pt-0">
               <div className="flex w-full p-4 relative flex-col">
                 {filteredStrategies &&
                   filteredStrategies.length > 0 &&
-                  filteredStrategies.map(strategy => (
-                    <div className="flex items-start space-x-2">
-                      <span
-                        className="h-[10px] w-[10px] block mt-2 p-1"
-                        style={{ backgroundColor: "#006227" }}
-                      ></span>
+                  filteredStrategies.map((strategy, idx) => (
+                    <>
+                      {filteredStrategies[idx - 1]?.element !==
+                        strategy.element && (
+                        <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%] py-3">
+                          Strategies for Achieving{" "}
+                          <span style={{ color: elementHex[strategy.element] }}>
+                            {strategy.element}
+                          </span>{" "}
+                          Our Goals
+                        </h2>
+                      )}
+                      <div className="flex items-start space-x-2">
+                        <span
+                          className="h-[10px] w-[10px] block mt-2 p-1"
+                          style={{
+                            backgroundColor: elementHex[strategy.element],
+                          }}
+                        ></span>
 
-                      <div>
-                        <p className="font-bold text-xl text-[#006227]">
-                          {strategy.name}{" "}
-                          <span className="italic">({strategy.element})</span>
-                        </p>
-                        <p>{strategy.description}</p>
-                        <div className="bg-[#b9e0c7] p-2 px-4">
-                          <Accordion
-                            label="Implementation Actions"
-                            color="#006227"
+                        <div>
+                          <p
+                            className="font-bold text-xl"
+                            style={{ color: elementHex[strategy.element] }}
                           >
-                            {strategy.actions.map(action => {
-                              return (
-                                <>
-                                  {party.length > 0 &&
-                                    action.tags.some(value =>
-                                      party
-                                        .map(term => term.value)
-                                        .includes(value)
-                                    ) && <p>{action.description}</p>}
-                                  {!party.length && (
-                                    <p>
-                                      {action.description} (
-                                      {action.tags.join(", ")})
-                                    </p>
-                                  )}
-                                </>
-                              )
-                            })}
-                          </Accordion>
+                            {strategy.name}
+                          </p>
+                          <p>{strategy.description}</p>
+                          <div
+                            className="p-2 px-4"
+                            style={{
+                              backgroundColor: elementSecHex[strategy.element],
+                            }}
+                          >
+                            <Accordion
+                              label="Implementation Actions"
+                              color={elementHex[strategy.element]}
+                            >
+                              {strategy.actions.map(action => {
+                                return (
+                                  <>
+                                    {party.length > 0 &&
+                                      action.tags.some(value =>
+                                        party
+                                          .map(term => term.value)
+                                          .includes(value)
+                                      ) && <p>{action.description}</p>}
+                                    {!party.length && (
+                                      <p>
+                                        {action.description} (
+                                        {action.tags.join(", ")})
+                                      </p>
+                                    )}
+                                  </>
+                                )
+                              })}
+                            </Accordion>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </>
                   ))}
               </div>
             </div>
