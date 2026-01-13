@@ -21,6 +21,36 @@ import { Legend } from "../components/popempmap"
 import Revenue from "../images/revenue.png"
 import Transit from "../images/transitneeds.png"
 import Roadway from "../images/roadwayneeds.png"
+import PaTransitPm from "../images/pa-transit-pm.png"
+import PaTransitOp from "../images/pa-transit-op.png"
+import PaTransitExp from "../images/pa-transit-exp.png"
+import PaTransitOther from "../images/pa-transit-other.png"
+import NjTransitPm from "../images/nj-transit-pm.png"
+import NjTransitOp from "../images/nj-transit-op.png"
+import NjTransitExp from "../images/nj-transit-exp.png"
+import NjTransitOther from "../images/nj-transit-other.png"
+import PaRoadwayPpm from "../images/pa-roadway-ppm.png"
+import PaRoadwayBp from "../images/pa-roadway-bp.png"
+import PaRoadwaySs from "../images/pa-roadway-ss.png"
+import PaRoadwayMoi from "../images/pa-roadway-moi.png"
+import PaRoadwayRe from "../images/pa-roadway-re.png"
+import PaRoadwayGt from "../images/pa-roadway-gt.png"
+import NjRoadwayPpm from "../images/nj-roadway-ppm.png"
+import NjRoadwayBp from "../images/nj-roadway-bp.png"
+import NjRoadwaySs from "../images/nj-roadway-ss.png"
+import NjRoadwayMoi from "../images/nj-roadway-moi.png"
+import NjRoadwayRe from "../images/nj-roadway-re.png"
+import NjRoadwayGt from "../images/nj-roadway-gt.png"
+import Transitpm from "../images/transitpm.png"
+import Transittoi from "../images/transittoi.png"
+import Transittse from "../images/transittse.png"
+import Transitother from "../images/transitother.png"
+import Roadwayppm from "../images/roadwayppm.png"
+import Roadwaybp from "../images/roadwaybp.png"
+import Roadwaymoi from "../images/roadwaymoi.png"
+import Roadwayre from "../images/roadwayre.png"
+import Roadwaygt from "../images/roadwaygt.png"
+import Roadwayss from "../images/roadwayss.png"
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
   return (
@@ -149,8 +179,268 @@ const WhatIsThePlan = () => {
             />
           </div>
 
-          {selectedTab === 0 && <img src={Roadway} className="w-3/5" />}
-          {selectedTab === 1 && <img src={Transit} className="w-3/5" />}
+          {selectedTab === 0 && (
+            <>
+              <div className="grid grid-cols-4 grid grid-rows-2 p-4 auto-rows-auto">
+                <div className="w-1/2 text-[#714876] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$37.7 B</p>
+                    <p>Funding:</p>
+                    <p>$12.9 B</p>
+                    <p>Allocation:</p>
+                    <p>56%</p>
+                  </div>
+                  <img src={PaTransitPm} />
+                </div>
+                <div className="w-1/2 text-[#0078ae] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$7.4 B</p>
+                    <p>Funding:</p>
+                    <p>$1.5 B</p>
+                    <p>Allocation:</p>
+                    <p>6.7%</p>
+                  </div>
+                  <img src={PaTransitOp} />
+                </div>
+                <div className="w-1/2 text-[#24964f] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$15.0 B</p>
+                    <p>Funding:</p>
+                    <p>$0.8 B</p>
+                    <p>Allocation:</p>
+                    <p>3.3%</p>
+                  </div>
+                  <img src={PaTransitExp} />
+                </div>
+                <div className="w-1/2 text-[#20a9a6] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$7.8 B</p>
+                    <p>Funding:</p>
+                    <p>$7.8 B</p>
+                    <p>Allocation:</p>
+                    <p>34.1%</p>
+                  </div>
+                  <img src={PaTransitOther} />
+                </div>
+                <div className="w-1/2 text-[#714876] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$5.1 B</p>
+                    <p>Funding:</p>
+                    <p>$5.1 B</p>
+                    <p>Allocation:</p>
+                    <p>75%</p>
+                  </div>
+                  <img src={NjTransitPm} />
+                  <img src={Transitpm} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#0078ae] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$0.4 B</p>
+                    <p>Funding:</p>
+                    <p>$0.6 B</p>
+                    <p>Allocation:</p>
+                    <p>8.3%</p>
+                  </div>
+                  <img src={NjTransitOp} className="w-6 mx-auto" />
+                  <img src={Transittoi} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#24964f] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$8.6 B</p>
+                    <p>Funding:</p>
+                    <p>$0.8 B</p>
+                    <p>Allocation:</p>
+                    <p>12.5%</p>
+                  </div>
+                  <img src={NjTransitExp} />
+                  <img src={Transittse} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#20a9a6] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$0.3 B</p>
+                    <p>Funding:</p>
+                    <p>$0.3 B</p>
+                    <p>Allocation:</p>
+                    <p>4.3%</p>
+                  </div>
+                  <img src={NjTransitOther} className="w-2 mx-auto" />
+                  <img src={Transitother} className="h-36" />
+                </div>
+              </div>
+            </>
+          )}
+          {selectedTab === 1 && (
+            <>
+              <div className="grid grid-cols-6 grid grid-rows-2 p-4 auto-rows-auto">
+                <div className="w-1/2 text-[#714876] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$14.3 B</p>
+                    <p>Funding:</p>
+                    <p>$8.2 B</p>
+                    <p>Allocation:</p>
+                    <p>26%</p>
+                  </div>
+                  <img src={PaRoadwayPpm} />
+                </div>
+                <div className="w-1/2 text-[#6f6688] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$18.8 B</p>
+                    <p>Funding:</p>
+                    <p>$14.3 B</p>
+                    <p>Allocation:</p>
+                    <p>45%</p>
+                  </div>
+                  <img src={PaRoadwayBp} />
+                </div>
+                <div className="w-1/2 text-[#009eb8] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$2.0 B</p>
+                    <p>Funding:</p>
+                    <p>$1.9 B</p>
+                    <p>Allocation:</p>
+                    <p>6%</p>
+                  </div>
+                  <img src={PaRoadwaySs} className="w-12 mx-auto" />
+                </div>
+                <div className="w-1/2 text-[#0078ae] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$7.5 B</p>
+                    <p>Funding:</p>
+                    <p>$3.2 B</p>
+                    <p>Allocation:</p>
+                    <p>10%</p>
+                  </div>
+                  <img src={PaRoadwayMoi} />
+                </div>
+                <div className="w-1/2 text-[#24964f] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$2.0 B</p>
+                    <p>Funding:</p>
+                    <p>$1.3 B</p>
+                    <p>Allocation:</p>
+                    <p>4%</p>
+                  </div>
+                  <img src={PaRoadwayRe} className="w-12 mx-auto" />
+                </div>
+                <div className="w-1/2 text-[#026227] font-bold space-y-2">
+                  <p className="text-center text-2xl">Pennsylvania</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$11.8 B</p>
+                    <p>Funding:</p>
+                    <p>$3.21 B</p>
+                    <p>Allocation:</p>
+                    <p>10%</p>
+                  </div>
+                  <img src={PaRoadwayGt} />
+                </div>
+                <div className="w-1/2 text-[#714876] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$8.4 B</p>
+                    <p>Funding:</p>
+                    <p>$5.8 B</p>
+                    <p>Allocation:</p>
+                    <p>35%</p>
+                  </div>
+                  <img src={NjRoadwayPpm} />
+                  <img src={Roadwayppm} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#6f6688] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$4.7 B</p>
+                    <p>Funding:</p>
+                    <p>$3.1 B</p>
+                    <p>Allocation:</p>
+                    <p>19%</p>
+                  </div>
+                  <img src={NjRoadwayBp} />
+                  <img src={Roadwaybp} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#009eb8] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$0.4 B</p>
+                    <p>Funding:</p>
+                    <p>$0.3 B</p>
+                    <p>Allocation:</p>
+                    <p>2%</p>
+                  </div>
+                  <img src={NjRoadwaySs} className="w-3 mx-auto" />
+                  <img src={Roadwayss} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#0078ae] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$4.8 B</p>
+                    <p>Funding:</p>
+                    <p>$2.3 B</p>
+                    <p>Allocation:</p>
+                    <p>14%</p>
+                  </div>
+                  <img src={NjRoadwayMoi} />
+                  <img src={Roadwaymoi} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#24964f] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$1.1 B</p>
+                    <p>Funding:</p>
+                    <p>$0.7 B</p>
+                    <p>Allocation:</p>
+                    <p>4%</p>
+                  </div>
+                  <img src={NjRoadwayRe} className="w-8 mx-auto" />
+                  <img src={Roadwayre} className="h-36" />
+                </div>
+                <div className="w-1/2 text-[#026227] font-bold space-y-2">
+                  <p className="text-center text-2xl">New Jersey</p>
+                  <div className="grid grid-cols-2 text-right">
+                    <p>Need:</p>
+                    <p>$6.3 B</p>
+                    <p>Funding:</p>
+                    <p>$4.3 B</p>
+                    <p>Allocation:</p>
+                    <p>26%</p>
+                  </div>
+                  <img src={NjRoadwayGt} />
+                  <img src={Roadwaygt} className="h-36" />
+                </div>
+              </div>
+            </>
+          )}
         </div>
         <div className="w-full bg-[#cbe5f3] relative p-10 flex">
           <Link
