@@ -8,6 +8,7 @@ import { ChevronDownIcon } from "@heroicons/react/16/solid"
 import Projects from "../components/projects.json"
 import Select from "react-select"
 import Accordion from "../components/accordion"
+import { Tooltip } from "react-tippy"
 
 const MRPList = () => {
   const projects = { ...Projects }
@@ -119,6 +120,9 @@ const MRPList = () => {
         </div>
         <div className="w-[68%] relative border-l-4 border-[#063446]">
           <div className="flex w-full p-4 relative flex-col">
+            <Tooltip title="Welcome to React" position="bottom" trigger="click">
+              <p>Click here to show popup</p>
+            </Tooltip>
             <strong>Start your search:</strong>
             <span>State</span>
             <Select
@@ -169,17 +173,80 @@ const MRPList = () => {
         <div className="w-full bg-[#eaf3fb] relative">
           <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
             <div className="flex flex-col space-y-6 p-6 pt-0">
-              <table>
+              <table className="table-auto">
                 <thead className="text-left">
                   <tr>
-                    <th onClick={e => sortTable("id")}>MRP ID</th>
-                    <th onClick={e => sortTable("facility")}>Facility</th>
-                    <th onClick={e => sortTable("scope")}>Scope</th>
-                    <th onClick={e => sortTable("location")}>Location</th>
-                    <th onClick={e => sortTable("period")}>Plan Period</th>
-                    <th onClick={e => sortTable("cost")}>Cost</th>
-                    <th onClick={e => sortTable("categories")}>
-                      Project Categories/Sponsor
+                    <th>
+                      <Tooltip
+                        title="Unique identifier for Major Regional Projects (MRPs). The first two letters indicate the state; the third letter indicates project type—roadway (R), transit (T), illustrative (I), or external (X); and the final three digits are a unique number."
+                        position="top"
+                        trigger="click"
+                      >
+                        <p>MRP ID</p>
+                      </Tooltip>
+                    </th>
+                    <th>
+                      <Tooltip
+                        title="The name of the road, bridge, rail line, or other asset involved in the project, often with a few words that describe what will be done (for example, “U.S. 422 Reconstruction”)."
+                        position="top"
+                        trigger="click"
+                      >
+                        <p>Facility</p>
+                      </Tooltip>
+                    </th>
+                    <th>
+                      <Tooltip
+                        title="A short summary of the work planned for this project within the listed budget and timeframe. More detailed descriptions are included in the Transportation Improvement Program (TIP) once the project moves into the first two funding periods."
+                        position="top"
+                        trigger="click"
+                      >
+                        <p>Project Scope</p>
+                      </Tooltip>
+                    </th>
+                    <th>
+                      <Tooltip
+                        title="Shows which county or counties in the nine-county DVRPC region the project is located in."
+                        position="top"
+                        trigger="click"
+                      >
+                        <p>Location</p>
+                      </Tooltip>
+                    </th>
+                    <th>
+                      <Tooltip
+                        title="Funded projects are scheduled in one or more of the following funding periods, depending on whether the project is located in Pennsylvania or New Jersey."
+                        position="top"
+                        trigger="click"
+                      >
+                        <p>Plan Period</p>
+                      </Tooltip>
+                    </th>
+                    <th>
+                      <Tooltip
+                        title="Funded MRPs are expressed in Year-of-expenditure dollars, whereas 2025 base cost dollars are used to represent Unfunded, Illustrative, and Externally Funded projects."
+                        position="top"
+                        trigger="click"
+                      >
+                        <p>Cost</p>
+                      </Tooltip>
+                    </th>
+                    <th>
+                      <Tooltip
+                        title="Transit MRPs are categorized by their primary purpose—such as preserving or expanding the system. Categories include T1. Transit Preservation and Modernization 
+T2. Transit Operational Improvements
+T3. Transit System Expansion
+T4. Transit Other
+Roadway MRPs often address multiple goals at once, such as improving safety, operations, pavement conditions, and green transportation. Categories include R1. Pavement Preservation and Modernization
+R2. Bridge Preservation
+R3. Substantive Safety
+R4. Mobility Operational Improvements
+R5. Roadway System Expansion
+R6. Green Transportation"
+                        position="top"
+                        trigger="click"
+                      >
+                        <p>Project Categories/Sponsor</p>
+                      </Tooltip>
                     </th>
                   </tr>
                 </thead>
@@ -202,7 +269,7 @@ const MRPList = () => {
                             </td>
                           </tr>
                         )}
-                        <tr>
+                        <tr class="even:bg-gray-50">
                           <td>{project.id}</td>
                           <td>{project.facility}</td>
                           <td>{project.scope}</td>

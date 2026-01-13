@@ -1,11 +1,18 @@
 /*TODO: fix import*/
 @import url("https://fonts.googleapis.com/css?family=Inclusive+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+3");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  td,
+  th {
+    @apply p-2;
+  }
+}
 
 html,
 body {
@@ -15,6 +22,10 @@ body {
 
 p {
   font-family: "Source Sans 3" !important;
+}
+
+table {
+  font-family: "Source Sans 3";
 }
 
 .input {
