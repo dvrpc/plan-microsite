@@ -75,7 +75,7 @@ const Vision = () => {
 
   return (
     <Layout>
-      <div className="bg-[#cce5f3] flex flex-col items-center">
+      <div className="bg-white flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
@@ -84,42 +84,46 @@ const Vision = () => {
             <Link>Vision</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] mx-auto w-[70%] bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%] relative">
-          <h2 className="text-3xl font-bold">Where Are We Headed?</h2>
-          <p className="text-2xl pb-0 z-50">
-            Every region needs a roadmap for the future—and that’s what a
-            long-range plan provides.{" "}
-            <strong>The regional vision for 2050</strong> imagines a Greater
-            Philadelphia that is safer, more connected, and more resilient—where
-            communities grow sustainably, people can move easily and affordably,
-            and natural resources are protected.
-          </p>
-          <p className="text-2xl pb-0 z-50">
-            DVRPC works with partners across the region to shape this shared
-            vision. The plan guides major transportation decisions, such as
-            making biking and walking safer, improving transit, and maintaining
-            reliable travel on our roads. But it’s about more than getting from
-            A to B. Transportation influences where we live, how the economy
-            grows, and how we care for the environment. Our plan looks at the{" "}
-            <strong>big picture</strong>, connecting all the pieces that make
-            our region a great place to live and thrive.
-          </p>
-          <p className="text-2xl pb-0 z-50">
-            The regional vision for 2050 is a Greater Philadelphia that
-            provides:
-          </p>
-          <div className="-ml-[5%] -mr-[5%]">
-            <Bubbles />
+        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
+          <div className="w-[70%] mx-auto space-y-4">
+            <h2 className="text-3xl font-bold">Where Are We Headed?</h2>
+            <p className="text-2xl pb-0 z-50">
+              Every region needs a roadmap for the future—and that’s what a
+              long-range plan provides.{" "}
+              <strong>The regional vision for 2050</strong> imagines a Greater
+              Philadelphia that is safer, more connected, and more
+              resilient—where communities grow sustainably, people can move
+              easily and affordably, and natural resources are protected.
+            </p>
+            <p className="text-2xl pb-0 z-50">
+              DVRPC works with partners across the region to shape this shared
+              vision. The plan guides major transportation decisions, such as
+              making biking and walking safer, improving transit, and
+              maintaining reliable travel on our roads. But it’s about more than
+              getting from A to B. Transportation influences where we live, how
+              the economy grows, and how we care for the environment. Our plan
+              looks at the <strong>big picture</strong>, connecting all the
+              pieces that make our region a great place to live and thrive.
+            </p>
+            <p className="text-2xl pb-0 z-50">
+              The regional vision for 2050 is a Greater Philadelphia that
+              provides:
+            </p>
+            <div className="-ml-[5%] -mr-[5%]">
+              <Bubbles />
+            </div>
           </div>
         </div>
-        <div className="w-[68%] bg-[#eef4fb] relative ml-[2%] border-l-4 border-[#0c2e39]">
-          <div className="flex items-center w-full bg-[#16819a] p-4 relative mt-4">
+        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446] text-[#063446]">
+          <div className="flex items-center w-full p-4 relative">
             <Dot width="3%" className="absolute -left-[1.5%]" />
-            <h2 className="text-2xl text-white font-bold ml-[1.5%]">
+            <h2 className="text-2xl font-bold ml-[1.5%]">
               Explore the Vision in Maps
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 m-6 ">
+        </div>
+        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446] text-[#063446]">
+          <div className="items-center w-full p-4 relative space-y-6">
             <p>
               <strong>What will Greater Philadelphia look like in 2050?</strong>{" "}
               The Plan envisions <strong>dense, connected communities</strong>{" "}
@@ -129,9 +133,12 @@ const Vision = () => {
               reducing financial and environmental costs.
             </p>
             <p>Use the interactive map to explore this vision in two layers:</p>
-
-            <div className="relative h-full">
-              <div className="absolute z-[100] h-full w-1/4 flex">
+          </div>
+        </div>
+        <div className="relative h-full w-full">
+          <div className="flex flex-col space-y-6">
+            <div className="relative h-full w-full">
+              <div className="absolute z-[100] flex h-full w-1/3 pl-[17%] bg-[#063446]">
                 <Tabs
                   selectedLayer={selectedLayer}
                   selectedIndex={selectedTab}
@@ -144,6 +151,10 @@ const Vision = () => {
               </div>
               <VisionMap selectedLayer={selectedLayer} />
             </div>
+          </div>
+        </div>
+        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446] text-[#063446]">
+          <div className="items-center w-full p-4 relative space-y-6">
             <p>
               These maps use existing passenger rail and a proposed line to
               create a <strong>visual guide to strategic growth</strong>—helping
