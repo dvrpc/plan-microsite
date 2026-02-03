@@ -72,12 +72,12 @@ const MrpWebmap = () => {
         <div className="relative h-full w-full">
           <div className="absolute z-[100] flex h-full w-1/3 pl-[17%] bg-[#063446]">
             <div className="text-white p-3">
-              <p>
+              <span>
                 The map shows MRPs categorized by one or more transportation
                 improvement categories.
-              </p>
+              </span>
               <br />
-              <p>
+              <span>
                 <strong>Roadway</strong> and <strong>Transit</strong> projects
                 in this web map are designated as
                 <strong>Funded</strong> (prioritized and programmed within
@@ -87,7 +87,7 @@ const MrpWebmap = () => {
                 <strong>Externally Funded</strong> projects that don’t use
                 regional dollars, but must be considered due to their impacts on
                 the regional network and air quality conformity.
-              </p>
+              </span>
             </div>
             <Legend selectedLayer={selectedLayer} />
           </div>
@@ -111,7 +111,7 @@ const MrpWebmap = () => {
               and improve mobility. CMP strategies support the Plan’s broader
               goals by helping to:
             </p>
-            <ul className="list-disc ml-4">
+            <ul className="list-disc ml-4 text-2xl">
               <li>Increase mobility and reliability</li>
               <li>Integrate modes and improve transit access</li>
               <li>Modernize and maintain the transportation network</li>

@@ -48,7 +48,7 @@ const WhatIsThePlan = () => {
           </div>
           <div className="flex flex-col space-y-6 m-6">
             <DvrpcMap />
-            <p>
+            <p className="text-2xl">
               Greater Philadelphia is one of the nation’s most historic and
               dynamic regions. Once an industrial powerhouse, it has evolved
               into a diverse economic and cultural hub supported by world-class

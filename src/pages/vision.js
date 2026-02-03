@@ -41,19 +41,19 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         </TabList>
         <TabPanels className="bg-[#093446] p-3 text-white flex-1">
           <TabPanel className="p-3">
-            <p>
+            <span>
               Shows how the region can grow in smart, balanced ways by aligning
               future development with existing infrastructure. It highlights
               redevelopment opportunities, emerging growth areas, rural
               landscapes to preserve, and green spaces that link them together.
-            </p>
+            </span>
           </TabPanel>
           <TabPanel className="p-3">
-            <p>
+            <span>
               Identifies specific Centers where future growth is prioritized and
               where investments in housing, infrastructure, and jobs can have
               the greatest impact.
-            </p>
+            </span>
           </TabPanel>
         </TabPanels>
       </TabGroup>

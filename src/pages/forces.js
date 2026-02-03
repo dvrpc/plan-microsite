@@ -36,25 +36,25 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </Tab>
         </TabList>
         <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2">
-          <p className="italic">
+          <span className="italic">
             Explore the web map to view absolute change, percent change, and
             total forecasted population by municipality throughout the region.
-          </p>
+          </span>
           <TabPanel>
-            <p>
+            <span>
               By 2050, the Greater Philadelphia region is projected to add about
               450,000 new residents, bringing the total population to more than
               6.3 million—a 7% increase since 2020.
-            </p>
+            </span>
           </TabPanel>
           <TabPanel>
-            <p>
+            <span>
               By 2050, the region is expected to gain 356,000 new jobs, an
               increase of more than 10% since 2020, with growth across a wide
               range of industries. Explore the web map to view absolute change,
               percent change, and total forecasted employment by municipality
               throughout the region.
-            </p>
+            </span>
           </TabPanel>
         </TabPanels>
       </TabGroup>

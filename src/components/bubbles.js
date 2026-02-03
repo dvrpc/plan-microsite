@@ -8,7 +8,7 @@ import Hero from "../images/home-image.png"
 
 const Bubbles = () => {
   return (
-    <div className="flex space-x-2 [&>*]:w-1/5 [&>*]:relative w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-xl text-center items-center my-12">
+    <div className="flex space-x-2 [&>*]:w-1/4 [&>*]:relative w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-xl text-center items-center my-12">
       <div>
         <Purple width="100%" className="absolute z-10" />
         <p className="z-50 w-[90%]">
