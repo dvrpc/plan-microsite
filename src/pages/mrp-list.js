@@ -112,17 +112,49 @@ const MRPList = () => {
             <h2 className="text-3xl font-bold">Major Regional Project List</h2>
             <p className="text-2xl pb-0 z-50">
               Explore all projects included in Update: Connections 2050. Each
-              project is classified as Funded, Unfunded, Illustrative, or
-              Externally Funded based on its status and funding source. Use the
-              filters below to sort and learn about each project.
+              project is classified as{" "}
+              <Tooltip
+                title="Projects in this category are funded with anticipated regional dollars. Those in the first two plan periods are also listed in the current Transportation Improvement Program (TIP). Funding has been identified, and anticipated timing and costs reflect programmed amounts, though schedules and budgets may be refined as projects advance through design and implementation."
+                position="top"
+                trigger="click"
+              >
+                <span className="underline hover:cursor-pointer">Funded</span>
+              </Tooltip>
+              ,{" "}
+              <Tooltip
+                title="Due to the limited funding available for achieving the region’s vision, some MRPs are categorized as Unfunded, though they remain aspirations to complete as more funding becomes available. Anticipated timing for these projects is listed, but cost remains in current-year dollars until the project is programmed."
+                position="top"
+                trigger="click"
+              >
+                <span className="underline hover:cursor-pointer">Unfunded</span>
+              </Tooltip>
+              ,{" "}
+              <Tooltip
+                title="Illustrative projects are not considered unfunded; rather, they will advance into the Plan and TIP depending on the timing of their repair needs and project readiness. Illustrative projects can be completed by drawing from the balance of unallocated system preservation funds, but not all of them will be able to advance due to limited revenues."
+                position="top"
+                trigger="click"
+              >
+                <span className="underline hover:cursor-pointer">
+                  Illustrative
+                </span>
+              </Tooltip>
+              , or{" "}
+              <Tooltip
+                title="These projects are generally funded through toll revenues, but some will be funded from other non-federal sources. They are largely developed outside the regional planning process, and roadway system expansion projects in this category are excluded from the Needs Assessment and the four percent cap on roadway system expansion investments."
+                position="top"
+                trigger="click"
+              >
+                <span className="underline hover:cursor-pointer">
+                  Externally Funded
+                </span>
+              </Tooltip>{" "}
+              based on its status and funding source. Use the filters below to
+              sort and learn about each project.
             </p>
           </div>
         </div>
         <div className="w-[68%] relative border-l-4 border-[#063446]">
           <div className="flex w-full p-4 relative flex-col">
-            <Tooltip title="Welcome to React" position="bottom" trigger="click">
-              <p>Click here to show popup</p>
-            </Tooltip>
             <strong>Start your search:</strong>
             <span>State</span>
             <Select
@@ -182,7 +214,7 @@ const MRPList = () => {
                         position="top"
                         trigger="click"
                       >
-                        <p>MRP ID</p>
+                        <p className="underline hover:cursor-pointer">MRP ID</p>
                       </Tooltip>
                     </th>
                     <th>
@@ -191,7 +223,9 @@ const MRPList = () => {
                         position="top"
                         trigger="click"
                       >
-                        <p>Facility</p>
+                        <p className="underline hover:cursor-pointer">
+                          Facility
+                        </p>
                       </Tooltip>
                     </th>
                     <th>
@@ -200,7 +234,9 @@ const MRPList = () => {
                         position="top"
                         trigger="click"
                       >
-                        <p>Project Scope</p>
+                        <p className="underline hover:cursor-pointer">
+                          Project Scope
+                        </p>
                       </Tooltip>
                     </th>
                     <th>
@@ -209,7 +245,9 @@ const MRPList = () => {
                         position="top"
                         trigger="click"
                       >
-                        <p>Location</p>
+                        <p className="underline hover:cursor-pointer">
+                          Location
+                        </p>
                       </Tooltip>
                     </th>
                     <th>
@@ -218,7 +256,9 @@ const MRPList = () => {
                         position="top"
                         trigger="click"
                       >
-                        <p>Plan Period</p>
+                        <p className="underline hover:cursor-pointer">
+                          Plan Period
+                        </p>
                       </Tooltip>
                     </th>
                     <th>
@@ -227,7 +267,7 @@ const MRPList = () => {
                         position="top"
                         trigger="click"
                       >
-                        <p>Cost</p>
+                        <p className="underline hover:cursor-pointer">Cost</p>
                       </Tooltip>
                     </th>
                     <th>
@@ -245,7 +285,9 @@ R6. Green Transportation"
                         position="top"
                         trigger="click"
                       >
-                        <p>Project Categories/Sponsor</p>
+                        <p className="underline hover:cursor-pointer">
+                          Project Categories/Sponsor
+                        </p>
                       </Tooltip>
                     </th>
                   </tr>
