@@ -27,6 +27,10 @@ p {
   font-size: 1.5rem;
 }
 
+td {
+  padding: 0;
+}
+
 table {
   font-family: "Source Sans 3";
 }

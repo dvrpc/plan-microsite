@@ -1,6 +1,7 @@
-import React from "react"
+import React, { useContext, useCallback } from "react"
 import DvrpcMap from "./dvrpcmap"
-import { Source, Layer } from "react-map-gl/mapbox"
+import { Source, Layer, Popup } from "react-map-gl/mapbox"
+import AppContext from "./AppContext"
 
 export const Legend = () => {
   return (
@@ -88,9 +89,53 @@ const layerDef = {
     ],
   },
 }
-const PopEmpMap = ({ selectedLayer }) => {
+const MrpMap = ({ selectedLayer }) => {
+  const { clickedFeature, setClickedFeature } = useContext(AppContext)
   return (
     <DvrpcMap>
+      {clickedFeature && (
+        <Popup
+          anchor="top"
+          longitude={clickedFeature.longitude}
+          latitude={clickedFeature.latitude}
+          onClose={() => setClickedFeature(null)}
+        >
+          <table>
+            <tr>
+              <td>ID#:</td>
+              <td>{clickedFeature.feature.properties.uc2050_id}</td>
+            </tr>
+            <tr>
+              <td>Project Name:</td>
+              <td>{clickedFeature.feature.properties.facility}</td>
+            </tr>
+            <tr>
+              <td>Scope:</td>
+              <td>{clickedFeature.feature.properties.scope}</td>
+            </tr>
+            <tr>
+              <td>Project Categories:</td>
+              <td>{clickedFeature.feature.properties.combined_pcts}</td>
+            </tr>
+            <tr>
+              <td>Counties:</td>
+              <td>{clickedFeature.feature.properties.location}</td>
+            </tr>
+            <tr>
+              <td>State:</td>
+              <td>{clickedFeature.feature.properties.state}</td>
+            </tr>
+            <tr>
+              <td>Funding:</td>
+              <td>{clickedFeature.feature.properties.funding}</td>
+            </tr>
+            <tr>
+              <td>Cost:</td>
+              <td>{clickedFeature.feature.properties.displaycost}</td>
+            </tr>
+          </table>
+        </Popup>
+      )}
       <Source
         id="MCD"
         type="geojson"
@@ -104,4 +149,4 @@ const PopEmpMap = ({ selectedLayer }) => {
   )
 }
 
-export default PopEmpMap
+export default MrpMap

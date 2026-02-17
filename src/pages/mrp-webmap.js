@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect, useContext } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
@@ -18,8 +18,10 @@ import {
 } from "@headlessui/react"
 import { ChevronDownIcon } from "@heroicons/react/16/solid"
 import { Legend } from "../components/mrpmap"
+import AppContext from "../components/AppContext"
 
 const MrpWebmap = () => {
+  const { mapRef } = useContext(AppContext)
   const [selectedLayer, setSelectedLayer] = useState("popABS")
   const [selectedTab, setSelectedTab] = useState(0)
 
