@@ -234,7 +234,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>Allocation:</p>
                     <p>6%</p>
                   </div>
-                  <img src={PaRoadwaySs} className="w-12 mx-auto" />
+                  <img src={PaRoadwaySs} className="w-20 mx-auto" />
                 </div>
                 <div className="text-[#0078ae] font-bold space-y-4">
                   <p className="text-center text-2xl">Pennsylvania</p>
@@ -258,7 +258,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>Allocation:</p>
                     <p>4%</p>
                   </div>
-                  <img src={PaRoadwayRe} className="w-12 mx-auto" />
+                  <img src={PaRoadwayRe} className="w-20 mx-auto" />
                 </div>
                 <div className="text-[#026227] font-bold space-y-4">
                   <p className="text-center text-2xl">Pennsylvania</p>
@@ -410,7 +410,10 @@ const WhatIsThePlan = () => {
             text boxes to learn more.
           </p>
           <img src={Arrow1} className="absolute md:left-[15%] md:top-[28%]" />
-          <img src={Arrow2} className="absolute md:right-[2%] md:top-[25%]" />
+          <img
+            src={Arrow2}
+            className="absolute md:right-[10%] md:top-[30%] scale-[75%]"
+          />
           <img
             src={Arrow3}
             className="absolute md:bottom-[12%] md:right-[60%]"
@@ -442,11 +445,11 @@ const WhatIsThePlan = () => {
           </div>
           <div
             id="block-2"
-            className="absolute md:right-0 md:top-[25%]"
+            className="absolute md:right-0 md:top-[30%]"
             onClick={() =>
               document
                 .querySelector("#block-2")
-                .classList.toggle("scale-[150%]")
+                .classList.toggle("scale-[200%]")
             }
           >
             <div className="absolute md:m-8 text-sm space-y-2 text-[#063446] flex flex-col">
