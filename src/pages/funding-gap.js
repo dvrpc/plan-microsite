@@ -7,8 +7,20 @@ import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import PlanProcess from "../images/plan-process@4x.png"
 import DvrpcMap from "../components/dvrpcmap"
 import PurchasingPower from "../images/purchasing-power.png"
+import Flipcard from "../components/flipcard"
 import LocalFunding from "../images/local-funding.png"
-import TextBox1 from "../images/funding-box-1.png"
+import FundingBox1 from "../images/funding-box-1.png"
+import FundingBox2 from "../images/funding-box-2.png"
+import FundingBox3 from "../images/funding-box-3.png"
+import FundingBox4 from "../images/funding-box-4.png"
+import Mbuf from "../images/mbuf.png"
+import Cpf from "../images/cpf.png"
+import Ht from "../images/ht.png"
+import Es from "../images/es.png"
+import Tdc from "../images/tdc.png"
+import Siif from "../images/siif.png"
+import Pp from "../images/pp.png"
+import Cgp from "../images/cgp.png"
 
 const WhatIsThePlan = () => {
   return (
@@ -52,8 +64,8 @@ const WhatIsThePlan = () => {
               The Diminishing Gas Tax
             </h2>
           </div>
-          <div className="grid grid-cols-3 space-x-4 m-6">
-            <div className="col-span-2 space-y-4">
+          <div className="flex space-y-6 m-6">
+            <div>
               <p className="text-2xl">
                 Most transportation funding still comes from taxes on gasoline
                 and petroleum products, but those revenues are shrinking as
@@ -75,7 +87,7 @@ const WhatIsThePlan = () => {
                 needs will continue to grow.
               </p>
             </div>
-            <img src={PurchasingPower} />
+            <img src={PurchasingPower} className="w-1/2" />
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
@@ -86,8 +98,8 @@ const WhatIsThePlan = () => {
                 Limited Local Funding
               </h2>
             </div>
-            <div className="grid grid-cols-3 space-x-4 m-6">
-              <div className="col-span-2 space-y-4">
+            <div className="grid grid-cols-5 space-y-6 p-6">
+              <div className="col-span-3">
                 <p>
                   Only 2% of Greater Philadelphia’s transportation funding comes
                   from local sources, mainly to match state and federal dollars.
@@ -98,10 +110,12 @@ const WhatIsThePlan = () => {
                 <p>
                   State laws in Pennsylvania and New Jersey limit local
                   governments’ ability to raise transportation funds, leaving
-                  our region at a disadvantage. Without dedicated local sources,
-                  it’s harder to:
+                  our region at a disadvantage.{" "}
+                  <strong>
+                    Without dedicated local sources, it’s harder to:
+                  </strong>
                 </p>
-                <ul className="list-disc *:ml-4 text-2xl">
+                <ul className="list-disc ml-8 text-2xl">
                   <li>Keep up with basic maintenance needs, and</li>
                   <li>
                     Compete for federal grants that require a substantial local
@@ -114,28 +128,30 @@ const WhatIsThePlan = () => {
                   maintain their systems and support long-term economic growth.
                 </p>
               </div>
-              <img src={LocalFunding} className="self-center" />
-            </div>
-            <div className="col-span-3 relative py-8">
-              <img src={TextBox1} />
-              <div className="absolute md:top-[10%] text-white space-y-4 md:p-10 md:left-[5%]">
-                <p className="font-bold">
-                  Transportation access directly affects opportunity.
-                </p>
-                <p>
-                  In a survey by the Federal Reserve Bank of Philadelphia, 16%
-                  of participants earning below the basic cost of living
-                  identified transportation as a major barrier to improving
-                  their economic situation.
-                </p>
-                <p>
-                  Recognizing this, the City of Philadelphia, in partnership
-                  with SEPTA and community organizations, launched the Zero Fare
-                  pilot program, providing free transit for more than 25,000
-                  Philadelphians living at or near the poverty line. Programs
-                  like Zero Fare are vital, but their long-term success—and the
-                  region’s broader goals—depend on stable, sustainable funding
-                </p>
+              <img src={LocalFunding} className="col-span-2" />
+
+              <div className="relative col-span-5">
+                <img src={FundingBox1} className="p-2" />
+                <div className="absolute md:top-[15%] md:left-[5%] text-white text-2xl space-y-6 p-4">
+                  <strong>
+                    Transportation access directly affects opportunity.
+                  </strong>
+                  <p>
+                    In a survey by the Federal Reserve Bank of Philadelphia, 16%
+                    of participants earning below the basic cost of living
+                    identified transportation as a major barrier to improving
+                    their economic situation.
+                  </p>
+                  <p>
+                    Recognizing this, the City of Philadelphia, in partnership
+                    with SEPTA and community organizations, launched the Zero
+                    Fare pilot program, providing free transit for more than
+                    25,000 Philadelphians living at or near the poverty line.
+                    Programs like Zero Fare are vital, but their long-term
+                    success—and the region’s broader goals—depend on stable,
+                    sustainable funding.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -145,35 +161,249 @@ const WhatIsThePlan = () => {
             <div className="flex items-center w-full p-4 relative">
               <Dot width="3%" className="absolute -left-[1.5%]" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
-                Putting the Plan into Action
+                Funding Options
               </h2>
             </div>
             <div className="flex flex-col space-y-6 p-6 pt-0">
               <p>
-                The Plan is updated every four years, but implementation happens
-                every day. DVRPC and its partners move projects forward through:
+                Our current transportation funding model isn’t keeping up with
+                today’s needs. It must be rethought and updated to generate new
+                revenue for both capital investments and operating costs.
               </p>
-              <ul className="list-disc ml-4">
-                <li>
-                  The{" "}
-                  <span className="font-bold underline">
-                    Transportation Improvement Program (TIP):
-                  </span>{" "}
-                  the region’s short-term list of funded transportation
-                  projects. Larger projects originate from the Plan.
-                </li>
-                <li>
-                  <span className="font-bold underline">
-                    The Annual Work Program:
-                  </span>{" "}
-                  ongoing studies, planning initiatives, and technical support
-                  that help local governments advance shared goals. Programs and
-                  activities align with the Plan’s five key elements:
-                  Transportation, Economy, Communities, Environment, and
-                  Infrastructure and Utilities.
-                </li>
-              </ul>
-              <img src={PlanProcess} />
+              <p>
+                For example, many communities hesitate to build new walking and
+                biking facilities because they come with maintenance costs but
+                no dedicated funding to cover them. Fixing this policy gap is
+                essential to creating and maintaining the active transportation
+                network our region deserves.
+              </p>
+              <p>
+                DVRPC will continue to facilitate dialogue with our planning
+                partners to identify ways to improve and modernize federal and
+                state funding models that are consistent with the Plan’s vision
+                and goals.
+              </p>
+              <strong className="text-3xl text-[#063446]">
+                Click on the Potential Federal and State Funding Options below
+                to learn about them.
+              </strong>
+
+              <div className="grid grid-cols-4 grid-rows-2 gap-y-4">
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Mbuf} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">
+                        Mileage Based User Fee
+                      </p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Charges drivers by the mile for travel on a defined
+                      roadway network. <strong>Potential benefits:</strong>{" "}
+                      Stabilizes revenue compared with the gas tax, as it is
+                      less affected by changes in vehicle fuel efficiency.
+                    </span>
+                  }
+                  color="#704775"
+                />
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Cpf} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">
+                        Commercial Property VMT Fee
+                      </p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Administers a location-based fee to commercial real estate
+                      based on the annual vehicle miles they generate.{" "}
+                      <strong>Potential benefits:</strong> Promotes more
+                      efficient business location decisions.
+                    </span>
+                  }
+                  color="#704775"
+                />
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Ht} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">Highway Tolls</p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Exerts a user fee on designated limited-access roads and
+                      bridges. <strong>Potential benefits:</strong> Can help to
+                      manage demand for finite highway space.
+                    </span>
+                  }
+                  color="#704775"
+                />
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Es} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">
+                        Electricity Surtax for Home or Public Charging
+                      </p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Adds a flat fee or surcharge per unit of electricity used
+                      to power electric vehicles.
+                      <strong>Potential benefits:</strong> Replicates the gas
+                      tax for EVs.
+                    </span>
+                  }
+                  color="#704775"
+                />
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Tdc} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">
+                        Tradeable Driving Credits
+                      </p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Allocates a quota of mileage driving rights each year.{" "}
+                      <strong>Potential benefits:</strong> Provides an incentive
+                      to use other modes by allowing those who drive less to
+                      sell their credits to those who drive more.
+                    </span>
+                  }
+                  color="#704775"
+                />
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Siif} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">
+                        Safety/Infrastructure Investment Fees
+                      </p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Scales vehicle registration fees based on vehicle weight
+                      and size. <strong>Potential benefits:</strong> Charges
+                      vehicle owners for societal costs of increased emissions,
+                      road damages, and safety risks that all rise with heavier
+                      vehicle weights.
+                    </span>
+                  }
+                  color="#704775"
+                />
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Pp} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">Parking Pricing</p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Applies variable charges to on-street parking based on
+                      demand, while reducing the cost of off-street spaces.
+                      <strong>Potential benefits:</strong> Decreases traffic in
+                      central business districts from drivers looking for
+                      parking spaces and better accounts for the value of land
+                      used for vehicle parking.
+                    </span>
+                  }
+                  color="#704775"
+                />
+                <Flipcard
+                  front={
+                    <div className="flex flex-col items-center text-center space-y-2">
+                      <img src={Cgp} className="md:w-1/3" />
+                      <p className="md:w-2/3 leading-none">
+                        Congestion Pricing
+                      </p>
+                    </div>
+                  }
+                  back={
+                    <span>
+                      Employs variable tolls to manage demand on a facility or
+                      within a specific zone.
+                      <strong>Potential benefits:</strong> Reduces congestion
+                      and encourages more efficient use of transportation
+                      infrastructure, while generating revenue to provide more
+                      transportation options.
+                    </span>
+                  }
+                  color="#704775"
+                />
+              </div>
+              <p>
+                In the near term, we can stretch limited funds by focusing on
+                efficient, affordable, and context-sensitive solutions—projects
+                that solve real problems without overbuilding or overspending.
+                Smarter, smaller investments can improve safety, mobility, and
+                reliability more quickly and cost-effectively than major
+                construction projects. For example:
+              </p>
+              <div className="grid grid-cols-3 gap-x-2">
+                <div className="relative md:mt-2">
+                  <img src={FundingBox2} className="p-2" />
+                  <div className="absolute md:top-[5%] md:left-[5%] text-white text-2xl p-4">
+                    <strong>
+                      Transportation Systems Management and Operations
+                    </strong>
+                    <p>
+                      (TSMO) strategies like signal timing upgrades, ramp
+                      metering, real-time travel info, and incident management
+                      can reduce congestion and improve travel times without
+                      adding new lanes.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative">
+                  <img src={FundingBox3} className="p-2" />
+                  <div className="absolute md:top-[5%] md:left-[5%] text-white text-2xl p-6">
+                    <strong>Reduced-scale alternatives</strong>
+                    <p>
+                      can deliver many most of the benefits of large projects at
+                      a fraction of the cost.
+                    </p>
+                  </div>
+                </div>
+                <div className="relative">
+                  <img src={FundingBox4} className="p-2" />
+                  <div className="absolute md:top-[5%] md:left-[5%] text-white text-2xl p-6">
+                    <strong>Repairs and upgrades</strong>
+                    <p>
+                      an support multiple travel options, such as fixing bridges
+                      important to transit or maintaining well-used trails.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <p>
+                These targeted improvements help keep the region moving while
+                new funding sources are developed. Transportation agencies can
+                also use funds more efficiently by taking a corridor-based
+                approach—bundling multiple improvements along the same roadway
+                or transit corridor into one coordinated project. By thinking
+                comprehensively and investing strategically, the region can
+                build a safer, more connected, and more resilient transportation
+                system while laying the groundwork for new, viablesustainable
+                funding models.
+              </p>
+              <Link
+                className="mx-auto text-white bg-[#063446] p-2 font-bold text-2xl"
+                to="/"
+              >
+                Click here to read more about how the Region can meet the
+                challenges ahead
+              </Link>
             </div>
           </div>
         </div>
