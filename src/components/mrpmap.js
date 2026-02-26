@@ -32,7 +32,7 @@ export const Legend = () => {
         <div className="flex gap-2">
           <span
             className="h-[20px] w-[20px]"
-            style={{ backgroundColor: "#bcd85f" }}
+            style={{ backgroundColor: "#66AE8B" }}
           ></span>
           <span>Transit Unfunded</span>
         </div>
@@ -46,7 +46,7 @@ export const Legend = () => {
         <div className="flex gap-2">
           <span
             className="h-[20px] w-[20px]"
-            style={{ backgroundColor: "#ad5b87" }}
+            style={{ backgroundColor: "#A990AC" }}
           ></span>
           <span>Externally Unfunded</span>
         </div>
@@ -78,11 +78,11 @@ const layerDef = {
       "Transit Funded",
       "#00783e",
       "Transit Unfunded",
-      "#bcd85f",
+      "#66AE8B",
       "Externally Funded",
       "#704775",
       "Externally Unfunded",
-      "#ad5b87",
+      "#A990AC",
       "Roadway Illustrative",
       "#4b4c4d",
       "#ffffff",
@@ -95,20 +95,18 @@ const MrpMap = ({ selectedLayer }) => {
     <DvrpcMap>
       {clickedFeature && (
         <Popup
-          anchor="top"
+          anchor="bottom"
           longitude={clickedFeature.longitude}
           latitude={clickedFeature.latitude}
           onClose={() => setClickedFeature(null)}
         >
-          <table>
+          <strong>{clickedFeature.feature.properties.facility}</strong>
+          <table className="[&>*:nth-child(even)]:bg-gray-100">
             <tr>
               <td>ID#:</td>
               <td>{clickedFeature.feature.properties.uc2050_id}</td>
             </tr>
-            <tr>
-              <td>Project Name:</td>
-              <td>{clickedFeature.feature.properties.facility}</td>
-            </tr>
+
             <tr>
               <td>Scope:</td>
               <td>{clickedFeature.feature.properties.scope}</td>

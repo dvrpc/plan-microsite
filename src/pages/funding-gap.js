@@ -188,7 +188,7 @@ const WhatIsThePlan = () => {
                 to learn about them.
               </strong>
 
-              <div className="grid grid-cols-4 grid-rows-2 gap-y-4">
+              <div className="grid grid-cols-4 grid-rows-2 gap-y-4 gap-x-12">
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">

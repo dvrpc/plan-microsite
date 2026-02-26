@@ -420,7 +420,7 @@ const WhatIsThePlan = () => {
           />
           <div
             id="block-1"
-            className="absolute md:top-[15%]"
+            className="absolute md:top-[20%]"
             onClick={() =>
               document
                 .querySelector("#block-1")
@@ -429,16 +429,13 @@ const WhatIsThePlan = () => {
           >
             <div className="absolute text-sm md:m-6 space-y-2 text-[#063446] flex flex-col">
               <span>
-                Each subregion in Pennsylvania and New Jersey receives a portion
-                of total roadway and transit funding based on the Plan's vision,
-                goals, policies, and identified needs.
+                DVRPC estimates reasonably anticipated funding for the
+                Pennsylvania and New Jersey subregions for roadways and transit.
+                There is limited ability to move funds between modes.
               </span>
               <span>
-                Roadway and transit funds come from{" "}
-                <strong>
-                  separate sources, and there's limited flexibility
-                </strong>{" "}
-                to move money between them.
+                These are allocated to specific types of projects based on the
+                Plan’s vision, goals, policies, and identified needs.
               </span>
             </div>
             <img src={Block1} />
@@ -476,12 +473,11 @@ const WhatIsThePlan = () => {
               </span>
               <span>The estimate does not yet include the full cost of:</span>
               <ul className="list-disc *:ml-4 !text-sm">
-                <li>
-                  Achieving Vision Zero (eliminating traffic deaths and serious
-                  issues)
-                </li>
-                <li>Reducing transportation-related air pollution</li>
-                <li>Preparing infrastructure for extreme weather</li>
+                <li>Substantive safety improvements</li>
+                <li>Preservation of existing roadway and transit networks</li>
+                <li>New bicycle and pedestrian facilities</li>
+                <li>Operational improvements</li>
+                <li>Network Expansion</li>
               </ul>
             </div>
             <img src={Block3} />

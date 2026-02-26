@@ -19,11 +19,18 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/16/solid"
 import { Legend } from "../components/mrpmap"
 import AppContext from "../components/AppContext"
+import Modal from "../components/modal"
+import InfoIcon from "../images/info-icon.svg"
 
 const MrpWebmap = () => {
-  const { mapRef } = useContext(AppContext)
   const [selectedLayer, setSelectedLayer] = useState("popABS")
   const [selectedTab, setSelectedTab] = useState(0)
+
+  const toggleModal = event => {
+    event.preventDefault()
+    document.getElementById("modal-background").classList.toggle("hidden")
+    document.getElementById("modal").classList.toggle("hidden")
+  }
 
   useEffect(() => {
     if (selectedTab === 0) setSelectedLayer("popABS")
@@ -93,7 +100,78 @@ const MrpWebmap = () => {
             </div>
             <Legend selectedLayer={selectedLayer} />
           </div>
+          <button
+            className="font-bold z-[100] w-min h-[20px] absolute top-0 right-0 m-6"
+            onClick={toggleModal}
+          >
+            <InfoIcon fill="#063446" width="20px" />
+          </button>
           <MrpMap />
+
+          <Modal toggleModal={toggleModal}>
+            <div className="space-y-4 p-4">
+              <p>
+                Major Regional Projects (MRPs) are large-scale transportation
+                investments that cost more than $40 million and/or significantly
+                impact travel across the region.
+              </p>
+              <p>
+                Roadway and Transit projects in this webmap are designated as{" "}
+                <strong>Funded</strong> (prioritized and programmed within
+                anticipated revenues) or <strong>Unfunded</strong> (aspirational
+                projects aligned with the Plan’s goals that could move forward
+                if new funding becomes available). There are also{" "}
+                <strong>Externally Funded</strong> projects that don’t use
+                regional dollars, but must be considered due to their impacts on
+                the regional network and air quality conformity. For more
+                information on each project, including the budgets from project
+                categories they’re funded with, and to view a list of{" "}
+                <strong>Unmapped</strong> and <strong>Illustrative</strong>{" "}
+                projects, see Appendix F—Financial Plan, linked from
+                <a href="http://www.dvrpc.org/plan" target="_blank">
+                  http://www.dvrpc.org/plan
+                </a>
+                .
+              </p>
+              <p>
+                Funded projects are scheduled in one or more of the following
+                funding periods, depending on whether the project is located in
+                Pennsylvania or New Jersey.
+              </p>
+
+              <table>
+                <thead className="bg-[#063446] text-white">
+                  <tr className="*:py-4">
+                    <th>Funding Period</th>
+                    <th>Pennsylvania</th>
+                    <th>New Jersey</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-gray-200 bg-white [&>*:nth-child(even)]:bg-gray-100">
+                  <tr className="*:py-4">
+                    <td>1</td>
+                    <td>2026–2030 (5)</td>
+                    <td>2026–2029 (4)</td>
+                  </tr>
+                  <tr className="*:py-4">
+                    <td>2</td>
+                    <td>2031–2036 (6)</td>
+                    <td>2030–2036 (6)</td>
+                  </tr>
+                  <tr className="*:py-4">
+                    <td>3</td>
+                    <td>2037–2045 (9)</td>
+                    <td>2036–2045 (10)</td>
+                  </tr>
+                  <tr className="*:py-4">
+                    <td>4</td>
+                    <td>2046–2050 (5)</td>
+                    <td>2046–2050 (5)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Modal>
         </div>
 
         <div className="w-[68%] relative ml-[2%] border-l-4 border-[#0c2e39]">
