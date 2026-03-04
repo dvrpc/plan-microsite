@@ -1,0 +1,363 @@
+import * as React from "react"
+import { Link } from "gatsby"
+import Layout from "../components/layout"
+import Bg from "../images/bg.png"
+import Dot from "../images/dot.svg"
+import { ChevronRightIcon } from "@heroicons/react/16/solid"
+import TransportationMeans from "../images/transportation-means.png"
+import Ai from "../images/ai.png"
+import Tp from "../images/tp@4x.png"
+import Accordion from "../components/accordion"
+
+const Resources = () => {
+  return (
+    <Layout>
+      <div className="flex flex-col items-center">
+        <div className="w-full h-full">
+          <img src={Bg} className="absolute object-cover h-2/5 w-full" />
+          <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
+            <Link to="/">Home</Link>
+            <ChevronRightIcon width="1.5%" />
+            <Link>Resources</Link>
+          </div>
+        </div>
+        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
+          <div className="w-[70%] mx-auto space-y-4">
+            <h2 className="text-3xl font-bold">Plan Documents & Resources</h2>
+            <p className="text-2xl">
+              Find everything you need to explore the Plan in one place. Access
+              PDF documents and supporting resources, learn how to get involved,
+              and get answers to common questions about what the Plan means for
+              our region and how it will be put into action.
+            </p>
+          </div>
+        </div>
+        <div className="w-full bg-white relative">
+          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+            <div className=" flex items-center w-full p-4 relative">
+              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+                Download & Print
+              </h2>
+            </div>
+            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+              <ul className="ml-8 text-2xl space-y-2">
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Summary Document
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Appendices
+                  </a>
+                </li>
+                <li className="ml-8">
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    A - Planning Process & Administration
+                  </a>
+                </li>
+                <li className="ml-8">
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    B - Land Use & Transportation
+                  </a>
+                </li>
+                <li className="ml-8">
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    C - Federal Performance Measures
+                  </a>
+                </li>
+                <li className="ml-8">
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    D - Community Analytics
+                  </a>
+                </li>
+                <li className="ml-8">
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    E - Financial Plan
+                  </a>
+                </li>
+                <li className="ml-8">
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    F - Future Funding Outlook
+                  </a>
+                </li>
+                <li className="ml-8">
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    G - Definitions & Acronyms
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Amendments
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-[#cbe5f3] relative">
+          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+            <div className=" flex items-center w-full p-4 relative">
+              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+                Resources
+              </h2>
+            </div>
+            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+              <ul className="ml-8 text-2xl space-y-2">
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Long-Range Plan Home Page
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Transportation Improvement Program (TIP)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Congestion Management Process (CMP)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Comprehensive Economic Development Strategy (CEDS)
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Regional Vision Zero
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/"
+                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+                  >
+                    Air Quality Conformity
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-white relative">
+          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+            <div className=" flex items-center w-full p-4 relative">
+              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+                Get involved
+              </h2>
+            </div>
+            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+              <p>
+                Every resident has a role to play in shaping our region’s
+                future. By staying informed, speaking up, and engaging in
+                regional conversations, you can help ensure the vision for our
+                future reflects the needs and hopes of everyone who calls this
+                region home.
+              </p>
+              <Link
+                className="text-2xl mx-auto p-2 bg-[#063446] text-white my-4"
+                to="/"
+              >
+                Stay Connected
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="w-full bg-[#cbe5f3] relative">
+          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+            <div className=" flex items-center w-full p-4 relative">
+              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+                Frequently Asked Questions
+              </h2>
+            </div>
+            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+              <Accordion label="What is the purpose of the Plan?">
+                Update: Connections 2050 is Greater Philadelphia's Long-Range
+                Plan (Plan). The Plan serves as the blueprint to guide growth
+                and development in our region and to prioritize funding for
+                capital transportation investment accordingly. The Plan looks
+                ahead to how our region will grow and change—considering
+                population trends, the economy, the environment, and
+                technology—to guide investments in roads, transit, biking,
+                walking, and other transportation modes.
+              </Accordion>
+              <Accordion label="Who develops the Plan?">
+                The Plan is created by DVRPC with input from local governments,
+                transportation agencies, state partners, community
+                organizations, and residents across the region. It reflects
+                broad collaboration and public engagement at every stage.
+              </Accordion>
+              <Accordion label="What is a Major Regional Project?">
+                Major Regional Projects are large-scale transportation
+                investments—such as new transit lines, highway improvements, or
+                major bicycle and pedestrian corridors—that cost more than $40
+                million and/or significantly impact travel across the region.
+                These projects must appear in the Plan to be eligible for
+                federal funding.
+              </Accordion>
+              <Accordion label="How does a project get considered for the Plan?">
+                <p>
+                  The Long-Range Plan identifies the region’s major
+                  transportation priorities for the next 20-30 years. Only
+                  projects included in the Plan are eligible for federal
+                  transportation funding through the Transportation Improvement
+                  Program (TIP), making inclusion an important step for
+                  advancing major investments.
+                </p>
+                <p>
+                  Project evaluation starts with a call for projects to DVRPC’s
+                  planning partners (counties, cities, state transportation
+                  departments, and transit agencies). Project sponsors submit an
+                  intake form with key information needed for evaluation. DVRPC
+                  then applies established evaluation criteria adopted in
+                  October 2023 to compare benefits and costs, and identify
+                  projects with the greatest regional impact. DVRPC staff
+                  facilitates the process, and final project selections are made
+                  by planning partners who comprise DVRPC’s governing Board.
+                </p>
+              </Accordion>
+              <Accordion label="How can I access or download data from the Long-Range Plan?">
+                You can find Long-Range Plan data in the{" "}
+                <a href="https://www.dvrpc.org/data/" target="_blank">
+                  DVRPC Data Center
+                </a>
+                , which provides centralized access to all DVRPC datasets and
+                mapping applications. Simply filter by the{" "}
+                <a href="https://catalog.dvrpc.org/dataset/?category=Long-Range+Plan">
+                  Long-Range Plan category
+                </a>{" "}
+                to view and download all related data layers.
+              </Accordion>
+              <Accordion label="How should local governments use the plan?">
+                Local governments can use the Plan as a regional guide to inform
+                local decisions and investments. Its strategies, policies,
+                priority projects, and forecast data can support zoning updates,
+                comprehensive plans, capital programming, redevelopment efforts,
+                development review, and grant applications. By aligning local
+                actions with regional priorities and expected growth,
+                municipalities can make more coordinated, future-focused
+                decisions that contribute to the region’s shared vision.
+              </Accordion>
+              <Accordion label="How will progress toward the Plan’s goals be measured?">
+                The Plan includes performance measures and tracking tools that
+                monitor trends such as safety, congestion, environmental health,
+                and affordability. DVRPC reports on these indicators regularly
+                to assess whether the region is moving toward the Plan’s vision.
+                The{" "}
+                <a
+                  href="https://www.dvrpc.org/trackingprogress/"
+                  target="_blank"
+                >
+                  Tracking Progress
+                </a>{" "}
+                dashboard and other performance-management tools embedded in the
+                Plan are used to monitor how regional goals are being addressed.
+              </Accordion>
+              <Accordion label="How can I make a public comment about the Plan?">
+                <p>
+                  DVRPC invites the public to share feedback throughout the
+                  planning process. Federal rules also require a minimum 30-day
+                  public comment period before a long-range plan is formally
+                  adopted. For the current Plan, the draft Update: Connections
+                  2050 summary document and appendices were open for public
+                  comment from July 18 to August 20, 2025. All public comments
+                  received during official comment periods—along with DVRPC’s
+                  responses—are saved in an{" "}
+                  <a
+                    href="https://apps.dvrpc.org/ords/r/dvrpcintranetapps/lrp-comment/comment-list"
+                    target="_blank"
+                  >
+                    online, publicly accessible database.
+                  </a>
+                </p>
+                <p>
+                  Even outside the official comment period, your voice matters.
+                  The Plan is regularly updated and shaped by ongoing public
+                  input. You can stay involved by following updates, attending
+                  public meetings, reviewing draft documents, or joining DVRPC
+                  committees and outreach events. Want to provide feedback now?
+                  Take our survey.
+                </p>
+              </Accordion>
+              <Accordion label="How can residents get involved in shaping the Plan?">
+                Residents can participate by attending public meetings, engaging
+                with online tools and surveys, reviewing draft documents, or
+                serving on DVRPC committees. Public input directly informs the
+                goals, strategies, and project lists that appear in the Plan.
+                Learn more on our{" "}
+                <a href="https://www.dvrpc.org/getinvolved/" target="_blank">
+                  Stay Connected
+                </a>{" "}
+                page.
+              </Accordion>
+              <Accordion label="How can I access previous Plan documents?">
+                You can explore past long-range plans and related materials on
+                <a
+                  href="https://www.dvrpc.org/plan/planhistory/"
+                  target="_blank"
+                >
+                  DVRPC’s Plan History page
+                </a>
+                , which provides access to archived documents dating back
+                several decades.
+              </Accordion>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
+}
+
+export default Resources

@@ -11,7 +11,9 @@ const Accordion = ({ label, children, color }) => {
     <div className="w-full">
       <Disclosure as="div">
         <DisclosureButton className="group flex w-full items-center gap-2 font-bold">
-          <span style={{ color: color && color }}>{label}</span>
+          <span className="text-2xl" style={{ color: color && color }}>
+            {label}
+          </span>
           <PlusIcon className="size-4 open:rotate-180" />
         </DisclosureButton>
         <DisclosurePanel className="mt-2 flex flex-col gap-6">
