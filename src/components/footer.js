@@ -7,9 +7,11 @@ const Footer = () => {
   return (
     <footer className="text-[#dfebf5]">
       <div className="bg-[#0c2e39] grid grid-cols-3 justify-items-center text-xl text-center underline py-8 px-[15%]">
-        <Link>Download the Plan</Link>
-        <Link>View Major Regional Projects</Link>
-        <Link>Get Involved</Link>
+        <Link to="https://www.dvrpc.org/plan">Download the Plan</Link>
+        <Link to="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254">
+          View Major Regional Projects
+        </Link>
+        <Link to="http://www.dvrpc.org/getinvolved">Get Involved</Link>
       </div>
       <div className="bg-[#16819a] px-16 py-6 font-[Roboto]!">
         {/* TODO: add link to dvrpc home */}

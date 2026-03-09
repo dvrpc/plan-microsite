@@ -30,10 +30,20 @@ const Navigation = () => {
             <Link to="/forces">Forces</Link>
           </MenuItem>
         </Dropdown>
-        <Link to="/vision">Vision</Link>
+        <Dropdown label="Vision">
+          <MenuItem>
+            <Link to="/vision">Vision</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/plan-elements">Plan Elements</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link to="/strategies">Strategies</Link>
+          </MenuItem>
+        </Dropdown>
         <Link to="/mrp-list">Projects</Link>
-        <Link>Take Action</Link>
-        <Link>Documents & Resources</Link>
+        <Link to="/taking-action">Take Action</Link>
+        <Link to="/resources">Documents & Resources</Link>
       </div>
     </div>
   )

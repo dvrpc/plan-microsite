@@ -52,19 +52,21 @@ const IndexPage = () => {
           <div className="w-[68%] relative border-l-4 border-[#0c2e39] h-[90vh] mx-auto pt-4">
             <div className="flex flex-col underline text-4xl space-y-6 w-2/5 -ml-[1.5%]">
               <ExploreLink>
-                <Link>What is the Plan?</Link>
+                <Link to="/what-is-the-plan">What is the Plan?</Link>
               </ExploreLink>
               <ExploreLink>
-                <Link>What's Shaping Our Future?</Link>
+                <Link to="/trends">What's Shaping Our Future?</Link>
               </ExploreLink>
               <ExploreLink>
-                <Link>What will Transportation Look Like in 2050?</Link>
+                <Link to="/vision">
+                  What will Transportation Look Like in 2050?
+                </Link>
               </ExploreLink>
               <ExploreLink>
-                <Link>How Will We Fund the Future?</Link>
+                <Link to="/financial">How Will We Fund the Future?</Link>
               </ExploreLink>
               <ExploreLink>
-                <Link>How Can We Make It Happen?</Link>
+                <Link to="/taking-action">How Can We Make It Happen?</Link>
               </ExploreLink>
             </div>
             <img
