@@ -6,7 +6,7 @@ import Connections from "../images/connections-2050.svg"
 const Footer = () => {
   return (
     <footer className="text-[#dfebf5]">
-      <div className="bg-[#0c2e39] grid grid-cols-3 justify-items-center text-xl text-center underline py-8 px-[15%]">
+      <div className="bg-[#0c2e39] grid grid-cols-3 text-xl text-center underline py-8 px-[15%]">
         <Link to="https://www.dvrpc.org/plan">Download the Plan</Link>
         <Link to="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254">
           View Major Regional Projects

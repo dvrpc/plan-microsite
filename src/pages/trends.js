@@ -308,7 +308,7 @@ const Trends = () => {
                 </svg>
 
                 <div className="wrap">
-                  <div className="grid">
+                  <div className="tp-grid">
                     <div className="tile good">
                       <span className="face" aria-hidden="true">
                         <svg>
