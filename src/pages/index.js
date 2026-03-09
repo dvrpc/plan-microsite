@@ -10,14 +10,12 @@ import Bubbles from "../components/bubbles"
 
 const ExploreLink = ({ children }) => {
   return (
-    <div className="flex items-center space-x-4">
-      <Dot width="7%" />
-      {children}
+    <div className="flex items-center gap-x-6">
+      <Dot className="max-w-[1.25rem]" />
+      <div>{children}</div>
     </div>
   )
 }
-
-// @TODO: fix bubbles (font size and width), fix dots
 
 const IndexPage = () => {
   return (
@@ -29,20 +27,23 @@ const IndexPage = () => {
           <RegionOutline className="absolute top-[15%] z-10" width="50%" />
           <p className="text-4xl p-12 pb-0 z-50">
             <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span>{" "}
-            is Greater Philadelphia's Long-Range Plan (Plan). Built around a
-            regional Vision for 2050, it serves as a blueprint for prioritizing
-            $73 billion for capital transportation investment in the region over
-            the coming decades.
+            is Greater Philadelphia's Long-Range Plan (Plan). The Plan serves as
+            the blueprint to guide growth and development in our region and to
+            prioritize funding for capital transportation investment,
+            accordingly.
           </p>
-          <h2 className="text-6xl w-2/3 z-50 mt-24 mb-18">
+          <h2 className="text-9xl w-2/3 z-50 mt-24 mb-18">
             The Regional Vision for 2050 is a Greater Philadephia that provides:
           </h2>
 
-          <div className="-ml-[5%] -mr-[5%] my-24">
+          <div className="md:-ml-[5%] md:-mr-[5%] my-20">
             <Bubbles />
           </div>
         </div>
-        <Link className="text-3xl underline my-6 p-2 bg-[#0c2e39] text-white">
+        <Link
+          className="text-3xl underline my-6 p-2 bg-[#0c2e39] text-white"
+          to="/vision"
+        >
           Learn more about the Vision
         </Link>
         <div className="w-full bg-[#eef4fb]">
@@ -71,7 +72,7 @@ const IndexPage = () => {
             </div>
             <img
               src={Hero}
-              class="right-0 absolute top-[1%] w-[70%] -right-[20%]"
+              class="right-0 absolute md:top-[1%] md:w-[70%] md:-right-[20%]"
             />
           </div>
         </div>

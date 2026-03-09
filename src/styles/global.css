@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Inclusive+Sans");
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Adelle");
 
 /* body, header inclusive */
 
@@ -19,12 +20,18 @@
 html,
 body {
   margin: 0;
-  font-family: "Inclusive Sans" !important;
+  font-family: "Inclusive Sans";
+}
+
+a {
+  font-family: "Inclusive Sans";
+}
+
+footer {
+  font-family: "Roboto" !important;
 }
 
 p {
-  font-family: "Source Sans 3" !important;
-  font-size: 1.5rem;
 }
 
 td {

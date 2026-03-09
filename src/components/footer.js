@@ -13,7 +13,7 @@ const Footer = () => {
         </Link>
         <Link to="http://www.dvrpc.org/getinvolved">Get Involved</Link>
       </div>
-      <div className="bg-[#16819a] px-16 py-6 font-[Roboto]!">
+      <div className="bg-[#16819a] px-16 py-6">
         {/* TODO: add link to dvrpc home */}
         <Dvrpc fill="#dfebf5" width="10%" />
         <p>
