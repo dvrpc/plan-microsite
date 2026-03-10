@@ -22,16 +22,18 @@ const Trends = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">What’s Shaping Our Future?</h2>
-            <p className="text-2xl pb-0 z-50">
+          <div className="md:w-[70%] mx-auto space-y-4">
+            <h2 className="md:text-3xl text-xl font-bold">
+              What’s Shaping Our Future?
+            </h2>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               Each update to the region’s Plan begins with a look at the{" "}
               <strong>forces shaping Greater Philadelphia’s future</strong>.
               DVRPC studies social, economic, and land use trends to understand
               how the region is changing and how those changes might affect our
               communities, economy, and environment in the decades ahead.
             </p>
-            <p className="text-2xl">
+            <p className="md:text-2xl text-lg">
               This research helps DVRPC and its partners{" "}
               <strong>anticipate future needs and craft policies</strong> that
               move the region toward its shared vision. DVRPC continues to
@@ -41,9 +43,9 @@ const Trends = () => {
           </div>
         </div>
         <div className="w-full relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Remote Work and Post-COVID Commute Patterns
               </h2>
@@ -100,9 +102,9 @@ const Trends = () => {
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
+            <div className="flex items-center w-full p-4 relative">
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Artificial Intelligence
               </h2>
@@ -140,9 +142,9 @@ const Trends = () => {
           </div>
         </div>
         <div className="w-full relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Ridesharing and Automated Vehicle Programs
               </h2>
@@ -175,9 +177,12 @@ const Trends = () => {
           </div>
         </div>
         <div className="w-full bg-[#d5d1db] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%] top-5" />
+              <Dot
+                width="3%"
+                className="md:absolute -left-[1.5%] top-5 hidden"
+              />
               <div className="w-full ml-[1.5%] flex flex-col space-y-4 text-[#063446]">
                 <h2 className="text-3xl font-bold">Tracking Progress</h2>
               </div>

@@ -59,17 +59,17 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         <TabPanels className="flex-1 justify-center">
           <TabPanel>
             <div className="text-center bg-[#423d59] text-white p-6">
-              <h2 className="text-2xl">
+              <p className="md:text-2xl text-xl">
                 The Transportation Vision for 2050 is:
-              </h2>
-              <h2 className="text-2xl font-bold">
+              </p>
+              <p className="md:text-2xl text-xl font-bold">
                 A safe, modern, multimodal, network for all.
-              </h2>
+              </p>
             </div>
             <img src={Transportation} className="w-4/5 mx-auto" />
-            <div className="w-[68%] relative mx-auto border-l-4 border-[#063446]">
+            <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full p-4 relative flex-col">
-                <Dot width="3%" className="absolute -left-[1.5%]" />
+                <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                 <p className="ml-[1.5%]">
                   Greater Philadelphia has a strong transportation network that
                   includes{" "}
@@ -90,15 +90,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </strong>
                   .
                 </p>
-                <h2 className="text-2xl font-bold p-2 text-[#423d59]">
+                <p className="md:text-2xl text-xl font-bold md:p-2 text-[#423d59]">
                   Transportation Goals
-                </h2>
+                </p>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>1.</b> A transportation system that is safe and secure
                     for all.
-                  </h2>
+                  </p>
                   <p>
                     There’s increased safety and access to affordable
                     transportation, along with the jobs, services, and
@@ -108,11 +108,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>2.</b> Connected and integrated transportation facilities
                     for all modes in a state of good repair.
-                  </h2>
+                  </p>
                   <p>
                     Users can expect reliable, predictable trips made possible
                     by sustained investments in transit, roads, and bridges.
@@ -123,11 +123,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>3.</b> Reduced car dependency and per-capita vehicle
                     miles traveled.
-                  </h2>
+                  </p>
                   <p>
                     There are fewer people driving alone and more people
                     traveling by resource-efficient mobility options, such as
@@ -147,16 +147,16 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#711e53] text-white p-6">
-              <h2 className="text-2xl">The Economy Vision for 2050 is:</h2>
-              <h2 className="text-2xl font-bold">
+              <p className="text-2xl">The Economy Vision for 2050 is:</p>
+              <p className="text-2xl font-bold">
                 An innovative and connected economy with opportunity and shared
                 prosperity
-              </h2>
+              </p>
             </div>
             <img src={Economy} className="w-4/5 mx-auto" />
-            <div className="w-[68%] relative mx-auto border-l-4 border-[#063446]">
+            <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full p-4 relative flex-col">
-                <Dot width="3%" className="absolute -left-[1.5%]" />
+                <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                 <p className="ml-[1.5%]">
                   Greater Philadelphia’s economy benefits from{" "}
                   <strong>
@@ -174,14 +174,14 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </strong>
                   .
                 </p>
-                <h2 className="text-2xl font-bold p-2 text-[#711e53]">
+                <p className="text-2xl font-bold p-2 text-[#711e53]">
                   Economic Goals
-                </h2>
+                </p>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>1.</b> A well-trained and adaptable regional workforce.{" "}
-                  </h2>
+                  </p>
                   <p>
                     Residents experience economic mobility through access to
                     good schools in all districts, jobs that meet and exceed the
@@ -192,10 +192,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>2.</b> A variety of regional economic sectors.
-                  </h2>
+                  </p>
                   <p>
                     The region anticipates the impacts of global market forces,
                     economic shocks, and extreme weather risks and mitigates
@@ -204,11 +204,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>3.</b> Reliable physical and digital access to regional,
                     national, and global resources and markets.
-                  </h2>
+                  </p>
                   <p>
                     Food and goods production and growth, especially at the
                     local level, occur at rates that meet current needs without
@@ -227,15 +227,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#004c6d] text-white p-6">
-              <h2 className="text-2xl">The Communities Vision for 2050 is:</h2>
-              <h2 className="text-2xl font-bold">
+              <p className="text-2xl">The Communities Vision for 2050 is:</p>
+              <p className="text-2xl font-bold">
                 Integrated, healthy, and walkable communities
-              </h2>
+              </p>
             </div>
             <img src={Communities} className="w-4/5 mx-auto" />
-            <div className="w-[68%] relative mx-auto border-l-4 border-[#063446]">
+            <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full p-4 relative flex-col">
-                <Dot width="3%" className="absolute -left-[1.5%]" />
+                <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                 <p className="ml-[1.5%]">
                   Livable communities make the most of existing infrastructure
                   to <strong>deliver services efficiently</strong>. They offer a
@@ -245,15 +245,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   communities promote <strong>active, healthy living</strong>{" "}
                   and create <strong>vibrant, resilient places for all</strong>.
                 </p>
-                <h2 className="text-2xl font-bold p-2 text-[#004c6d]">
+                <p className="text-2xl font-bold p-2 text-[#004c6d]">
                   Community Goals
-                </h2>
+                </p>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>1.</b> Accessible and affordable housing options and cost
                     of living that accommodate all ages and incomes.
-                  </h2>
+                  </p>
                   <p>
                     Affordable and economically mixed communities are safe,
                     accessible, and built for all ages. Growth is accommodated
@@ -262,12 +262,12 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>2.</b> Infill development that creates and protects the
                     unique qualities and sense of place in the region’s Centers,
                     communities, and neighborhoods.
-                  </h2>
+                  </p>
                   <p>
                     Strong civic infrastructure and social cohesion help
                     residents withstand, adapt to, and recover from adverse
@@ -276,11 +276,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>3.</b> Socioeconomically integrated neighborhoods with
                     quality education that is accessible to all.
-                  </h2>
+                  </p>
                   <p>
                     Growth is focused in mixed-use, walkable Centers that make
                     efficient use of infrastructure, provide access to essential
@@ -298,16 +298,16 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#006227] text-white p-6">
-              <h2 className="text-2xl">The Environment Vision for 2050 is:</h2>
-              <h2 className="text-2xl font-bold">
+              <p className="text-2xl">The Environment Vision for 2050 is:</p>
+              <p className="text-2xl font-bold">
                 A preserved and restored natural environment and healthy
                 ecological systems
-              </h2>
+              </p>
             </div>
             <img src={Environment} className="w-4/5 mx-auto" />
-            <div className="w-[68%] relative mx-auto border-l-4 border-[#063446]">
+            <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full p-4 relative flex-col">
-                <Dot width="3%" className="absolute -left-[1.5%]" />
+                <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                 <p className="ml-[1.5%]">
                   From the Pinelands to the Brandywine Valley, and from
                   neighborhood parks to riverside trails, Greater Philadelphia
@@ -326,15 +326,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   Greener places also contribute to lower crime, reduced chronic
                   disease, and improved well-being, productivity, and learning.
                 </p>
-                <h2 className="text-2xl font-bold p-2 text-[#006227]">
+                <p className="text-2xl font-bold p-2 text-[#006227]">
                   Environment Goals
-                </h2>
+                </p>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>1.</b> A regional-scale network of protected open space
                     and green urban infrastructure.{" "}
-                  </h2>
+                  </p>
                   <p>
                     Nature-based solutions are prioritized and expanded for
                     adapting to intense precipitation and high heat events in
@@ -342,10 +342,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>2.</b> Healthy air and water for people and wildlife.
-                  </h2>
+                  </p>
                   <p>
                     A connected network of protected, restored, and well-managed
                     forests, wetlands, and waterways sustains biodiversity,
@@ -353,11 +353,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>3.</b> Access to high-quality parks, natural areas, and
                     passive recreational opportunities for all.
-                  </h2>
+                  </p>
                   <p>
                     Current and future generations enjoy access to parks, open
                     space, natural areas, and outdoor recreation.
@@ -374,17 +374,17 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#147272] text-white p-6">
-              <h2 className="text-2xl">
+              <p className="text-2xl">
                 The Infrastructure and Utility Services Vision for 2050 is:
-              </h2>
-              <h2 className="text-2xl font-bold">
+              </p>
+              <p className="text-2xl font-bold">
                 Clean, reliable, and affordable infrastructure and utility
                 services resilient to the effects of extreme weather
-              </h2>
+              </p>
             </div>
-            <div className="w-[68%] relative mx-auto border-l-4 border-[#063446]">
+            <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full p-4 relative flex-col">
-                <Dot width="3%" className="absolute -left-[1.5%]" />
+                <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                 <p className="ml-[1.5%]">
                   Achieving regional goals for power and other infrastructure
                   systems across multiple scales will help deliver improved air
@@ -398,17 +398,17 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   of the buildings, vehicles, and infrastructure systems on
                   which we all depend.
                 </p>
-                <h2 className="text-2xl font-bold p-2 text-[#147272]">
+                <p className="text-2xl font-bold p-2 text-[#147272]">
                   Infrastructure and Utility Services Goals
-                </h2>
+                </p>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>1.</b>
                     Affordable access to heating, cooling, and power services
                     for every household, business, and institution in the
                     region.
-                  </h2>
+                  </p>
                   <p>
                     Reliable and affordable utility services, including
                     broadband, electricity, natural gas, water, and wastewater
@@ -416,11 +416,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>2.</b> Infrastructure that is reliable and resilient to
                     extreme-weather disruptions.
-                  </h2>
+                  </p>
                   <p>
                     Reliable access to heating, cooling, and power for
                     households and businesses. Systems are prepared for extreme
@@ -428,13 +428,13 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <div className="ml-[1.5%]">
-                  <Dot width="3%" className="absolute -left-[1.5%]" />
-                  <h2 className="text-lg font-bold">
+                  <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+                  <p className="text-lg font-bold">
                     <b>3.</b> Regionwide implementation of innovative
                     technologies around heating, cooling, power, mobility, and
                     goods movement that supports community health, reduces air
                     pollution, and provides economic opportunities.
-                  </h2>
+                  </p>
                   <p>
                     Reduced local air pollution is achieved through efficient
                     land use, transportation, and building systems, as well as
@@ -463,7 +463,7 @@ const WhatIsThePlan = () => {
     if (typeof window !== undefined) {
       const params = new URLSearchParams(window.location.search)
       const element = params.get("element")
-      setSelectedIndex(elementIndex[element])
+      setSelectedIndex(element ? elementIndex[element] : 0)
     }
   }, [setSelectedIndex])
 
@@ -487,9 +487,9 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">Plan Elements</h2>
-            <p className="text-2xl pb-0 z-50">
+          <div className="md:w-[70%] mx-auto space-y-4">
+            <h2 className="md:text-3xl text-xl font-bold">Plan Elements</h2>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               The Plan is organized into five key elements—
               <strong>Transportation, Economy, Communities, Environment</strong>
               , and <strong>Infrastructure & Utility Services</strong>—each with

@@ -12,7 +12,7 @@ const Accordion = ({ label, children, color }) => {
       <Disclosure as="div">
         <DisclosureButton className="group flex w-full items-center gap-2 font-bold">
           <span
-            className="text-2xl"
+            className="text-2xl text-left"
             style={{ color: color ? color : "#063446" }}
           >
             {label}

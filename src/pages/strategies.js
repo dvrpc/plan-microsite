@@ -102,17 +102,17 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">
+          <div className="md:w-[70%] mx-auto space-y-4">
+            <h2 className="md:text-3xl text-xl font-bold">
               Strategies: Turning Vision into Action
             </h2>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               Change won't come overnight, and it won't happen by doing things
               the same old way. Achieving this vision will take{" "}
               <strong>bold action and collaboration</strong> acrosss the region,
               with everyone playing a part.
             </p>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               Even though each goal and strategy shows up just once,
               crosscutting themes - like how goods move around the region, how
               we use land, how easy it is to get where you need to go, and how
@@ -120,9 +120,9 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="w-[68%] relative border-l-4 border-[#063446]">
+        <div className="md:w-[68%] relative border-l-4 border-[#063446]">
           <div className="flex items-center w-full p-4 relative">
-            <Dot width="3%" className="absolute -left-[1.5%]" />
+            <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <p className="text-[#063446] ml-[1.5%]">
               Explore how the region's five Plan Elements are being put into
               action through <strong>high-level strategies</strong> and specific{" "}
@@ -132,7 +132,7 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="w-[68%] relative border-l-4 border-[#063446]">
+        <div className="md:w-[68%] w-full relative border-l-4 border-[#063446]">
           <div className="flex w-full p-4 relative flex-col">
             <strong>Start your search:</strong>
             <span>Element</span>
@@ -182,9 +182,9 @@ const WhatIsThePlan = () => {
         </div>
 
         <div className="w-full bg-[#eaf3fb] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className="flex flex-col space-y-6 p-6 pt-0">
-              <div className="flex w-full p-4 relative flex-col">
+              <div className="flex w-full md:p-4 relative flex-col">
                 {filteredStrategies &&
                   filteredStrategies.length > 0 &&
                   filteredStrategies.map((strategy, idx) => (

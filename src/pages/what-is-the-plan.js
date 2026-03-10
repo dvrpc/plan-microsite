@@ -20,9 +20,9 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">What is the Plan?</h2>
-            <p className="text-2xl pb-0 z-50">
+          <div className="md:w-[70%] mx-auto space-y-4">
+            <h2 className="md:text-3xl text-xl font-bold">What is the Plan?</h2>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span>{" "}
               is Greater Philadelphia's Long-Range Plan (Plan). The Plan serves
               as the blueprint to guide growth and development in our region and
@@ -37,14 +37,14 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
-          <div className="flex items-center w-full  p-4 relative mt-4">
-            <Dot width="3%" className="absolute -left-[1.5%]" />
+        <div className="md:w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
+          <div className="flex items-center w-full p-4 relative mt-4">
+            <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
               The DVRPC Region
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 m-6">
+          <div className="flex flex-col space-y-6 p-6 pt-0">
             <DvrpcMap />
             <p>
               Greater Philadelphia is one of the nation’s most historic and
@@ -85,9 +85,9 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 The Long-Range Plan
               </h2>
@@ -120,9 +120,9 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="w-full bg-[#eef4fb] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] md:mx-auto">
             <div className="flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Putting the Plan into Action
               </h2>

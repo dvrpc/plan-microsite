@@ -87,15 +87,17 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">Where Are We Headed?</h2>
-            <p className="text-2xl pb-0 z-50">
+          <div className="md:w-[70%] mx-auto space-y-4">
+            <h2 className="md:text-3xl text-xl font-bold">
+              Where Are We Headed?
+            </h2>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               Population and employment forecasts help planners understand{" "}
               <strong>how the Greater Philadelphia region might grow</strong> in
               the coming decades and how that growth will affect housing,
               transportation, jobs, and quality of life.
             </p>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               While no one can predict the future, forecasts give us a roadmap
               to make <strong>smarter investments</strong> in roads, buses,
               trains, and communities. Overall, the region is expected to see
@@ -104,14 +106,14 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446]">
+        <div className="md:w-[68%] relative border-l-4 border-[#063446]">
           <div className="flex items-center w-full p-4 relative">
-            <Dot width="3%" className="absolute -left-[1.5%]" />
+            <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
               Explore the Forecasts in Maps
             </h2>
           </div>
-          <div className="flex items-center w-full p-4 relative">
+          <div className="flex flex-col space-y-6 p-6 pt-0">
             <p>
               How will Greater Philadelphia’s people and jobs be distributed by
               2050? These interactive maps show where growth and decline are
@@ -123,7 +125,7 @@ const WhatIsThePlan = () => {
               Toggle between sets of maps. Each shows three ways to view the
               forecast for 2050:
             </p>
-            <ul className="list-disc ml-4 text-2xl">
+            <ul className="list-disc ml-4">
               <li>
                 <strong>Absolute Change</strong>: the numeric increase or
                 decrease
@@ -140,7 +142,7 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="relative h-full w-full">
-          <div className="absolute z-[100] flex h-full w-1/3 pl-[17%] bg-[#063446]">
+          <div className="md:absolute z-[100] flex h-full md:w-1/3 md:pl-[17%] bg-[#063446]">
             <Tabs
               selectedLayer={selectedLayer}
               selectedIndex={selectedTab}
@@ -150,7 +152,7 @@ const WhatIsThePlan = () => {
             <Legend selectedLayer={selectedLayer} />
           </div>
           <PopEmpMap selectedLayer={selectedLayer} />
-          <div className="absolute right-0 top-0 w-52 m-3">
+          <div className="absolute right-0 md:top-0 top-[40%] w-52 m-3">
             <Menu>
               <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full">
                 Select Layer
@@ -225,7 +227,7 @@ const WhatIsThePlan = () => {
           </div>
         </div>
 
-        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#0c2e39]">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
           <div className="flex flex-col space-y-6 m-6 text-[#063446]">
             {selectedTab === 0 && (
               <>

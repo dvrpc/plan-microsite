@@ -85,11 +85,11 @@ const Vision = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">
+          <div className="md:w-[70%] mx-auto space-y-4">
+            <h2 className="md:text-3xl text-xl font-bold">
               What Do We Want the Region to Look Like in 2050?
             </h2>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               Every region needs a roadmap for the future—and that’s what a
               long-range plan provides.{" "}
               <strong>The regional vision for 2050</strong> imagines a Greater
@@ -97,7 +97,7 @@ const Vision = () => {
               resilient—where communities grow sustainably, people can move
               easily and affordably, and natural resources are protected.
             </p>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               DVRPC works with partners across the region to shape this shared
               vision. The plan guides major transportation decisions, such as
               making biking and walking safer, improving transit, and
@@ -107,7 +107,7 @@ const Vision = () => {
               looks at the <strong>big picture</strong>, connecting all the
               pieces that make our region a great place to live and thrive.
             </p>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               The regional vision for 2050 is a Greater Philadelphia that
               provides:
             </p>
@@ -116,15 +116,15 @@ const Vision = () => {
             </div>
           </div>
         </div>
-        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446] text-[#063446]">
+        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
           <div className="flex items-center w-full p-4 relative">
-            <Dot width="3%" className="absolute -left-[1.5%]" />
+            <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="text-2xl font-bold ml-[1.5%]">
               Explore the Vision in Maps
             </h2>
           </div>
         </div>
-        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446] text-[#063446]">
+        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
           <div className="items-center w-full p-4 relative space-y-6">
             <p>
               <strong>What will Greater Philadelphia look like in 2050?</strong>{" "}
@@ -140,7 +140,7 @@ const Vision = () => {
         <div className="relative h-full w-full">
           <div className="flex flex-col space-y-6">
             <div className="relative h-full w-full">
-              <div className="absolute z-[100] flex h-full w-1/3 pl-[17%] bg-[#063446]">
+              <div className="md:absolute z-[100] flex h-full md:w-1/3 md:pl-[17%] bg-[#063446]">
                 <Tabs
                   selectedLayer={selectedLayer}
                   selectedIndex={selectedTab}
@@ -155,7 +155,7 @@ const Vision = () => {
             </div>
           </div>
         </div>
-        <div className="w-[68%] relative ml-[2%] border-l-4 border-[#063446] text-[#063446]">
+        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
           <div className="items-center w-full p-4 relative space-y-6">
             <p>
               These maps use existing passenger rail and a proposed line to
@@ -179,7 +179,7 @@ const Vision = () => {
                 weighed in, and their input helped shape this vision. Here’s a
                 snapshot of what we heard:
               </p>
-              <img src={Feedback} className="w-2/3 mx-auto" />
+              <img src={Feedback} className="md:w-2/3 mx-auto" />
             </Accordion>
             <Accordion label="Building Blocks of the Vision">
               <p>
@@ -190,7 +190,7 @@ const Vision = () => {
                 vision, along with Strategies that outline how to achieve them
                 and identify who can help make them happen.
               </p>
-              <img src={Elements} className="w-2/3 mx-auto" />
+              <img src={Elements} className="md:w-2/3 mx-auto" />
             </Accordion>
           </div>
         </div>
