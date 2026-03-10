@@ -6,16 +6,16 @@ import Connections from "../images/connections-2050.svg"
 const Footer = () => {
   return (
     <footer className="text-[#dfebf5]">
-      <div className="bg-[#0c2e39] grid grid-cols-3 text-xl text-center underline py-8 px-[15%]">
+      <div className="bg-[#0c2e39] grid grid-cols-3 text-xl text-center underline py-8 md:px-[15%] px-8">
         <Link to="https://www.dvrpc.org/plan">Download the Plan</Link>
         <Link to="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254">
           View Major Regional Projects
         </Link>
         <Link to="http://www.dvrpc.org/getinvolved">Get Involved</Link>
       </div>
-      <div className="bg-[#16819a] px-16 py-6">
+      <div className="bg-[#16819a] md:px-16 md:py-6 p-4">
         {/* TODO: add link to dvrpc home */}
-        <Dvrpc fill="#dfebf5" width="10%" />
+        <Dvrpc fill="#dfebf5" className="md:w-[10%] w-1/3" />
         <p>
           190 N Independence Mall West, 8th Floor <br />
           Philadelphia, PA 19106-1520 <br />
