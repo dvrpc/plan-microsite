@@ -43,17 +43,21 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           <TabPanel>
             <span>
               By 2050, the Greater Philadelphia region is projected to add about
-              450,000 new residents, bringing the total population to more than
-              6.3 million—a 7% increase since 2020.
+              <strong>450,000 new residents</strong>, bringing the total
+              population to more than <strong>6.3 million</strong>—a 7% increase
+              since 2020. Explore the web map to view absolute change, percent
+              change, and total forecasted population by municipality throughout
+              the region.
             </span>
           </TabPanel>
           <TabPanel>
             <span>
-              By 2050, the region is expected to gain 356,000 new jobs, an
-              increase of more than 10% since 2020, with growth across a wide
-              range of industries. Explore the web map to view absolute change,
-              percent change, and total forecasted employment by municipality
-              throughout the region.
+              By 2050, the region is expected to gain{" "}
+              <strong>356,000 new jobs</strong>, an increase of more than 10%
+              since 2020, with growth across a{" "}
+              <strong>wide range of industries</strong>. Explore the web map to
+              view absolute change, percent change, and total forecasted
+              employment by municipality throughout the region.
             </span>
           </TabPanel>
         </TabPanels>
@@ -86,15 +90,17 @@ const WhatIsThePlan = () => {
           <div className="w-[70%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">Where Are We Headed?</h2>
             <p className="text-2xl pb-0 z-50">
-              Forecasts help planners understand how the Greater Philadelphia
-              region might grow in the coming decades and how that growth will
-              affect housing, transportation, jobs, and quality of life.
+              Population and employment forecasts help planners understand{" "}
+              <strong>how the Greater Philadelphia region might grow</strong> in
+              the coming decades and how that growth will affect housing,
+              transportation, jobs, and quality of life.
             </p>
             <p className="text-2xl pb-0 z-50">
-              While no one can predict the future, population and employment
-              forecasts give us a roadmap to make smarter investments in roads,
-              buses, trains, and communities. Overall, the region is expected to
-              see steady growth in both people and jobs through 2050.
+              While no one can predict the future, forecasts give us a roadmap
+              to make <strong>smarter investments</strong> in roads, buses,
+              trains, and communities. Overall, the region is expected to see
+              <strong>steady growth in both people and jobs</strong> through
+              2050.
             </p>
           </div>
         </div>
@@ -104,6 +110,33 @@ const WhatIsThePlan = () => {
             <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
               Explore the Forecasts in Maps
             </h2>
+          </div>
+          <div className="flex items-center w-full p-4 relative">
+            <p>
+              How will Greater Philadelphia’s people and jobs be distributed by
+              2050? These interactive maps show where growth and decline are
+              likely to occur so planners, communities, and decision-makers can
+              visualize tradeoffs, prioritize investments, and plan for
+              infrastructure, housing, and services.
+            </p>
+            <p>
+              Toggle between sets of maps. Each shows three ways to view the
+              forecast for 2050:
+            </p>
+            <ul className="list-disc ml-4 text-2xl">
+              <li>
+                <strong>Absolute Change</strong>: the numeric increase or
+                decrease
+              </li>
+              <li>
+                <strong>Percent Change</strong>: the proportional change
+                compared with today
+              </li>
+              <li>
+                <strong>Total Forecasted</strong>: the expected numbers by
+                municipality in 2050
+              </li>
+            </ul>
           </div>
         </div>
         <div className="relative h-full w-full">
@@ -201,55 +234,68 @@ const WhatIsThePlan = () => {
                   fastest growth is expected in Pennsylvania’s suburban
                   counties, especially Montgomery and Chester. Philadelphia is
                   projected to gain about 130,000 people, nearly one-third of
-                  all regional growth. Together, Philadelphia, Montgomery, and
-                  Chester counties will account for almost three-fourths of the
-                  total population increase.
+                  all regional growth. Together,{" "}
+                  <strong>Philadelphia, Montgomery, and Chester</strong>{" "}
+                  counties will account for almost{" "}
+                  <strong>
+                    three-fourths of the total population increase
+                  </strong>
+                  .
                 </p>
                 <p>
-                  The region’s population is also getting older. Fewer births
-                  and longer lifespans mean that by 2050, the share of residents
-                  aged 65 and older will grow by nearly 50%, while those under
-                  30 will decline slightly. This shift mirrors national trends
-                  and will influence everything from healthcare needs to
-                  workforce availability.
+                  The region’s population is also <strong>getting older</strong>
+                  . Fewer births and longer lifespans mean that by 2050, the
+                  share of residents aged{" "}
+                  <strong>65 and older will grow by nearly 50%</strong>, while
+                  those under 30 will decline slightly. This shift mirrors
+                  national trends and will influence everything from healthcare
+                  needs to workforce availability.
                 </p>
                 <p>
-                  The region’s population is also getting older. Fewer births
-                  and longer lifespans mean that by 2050, the share of residents
-                  aged 65 and older will grow by nearly 50%, while those under
-                  30 will decline slightly. This shift mirrors national trends
-                  and will influence everything from healthcare needs to
-                  workforce availability.
+                  Household types are changing, too, as families are adapting to
+                  affordability pressures. More residents are living in
+                  <strong>
+                    multifamily housing, multigenerational households
+                  </strong>
+                  , or <strong>shared spaces</strong>. Young adults are staying
+                  with their parents longer. That said, half of new households
+                  formed since the year 2000 are single-person. These changes
+                  will shape the region’s housing market, neighborhood design,
+                  and community needs in the decades ahead.
                 </p>
               </>
             )}
             {selectedTab === 1 && (
               <>
                 <p>
-                  The healthcare and social services sector will remain the
-                  region’s largest employer, expanding as the population ages
-                  and demand for care increases. Transportation and warehousing
-                  jobs are expected to grow rapidly due to e-commerce and
-                  expanded delivery networks.
+                  The <strong>healthcare and social services</strong> sector is
+                  projected to remain the region’s largest employer, expanding
+                  as the population ages and demand for care increases.
+                  <strong>Transportation and warehousing</strong> jobs are
+                  expected to grow rapidly due to e-commerce and expanded
+                  delivery networks.
                 </p>
                 <p>
-                  The healthcare and social services sector will remain the
-                  region’s largest employer, expanding as the population ages
-                  and demand for care increases. Transportation and warehousing
-                  jobs are expected to grow rapidly due to e-commerce and
-                  expanded delivery networks.
+                  Between 2020 and 2025 alone, jobs in{" "}
+                  <strong>hotels, restaurants, and food services</strong> are
+                  projected to grow by <strong>67%</strong>, and{" "}
+                  <strong>arts and entertainment</strong> jobs by
+                  <strong>41%</strong>, as these sectors rebound from pandemic
+                  losses.
                 </p>
                 <p>
                   By 2050, total regional employment is forecast to reach nearly
-                  4 million jobs.
+                  <strong>4 million jobs</strong>.
                   <ul className="list-disc ml-4">
                     <li>
-                      Philadelphia will see the largest share of job growth,
-                      with about 25% of the total increase.
+                      <strong>Philadelphia</strong> will see the largest share
+                      of job growth, with about{" "}
+                      <strong>25% of the total increase</strong>.
                     </li>
                     <li>
-                      Montgomery and Chester counties will also expand, with 16%
-                      and 13% more jobs, respectively.
+                      <strong>Montgomery and Chester counties</strong> will also
+                      expand, with <strong>16% and 13%</strong> more jobs,
+                      respectively.
                     </li>
                     <li>
                       Other counties across the region will experience steady,
@@ -258,9 +304,10 @@ const WhatIsThePlan = () => {
                   </ul>
                 </p>
                 <p>
-                  These trends point to an economy driven by healthcare,
-                  logistics, and service jobs, supported by a stable workforce
-                  and a broad mix of industries across the region.
+                  These trends point to an economy driven by{" "}
+                  <strong>healthcare, logistics, and service jobs</strong>,
+                  supported by a stable workforce and a broad mix of industries
+                  across the region.
                 </p>
               </>
             )}
