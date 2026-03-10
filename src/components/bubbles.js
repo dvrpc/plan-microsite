@@ -9,7 +9,7 @@ import { Link } from "gatsby"
 
 const Bubbles = () => {
   return (
-    <div className="flex space-x-2 md:[&>*]:w-[15rem] [&>*]:relative w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-xl text-center items-center my-12 font-[Inclusive Sans]! text-[0.9rem]">
+    <div className="flex space-x-2 md:[&>*]:w-[15rem] [&>*]:relative w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-xl text-center items-center my-12 font-[Inclusive Sans]! text-[0.9rem] leading-tight">
       <div>
         <Purple width="100%" className="absolute z-10" />
         <p className="z-50 w-[90%] ">

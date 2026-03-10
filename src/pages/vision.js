@@ -40,7 +40,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </Tab>
         </TabList>
         <TabPanels className="bg-[#093446] p-3 text-white flex-1">
-          <TabPanel className="p-3">
+          <TabPanel className="p-2">
             <span>
               Shows how the region can grow in smart, balanced ways by aligning
               future development with existing infrastructure. It highlights
@@ -48,7 +48,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               landscapes to preserve, and green spaces that link them together.
             </span>
           </TabPanel>
-          <TabPanel className="p-3">
+          <TabPanel className="p-2">
             <span>
               Identifies specific Centers where future growth is prioritized and
               where investments in housing, infrastructure, and jobs can have
@@ -86,7 +86,9 @@ const Vision = () => {
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
           <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">Where Are We Headed?</h2>
+            <h2 className="text-3xl font-bold">
+              What Do We Want the Region to Look Like in 2050?
+            </h2>
             <p className="text-2xl pb-0 z-50">
               Every region needs a roadmap for the future—and that’s what a
               long-range plan provides.{" "}
