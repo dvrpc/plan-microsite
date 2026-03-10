@@ -43,82 +43,52 @@ const Resources = () => {
             <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
               <ul className="ml-8 text-2xl space-y-2">
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     Summary Document
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     Appendices
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     A - Planning Process & Administration
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     B - Land Use & Transportation
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     C - Federal Performance Measures
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     D - Community Analytics
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     E - Financial Plan
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     F - Future Funding Outlook
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     G - Definitions & Acronyms
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600 ">
                     Amendments
                   </a>
                 </li>
@@ -137,50 +107,32 @@ const Resources = () => {
             <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
               <ul className="ml-8 text-2xl space-y-2">
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600">
                     Long-Range Plan Home Page
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600">
                     Transportation Improvement Program (TIP)
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600">
                     Congestion Management Process (CMP)
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600">
                     Comprehensive Economic Development Strategy (CEDS)
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600">
                     Regional Vision Zero
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/"
-                    className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
-                  >
+                  <a href="/" className="underline text-blue-600">
                     Air Quality Conformity
                   </a>
                 </li>
@@ -223,28 +175,35 @@ const Resources = () => {
             </div>
             <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
               <Accordion label="What is the purpose of the Plan?">
-                Update: Connections 2050 is Greater Philadelphia's Long-Range
-                Plan (Plan). The Plan serves as the blueprint to guide growth
-                and development in our region and to prioritize funding for
-                capital transportation investment accordingly. The Plan looks
-                ahead to how our region will grow and change—considering
-                population trends, the economy, the environment, and
-                technology—to guide investments in roads, transit, biking,
-                walking, and other transportation modes.
+                <p>
+                  Update: Connections 2050 is Greater Philadelphia's Long-Range
+                  Plan (Plan). The Plan serves as the blueprint to guide growth
+                  and development in our region and to prioritize funding for
+                  capital transportation investment accordingly. The Plan looks
+                  ahead to how our region will grow and change—considering
+                  population trends, the economy, the environment, and
+                  technology—to guide investments in roads, transit, biking,
+                  walking, and other transportation modes.
+                </p>
               </Accordion>
               <Accordion label="Who develops the Plan?">
-                The Plan is created by DVRPC with input from local governments,
-                transportation agencies, state partners, community
-                organizations, and residents across the region. It reflects
-                broad collaboration and public engagement at every stage.
+                <p>
+                  The Plan is created by DVRPC with input from local
+                  governments, transportation agencies, state partners,
+                  community organizations, and residents across the region. It
+                  reflects broad collaboration and public engagement at every
+                  stage.
+                </p>
               </Accordion>
               <Accordion label="What is a Major Regional Project?">
-                Major Regional Projects are large-scale transportation
-                investments—such as new transit lines, highway improvements, or
-                major bicycle and pedestrian corridors—that cost more than $40
-                million and/or significantly impact travel across the region.
-                These projects must appear in the Plan to be eligible for
-                federal funding.
+                <p>
+                  Major Regional Projects are large-scale transportation
+                  investments—such as new transit lines, highway improvements,
+                  or major bicycle and pedestrian corridors—that cost more than
+                  $40 million and/or significantly impact travel across the
+                  region. These projects must appear in the Plan to be eligible
+                  for federal funding.
+                </p>
               </Accordion>
               <Accordion label="How does a project get considered for the Plan?">
                 <p>
@@ -268,41 +227,58 @@ const Resources = () => {
                 </p>
               </Accordion>
               <Accordion label="How can I access or download data from the Long-Range Plan?">
-                You can find Long-Range Plan data in the{" "}
-                <a href="https://www.dvrpc.org/data/" target="_blank">
-                  DVRPC Data Center
-                </a>
-                , which provides centralized access to all DVRPC datasets and
-                mapping applications. Simply filter by the{" "}
-                <a href="https://catalog.dvrpc.org/dataset/?category=Long-Range+Plan">
-                  Long-Range Plan category
-                </a>{" "}
-                to view and download all related data layers.
+                <p>
+                  You can find Long-Range Plan data in the{" "}
+                  <a
+                    href="https://www.dvrpc.org/data/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    DVRPC Data Center
+                  </a>
+                  , which provides centralized access to all DVRPC datasets and
+                  mapping applications. Simply filter by the{" "}
+                  <a
+                    href="https://catalog.dvrpc.org/dataset/?category=Long-Range+Plan"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Long-Range Plan category
+                  </a>{" "}
+                  to view and download all related data layers.
+                </p>
               </Accordion>
               <Accordion label="How should local governments use the plan?">
-                Local governments can use the Plan as a regional guide to inform
-                local decisions and investments. Its strategies, policies,
-                priority projects, and forecast data can support zoning updates,
-                comprehensive plans, capital programming, redevelopment efforts,
-                development review, and grant applications. By aligning local
-                actions with regional priorities and expected growth,
-                municipalities can make more coordinated, future-focused
-                decisions that contribute to the region’s shared vision.
+                <p>
+                  Local governments can use the Plan as a regional guide to
+                  inform local decisions and investments. Its strategies,
+                  policies, priority projects, and forecast data can support
+                  zoning updates, comprehensive plans, capital programming,
+                  redevelopment efforts, development review, and grant
+                  applications. By aligning local actions with regional
+                  priorities and expected growth, municipalities can make more
+                  coordinated, future-focused decisions that contribute to the
+                  region’s shared vision.
+                </p>
               </Accordion>
               <Accordion label="How will progress toward the Plan’s goals be measured?">
-                The Plan includes performance measures and tracking tools that
-                monitor trends such as safety, congestion, environmental health,
-                and affordability. DVRPC reports on these indicators regularly
-                to assess whether the region is moving toward the Plan’s vision.
-                The{" "}
-                <a
-                  href="https://www.dvrpc.org/trackingprogress/"
-                  target="_blank"
-                >
-                  Tracking Progress
-                </a>{" "}
-                dashboard and other performance-management tools embedded in the
-                Plan are used to monitor how regional goals are being addressed.
+                <p>
+                  The Plan includes performance measures and tracking tools that
+                  monitor trends such as safety, congestion, environmental
+                  health, and affordability. DVRPC reports on these indicators
+                  regularly to assess whether the region is moving toward the
+                  Plan’s vision. The{" "}
+                  <a
+                    href="https://www.dvrpc.org/trackingprogress/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Tracking Progress
+                  </a>{" "}
+                  dashboard and other performance-management tools embedded in
+                  the Plan are used to monitor how regional goals are being
+                  addressed.
+                </p>
               </Accordion>
               <Accordion label="How can I make a public comment about the Plan?">
                 <p>
@@ -317,6 +293,7 @@ const Resources = () => {
                   <a
                     href="https://apps.dvrpc.org/ords/r/dvrpcintranetapps/lrp-comment/comment-list"
                     target="_blank"
+                    className="underline"
                   >
                     online, publicly accessible database.
                   </a>
@@ -331,26 +308,35 @@ const Resources = () => {
                 </p>
               </Accordion>
               <Accordion label="How can residents get involved in shaping the Plan?">
-                Residents can participate by attending public meetings, engaging
-                with online tools and surveys, reviewing draft documents, or
-                serving on DVRPC committees. Public input directly informs the
-                goals, strategies, and project lists that appear in the Plan.
-                Learn more on our{" "}
-                <a href="https://www.dvrpc.org/getinvolved/" target="_blank">
-                  Stay Connected
-                </a>{" "}
-                page.
+                <p>
+                  Residents can participate by attending public meetings,
+                  engaging with online tools and surveys, reviewing draft
+                  documents, or serving on DVRPC committees. Public input
+                  directly informs the goals, strategies, and project lists that
+                  appear in the Plan. Learn more on our{" "}
+                  <a
+                    href="https://www.dvrpc.org/getinvolved/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    Stay Connected
+                  </a>{" "}
+                  page.
+                </p>
               </Accordion>
               <Accordion label="How can I access previous Plan documents?">
-                You can explore past long-range plans and related materials on
-                <a
-                  href="https://www.dvrpc.org/plan/planhistory/"
-                  target="_blank"
-                >
-                  DVRPC’s Plan History page
-                </a>
-                , which provides access to archived documents dating back
-                several decades.
+                <p>
+                  You can explore past long-range plans and related materials on{" "}
+                  <a
+                    href="https://www.dvrpc.org/plan/planhistory/"
+                    target="_blank"
+                    className="underline"
+                  >
+                    DVRPC’s Plan History page
+                  </a>
+                  , which provides access to archived documents dating back
+                  several decades.
+                </p>
               </Accordion>
             </div>
           </div>

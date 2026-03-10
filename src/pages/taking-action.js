@@ -50,7 +50,7 @@ const TakingAction = () => {
                 Big Moves, Big Support
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 text-[#063446]">
+            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
               <p>
                 Ambitious ideas can’t move forward without strong support. Too
                 many critical projects are delayed or underfunded, even as costs
@@ -65,7 +65,7 @@ const TakingAction = () => {
                 through red tape and get projects moving.
               </p>
               <p>Here's what is needed:</p>
-              <ul className="list-disc ml-8 text-2xl">
+              <ul className="list-disc ml-4">
                 <li>
                   <strong>Reliable, long-term federal and state funding</strong>{" "}
                   to maintain and improve infrastructure and support ongoing
@@ -115,7 +115,7 @@ const TakingAction = () => {
                 What DVRPC Is Doing
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 text-[#063446]">
+            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
               <p>
                 DVRPC brings together people and ideas to tackle the region’s
                 toughest challenges. As the metropolitan planning organization
@@ -134,7 +134,7 @@ const TakingAction = () => {
               <p>
                 <strong>Our commitment:</strong>
               </p>
-              <ul className="list-disc ml-8 text-2xl">
+              <ul className="list-disc ml-4">
                 <li>
                   <strong>Deliver trusted data and analysis</strong> that
                   empower partners to make informed decisions.
@@ -179,7 +179,7 @@ const TakingAction = () => {
                 What Local Governments Can Do
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 text-[#063446]">
+            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
               <p>
                 Local governments play a key role in building a stronger, more
                 connected region by turning long-range plan goals and strategies
@@ -193,7 +193,7 @@ const TakingAction = () => {
               <p>
                 <strong>Ways to get involved:</strong>
               </p>
-              <ul className="list-disc ml-8 text-2xl">
+              <ul className="list-disc ml-4">
                 <li>
                   <strong>Put Plan strategies into practice.</strong> Visit the
                   Strategies web page for actionable steps communities can take
