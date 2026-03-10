@@ -124,13 +124,11 @@ const WhatIsThePlan = () => {
           <div className="flex items-center w-full p-4 relative">
             <Dot width="3%" className="absolute -left-[1.5%]" />
             <p className="text-[#063446] ml-[1.5%]">
-              <strong>
-                Explore how the region's five Plan Elements are being put into
-                action
-              </strong>{" "}
-              through high-level strategies and specific implementation actions.
-              Filter by these topics, responsible party, or use the keyword
-              search to find the initiatives most relevant to your work.
+              Explore how the region's five Plan Elements are being put into
+              action through <strong>high-level strategies</strong> and specific{" "}
+              <strong>implementation actions</strong>. Filter by these topics,{" "}
+              <strong>responsible parties</strong>, or use the keyword search to
+              find the initiatives most relevant to your work.
             </p>
           </div>
         </div>

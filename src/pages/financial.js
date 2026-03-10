@@ -234,7 +234,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>Allocation:</p>
                     <p>6%</p>
                   </div>
-                  <img src={PaRoadwaySs} className="w-20 mx-auto" />
+                  <img src={PaRoadwaySs} className="w-16 mx-auto" />
                 </div>
                 <div className="text-[#0078ae] font-bold space-y-4">
                   <p className="text-center text-2xl">Pennsylvania</p>
@@ -258,7 +258,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>Allocation:</p>
                     <p>4%</p>
                   </div>
-                  <img src={PaRoadwayRe} className="w-20 mx-auto" />
+                  <img src={PaRoadwayRe} className="w-16 mx-auto" />
                 </div>
                 <div className="text-[#026227] font-bold space-y-4">
                   <p className="text-center text-2xl">Pennsylvania</p>
@@ -308,7 +308,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>Allocation:</p>
                     <p>2%</p>
                   </div>
-                  <img src={NjRoadwaySs} className="w-4 mx-auto" />
+                  <img src={NjRoadwaySs} className="w-3 mx-auto" />
                   <img src={Roadwayss} className="mt-auto" />
                 </div>
                 <div className="text-[#0078ae] font-bold flex flex-col gap-y-4">
@@ -334,7 +334,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>Allocation:</p>
                     <p>4%</p>
                   </div>
-                  <img src={NjRoadwayRe} className="w-12 mx-auto" />
+                  <img src={NjRoadwayRe} className="w-10 mx-auto" />
                   <img src={Roadwayre} className="mt-auto" />
                 </div>
                 <div className="text-[#026227] font-bold flex flex-col gap-y-4">
@@ -353,6 +353,16 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               </div>
             </>
           </TabPanel>
+          <div className="text-[#083346] flex ml-auto w-fit">
+            <div className="flex gap-x-2 border-r-2 border-[#083346] pr-2">
+              <div className="h-6 w-6 bg-[#083346] rounded-full" />{" "}
+              <strong>FUNDED = $1 Billion YOE</strong>
+            </div>
+            <div className="flex gap-x-2 pl-2">
+              <div className="h-6 w-6 rounded-full border-2 border-[#083346]" />{" "}
+              <strong>UNFUNDED = $1 Billion YOE</strong>
+            </div>
+          </div>
         </TabPanels>
       </TabGroup>
     </div>
@@ -383,14 +393,14 @@ const WhatIsThePlan = () => {
           <div className="w-[70%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">How Will We Fund the Future?</h2>
             <p className="text-2xl pb-0 z-50">
-              Update: Connections 2050 includes a Financial Plan that outlines
-              how we’ll invest in transportation infrastructure over the coming
-              decades to support the Plan’s vision. Our top priority is safety.
-              After that, we focus on maintaining and preserving the existing
-              system, making it easier and safer to walk and bike, and improving
-              how the system operates. As a region, we only consider expanding
-              the system in a few critical areas—where strategies like improving
-              operations, managing travel demand, and offering more
+              <em>Update: Connections 2050</em> includes a Financial Plan that
+              outlines how we’ll invest in transportation infrastructure over
+              the coming decades to support the Plan’s vision. Our top priority
+              is safety. After that, we focus on maintaining and preserving the
+              existing system, making it easier and safer to walk and bike, and
+              improving how the system operates. As a region, we only consider
+              expanding the system in a few critical areas—where strategies like
+              improving operations, managing travel demand, and offering more
               transportation options aren’t enough to meet current or future
               needs.
             </p>
@@ -404,19 +414,19 @@ const WhatIsThePlan = () => {
             </h2>
           </div>
           <p className="text-[#063446] ml-[1.5%]">
-            To reach our vision for a safe, modern, multimodal transportation
-            system, DVRPC estimates how much investment will be needed and
-            compares it to how much funding is available. Click below to enlarge
-            text boxes to learn more.
+            To reach our vision for a{" "}
+            <strong>safe, modern, multimodal transportation system</strong>,
+            DVRPC estimates how much investment will be needed and compares it
+            to how much funding is available.
           </p>
-          <img src={Arrow1} className="absolute md:left-[15%] md:top-[28%]" />
+          <img src={Arrow1} className="absolute md:left-[15%] md:top-[25%]" />
           <img
             src={Arrow2}
-            className="absolute md:right-[10%] md:top-[30%] scale-[75%]"
+            className="absolute md:right-0 md:top-[20%] scale-[75%]"
           />
           <img
             src={Arrow3}
-            className="absolute md:bottom-[12%] md:right-[60%]"
+            className="absolute md:bottom-[8%] md:right-[60%]"
           />
           <div
             id="block-1"
@@ -442,7 +452,7 @@ const WhatIsThePlan = () => {
           </div>
           <div
             id="block-2"
-            className="absolute md:right-0 md:top-[30%]"
+            className="absolute md:right-0 md:top-[25%]"
             onClick={() =>
               document
                 .querySelector("#block-2")
@@ -459,7 +469,7 @@ const WhatIsThePlan = () => {
           </div>
           <div
             id="block-3"
-            className="absolute md:bottom-[5%] md:right-[30%]"
+            className="absolute md:bottom-[6%] md:right-[30%]"
             onClick={() =>
               document
                 .querySelector("#block-3")
@@ -496,27 +506,24 @@ const WhatIsThePlan = () => {
               </h2>
             </div>
             <div className="flex flex-col space-y-6 pt-0 p-6">
-              <p>Here’s how the Plan allocates available funding:</p>
-              <ul className="list-disc ml-4 text-2xl">
-                <li>
-                  <strong>63% → Preserving and modernizing</strong> existing
-                  roads, bridges, and transit infrastructure{" "}
-                </li>
-                <li>
-                  <strong>25% → Multimodal investments</strong> such as
-                  expanding and upgrading bike and pedestrian networks,
-                  resurfacing trails, and reconnecting communities divided by
-                  past highway projects by creating new open spaces over
-                  highways
-                </li>
-                <li>
-                  <strong>3% → Safety projects and programs</strong> that reduce
-                  serious crashes and advance the region’s Vision Zero goal{" "}
-                </li>
-              </ul>
               <p>
-                Slide the image below to view the needs and allocated funding to
-                the various roadway and transit project categories in the Plan.
+                <strong>
+                  The Plan prioritizes investing in the transportation system
+                  people depend on every day
+                </strong>{" "}
+                and improving how it serves the region moving forward. Together,
+                91% of available roadway funding is focused on maintaining and
+                modernizing existing roads and bridges; expanding and improving
+                walking, biking, and trail connections; connecting communities
+                with denser street networks; and advancing projects that make
+                travel safer and move the region toward Vision Zero. Over 60% of
+                available transit funding is dedicated to maintaining and
+                modernizing existing assets.
+              </p>
+              <p>
+                Click on the tabs below to view the needs and allocated funding
+                to the various roadway and transit project categories in the
+                Plan.
               </p>
             </div>
           </div>
