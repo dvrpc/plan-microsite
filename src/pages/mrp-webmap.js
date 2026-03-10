@@ -59,7 +59,11 @@ const MrpWebmap = () => {
             <p className="text-2xl pb-0 z-50">
               A portion of funding is reserved for smaller projects to be added
               in future{" "}
-              <a href="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254/page/Page">
+              <a
+                href="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254/page/Page"
+                target="_blank"
+                className="underline"
+              >
                 Transportation Improvement Program (TIP)
               </a>{" "}
               updates. The remaining funds support{" "}
@@ -80,13 +84,12 @@ const MrpWebmap = () => {
         </div>
         <div className="relative h-full w-full">
           <div className="absolute z-[100] flex h-full w-1/3 pl-[17%] bg-[#063446]">
-            <div className="text-white p-3">
-              <span>
+            <div className="text-white p-3 text-sm space-y-4">
+              <p>
                 The map shows MRPs categorized by one or more transportation
                 improvement categories.
-              </span>
-              <br />
-              <span>
+              </p>
+              <p>
                 <strong>Roadway</strong> and <strong>Transit</strong> projects
                 in this web map are designated as
                 <strong>Funded</strong> (prioritized and programmed within
@@ -96,7 +99,7 @@ const MrpWebmap = () => {
                 <strong>Externally Funded</strong> projects that don’t use
                 regional dollars, but must be considered due to their impacts on
                 the regional network and air quality conformity.
-              </span>
+              </p>
             </div>
             <Legend selectedLayer={selectedLayer} />
           </div>
@@ -191,7 +194,7 @@ const MrpWebmap = () => {
               and improve mobility. CMP strategies support the Plan’s broader
               goals by helping to:
             </p>
-            <ul className="list-disc ml-4 text-2xl">
+            <ul className="list-disc ml-4">
               <li>Increase mobility and reliability</li>
               <li>Integrate modes and improve transit access</li>
               <li>Modernize and maintain the transportation network</li>
