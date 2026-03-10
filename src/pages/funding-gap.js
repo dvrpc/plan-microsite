@@ -38,20 +38,23 @@ const WhatIsThePlan = () => {
           <div className="w-[70%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">Filling the Funding Gap</h2>
             <p className="text-2xl pb-0 z-50">
-              To make our shared regional vision a reality, we need more
-              transportation funding from both existing federal, state, and
-              local sources, as well as new sources.
+              To make our shared regional vision a reality, we need{" "}
+              <strong>more transportation funding</strong> from both existing
+              federal, state, and local sources, as well as new sources.
             </p>
-            <p>
+            <p className="text-2xl">
               <strong>Greater investment is needed to:</strong>
-              <ul className="*:ml-4 text-2xl list-disc">
+              <ul className="*:ml-4 list-disc">
                 <li>
-                  Maintain and modernize our aging transportation infrastructure
+                  <strong>Maintain and modernize</strong> our aging
+                  transportation infrastructure
                 </li>
-                <li>Support emerging technologies</li>
                 <li>
-                  Expand access so more people can reach jobs, education
-                  services, and essential services
+                  <strong>Support emerging technologies</strong>
+                </li>
+                <li>
+                  <strong>Expand access</strong> so more people can reach jobs,
+                  education services, and essential services
                 </li>
               </ul>
             </p>
@@ -64,30 +67,33 @@ const WhatIsThePlan = () => {
               The Diminishing Gas Tax
             </h2>
           </div>
-          <div className="flex space-y-6 m-6">
-            <div>
-              <p className="text-2xl">
-                Most transportation funding still comes from taxes on gasoline
-                and petroleum products, but those revenues are shrinking as
-                vehicles become more fuel-efficient and electric.
+          <div className="flex p-6 pt-0">
+            <div className="space-y-6">
+              <p>
+                Most transportation funding comes from{" "}
+                <strong>taxes on gasoline and petroleum products</strong>, but
+                those revenues are shrinking as vehicles become more
+                fuel-efficient and electric.
               </p>
-              <ul className="list-disc *:ml-4 text-2xl">
+              <ul className="list-disc *:ml-4">
                 <li>
-                  The federal gas tax hasn’t increased since 1993, and inflation
-                  has erased about 64% of its purchasing power.
+                  The federal gas tax hasn’t increased since{" "}
+                  <strong>1993</strong>, and inflation has erased about{" "}
+                  <strong>64%</strong> of its purchasing power.
                 </li>
                 <li>
-                  Since 2008, Congress has transferred $275 billion from the
-                  general fund to keep the Highway and Transit Trust Funds
-                  solvent.
+                  Since 2008, Congress has transferred{" "}
+                  <strong>$275 billion</strong> from the general fund to keep
+                  the Highway and Transit Trust Funds solvent.
                 </li>
               </ul>
               <p>
-                Without reform, the gap between available funds and regional
-                needs will continue to grow.
+                Without reform, the gap between{" "}
+                <strong>available funds and regional needs</strong> will
+                continue to grow.
               </p>
             </div>
-            <img src={PurchasingPower} className="w-1/2" />
+            <img src={PurchasingPower} className="md:w-2/3 md:ml-6" />
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
@@ -98,41 +104,38 @@ const WhatIsThePlan = () => {
                 Limited Local Funding
               </h2>
             </div>
-            <div className="grid grid-cols-5 space-y-6 p-6">
-              <div className="col-span-3">
+            <div className="grid grid-cols-5 space-y-6 p-6 pt-0">
+              <div className="col-span-3 space-y-6">
                 <p>
-                  Only 2% of Greater Philadelphia’s transportation funding comes
-                  from local sources, mainly to match state and federal dollars.
-                  In contrast, many peer regions contribute far more locally,
-                  allowing for flexible investments in walking, biking, and
-                  transit improvements.
+                  <strong>
+                    Only 3% of Greater Philadelphia’s regional transportation
+                    funding comes from local sources
+                  </strong>
+                  , mainly to match state and federal dollars. In contrast, many
+                  peer regions contribute far more locally, allowing for
+                  flexible investments in walking, biking, and transit
+                  improvements.
                 </p>
                 <p>
                   State laws in Pennsylvania and New Jersey limit local
                   governments’ ability to raise transportation funds, leaving
-                  our region at a disadvantage.{" "}
-                  <strong>
-                    Without dedicated local sources, it’s harder to:
-                  </strong>
+                  our region at a disadvantage. Without dedicated local sources,
+                  it’s harder to keep up with basic maintenance needs and
+                  compete for federal grants that require a substantial local
+                  match.
                 </p>
-                <ul className="list-disc ml-8 text-2xl">
-                  <li>Keep up with basic maintenance needs, and</li>
-                  <li>
-                    Compete for federal grants that require a substantial local
-                    match
-                  </li>
-                </ul>
                 <p>
-                  As federal support becomes less certain, regions with
-                  dedicated, flexible local funding will be better positioned to
-                  maintain their systems and support long-term economic growth.
+                  As federal support becomes less certain, regions with{" "}
+                  <strong>dedicated, flexible local funding</strong> will be
+                  better positioned to maintain their systems and make
+                  innovative investments that promote long-term economic growth.
                 </p>
               </div>
               <img src={LocalFunding} className="col-span-2" />
 
               <div className="relative col-span-5">
                 <img src={FundingBox1} className="p-2" />
-                <div className="absolute md:top-[15%] md:left-[5%] text-white text-2xl space-y-6 p-4">
+                <div className="absolute md:top-[12%] md:left-[5%] text-white space-y-4 p-4">
                   <strong>
                     Transportation access directly affects opportunity.
                   </strong>
@@ -144,12 +147,12 @@ const WhatIsThePlan = () => {
                   </p>
                   <p>
                     Recognizing this, the City of Philadelphia, in partnership
-                    with SEPTA and community organizations, launched the Zero
-                    Fare pilot program, providing free transit for more than
-                    25,000 Philadelphians living at or near the poverty line.
-                    Programs like Zero Fare are vital, but their long-term
-                    success—and the region’s broader goals—depend on stable,
-                    sustainable funding.
+                    with SEPTA and community organizations, launched the{" "}
+                    <strong>Zero Fare pilot program</strong>, providing free
+                    transit for more than 25,000 Philadelphians living at or
+                    near the poverty line. Programs like Zero Fare are vital,
+                    but their long-term success—and the region’s broader
+                    goals—depend on stable, sustainable funding.
                   </p>
                 </div>
               </div>
@@ -167,15 +170,9 @@ const WhatIsThePlan = () => {
             <div className="flex flex-col space-y-6 p-6 pt-0">
               <p>
                 Our current transportation funding model isn’t keeping up with
-                today’s needs. It must be rethought and updated to generate new
-                revenue for both capital investments and operating costs.
-              </p>
-              <p>
-                For example, many communities hesitate to build new walking and
-                biking facilities because they come with maintenance costs but
-                no dedicated funding to cover them. Fixing this policy gap is
-                essential to creating and maintaining the active transportation
-                network our region deserves.
+                today’s needs. It must be{" "}
+                <strong>rethought and updated to generate new revenue</strong>{" "}
+                for both capital investments and operating costs.
               </p>
               <p>
                 DVRPC will continue to facilitate dialogue with our planning
@@ -183,12 +180,12 @@ const WhatIsThePlan = () => {
                 state funding models that are consistent with the Plan’s vision
                 and goals.
               </p>
-              <strong className="text-3xl text-[#063446]">
+              <strong className="text-[#063446]">
                 Click on the Potential Federal and State Funding Options below
                 to learn about them.
               </strong>
 
-              <div className="grid grid-cols-4 grid-rows-2 gap-y-4 gap-x-14">
+              <div className="grid grid-cols-4 grid-rows-2 gap-y-4 gap-x-4">
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
@@ -353,7 +350,7 @@ const WhatIsThePlan = () => {
               <div className="grid grid-cols-3 gap-x-2">
                 <div className="relative md:mt-2">
                   <img src={FundingBox2} className="p-2" />
-                  <div className="absolute md:top-[5%] md:left-[5%] text-white text-2xl p-4">
+                  <div className="absolute md:top-[5%] md:left-[5%] text-white p-4 text-sm">
                     <strong>
                       Transportation Systems Management and Operations
                     </strong>
@@ -367,39 +364,46 @@ const WhatIsThePlan = () => {
                 </div>
                 <div className="relative">
                   <img src={FundingBox3} className="p-2" />
-                  <div className="absolute md:top-[5%] md:left-[5%] text-white text-2xl p-6">
-                    <strong>Reduced-scale alternatives</strong>
+                  <div className="absolute md:top-[5%] md:left-[5%] text-white p-6 text-sm">
+                    <strong>Smaller, targeted improvements</strong>
                     <p>
-                      can deliver many most of the benefits of large projects at
-                      a fraction of the cost.
+                      —like intersection redesigns or transit enhancements—can
+                      deliver many of the benefits of large projects at a
+                      fraction of the cost.
                     </p>
                   </div>
                 </div>
                 <div className="relative">
                   <img src={FundingBox4} className="p-2" />
-                  <div className="absolute md:top-[5%] md:left-[5%] text-white text-2xl p-6">
+                  <div className="absolute md:top-[5%] md:left-[5%] text-white p-6 text-sm">
                     <strong>Repairs and upgrades</strong>
                     <p>
-                      an support multiple travel options, such as fixing bridges
-                      important to transit or maintaining well-used trails.
+                      can support multiple travel options, such as fixing
+                      bridges important to transit or maintaining well-used
+                      trails.
                     </p>
                   </div>
                 </div>
               </div>
               <p>
                 These targeted improvements help keep the region moving while
-                new funding sources are developed. Transportation agencies can
-                also use funds more efficiently by taking a corridor-based
-                approach—bundling multiple improvements along the same roadway
-                or transit corridor into one coordinated project. By thinking
-                comprehensively and investing strategically, the region can
-                build a safer, more connected, and more resilient transportation
-                system while laying the groundwork for new, viablesustainable
-                funding models.
+                new funding sources are developed.{" "}
+              </p>
+              <p>
+                Transportation agencies can also use funds more efficiently by
+                taking a <strong>corridor-based approach</strong>—bundling
+                multiple improvements along the same roadway or transit corridor
+                into one coordinated project. By thinking comprehensively and
+                investing strategically, the region can build a{" "}
+                <strong>
+                  safer, more connected, and more resilient transportation
+                  system
+                </strong>{" "}
+                while laying the groundwork for new, viable funding models.
               </p>
               <Link
-                className="mx-auto text-white bg-[#063446] p-2 font-bold text-2xl"
-                to="/"
+                className="mx-auto text-white bg-[#063446] p-2 font-bold text-2xl text-center"
+                to="/taking-action"
               >
                 Click here to read more about how the Region can meet the
                 challenges ahead
