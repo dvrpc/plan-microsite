@@ -109,8 +109,10 @@ const MRPList = () => {
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
           <div className="md:w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">Major Regional Project List</h2>
-            <p className="text-2xl pb-0 z-50">
+            <h2 className="md:text-3xl text-xl font-bold">
+              Major Regional Project List
+            </h2>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               Explore all projects included in Update: Connections 2050. Each
               project is classified as{" "}
               <Tooltip
@@ -301,7 +303,7 @@ R6. Green Transportation"
                           project.funding && (
                           <tr>
                             <td
-                              className="text-2xl font-bold w-full text-white"
+                              className="md:text-2xl text-lg font-bold w-full text-white"
                               style={{
                                 backgroundColor: fundingHex[project.funding],
                               }}

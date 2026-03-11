@@ -36,14 +36,14 @@ const Resources = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
                 Download & Print
               </h2>
             </div>
             <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
-              <ul className="ml-8 text-2xl space-y-2">
+              <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
                   <a href="/" className="underline text-blue-600 ">
                     Summary Document
@@ -100,14 +100,14 @@ const Resources = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
                 Resources
               </h2>
             </div>
             <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
-              <ul className="ml-8 text-2xl space-y-2">
+              <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
                   <a href="/" className="underline text-blue-600">
                     Long-Range Plan Home Page
@@ -144,9 +144,9 @@ const Resources = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
                 Get involved
               </h2>
             </div>
@@ -159,7 +159,7 @@ const Resources = () => {
                 region home.
               </p>
               <Link
-                className="text-2xl mx-auto p-2 bg-[#063446] text-white my-4"
+                className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
                 to="/"
               >
                 Stay Connected
@@ -169,9 +169,9 @@ const Resources = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
                 Frequently Asked Questions
               </h2>
             </div>

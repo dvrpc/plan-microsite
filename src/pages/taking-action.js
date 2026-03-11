@@ -23,8 +23,10 @@ const TakingAction = () => {
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
           <div className="md:w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">How Can We Make It Happen?</h2>
-            <p className="text-2xl">
+            <h2 className="md:text-3xl text-xl font-bold">
+              How Can We Make It Happen?
+            </h2>
+            <p className="md:text-2xl text-lg">
               Our region stands at a turning point. We face big
               challenges—creating opportunities for every resident,
               strengthening our infrastructure, making communities more
@@ -44,9 +46,9 @@ const TakingAction = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
                 Big Moves, Big Support
               </h2>
             </div>
@@ -109,9 +111,9 @@ const TakingAction = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
                 What DVRPC Is Doing
               </h2>
             </div>
@@ -173,9 +175,9 @@ const TakingAction = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
                 What Local Governments Can Do
               </h2>
             </div>
@@ -227,7 +229,7 @@ const TakingAction = () => {
                 that works better for everyone.
               </p>
               <Link
-                className="text-2xl mx-auto p-2 bg-[#063446] text-white my-4"
+                className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
                 to="/"
               >
                 Click Here for Ways To Stay Connected

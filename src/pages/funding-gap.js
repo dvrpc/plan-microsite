@@ -37,12 +37,12 @@ const WhatIsThePlan = () => {
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
           <div className="md:w-[70%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">Filling the Funding Gap</h2>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               To make our shared regional vision a reality, we need{" "}
               <strong>more transportation funding</strong> from both existing
               federal, state, and local sources, as well as new sources.
             </p>
-            <p className="text-2xl">
+            <p className="md:text-2xl text-lg">
               <strong>Greater investment is needed to:</strong>
               <ul className="*:ml-4 list-disc">
                 <li>
@@ -61,9 +61,9 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="md:w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
-          <div className="flex items-center w-full p-4 relative mt-4">
+          <div className="flex items-center w-full md:p-4 relative mt-4">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
               The Diminishing Gas Tax
             </h2>
           </div>
@@ -103,7 +103,7 @@ const WhatIsThePlan = () => {
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
                 Limited Local Funding
               </h2>
             </div>
@@ -164,9 +164,9 @@ const WhatIsThePlan = () => {
         </div>
         <div className="w-full bg-[#eef4fb] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex items-center w-full p-4 relative">
+            <div className="flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
                 Funding Options
               </h2>
             </div>
@@ -405,7 +405,7 @@ const WhatIsThePlan = () => {
                 while laying the groundwork for new, viable funding models.
               </p>
               <Link
-                className="mx-auto text-white bg-[#063446] p-2 font-bold text-2xl text-center"
+                className="mx-auto text-white bg-[#063446] p-2 font-bold md:text-2xl text-xl text-center"
                 to="/taking-action"
               >
                 Click here to read more about how the Region can meet the

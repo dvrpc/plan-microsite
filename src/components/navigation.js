@@ -107,7 +107,7 @@ const NavMenu = props => {
 
 const MenuItem = ({ item, mobile }) => {
   return (
-    <Link href={item.path}>
+    <Link to={item.path}>
       <a
         className={`underline ${
           mobile ? "w-full block px-4 py-2 -ml-4" : "inline-block px-6 py-2"
@@ -144,7 +144,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
                 {items.map((item, index) => (
                   <Menu.Item as="div" key={index}>
                     {({ active }) => (
-                      <Link href={item.path}>
+                      <Link to={item.path}>
                         <a className="flex space-x-2 lg:space-x-4 items-center px-5 py-2 w-min">
                           <span> {item.title}</span>
                         </a>

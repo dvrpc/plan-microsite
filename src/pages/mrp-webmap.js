@@ -50,13 +50,15 @@ const MrpWebmap = () => {
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
           <div className="md:w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">Major Regional Projects</h2>
-            <p className="text-2xl pb-0 z-50">
+            <h2 className="md:text-3xl text-xl font-bold">
+              Major Regional Projects
+            </h2>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               Once funding targets are set for each project category, DVRPC
               works with counties, PennDOT, NJDOT, and transit agencies to
               identify and evaluate candidate projects.
             </p>
-            <p className="text-2xl pb-0 z-50">
+            <p className="md:text-2xl text-lg pb-0 z-50">
               A portion of funding is reserved for smaller projects to be added
               in future{" "}
               <a
@@ -75,9 +77,9 @@ const MrpWebmap = () => {
           </div>
         </div>
         <div className="md:w-[68%] w-full relative border-l-4 border-[#063446]">
-          <div className="flex items-center w-full p-4 relative">
+          <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
               MRP Web Map
             </h2>
           </div>

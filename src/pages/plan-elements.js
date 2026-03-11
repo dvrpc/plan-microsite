@@ -39,26 +39,26 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         selectedIndex={selectedIndex}
         onChange={setSelectedIndex}
       >
-        <TabList className="flex text-white bg-[#063446]">
-          <Tab className="p-3 font-bold bg-[#423d59] text-white w-1/2 rounded-t-lg">
+        <TabList className="flex md:flex-row flex-col text-white bg-[#063446]">
+          <Tab className="p-3 font-bold bg-[#423d59] text-white md:w-1/2 rounded-t-lg">
             Transportation
           </Tab>
-          <Tab className="p-3 font-bold bg-[#711e53] text-white w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#711e53] text-white md:w-1/2 rounded-t-lg">
             Economy
           </Tab>
-          <Tab className="p-3 font-bold bg-[#004c6d] text-white w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#004c6d] text-white md:w-1/2 rounded-t-lg">
             Communities
           </Tab>
-          <Tab className="p-3 font-bold bg-[#006227] text-white w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#006227] text-white md:w-1/2 rounded-t-lg">
             Environment
           </Tab>
-          <Tab className="p-3 font-bold bg-[#147272] text-white w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#147272] text-white md:w-1/2 rounded-t-lg">
             Infrastructure and Utility Services
           </Tab>
         </TabList>
         <TabPanels className="flex-1 justify-center">
           <TabPanel>
-            <div className="text-center bg-[#423d59] text-white p-6">
+            <div className="text-center bg-[#423d59] text-white md:p-6 p-2 p-2">
               <p className="md:text-2xl text-xl">
                 The Transportation Vision for 2050 is:
               </p>
@@ -68,9 +68,9 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             </div>
             <img src={Transportation} className="w-4/5 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
-              <div className="flex w-full p-4 relative flex-col">
+              <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-                <p className="ml-[1.5%]">
+                <p className="md:ml-[1.5%]">
                   Greater Philadelphia has a strong transportation network that
                   includes{" "}
                   <strong>
@@ -93,7 +93,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                 <p className="md:text-2xl text-xl font-bold md:p-2 text-[#423d59]">
                   Transportation Goals
                 </p>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>1.</b> A transportation system that is safe and secure
@@ -107,7 +107,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     burdens on them.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>2.</b> Connected and integrated transportation facilities
@@ -122,7 +122,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     system.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>3.</b> Reduced car dependency and per-capita vehicle
@@ -137,7 +137,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <Link
-                  className="text-2xl mx-auto p-2 bg-[#423d59] text-white my-4"
+                  className="md:text-2xl text-lg mx-auto p-2 bg-[#423d59] text-white my-4"
                   to="/strategies"
                 >
                   Click to see Strategies for achieving the Vision
@@ -146,18 +146,20 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="text-center bg-[#711e53] text-white p-6">
-              <p className="text-2xl">The Economy Vision for 2050 is:</p>
-              <p className="text-2xl font-bold">
+            <div className="text-center bg-[#711e53] text-white md:p-6 p-2">
+              <p className="md:text-2xl text-lg">
+                The Economy Vision for 2050 is:
+              </p>
+              <p className="md:text-2xl text-lg font-bold">
                 An innovative and connected economy with opportunity and shared
                 prosperity
               </p>
             </div>
             <img src={Economy} className="w-4/5 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
-              <div className="flex w-full p-4 relative flex-col">
+              <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-                <p className="ml-[1.5%]">
+                <p className="md:ml-[1.5%]">
                   Greater Philadelphia’s economy benefits from{" "}
                   <strong>
                     its location along the Northeast Corridor, diverse
@@ -174,10 +176,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </strong>
                   .
                 </p>
-                <p className="text-2xl font-bold p-2 text-[#711e53]">
+                <p className="md:text-2xl text-lg font-bold p-2 text-[#711e53]">
                   Economic Goals
                 </p>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>1.</b> A well-trained and adaptable regional workforce.{" "}
@@ -191,7 +193,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     jobs with livable wages.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>2.</b> A variety of regional economic sectors.
@@ -203,7 +205,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     businesses and workers are able to recover quickly.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>3.</b> Reliable physical and digital access to regional,
@@ -217,7 +219,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <Link
-                  className="text-2xl mx-auto p-2 bg-[#711e53] text-white my-4"
+                  className="md:text-2xl text-lg mx-auto p-2 bg-[#711e53] text-white my-4"
                   to="/strategies"
                 >
                   Click to see Strategies for achieving the Vision
@@ -226,17 +228,19 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="text-center bg-[#004c6d] text-white p-6">
-              <p className="text-2xl">The Communities Vision for 2050 is:</p>
-              <p className="text-2xl font-bold">
+            <div className="text-center bg-[#004c6d] text-white md:p-6 p-2">
+              <p className="md:text-2xl text-lg">
+                The Communities Vision for 2050 is:
+              </p>
+              <p className="md:text-2xl text-lg font-bold">
                 Integrated, healthy, and walkable communities
               </p>
             </div>
             <img src={Communities} className="w-4/5 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
-              <div className="flex w-full p-4 relative flex-col">
+              <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-                <p className="ml-[1.5%]">
+                <p className="md:ml-[1.5%]">
                   Livable communities make the most of existing infrastructure
                   to <strong>deliver services efficiently</strong>. They offer a
                   mix of housing types, affordable options, and safe, convenient
@@ -245,10 +249,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   communities promote <strong>active, healthy living</strong>{" "}
                   and create <strong>vibrant, resilient places for all</strong>.
                 </p>
-                <p className="text-2xl font-bold p-2 text-[#004c6d]">
+                <p className="md:text-2xl text-lg font-bold p-2 text-[#004c6d]">
                   Community Goals
                 </p>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>1.</b> Accessible and affordable housing options and cost
@@ -261,7 +265,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     allows all residents to benefit.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>2.</b> Infill development that creates and protects the
@@ -275,7 +279,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     disruptions.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>3.</b> Socioeconomically integrated neighborhoods with
@@ -288,7 +292,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <Link
-                  className="text-2xl mx-auto p-2 bg-[#004c6d] text-white my-4"
+                  className="md:text-2xl text-lg mx-auto p-2 bg-[#004c6d] text-white my-4"
                   to="/strategies"
                 >
                   Click to see Strategies for achieving the Vision
@@ -297,18 +301,20 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="text-center bg-[#006227] text-white p-6">
-              <p className="text-2xl">The Environment Vision for 2050 is:</p>
-              <p className="text-2xl font-bold">
+            <div className="text-center bg-[#006227] text-white md:p-6 p-2">
+              <p className="md:text-2xl text-lg">
+                The Environment Vision for 2050 is:
+              </p>
+              <p className="md:text-2xl text-lg font-bold">
                 A preserved and restored natural environment and healthy
                 ecological systems
               </p>
             </div>
             <img src={Environment} className="w-4/5 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
-              <div className="flex w-full p-4 relative flex-col">
+              <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-                <p className="ml-[1.5%]">
+                <p className="md:ml-[1.5%]">
                   From the Pinelands to the Brandywine Valley, and from
                   neighborhood parks to riverside trails, Greater Philadelphia
                   offers a wealth of green spaces. Expanding and restoring
@@ -326,10 +332,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   Greener places also contribute to lower crime, reduced chronic
                   disease, and improved well-being, productivity, and learning.
                 </p>
-                <p className="text-2xl font-bold p-2 text-[#006227]">
+                <p className="md:text-2xl text-lg font-bold p-2 text-[#006227]">
                   Environment Goals
                 </p>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>1.</b> A regional-scale network of protected open space
@@ -341,7 +347,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     communities.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>2.</b> Healthy air and water for people and wildlife.
@@ -352,7 +358,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     absorbs stormwater, and protects water quality.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>3.</b> Access to high-quality parks, natural areas, and
@@ -364,7 +370,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <Link
-                  className="text-2xl mx-auto p-2 bg-[#006227] text-white my-4"
+                  className="md:text-2xl text-lg mx-auto p-2 bg-[#006227] text-white my-4"
                   to="/strategies"
                 >
                   Click to see Strategies for achieving the Vision
@@ -373,19 +379,19 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             </div>
           </TabPanel>
           <TabPanel>
-            <div className="text-center bg-[#147272] text-white p-6">
-              <p className="text-2xl">
+            <div className="text-center bg-[#147272] text-white md:p-6 p-2">
+              <p className="md:text-2xl text-lg">
                 The Infrastructure and Utility Services Vision for 2050 is:
               </p>
-              <p className="text-2xl font-bold">
+              <p className="md:text-2xl text-lg font-bold">
                 Clean, reliable, and affordable infrastructure and utility
                 services resilient to the effects of extreme weather
               </p>
             </div>
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
-              <div className="flex w-full p-4 relative flex-col">
+              <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-                <p className="ml-[1.5%]">
+                <p className="md:ml-[1.5%]">
                   Achieving regional goals for power and other infrastructure
                   systems across multiple scales will help deliver improved air
                   quality and benefits to public health. Ensuring the
@@ -398,10 +404,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   of the buildings, vehicles, and infrastructure systems on
                   which we all depend.
                 </p>
-                <p className="text-2xl font-bold p-2 text-[#147272]">
+                <p className="md:text-2xl text-lg font-bold p-2 text-[#147272]">
                   Infrastructure and Utility Services Goals
                 </p>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>1.</b>
@@ -415,7 +421,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     are available for residents and businesses.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>2.</b> Infrastructure that is reliable and resilient to
@@ -427,7 +433,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     weather events, disruptions, and related impacts.
                   </p>
                 </div>
-                <div className="ml-[1.5%]">
+                <div className="md:ml-[1.5%]">
                   <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
                   <p className="text-lg font-bold">
                     <b>3.</b> Regionwide implementation of innovative
@@ -442,7 +448,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </p>
                 </div>
                 <Link
-                  className="text-2xl mx-auto p-2 bg-[#147272] text-white my-4"
+                  className="md:text-2xl text-lg mx-auto p-2 bg-[#147272] text-white my-4"
                   to="/strategies"
                 >
                   Click to see Strategies for achieving the Vision

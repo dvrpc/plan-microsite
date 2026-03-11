@@ -415,8 +415,10 @@ const WhatIsThePlan = () => {
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
           <div className="md:w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">How Will We Fund the Future?</h2>
-            <p className="text-2xl pb-0 z-50">
+            <h2 className="md:text-3xl text-xl font-bold">
+              How Will We Fund the Future?
+            </h2>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               <em>Update: Connections 2050</em> includes a Financial Plan that
               outlines how we’ll invest in transportation infrastructure over
               the coming decades to support the Plan’s vision. Our top priority
@@ -431,13 +433,13 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446] relative">
-          <div className="flex items-center w-full p-4 relative">
+          <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
               Understanding Our Transportation Needs
             </h2>
           </div>
-          <p className="text-[#063446] ml-[1.5%]">
+          <p className="text-[#063446] md:ml-[1.5%]">
             To reach our vision for a{" "}
             <strong>safe, modern, multimodal transportation system</strong>,
             DVRPC estimates how much investment will be needed and compares it
@@ -523,9 +525,9 @@ const WhatIsThePlan = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-20">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
                 Allocating Available Revenue
               </h2>
             </div>
@@ -558,7 +560,7 @@ const WhatIsThePlan = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative p-10 flex">
           <Link
-            className="text-2xl mx-auto p-2 bg-[#063446] text-white my-4"
+            className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
             to="/mrp-list"
           >
             See the Major Regional Projects funded with available Revenue

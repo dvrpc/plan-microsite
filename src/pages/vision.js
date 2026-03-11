@@ -117,15 +117,15 @@ const Vision = () => {
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
-          <div className="flex items-center w-full p-4 relative">
+          <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="text-2xl font-bold ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg font-bold md:ml-[1.5%]">
               Explore the Vision in Maps
             </h2>
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
-          <div className="items-center w-full p-4 relative space-y-6">
+          <div className="items-center w-full md:p-6 p-2 relative space-y-6">
             <p>
               <strong>What will Greater Philadelphia look like in 2050?</strong>{" "}
               The Plan envisions <strong>dense, connected communities</strong>{" "}
@@ -156,7 +156,7 @@ const Vision = () => {
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
-          <div className="items-center w-full p-4 relative space-y-6">
+          <div className="items-center w-full md:p-4 p-2 relative space-y-6">
             <p>
               These maps use existing passenger rail and a proposed line to
               create a <strong>visual guide to strategic growth</strong>—helping

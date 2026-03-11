@@ -107,13 +107,13 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446]">
-          <div className="flex items-center w-full p-4 relative">
+          <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
               Explore the Forecasts in Maps
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 p-6 pt-0">
+          <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0">
             <p>
               How will Greater Philadelphia’s people and jobs be distributed by
               2050? These interactive maps show where growth and decline are

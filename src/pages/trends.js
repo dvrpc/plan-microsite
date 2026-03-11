@@ -44,13 +44,13 @@ const Trends = () => {
         </div>
         <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Remote Work and Post-COVID Commute Patterns
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6">
+            <div className="flex flex-col space-y-6 md:p-6 p-2">
               <p>
                 Remote and hybrid work have reshaped travel behavior across
                 Greater Philadelphia, changing where people live, how they get
@@ -103,13 +103,13 @@ const Trends = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex items-center w-full p-4 relative">
+            <div className="flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Artificial Intelligence
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 ">
+            <div className="flex flex-col space-y-6 md:p-6 p-2">
               <p>
                 Artificial intelligence (AI) technologies are transforming how
                 infrastructure is planned, managed, and maintained—offering both
@@ -143,13 +143,13 @@ const Trends = () => {
         </div>
         <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Ridesharing and Automated Vehicle Programs
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 ">
+            <div className="flex flex-col space-y-6 md:p-6 p-2">
               <p>
                 New mobility options—from shared rides to automated shuttles—are
                 expanding access to transportation and redefining how people
@@ -178,16 +178,18 @@ const Trends = () => {
         </div>
         <div className="w-full bg-[#d5d1db] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot
                 width="3%"
                 className="md:absolute -left-[1.5%] top-5 hidden"
               />
-              <div className="w-full ml-[1.5%] flex flex-col space-y-4 text-[#063446]">
-                <h2 className="text-3xl font-bold">Tracking Progress</h2>
+              <div className="w-full  flex flex-col space-y-4 text-[#063446]">
+                <h2 className="md:text-3xl text-xl font-bold">
+                  Tracking Progress
+                </h2>
               </div>
             </div>
-            <div className="flex flex-col space-y-6 p-6">
+            <div className="flex flex-col space-y-6 md:p-6 p-2">
               <p>
                 DVRPC’s{" "}
                 <a

@@ -121,9 +121,9 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446]">
-          <div className="flex items-center w-full p-4 relative">
+          <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <p className="text-[#063446] ml-[1.5%]">
+            <p className="text-[#063446] md:ml-[1.5%]">
               Explore how the region's five Plan Elements are being put into
               action through <strong>high-level strategies</strong> and specific{" "}
               <strong>implementation actions</strong>. Filter by these topics,{" "}
@@ -191,7 +191,7 @@ const WhatIsThePlan = () => {
                     <>
                       {filteredStrategies[idx - 1]?.element !==
                         strategy.element && (
-                        <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%] py-3">
+                        <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%] py-3">
                           Strategies for Achieving{" "}
                           <span style={{ color: elementHex[strategy.element] }}>
                             {strategy.element}
