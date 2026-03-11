@@ -66,7 +66,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         selectedIndex={selectedIndex}
         onChange={setSelectedIndex}
       >
-        <TabList className="flex text-white -mt-20 w-1/4">
+        <TabList className="flex text-white -mt-20 md:w-1/4 w-1/2">
           <Tab className="p-3 font-bold data-[selected]:bg-[#063446] [&:not([data-selected])]:bg-white data-[selected]:text-white [&:not([data-selected])]:text-[#063446] w-1/2 rounded-t-lg h-20">
             Roadway Needs
           </Tab>
@@ -74,14 +74,14 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             Transit Needs
           </Tab>
         </TabList>
-        <TabPanels className="bg-white p-8 text-white min-w-full">
+        <TabPanels className="bg-white md:p-8 text-white min-w-full">
           <TabPanel>
             <>
-              <div className="grid grid-cols-4 grid grid-rows-2 p-4 auto-rows-auto *:border-r-4 [&>*:nth-child(-n+4)]:border-b-4 [&>*:nth-child(4n)]:border-r-0 *:p-4">
-                <div className="text-[#714876] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col space-y-4">
-                    <p className="text-center text-2xl">Pennsylvania</p>
-                    <div className="grid grid-cols-2 text-right">
+              <div className="grid grid-cols-4 grid grid-rows-2 md:p-4 auto-rows-auto *:border-r-4 [&>*:nth-child(-n+4)]:border-b-4 [&>*:nth-child(4n)]:border-r-0 md:*:p-4">
+                <div className="text-[#714876] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$37.7 B</p>
                       <p>Funding:</p>
@@ -92,10 +92,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={PaTransitPm} />
                   </div>
                 </div>
-                <div className="text-[#0078ae] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col space-y-4">
-                    <p className="text-center text-2xl">Pennsylvania</p>
-                    <div className="grid grid-cols-2 text-right">
+                <div className="text-[#0078ae] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$7.4 B</p>
                       <p>Funding:</p>
@@ -106,10 +106,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={PaTransitOp} />
                   </div>
                 </div>
-                <div className="text-[#24964f] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col space-y-4">
-                    <p className="text-center text-2xl">Pennsylvania</p>
-                    <div className="grid grid-cols-2 text-right">
+                <div className="text-[#24964f] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$15.0 B</p>
                       <p>Funding:</p>
@@ -120,10 +120,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={PaTransitExp} />
                   </div>
                 </div>
-                <div className="text-[#20a9a6] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col space-y-4">
-                    <p className="text-center text-2xl">Pennsylvania</p>
-                    <div className="grid grid-cols-2 text-right">
+                <div className="text-[#20a9a6] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$7.8 B</p>
                       <p>Funding:</p>
@@ -134,10 +134,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={PaTransitOther} />
                   </div>
                 </div>
-                <div className="text-[#714876] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-center text-2xl">New Jersey</p>
-                    <div className="grid grid-cols-2 text-right">
+                <div className="text-[#714876] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="md:text-center md:text-2xl">New Jersey</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$5.1 B</p>
                       <p>Funding:</p>
@@ -149,10 +149,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={Transitpm} className="mt-auto" />
                   </div>
                 </div>
-                <div className="text-[#0078ae] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-center text-2xl">New Jersey</p>
-                    <div className="grid grid-cols-2 text-right">
+                <div className="text-[#0078ae] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="md:text-center md:text-2xl">New Jersey</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$0.4 B</p>
                       <p>Funding:</p>
@@ -164,10 +164,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={Transittoi} className="mt-auto" />
                   </div>
                 </div>
-                <div className="text-[#24964f] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-center text-2xl">New Jersey</p>
-                    <div className="grid grid-cols-2 text-right">
+                <div className="text-[#24964f] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="md:text-center md:text-2xl">New Jersey</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$8.6 B</p>
                       <p>Funding:</p>
@@ -179,10 +179,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={Transittse} className="mt-auto" />
                   </div>
                 </div>
-                <div className="text-[#20a9a6] font-bold">
-                  <div className="w-1/2 mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-center text-2xl">New Jersey</p>
-                    <div className="grid grid-cols-2 text-right">
+                <div className="text-[#20a9a6] md:font-bold">
+                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="md:text-center md:text-2xl">New Jersey</p>
+                    <div className="grid md:grid-cols-2 md:text-right text-left">
                       <p>Need:</p>
                       <p>$0.3 B</p>
                       <p>Funding:</p>
@@ -199,10 +199,12 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
           <TabPanel>
             <>
-              <div className="grid grid-cols-6 grid grid-rows-2 p-4 auto-rows-auto *:border-r-4 [&>*:nth-child(-n+6)]:border-b-4 [&>*:nth-child(6n)]:border-r-0 *:p-6">
-                <div className="text-[#714876] font-bold space-y-4">
-                  <p className="text-center text-2xl">Pennsylvania</p>
-                  <div className="grid grid-cols-2 text-right">
+              <div className="grid grid-cols-6 grid grid-rows-2 md:p-4 auto-rows-auto *:border-r-4 [&>*:nth-child(-n+6)]:border-b-4 [&>*:nth-child(6n)]:border-r-0 md:*:p-6">
+                <div className="text-[#714876] md:font-bold space-y-4 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    Pennsylvania
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$14.3 B</p>
                     <p>Funding:</p>
@@ -212,9 +214,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                   <img src={PaRoadwayPpm} />
                 </div>
-                <div className="text-[#6f6688] font-bold space-y-4">
-                  <p className="text-center text-2xl">Pennsylvania</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#6f6688] md:font-bold space-y-4 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    Pennsylvania
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$18.8 B</p>
                     <p>Funding:</p>
@@ -224,9 +228,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                   <img src={PaRoadwayBp} />
                 </div>
-                <div className="text-[#009eb8] font-bold space-y-4">
-                  <p className="text-center text-2xl">Pennsylvania</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#009eb8] md:font-bold space-y-4 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    Pennsylvania
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$2.0 B</p>
                     <p>Funding:</p>
@@ -236,9 +242,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                   <img src={PaRoadwaySs} className="w-16 mx-auto" />
                 </div>
-                <div className="text-[#0078ae] font-bold space-y-4">
-                  <p className="text-center text-2xl">Pennsylvania</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#0078ae] md:font-bold space-y-4 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    Pennsylvania
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$7.5 B</p>
                     <p>Funding:</p>
@@ -248,9 +256,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                   <img src={PaRoadwayMoi} />
                 </div>
-                <div className="text-[#24964f] font-bold space-y-4">
-                  <p className="text-center text-2xl">Pennsylvania</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#24964f] md:font-bold space-y-4 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    Pennsylvania
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$2.0 B</p>
                     <p>Funding:</p>
@@ -260,9 +270,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                   <img src={PaRoadwayRe} className="w-16 mx-auto" />
                 </div>
-                <div className="text-[#026227] font-bold space-y-4">
-                  <p className="text-center text-2xl">Pennsylvania</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#026227] md:font-bold space-y-4 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    Pennsylvania
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$11.8 B</p>
                     <p>Funding:</p>
@@ -272,9 +284,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                   <img src={PaRoadwayGt} />
                 </div>
-                <div className="text-[#714876] font-bold flex flex-col gap-y-4">
-                  <p className="text-center text-2xl">New Jersey</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#714876] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    New Jersey
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$8.4 B</p>
                     <p>Funding:</p>
@@ -285,9 +299,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayPpm} />
                   <img src={Roadwayppm} className="mt-auto" />
                 </div>
-                <div className="text-[#6f6688] font-bold flex flex-col gap-y-4">
-                  <p className="text-center text-2xl">New Jersey</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#6f6688] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    New Jersey
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$4.7 B</p>
                     <p>Funding:</p>
@@ -298,9 +314,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayBp} />
                   <img src={Roadwaybp} className="mt-auto" />
                 </div>
-                <div className="text-[#009eb8] font-bold flex flex-col gap-y-4">
-                  <p className="text-center text-2xl">New Jersey</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#009eb8] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    New Jersey
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$0.4 B</p>
                     <p>Funding:</p>
@@ -311,9 +329,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwaySs} className="w-3 mx-auto" />
                   <img src={Roadwayss} className="mt-auto" />
                 </div>
-                <div className="text-[#0078ae] font-bold flex flex-col gap-y-4">
-                  <p className="text-center text-2xl">New Jersey</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#0078ae] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    New Jersey
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$4.8 B</p>
                     <p>Funding:</p>
@@ -324,9 +344,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayMoi} />
                   <img src={Roadwaymoi} className="mt-auto" />
                 </div>
-                <div className="text-[#24964f] font-bold flex flex-col gap-y-4">
-                  <p className="text-center text-2xl">New Jersey</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#24964f] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    New Jersey
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$1.1 B</p>
                     <p>Funding:</p>
@@ -337,9 +359,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayRe} className="w-10 mx-auto" />
                   <img src={Roadwayre} className="mt-auto" />
                 </div>
-                <div className="text-[#026227] font-bold flex flex-col gap-y-4">
-                  <p className="text-center text-2xl">New Jersey</p>
-                  <div className="grid grid-cols-2 text-right">
+                <div className="text-[#026227] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
+                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                    New Jersey
+                  </p>
+                  <div className="grid md:grid-cols-2 md:text-right text-left">
                     <p>Need:</p>
                     <p>$6.3 B</p>
                     <p>Funding:</p>
@@ -353,12 +377,12 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               </div>
             </>
           </TabPanel>
-          <div className="text-[#083346] flex ml-auto w-fit">
-            <div className="flex gap-x-2 border-r-2 border-[#083346] pr-2">
+          <div className="text-[#083346] flex md:ml-auto w-fit md:flex-row flex-col gap-y-2 md:my-0 my-2">
+            <div className="flex gap-x-2 md:border-r-2 border-[#083346] pr-2">
               <div className="h-6 w-6 bg-[#083346] rounded-full" />{" "}
               <strong>FUNDED = $1 Billion YOE</strong>
             </div>
-            <div className="flex gap-x-2 pl-2">
+            <div className="flex gap-x-2 md:pl-2">
               <div className="h-6 w-6 rounded-full border-2 border-[#083346]" />{" "}
               <strong>UNFUNDED = $1 Billion YOE</strong>
             </div>
@@ -390,7 +414,7 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
+          <div className="md:w-[70%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">How Will We Fund the Future?</h2>
             <p className="text-2xl pb-0 z-50">
               <em>Update: Connections 2050</em> includes a Financial Plan that
@@ -406,9 +430,9 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="w-[68%] relative border-l-4 border-[#063446] relative">
+        <div className="md:w-[68%] relative border-l-4 border-[#063446] relative">
           <div className="flex items-center w-full p-4 relative">
-            <Dot width="3%" className="absolute -left-[1.5%]" />
+            <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
               Understanding Our Transportation Needs
             </h2>
@@ -498,14 +522,14 @@ const WhatIsThePlan = () => {
           />
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto pb-20">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-20">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Allocating Available Revenue
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 pt-0 p-6">
+            <div className="flex flex-col space-y-6 pt-0 md:p-6 p-2">
               <p>
                 <strong>
                   The Plan prioritizes investing in the transportation system

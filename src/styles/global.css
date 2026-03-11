@@ -106,9 +106,6 @@ h2 {
   justify-content: center;
 }
 
-.sub-container {
-  width: 70%;
-}
 .flip-card-back {
   transform: rotateY(180deg);
 }

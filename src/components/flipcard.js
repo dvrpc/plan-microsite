@@ -56,7 +56,7 @@ const Flipcard = ({ color, front, back }) => {
             id="back"
             style={{ backgroundColor: color, borderColor: color }}
           >
-            <div className="sub-container text-xs">{back}</div>
+            <div className="md:w-[70%] w-[90%] text-xs">{back}</div>
           </div>
         </div>
       </div>

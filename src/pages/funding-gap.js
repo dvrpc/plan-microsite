@@ -35,7 +35,7 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
+          <div className="md:w-[70%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">Filling the Funding Gap</h2>
             <p className="text-2xl pb-0 z-50">
               To make our shared regional vision a reality, we need{" "}
@@ -60,14 +60,14 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
-          <div className="flex items-center w-full  p-4 relative mt-4">
-            <Dot width="3%" className="absolute -left-[1.5%]" />
+        <div className="md:w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
+          <div className="flex items-center w-full p-4 relative mt-4">
+            <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
               The Diminishing Gas Tax
             </h2>
           </div>
-          <div className="flex p-6 pt-0">
+          <div className="flex md:p-6 p-2 pt-0 md:flex-row flex-col-reverse">
             <div className="space-y-6">
               <p>
                 Most transportation funding comes from{" "}
@@ -93,18 +93,21 @@ const WhatIsThePlan = () => {
                 continue to grow.
               </p>
             </div>
-            <img src={PurchasingPower} className="md:w-2/3 md:ml-6" />
+            <img
+              src={PurchasingPower}
+              className="md:w-2/3 md:ml-6 w-1/2 mx-auto"
+            />
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Limited Local Funding
               </h2>
             </div>
-            <div className="grid grid-cols-5 space-y-6 p-6 pt-0">
+            <div className="md:grid grid-cols-5 space-y-6 md:p-6 p-2 pt-0 flex flex-col">
               <div className="col-span-3 space-y-6">
                 <p>
                   <strong>
@@ -135,7 +138,7 @@ const WhatIsThePlan = () => {
 
               <div className="relative col-span-5">
                 <img src={FundingBox1} className="p-2" />
-                <div className="absolute md:top-[12%] md:left-[5%] text-white space-y-4 p-4">
+                <div className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-4 md:p-4 p-6 top-0 text-[0.5rem] md:text-base">
                   <strong>
                     Transportation access directly affects opportunity.
                   </strong>
@@ -160,14 +163,14 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="w-full bg-[#eef4fb] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className="flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Funding Options
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 pt-0">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0">
               <p>
                 Our current transportation funding model isn’t keeping up with
                 today’s needs. It must be{" "}
@@ -185,11 +188,11 @@ const WhatIsThePlan = () => {
                 to learn about them.
               </strong>
 
-              <div className="grid grid-cols-4 grid-rows-2 gap-y-4 gap-x-4">
+              <div className="grid md:grid-cols-4 grid-cols-2 grid-rows-2 gap-y-4 gap-x-4">
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Mbuf} className="md:w-1/3" />
+                      <img src={Mbuf} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">
                         Mileage Based User Fee
                       </p>
@@ -208,7 +211,7 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Cpf} className="md:w-1/3" />
+                      <img src={Cpf} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">
                         Commercial Property VMT Fee
                       </p>
@@ -227,7 +230,7 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Ht} className="md:w-1/3" />
+                      <img src={Ht} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">Highway Tolls</p>
                     </div>
                   }
@@ -243,7 +246,7 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Es} className="md:w-1/3" />
+                      <img src={Es} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">
                         Electricity Surtax for Home or Public Charging
                       </p>
@@ -262,7 +265,7 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Tdc} className="md:w-1/3" />
+                      <img src={Tdc} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">
                         Tradeable Driving Credits
                       </p>
@@ -281,7 +284,7 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Siif} className="md:w-1/3" />
+                      <img src={Siif} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">
                         Safety/Infrastructure Investment Fees
                       </p>
@@ -301,7 +304,7 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Pp} className="md:w-1/3" />
+                      <img src={Pp} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">Parking Pricing</p>
                     </div>
                   }
@@ -320,7 +323,7 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Cgp} className="md:w-1/3" />
+                      <img src={Cgp} className="md:w-1/3 w-1/2" />
                       <p className="md:w-2/3 leading-none">
                         Congestion Pricing
                       </p>
@@ -347,10 +350,10 @@ const WhatIsThePlan = () => {
                 reliability more quickly and cost-effectively than major
                 construction projects. For example:
               </p>
-              <div className="grid grid-cols-3 gap-x-2">
+              <div className="md:grid grid-cols-3 gap-x-2">
                 <div className="relative md:mt-2">
                   <img src={FundingBox2} className="p-2" />
-                  <div className="absolute md:top-[5%] md:left-[5%] text-white p-4 text-sm">
+                  <div className="absolute top-[5%] md:left-[5%] text-white p-4 text-sm">
                     <strong>
                       Transportation Systems Management and Operations
                     </strong>
@@ -364,7 +367,7 @@ const WhatIsThePlan = () => {
                 </div>
                 <div className="relative">
                   <img src={FundingBox3} className="p-2" />
-                  <div className="absolute md:top-[5%] md:left-[5%] text-white p-6 text-sm">
+                  <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
                     <strong>Smaller, targeted improvements</strong>
                     <p>
                       —like intersection redesigns or transit enhancements—can
@@ -375,7 +378,7 @@ const WhatIsThePlan = () => {
                 </div>
                 <div className="relative">
                   <img src={FundingBox4} className="p-2" />
-                  <div className="absolute md:top-[5%] md:left-[5%] text-white p-6 text-sm">
+                  <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
                     <strong>Repairs and upgrades</strong>
                     <p>
                       can support multiple travel options, such as fixing

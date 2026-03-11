@@ -108,7 +108,7 @@ const MRPList = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
+          <div className="md:w-[70%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">Major Regional Project List</h2>
             <p className="text-2xl pb-0 z-50">
               Explore all projects included in Update: Connections 2050. Each
@@ -153,8 +153,8 @@ const MRPList = () => {
             </p>
           </div>
         </div>
-        <div className="w-[68%] relative border-l-4 border-[#063446]">
-          <div className="flex w-full p-4 relative flex-col">
+        <div className="md:w-[68%] w-full relative border-l-4 border-[#063446]">
+          <div className="flex w-full md:p-6 p-2 relative flex-col">
             <strong>Start your search:</strong>
             <span>State</span>
             <Select
@@ -203,8 +203,8 @@ const MRPList = () => {
         </div>
 
         <div className="w-full bg-[#eaf3fb] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
-            <div className="flex flex-col space-y-6 p-6 pt-0">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 overflow-x-auto">
               <table className="table-auto">
                 <thead className="text-left">
                   <tr>

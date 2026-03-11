@@ -22,9 +22,11 @@ const Resources = () => {
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="w-[70%] mx-auto space-y-4">
-            <h2 className="text-3xl font-bold">Plan Documents & Resources</h2>
-            <p className="text-2xl">
+          <div className="md:w-[70%] mx-auto space-y-4">
+            <h2 className="md:text-3xl text-xl font-bold">
+              Plan Documents & Resources
+            </h2>
+            <p className="md:text-2xl text-lg">
               Find everything you need to explore the Plan in one place. Access
               PDF documents and supporting resources, learn how to get involved,
               and get answers to common questions about what the Plan means for
@@ -33,14 +35,14 @@ const Resources = () => {
           </div>
         </div>
         <div className="w-full bg-white relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Download & Print
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
               <ul className="ml-8 text-2xl space-y-2">
                 <li>
                   <a href="/" className="underline text-blue-600 ">
@@ -97,14 +99,14 @@ const Resources = () => {
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Resources
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
               <ul className="ml-8 text-2xl space-y-2">
                 <li>
                   <a href="/" className="underline text-blue-600">
@@ -141,14 +143,14 @@ const Resources = () => {
           </div>
         </div>
         <div className="w-full bg-white relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Get involved
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
               <p>
                 Every resident has a role to play in shaping our region’s
                 future. By staying informed, speaking up, and engaging in
@@ -166,14 +168,14 @@ const Resources = () => {
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
-              <Dot width="3%" className="absolute -left-[1.5%]" />
+              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="text-2xl text-[#063446] font-bold ml-[1.5%]">
                 Frequently Asked Questions
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 p-6 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
               <Accordion label="What is the purpose of the Plan?">
                 <p>
                   Update: Connections 2050 is Greater Philadelphia's Long-Range

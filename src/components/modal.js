@@ -13,7 +13,7 @@ const Modal = ({ children, toggleModal }) => {
         className="fixed inset-0 z-[102] hidden w-screen overflow-y-auto"
       >
         <div className="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
-          <div className="relative w-[75%] transform rounded-md bg-[#EFF0F2] p-4 text-left shadow-xl transition-all sm:my-8">
+          <div className="relative md:w-[75%] w-[90%] transform rounded-md bg-[#EFF0F2] p-4 text-left shadow-xl transition-all sm:my-8">
             <button
               className="absolute -top-3 right-1/2 flex h-8 w-8 items-center justify-center rounded-full border pb-[0.1rem] pl-[0.06rem] text-3xl text-white shadow-lg bg-[#063446]"
               onClick={toggleModal}
