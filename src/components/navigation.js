@@ -14,6 +14,16 @@ export default function Navigation() {
       ],
     },
     {
+      title: "Financial",
+      path: "",
+      children: [
+        { title: "Financial", path: "/financial" },
+        { title: "Funding Gap", path: "/funding-gap" },
+        { title: "MRP Web Map", path: "/mrp-webmap" },
+        { title: "MRP List", path: "/mrp-list" },
+      ],
+    },
+    {
       title: "Vision",
       path: "/vision",
       children: [
@@ -139,13 +149,13 @@ const DropdownMenu = ({ menu, items, mobile }) => {
             leaveFrom="lg:transform lg:opacity-100 lg:scale-100"
             leaveTo="lg:transform lg:opacity-0 lg:scale-95"
           >
-            <Menu.Items className="z-[100] lg:w-56 origin-top-left  rounded-md  lg:absolute lg:right-0  focus:outline-none bg-[#dfebf5]">
+            <Menu.Items className="z-[100] lg:w-56 origin-top-left rounded-md lg:absolute lg:right-0 focus:outline-none bg-[#dfebf5] text-left">
               <div className={`${!mobile ? "py-3" : ""}`}>
                 {items.map((item, index) => (
                   <Menu.Item as="div" key={index}>
                     {({ active }) => (
                       <Link to={item.path}>
-                        <a className="flex space-x-2 lg:space-x-4 items-center px-5 py-2 w-min">
+                        <a className="flex space-x-2 lg:space-x-4 items-center px-5 py-2">
                           <span> {item.title}</span>
                         </a>
                       </Link>
