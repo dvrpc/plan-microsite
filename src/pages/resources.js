@@ -38,7 +38,7 @@ const Resources = () => {
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Download & Print
               </h2>
             </div>
@@ -102,7 +102,7 @@ const Resources = () => {
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Resources
               </h2>
             </div>
@@ -146,7 +146,7 @@ const Resources = () => {
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Get involved
               </h2>
             </div>
@@ -171,7 +171,7 @@ const Resources = () => {
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="md:text-2xl text-lg text-[#063446] font-bold ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Frequently Asked Questions
               </h2>
             </div>

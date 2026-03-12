@@ -65,7 +65,7 @@ const WhatIsThePlan = () => {
         <div className="md:w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
           <div className="flex items-center w-full md:p-4 relative mt-4">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               The Diminishing Gas Tax
             </h2>
           </div>
@@ -105,7 +105,7 @@ const WhatIsThePlan = () => {
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full p-4 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Limited Local Funding
               </h2>
             </div>
@@ -168,7 +168,7 @@ const WhatIsThePlan = () => {
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className="flex items-center w-full md:p-4 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Funding Options
               </h2>
             </div>

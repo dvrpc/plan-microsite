@@ -81,7 +81,7 @@ const MrpWebmap = () => {
         <div className="md:w-[68%] w-full relative border-l-4 border-[#063446]">
           <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               MRP Web Map
             </h2>
           </div>
