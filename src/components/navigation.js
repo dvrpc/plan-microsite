@@ -10,7 +10,16 @@ export default function Navigation() {
       path: "",
       children: [
         { title: "Trends", path: "/trends" },
-        { title: "Forces", path: "/forces" },
+        { title: "Forecasts", path: "/forecasts" },
+      ],
+    },
+    {
+      title: "Vision",
+      path: "/vision",
+      children: [
+        { title: "Vision", path: "/vision" },
+        { title: "Plan Elements", path: "/plan-elements" },
+        { title: "Strategies", path: "/strategies" },
       ],
     },
     {
@@ -21,15 +30,6 @@ export default function Navigation() {
         { title: "Funding Gap", path: "/funding-gap" },
         { title: "MRP Web Map", path: "/mrp-webmap" },
         { title: "MRP List", path: "/mrp-list" },
-      ],
-    },
-    {
-      title: "Vision",
-      path: "/vision",
-      children: [
-        { title: "Vision", path: "/vision" },
-        { title: "Plan Elements", path: "/plan-elements" },
-        { title: "Strategies", path: "/strategies" },
       ],
     },
     { title: "Projects", path: "/mrp-list" },

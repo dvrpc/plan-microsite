@@ -18,6 +18,8 @@ const Trends = () => {
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
             <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
+            <Link to="/trends">Trends & Forces</Link>
+            <ChevronRightIcon width="1.5%" />
             <Link>Trends</Link>
           </div>
         </div>

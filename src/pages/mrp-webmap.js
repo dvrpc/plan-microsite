@@ -45,6 +45,8 @@ const MrpWebmap = () => {
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
             <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
+            <Link to="/financial">Financial Plan</Link>
+            <ChevronRightIcon width="1.5%" />
             <Link>MRP Webmap</Link>
           </div>
         </div>

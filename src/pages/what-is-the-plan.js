@@ -16,7 +16,7 @@ const WhatIsThePlan = () => {
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
             <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>What is the Plan?</Link>
+            <Link>About the Plan</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
