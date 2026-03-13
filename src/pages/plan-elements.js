@@ -40,33 +40,33 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         onChange={setSelectedIndex}
       >
         <TabList className="flex md:flex-row flex-col text-white bg-[#063446]">
-          <Tab className="p-3 font-bold bg-[#423d59] text-white md:w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#423d59] text-white md:w-1/2 rounded-t-lg aria-selected:border-none border border-white">
             Transportation
           </Tab>
-          <Tab className="p-3 font-bold bg-[#711e53] text-white md:w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#711e53] text-white md:w-1/2 rounded-t-lg aria-selected:border-none border border-white">
             Economy
           </Tab>
-          <Tab className="p-3 font-bold bg-[#004c6d] text-white md:w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#004c6d] text-white md:w-1/2 rounded-t-lg aria-selected:border-none border border-white">
             Communities
           </Tab>
-          <Tab className="p-3 font-bold bg-[#006227] text-white md:w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#006227] text-white md:w-1/2 rounded-t-lg aria-selected:border-none border border-white">
             Environment
           </Tab>
-          <Tab className="p-3 font-bold bg-[#147272] text-white md:w-1/2 rounded-t-lg">
+          <Tab className="p-3 font-bold bg-[#147272] text-white md:w-1/2 rounded-t-lg aria-selected:border-none border border-white">
             Infrastructure and Utility Services
           </Tab>
         </TabList>
         <TabPanels className="flex-1 justify-center">
           <TabPanel>
             <div className="text-center bg-[#423d59] text-white md:p-6 p-2 p-2">
-              <p className="md:text-2xl text-xl">
+              <p className="md:text-2xl text-xl font-light">
                 The Transportation Vision for 2050 is:
               </p>
-              <p className="md:text-2xl text-xl font-bold">
-                A safe, modern, multimodal, network for all.
+              <p className="md:text-3xl text-xl font-bold">
+                A safe, modern, multimodal, network for all
               </p>
             </div>
-            <img src={Transportation} className="w-4/5 mx-auto" />
+            <img src={Transportation} className="w-1/2 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
@@ -140,7 +140,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   className="md:text-2xl text-lg mx-auto p-2 bg-[#423d59] text-white my-4"
                   to="/strategies"
                 >
-                  Click to see Strategies for achieving the Vision
+                  Strategies for Achieving the Vision
                 </Link>
               </div>
             </div>
@@ -150,12 +150,12 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               <p className="md:text-2xl text-lg">
                 The Economy Vision for 2050 is:
               </p>
-              <p className="md:text-2xl text-lg font-bold">
+              <p className="md:text-3xl text-lg font-bold">
                 An innovative and connected economy with opportunity and shared
                 prosperity
               </p>
             </div>
-            <img src={Economy} className="w-4/5 mx-auto" />
+            <img src={Economy} className="w-1/2 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
@@ -170,7 +170,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   where workers want to live and businesses can grow. Expanding
                   access to opportunity through workforce development,
                   innovation, and entrepreneurship will help families achieve
-                  financial mobility and position Greater Philadelphia as a
+                  financial mobility and position Greater Philadelphia as a{" "}
                   <strong>
                     thriving, resilient economy in a changing world
                   </strong>
@@ -222,7 +222,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   className="md:text-2xl text-lg mx-auto p-2 bg-[#711e53] text-white my-4"
                   to="/strategies"
                 >
-                  Click to see Strategies for achieving the Vision
+                  Strategies for Achieving the Vision
                 </Link>
               </div>
             </div>
@@ -232,11 +232,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               <p className="md:text-2xl text-lg">
                 The Communities Vision for 2050 is:
               </p>
-              <p className="md:text-2xl text-lg font-bold">
+              <p className="md:text-3xl text-lg font-bold">
                 Integrated, healthy, and walkable communities
               </p>
             </div>
-            <img src={Communities} className="w-4/5 mx-auto" />
+            <img src={Communities} className="w-1/2 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
@@ -295,7 +295,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   className="md:text-2xl text-lg mx-auto p-2 bg-[#004c6d] text-white my-4"
                   to="/strategies"
                 >
-                  Click to see Strategies for achieving the Vision
+                  Strategies for Achieving the Vision
                 </Link>
               </div>
             </div>
@@ -305,12 +305,12 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               <p className="md:text-2xl text-lg">
                 The Environment Vision for 2050 is:
               </p>
-              <p className="md:text-2xl text-lg font-bold">
+              <p className="md:text-3xl text-lg font-bold">
                 A preserved and restored natural environment and healthy
                 ecological systems
               </p>
             </div>
-            <img src={Environment} className="w-4/5 mx-auto" />
+            <img src={Environment} className="w-1/2 mx-auto" />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
@@ -320,7 +320,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   offers a wealth of green spaces. Expanding and restoring
                   natural areas—forests, wetlands, tree canopy, parks, and
                   natural infrastructure—can improve air and water quality,
-                  provide wildlife habitat, reduce heat, and{" "}
+                  provide wildlife habitats, reduce heat, and{" "}
                   <strong>support community health</strong>. The region is also
                   working toward a target of{" "}
                   <strong>
@@ -373,7 +373,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   className="md:text-2xl text-lg mx-auto p-2 bg-[#006227] text-white my-4"
                   to="/strategies"
                 >
-                  Click to see Strategies for achieving the Vision
+                  Strategies for Achieving the Vision
                 </Link>
               </div>
             </div>
@@ -383,7 +383,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               <p className="md:text-2xl text-lg">
                 The Infrastructure and Utility Services Vision for 2050 is:
               </p>
-              <p className="md:text-2xl text-lg font-bold">
+              <p className="md:text-3xl text-lg font-bold">
                 Clean, reliable, and affordable infrastructure and utility
                 services resilient to the effects of extreme weather
               </p>
@@ -451,7 +451,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   className="md:text-2xl text-lg mx-auto p-2 bg-[#147272] text-white my-4"
                   to="/strategies"
                 >
-                  Click to see Strategies for achieving the Vision
+                  Strategies for Achieving the Vision
                 </Link>
               </div>
             </div>
@@ -500,9 +500,9 @@ const WhatIsThePlan = () => {
             <p className="md:text-2xl text-lg pb-0 z-50">
               The Plan is organized into five key elements—
               <strong>Transportation, Economy, Communities, Environment</strong>
-              , and <strong>Infrastructure & Utility Services</strong>—each with
-              three goals that guide our regional vision. Explore the elements
-              below to see what the vision looks like in practice.
+              , and <strong>Infrastructure and Utility Services</strong>—each
+              with three goals that guide our regional vision. Explore the
+              elements below to see what the vision looks like in practice.
             </p>
           </div>
         </div>

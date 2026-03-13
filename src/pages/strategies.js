@@ -20,7 +20,7 @@ const WhatIsThePlan = () => {
     { value: "Environment", label: "Environment" },
     {
       value: "Infrastructure & Utility Services",
-      label: "Infrastructure & Utility Services",
+      label: "Infrastructure and Utility Services",
     },
   ]
   const partyOptions = [

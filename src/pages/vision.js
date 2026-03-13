@@ -199,7 +199,7 @@ const Vision = () => {
                 <p>
                   The Plan is built around five key{" "}
                   <strong>Plan Elements</strong>: Transportation, Economy,
-                  Communities, Environment, and Infrastructure & Utility
+                  Communities, Environment, and Infrastructure and Utility
                   Services. Each element includes three <strong>Goals</strong>{" "}
                   that move us closer to our regional vision, along with{" "}
                   <strong>Strategies</strong> that outline how to achieve them
