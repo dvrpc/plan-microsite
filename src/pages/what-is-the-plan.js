@@ -16,12 +16,12 @@ const WhatIsThePlan = () => {
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
             <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>About the Plan</Link>
+            <Link>About</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
           <div className="md:w-[70%] mx-auto space-y-4">
-            <h2 className="md:text-3xl text-xl font-bold">What is the Plan?</h2>
+            <h2 className="md:text-3xl text-xl font-bold">What Is the Plan?</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span>{" "}
               is Greater Philadelphia's Long-Range Plan (Plan). The Plan serves
@@ -29,7 +29,7 @@ const WhatIsThePlan = () => {
               to prioritize funding for capital transportation investment
               accordingly.
             </p>
-            <p>
+            <p className="md:text-2xl text-lg pb-0 z-50">
               The Plan looks ahead to how our region will grow and
               change—considering population trends, the economy, the
               environment, and technology—to guide investments in roads,
@@ -52,9 +52,9 @@ const WhatIsThePlan = () => {
               into a <strong>diverse economic and cultural hub</strong>. The
               region is a complex mosaic of 350 municipalities, from the
               nation’s sixth largest city to small rural hamlets with a
-              wide-range of different communities in between. Each of these
-              places has different needs and varying levels of resources to
-              respond to them.Today’s regional economy is powered by{" "}
+              wide-range of communities in between. Each of these places has
+              different needs and varying levels of resources to respond to
+              them. Today’s regional economy is powered by{" "}
               <strong>
                 healthcare, education, technology, and creative sectors
               </strong>
@@ -77,7 +77,11 @@ const WhatIsThePlan = () => {
               Addressing these issues requires regional{" "}
               <strong>coordination</strong> and <strong>collaboration</strong>
               —the heart of{" "}
-              <a href="https://www.dvrpc.org/about/" target="_blank">
+              <a
+                href="https://www.dvrpc.org/about/"
+                target="_blank"
+                className="underline"
+              >
                 DVRPC’s mission
               </a>
               .
@@ -158,13 +162,11 @@ const WhatIsThePlan = () => {
                   ongoing studies, planning initiatives, and technical support
                   that help local governments advance shared goals. Programs and
                   activities align with the Plan’s five key elements:
-                  <em>
-                    Transportation, Economy, Communities, Environment,
-                  </em>{" "}
-                  and <em>Infrastructure and Utilities</em>.
+                  Transportation, Economy, Communities, Environment, and
+                  Infrastructure and Utility Services.
                 </li>
               </ul>
-              <img src={PlanProcess} />
+              <img src={PlanProcess} className="md:w-2/3" />
             </div>
           </div>
         </div>

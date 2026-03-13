@@ -27,7 +27,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         selectedIndex={selectedIndex}
         onChange={setSelectedIndex}
       >
-        <TabList className="flex text-white">
+        <TabList className="flex text-white md:w-2/3 md:ml-auto md:*:rounded-t-md">
           <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#0078af] data-[selected]:text-[#0078af] [&:not([data-selected])]:text-white w-1/2">
             Population
           </Tab>
@@ -35,14 +35,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             Employment
           </Tab>
         </TabList>
-        <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2">
-          <span className="italic">
-            Explore the web map to view absolute change, percent change, and
-            total forecasted population by municipality throughout the region.
-          </span>
+        <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2 pl-[33%]">
           <TabPanel>
             <span>
-              By 2050, the Greater Philadelphia region is projected to add about
+              By 2050, the Greater Philadelphia region is projected to add about{" "}
               <strong>450,000 new residents</strong>, bringing the total
               population to more than <strong>6.3 million</strong>—a 7% increase
               since 2020. Explore the web map to view absolute change, percent
@@ -60,6 +56,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               employment by municipality throughout the region.
             </span>
           </TabPanel>
+          <span className="italic">
+            Explore the web map to view absolute change, percent change, and
+            total forecasted population by municipality throughout the region.
+          </span>
         </TabPanels>
       </TabGroup>
     </div>
@@ -102,20 +102,20 @@ const WhatIsThePlan = () => {
             <p className="md:text-2xl text-lg pb-0 z-50">
               While no one can predict the future, forecasts give us a roadmap
               to make <strong>smarter investments</strong> in roads, buses,
-              trains, and communities. Overall, the region is expected to see
+              trains, and communities. Overall, the region is expected to see{" "}
               <strong>steady growth in both people and jobs</strong> through
               2050.
             </p>
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446]">
-          <div className="flex items-center w-full md:p-4 p-2 relative">
+          <div className="flex items-center w-full md:p-6 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               Explore the Forecasts in Maps
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0">
+          <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
             <p>
               How will Greater Philadelphia’s people and jobs be distributed by
               2050? These interactive maps show where growth and decline are
@@ -144,16 +144,19 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="relative h-full w-full">
-          <div className="md:absolute z-[100] flex h-full md:w-1/3 md:pl-[17%] bg-[#063446]">
-            <Tabs
-              selectedLayer={selectedLayer}
-              selectedIndex={selectedTab}
-              setSelectedIndex={setSelectedTab}
-            />
+          <div className="flex h-full md:flex-row flex-col">
+            <div className="md:w-2/5 z-[100] flex md:min-h-full">
+              <Tabs
+                selectedLayer={selectedLayer}
+                selectedIndex={selectedTab}
+                setSelectedIndex={setSelectedTab}
+              />
 
-            <Legend selectedLayer={selectedLayer} />
+              <Legend selectedLayer={selectedLayer} />
+            </div>
+
+            <PopEmpMap selectedLayer={selectedLayer} />
           </div>
-          <PopEmpMap selectedLayer={selectedLayer} />
           <div className="absolute right-0 md:top-0 top-[40%] w-52 m-3">
             <Menu>
               <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full">
@@ -230,15 +233,15 @@ const WhatIsThePlan = () => {
         </div>
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
-          <div className="flex flex-col space-y-6 m-6 text-[#063446]">
+          <div className="flex flex-col space-y-6 md:m-6 m-2 text-[#063446]">
             {selectedTab === 0 && (
               <>
                 <p>
                   Most new residents will live in the region’s cities, but the
-                  fastest growth is expected in Pennsylvania’s suburban
-                  counties, especially Montgomery and Chester. Philadelphia is
-                  projected to gain about 130,000 people, nearly one-third of
-                  all regional growth. Together,{" "}
+                  fastest growth is expected in Pennsylvania’s suburban counties
+                  especially Montgomery and Chester. Philadelphia is projected
+                  to gain about 130,000 people, nearly one-third of all regional
+                  growth. Together,{" "}
                   <strong>Philadelphia, Montgomery, and Chester</strong>{" "}
                   counties will account for almost{" "}
                   <strong>
@@ -248,7 +251,7 @@ const WhatIsThePlan = () => {
                 </p>
                 <p>
                   The region’s population is also <strong>getting older</strong>
-                  . Fewer births and longer lifespans mean that by 2050, the
+                  . Fewer births and longer lifespans, mean that by 2050, the
                   share of residents aged{" "}
                   <strong>65 and older will grow by nearly 50%</strong>, while
                   those under 30 will decline slightly. This shift mirrors
@@ -257,7 +260,7 @@ const WhatIsThePlan = () => {
                 </p>
                 <p>
                   Household types are changing, too, as families are adapting to
-                  affordability pressures. More residents are living in
+                  affordability pressures. More residents are living in{" "}
                   <strong>
                     multifamily housing, multigenerational households
                   </strong>
@@ -274,7 +277,7 @@ const WhatIsThePlan = () => {
                 <p>
                   The <strong>healthcare and social services</strong> sector is
                   projected to remain the region’s largest employer, expanding
-                  as the population ages and demand for care increases.
+                  as the population ages and demand for care increases.{" "}
                   <strong>Transportation and warehousing</strong> jobs are
                   expected to grow rapidly due to e-commerce and expanded
                   delivery networks.

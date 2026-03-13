@@ -8,6 +8,7 @@ import TransportationMeans from "../images/transportation-means.png"
 import Ai from "../images/ai.png"
 import Tp from "../images/tp@4x.png"
 import Accordion from "../components/accordion"
+import { Tooltip } from "react-tippy"
 
 const Trends = () => {
   return (
@@ -26,7 +27,7 @@ const Trends = () => {
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
           <div className="md:w-[70%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
-              What’s Shaping Our Future?
+              What Is Shaping Our Future?
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Each update to the region’s Plan begins with a look at the{" "}
@@ -46,13 +47,13 @@ const Trends = () => {
         </div>
         <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Remote Work and Post-COVID Commute Patterns
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
               <p>
                 Remote and hybrid work have reshaped travel behavior across
                 Greater Philadelphia, changing where people live, how they get
@@ -89,10 +90,11 @@ const Trends = () => {
                   MEANS OF TRANSPORTAION TO WORK BY MODE SHARE
                 </h4>
                 <img
+                  className="md:w-1/2 mx-auto"
                   alt="Means of Transportation to Work by Mode-share"
                   src={TransportationMeans}
                 />
-                <small>
+                <small className="md:mx-auto">
                   Source: U.S. Census Bureau’s American Community Survey
                   Five-Year Estimates
                   <br /> *No data available for 2020 due to the COVID-19
@@ -105,23 +107,32 @@ const Trends = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex items-center w-full md:p-4 p-2 relative">
+            <div className="flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Artificial Intelligence
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2">
+            <div className="flex flex-col space-y-6 md:p-6 md:pt-0 p-2">
               <p>
-                Artificial intelligence (AI) technologies are transforming how
-                infrastructure is planned, managed, and maintained—offering both
-                opportunities and challenges for the region’s future.
+                <Tooltip
+                  title="Artificial intelligence (AI) refers to computer systems that can perform tasks that typically require human intelligence—such as learning, analyzing data, recognizing patterns, and making decisions."
+                  position="top"
+                  trigger="click"
+                >
+                  <span className="underline hover:cursor-pointer">
+                    Artificial intelligence (AI)
+                  </span>
+                </Tooltip>{" "}
+                technologies are transforming how infrastructure is planned,
+                managed, and maintained—offering both opportunities and
+                challenges for the region’s future.
               </p>
               <Accordion label="Read More">
                 <p>
                   Across the U.S., AI is being used to{" "}
                   <strong>optimize traffic flow</strong>, improve{" "}
-                  <strong>transit reliability</strong>, and monitor
+                  <strong>transit reliability</strong>, and monitor{" "}
                   <strong>infrastructure conditions</strong> in real time.
                 </p>
                 <p>
@@ -132,11 +143,11 @@ const Trends = () => {
                   , and community impact.
                 </p>
                 <h4 className="mx-auto text-[#16819a] font-bold text-lg">
-                  AI PROCESSING FOR TRANSPORTAION
+                  AI PROCESSING FOR TRANSPORTATION
                 </h4>
                 <img
                   src={Ai}
-                  className="mx-auto"
+                  className="mx-auto md:w-1/2"
                   alt="How AI Processing for Transportation Works"
                 />
               </Accordion>
@@ -145,13 +156,13 @@ const Trends = () => {
         </div>
         <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Ridesharing and Automated Vehicle Programs
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2">
+            <div className="flex flex-col space-y-6 md:p-6 md:pt-0 p-2">
               <p>
                 New mobility options—from shared rides to automated shuttles—are
                 expanding access to transportation and redefining how people
@@ -160,13 +171,12 @@ const Trends = () => {
               <Accordion label="Read More">
                 <p>
                   Governments and private partners are testing{" "}
-                  <u>ridesharing</u>,<u>microtransit</u>, and{" "}
-                  <u>automated vehicle</u>
-                  programs to improve connections in areas underserved by
-                  traditional transit. DVRPC and local partners are exploring
-                  how these technologies can improve access to jobs, serve
-                  people with disabilities, and connect residents to essential
-                  services.
+                  <u>ridesharing</u>, <u>microtransit</u>, and{" "}
+                  <u>automated vehicle</u> programs to improve connections in
+                  areas underserved by traditional transit. DVRPC and local
+                  partners are exploring how these technologies can improve
+                  access to jobs, serve people with disabilities, and connect
+                  residents to essential services.
                 </p>
                 <p>
                   Examples include GOTrenton!, the Navy Yard Automated Shuttle,
@@ -179,8 +189,8 @@ const Trends = () => {
           </div>
         </div>
         <div className="w-full bg-[#d5d1db] relative">
-          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+          <div className="md:w-[68%] mx-auto">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot
                 width="3%"
                 className="md:absolute -left-[1.5%] top-5 hidden"
@@ -191,7 +201,7 @@ const Trends = () => {
                 </h2>
               </div>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2">
+            <div className="flex flex-col space-y-6 md:p-6 md:pt-0 p-2">
               <p>
                 DVRPC’s{" "}
                 <a
@@ -210,7 +220,7 @@ const Trends = () => {
                   region is advancing toward the Plan’s vision. Current trends
                   show improvement in{" "}
                   <strong>
-                    bridge conditions, business growth, and housing production,
+                    bridge conditions, business growth, and housing production,{" "}
                   </strong>
                   while there continue to be challenges in{" "}
                   <strong>
