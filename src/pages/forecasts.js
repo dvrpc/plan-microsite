@@ -27,7 +27,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         selectedIndex={selectedIndex}
         onChange={setSelectedIndex}
       >
-        <TabList className="flex text-white md:w-2/3 md:ml-auto md:*:rounded-t-md">
+        <TabList className="flex text-white md:w-2/3 md:ml-auto md:*:rounded-t-lg">
           <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#0078af] data-[selected]:text-[#0078af] [&:not([data-selected])]:text-white w-1/2">
             Population
           </Tab>

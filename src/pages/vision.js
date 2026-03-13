@@ -94,8 +94,8 @@ const Vision = () => {
               long-range plan provides.{" "}
               <strong>The regional vision for 2050</strong> imagines a Greater
               Philadelphia that is safer, more connected, and more
-              resilient—where communities grow sustainably, people can move
-              easily and affordably, and natural resources are protected.
+              resilient—where communities prosper, people can move easily and
+              affordably, and natural resources are protected.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               DVRPC works with partners across the region to shape this shared
@@ -107,13 +107,16 @@ const Vision = () => {
               looks at the <strong>big picture</strong>, connecting all the
               pieces that make our region a great place to live and thrive.
             </p>
-            <p className="md:text-2xl text-lg pb-0 z-50">
-              The regional vision for 2050 is a Greater Philadelphia that
+            <h2 className="md:text-5xl mx-auto md:w-3/4 md:text-center md:py-12">
+              The Regional Vision for 2050 is a Greater Philadelphia that
               provides:
-            </p>
-            <div className="-ml-[5%] -mr-[5%]">
+            </h2>
+            <div className="pb-6">
               <Bubbles />
             </div>
+            <h2 className="md:text-3xl text-lg pb-0 z-50 mx-auto text-center">
+              Click on each Plan Element above to explore more
+            </h2>
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
@@ -156,7 +159,7 @@ const Vision = () => {
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
-          <div className="items-center w-full md:p-4 p-2 relative space-y-6">
+          <div className="items-center w-full md:p-6 p-2 relative space-y-6">
             <p>
               These maps use existing passenger rail and a proposed line to
               create a <strong>visual guide to strategic growth</strong>—helping
@@ -164,34 +167,47 @@ const Vision = () => {
               support walkable, vibrant communities where people can live, work,
               and play.
             </p>
-            <Accordion label="Vision Survey Feedback">
-              <p>
-                The regional vision reflects the ideas and priorities of the
-                people who live and work in Greater Philadelphia. Through a
-                public survey with both multiple-choice and open-ended
-                questions, participants shared what they liked (or didn’t) about
-                the previous Plan and suggested what to add, change, or leave
-                out. We also asked for feedback on new topics like
-                infrastructure and utility services.
-              </p>
-              <p>
-                More than <strong>1,300 people from every county</strong>{" "}
-                weighed in, and their input helped shape this vision. Here’s a
-                snapshot of what we heard:
-              </p>
-              <img src={Feedback} className="md:w-2/3 mx-auto" />
-            </Accordion>
-            <Accordion label="Building Blocks of the Vision">
-              <p>
-                The Plan is built around five key <strong>Plan Elements</strong>
-                : Transportation, Economy, Communities, Environment, and
-                Infrastructure & Utility Services. Each element includes three{" "}
-                <strong>Goals</strong> that move us closer to our regional
-                vision, along with Strategies that outline how to achieve them
-                and identify who can help make them happen.
-              </p>
-              <img src={Elements} className="md:w-2/3 mx-auto" />
-            </Accordion>
+          </div>
+        </div>
+        <div className="w-full bg-[#cbe5f3] relative">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
+            <div className="flex items-center w-full md:p-6 p-2 relative">
+              <Accordion label="Vision Survey Feedback">
+                <p>
+                  The regional vision reflects the ideas and priorities of the
+                  people who live and work in Greater Philadelphia. Through a
+                  public survey with both multiple-choice and open-ended
+                  questions, participants shared what they liked (or didn’t)
+                  about the previous Plan and suggested what to add, change, or
+                  leave out. We also asked for feedback on new topics like
+                  infrastructure and utility services.
+                </p>
+                <p>
+                  More than <strong>1,300 people from every county</strong>{" "}
+                  weighed in, and their input helped shape this vision. Here’s a
+                  snapshot of what we heard:
+                </p>
+                <img src={Feedback} className="md:w-2/3 mx-auto" />
+              </Accordion>
+            </div>
+          </div>
+        </div>
+        <div className="w-full relative">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
+            <div className="flex items-center w-full md:p-6 p-2 relative">
+              <Accordion label="Building Blocks of the Vision">
+                <p>
+                  The Plan is built around five key{" "}
+                  <strong>Plan Elements</strong>: Transportation, Economy,
+                  Communities, Environment, and Infrastructure & Utility
+                  Services. Each element includes three <strong>Goals</strong>{" "}
+                  that move us closer to our regional vision, along with{" "}
+                  <strong>Strategies</strong> that outline how to achieve them
+                  and identify who can help make them happen.
+                </p>
+                <img src={Elements} className="md:w-2/3 mx-auto" />
+              </Accordion>
+            </div>
           </div>
         </div>
       </div>
