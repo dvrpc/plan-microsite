@@ -9,10 +9,13 @@ import { Link } from "gatsby"
 
 const Bubbles = () => {
   return (
-    <div className="md:flex md:space-x-2 md:[&>*]:w-[15.5rem] [&>*]:relative [&>*]:h-44 md:[&>*]:h-auto w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-center items-center md:my-12 font-[Inclusive Sans]! leading-tight justify-center grid grid-cols-2 md:text-lg text-xs">
-      <div>
-        <Purple width="100%" className="absolute z-10" />
-        <p className="z-50 w-[90%]">
+    <div
+      className="md:flex md:space-x-2 md:[&>*]:w-[16rem] [&>*]:relative md:[&>*]:h-auto w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-center items-center md:my-12 font-[Inclusive Sans]! leading-tight justify-center grid grid-cols-2 md:text-[0.9vw] text-xs grid-rows-3 md:grid-rows-1 gap-y-4"
+      id="bubbles"
+    >
+      <div className="relative">
+        <Purple width="100%" className="z-10" />
+        <p className="z-50 absolute md:p-3 p-5">
           A safe, modern, multimodal{" "}
           <Link
             to="/plan-elements?element=transportation"
@@ -23,9 +26,9 @@ const Bubbles = () => {
           network for all
         </p>
       </div>
-      <div>
+      <div className="relative">
         <Pink width="100%" className="absolute z-10" />
-        <p className="z-50 w-[90%]">
+        <p className="z-50 absolute md:p-3 p-5">
           An innovative and connected{" "}
           <Link
             to="/plan-elements?element=economy"
@@ -36,9 +39,9 @@ const Bubbles = () => {
           with opportunity and shared prosperity for all
         </p>
       </div>
-      <div>
+      <div className="relative">
         <Blue width="100%" className="absolute z-10" />
-        <p className="z-50 w-[90%]">
+        <p className="z-50 absolute md:p-3 p-5">
           Healthy, walkable, and vibrant{" "}
           <Link
             to="/plan-elements?element=communities"
@@ -48,9 +51,9 @@ const Bubbles = () => {
           </Link>
         </p>
       </div>
-      <div>
+      <div className="relative">
         <Green width="100%" className="absolute z-10" />
-        <p className="z-50 w-[90%]">
+        <p className="z-50 absolute md:p-3 p-5">
           A preserved and restored natural{" "}
           <Link
             to="/plan-elements?element=environment"
@@ -61,9 +64,9 @@ const Bubbles = () => {
           with thriving ecological systems
         </p>
       </div>
-      <div>
+      <div className="relative">
         <Turq width="100%" className="absolute z-10 " />
-        <p className="z-50 w-[90%]">
+        <p className="z-50 absolute md:p-3 p-5">
           Clean, reliable and affordable{" "}
           <Link
             to="/plan-elements?element=infrastructure"
