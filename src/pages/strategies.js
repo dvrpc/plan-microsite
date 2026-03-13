@@ -110,22 +110,22 @@ const WhatIsThePlan = () => {
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Change won't come overnight, and it won't happen by doing things
-              the same old way. Achieving this vision will take{" "}
+              the same old way. Achieving our vision will take{" "}
               <strong>bold action and collaboration</strong> acrosss the region,
               with everyone playing a part.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Even though each goal and strategy shows up just once,
-              crosscutting themes - like how goods move around the region, how
-              we use land, how easy it is to get where you need to go, and how
-              we use new technology - pop up throughout the plan.
+              crosscutting themes&mdash;like how goods move around the region,
+              how we use land, how easy it is to get where you need to go, and
+              how we use new technology&mdash;pop up throughout the plan.
             </p>
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446]">
           <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <p className="text-[#063446] md:ml-[1.5%]">
+            <p className="text-[#063446] md:text-2xl text-lg">
               Explore how the region's five Plan Elements are being put into
               action through <strong>high-level strategies</strong> and specific{" "}
               <strong>implementation actions</strong>. Filter by these topics,{" "}
@@ -180,20 +180,25 @@ const WhatIsThePlan = () => {
               value={filter}
               className="input"
             />
+            {filteredStrategies && filteredStrategies.length > 0 ? (
+              <div className="text-gray-500">
+                Search results: {filteredStrategies.length}
+              </div>
+            ) : null}
           </div>
         </div>
 
         <div className="w-full bg-[#eaf3fb] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className="flex flex-col space-y-6 p-6 pt-0">
-              <div className="flex w-full md:p-4 relative flex-col">
+              <div className="flex w-full md:p-4 relative flex-col space-y-6">
                 {filteredStrategies &&
                   filteredStrategies.length > 0 &&
                   filteredStrategies.map((strategy, idx) => (
                     <>
                       {filteredStrategies[idx - 1]?.element !==
                         strategy.element && (
-                        <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%] py-3">
+                        <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                           Strategies for Achieving{" "}
                           <span style={{ color: elementHex[strategy.element] }}>
                             {strategy.element}
@@ -226,6 +231,7 @@ const WhatIsThePlan = () => {
                             <Accordion
                               label="Implementation Actions"
                               color={elementHex[strategy.element]}
+                              size="1rem"
                             >
                               {strategy.actions.map(action => {
                                 return (
