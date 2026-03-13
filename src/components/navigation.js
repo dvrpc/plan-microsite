@@ -32,7 +32,6 @@ export default function Navigation() {
         { title: "MRP List", path: "/mrp-list" },
       ],
     },
-    { title: "Projects", path: "/mrp-list" },
     { title: "Take Action", path: "/taking-action" },
     {
       title: "Documents & Resources",

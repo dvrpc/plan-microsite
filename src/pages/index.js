@@ -53,8 +53,8 @@ const IndexPage = () => {
           <h2 className="text-4xl bg-[#0c2e39] text-white font-bold p-4 pl-[16%]">
             Explore the Plan
           </h2>
-          <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] h-[90vh] mx-auto pt-4 mx-6 md:mx-0">
-            <div className="flex flex-col underline md:text-4xl space-y-6 md:w-2/5 md:-ml-[1.5%] -ml-[4%]">
+          <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] h-[90vh] mx-auto pt-4 mx-6">
+            <div className="flex flex-col underline md:text-4xl space-y-6 md:w-2/5 md:-ml-[1%] -ml-[4%]">
               <ExploreLink>
                 <Link to="/what-is-the-plan">What is the Plan?</Link>
               </ExploreLink>
