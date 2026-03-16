@@ -18,7 +18,7 @@ const TakingAction = () => {
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
             <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>Taking Action</Link>
+            <Link>Take Action</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
@@ -35,7 +35,7 @@ const TakingAction = () => {
               choices we make, the policies we adopt, and the partnerships we
               build.
             </p>
-            <p>
+            <p className="md:text-2xl text-lg">
               Creating the future we want will take collaboration, creativity,
               and commitment. Everyone has a part to play—from governments
               agencies and businesses to community organizations and residents.
@@ -46,13 +46,13 @@ const TakingAction = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Big Moves, Big Support
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 Ambitious ideas can’t move forward without strong support. Too
                 many critical projects are delayed or underfunded, even as costs
@@ -111,13 +111,13 @@ const TakingAction = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 What DVRPC Is Doing
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 DVRPC brings together people and ideas to tackle the region’s
                 toughest challenges. As the metropolitan planning organization
@@ -160,9 +160,15 @@ const TakingAction = () => {
                   voices.
                 </li>
                 <li>
-                  <strong>Advance the Plan’s goals</strong> through DVRPC’s
-                  annual work program, the TIP, and collaboration with regional
-                  planning partners.
+                  <strong>Advance the Plan’s goals</strong> through{" "}
+                  <a
+                    className="underline"
+                    href="https://www.dvrpc.org/workprogram/"
+                    target="_blank"
+                  >
+                    DVRPC’s annual work program
+                  </a>
+                  , the TIP, and collaboration with regional planning partners.
                 </li>
               </ul>
               <p>
@@ -175,13 +181,13 @@ const TakingAction = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 What Local Governments Can Do
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 Local governments play a key role in building a stronger, more
                 connected region by turning long-range plan goals and strategies
@@ -230,7 +236,7 @@ const TakingAction = () => {
               </p>
               <Link
                 className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
-                to="/"
+                to="https://www.dvrpc.org/getinvolved"
               >
                 Click Here for Ways To Stay Connected
               </Link>

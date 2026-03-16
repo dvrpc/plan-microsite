@@ -62,15 +62,8 @@ const MrpWebmap = () => {
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               A portion of funding is reserved for smaller projects to be added
-              in future{" "}
-              <a
-                href="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254/page/Page"
-                target="_blank"
-                className="underline"
-              >
-                Transportation Improvement Program (TIP)
-              </a>{" "}
-              updates. The remaining funds support{" "}
+              in future Transportation Improvement Program (TIP) updates. The
+              remaining funds support{" "}
               <strong>Major Regional Projects (MRPs)</strong>, which are
               large-scale transportation investments that{" "}
               <strong>cost more than $40 million</strong> and/or{" "}
@@ -95,14 +88,14 @@ const MrpWebmap = () => {
               </p>
               <p>
                 <strong>Roadway</strong> and <strong>Transit</strong> projects
-                in this web map are designated as
-                <strong>Funded</strong> (prioritized and programmed within
-                anticipated revenues) or Unfunded (aspirational projects aligned
-                with the Plan’s goals that could move forward if new funding
-                becomes available). There are also{" "}
-                <strong>Externally Funded</strong> projects that don’t use
-                regional dollars, but must be considered due to their impacts on
-                the regional network and air quality conformity.
+                in this web map are designated as <strong>Funded</strong>{" "}
+                (prioritized and programmed within anticipated revenues) or{" "}
+                <strong>Unfunded</strong> (aspirational projects aligned with
+                the Plan’s goals that could move forward if new funding becomes
+                available). There are also <strong>Externally Funded</strong>{" "}
+                projects that don’t use regional dollars, but must be considered
+                due to their impacts on the regional network and air quality
+                conformity.
               </p>
             </div>
             <Legend selectedLayer={selectedLayer} />
@@ -148,29 +141,29 @@ const MrpWebmap = () => {
 
               <table>
                 <thead className="bg-[#063446] text-white">
-                  <tr className="*:py-4">
+                  <tr className="*:py-4 *:px-4">
                     <th>Funding Period</th>
                     <th>Pennsylvania</th>
                     <th>New Jersey</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-200 bg-white [&>*:nth-child(even)]:bg-gray-100">
-                  <tr className="*:py-4">
+                  <tr className="*:py-4 *:px-4">
                     <td>1</td>
                     <td>2026–2030 (5)</td>
                     <td>2026–2029 (4)</td>
                   </tr>
-                  <tr className="*:py-4">
+                  <tr className="*:py-4 *:px-4">
                     <td>2</td>
                     <td>2031–2036 (6)</td>
                     <td>2030–2036 (6)</td>
                   </tr>
-                  <tr className="*:py-4">
+                  <tr className="*:py-4 *:px-4">
                     <td>3</td>
                     <td>2037–2045 (9)</td>
                     <td>2036–2045 (10)</td>
                   </tr>
-                  <tr className="*:py-4">
+                  <tr className="*:py-4 *:px-4">
                     <td>4</td>
                     <td>2046–2050 (5)</td>
                     <td>2046–2050 (5)</td>

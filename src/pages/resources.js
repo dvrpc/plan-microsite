@@ -18,7 +18,7 @@ const Resources = () => {
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
             <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>Resources</Link>
+            <Link>Documents & Resources</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
@@ -36,61 +36,65 @@ const Resources = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Download & Print
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     Summary Document
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     Appendices
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     A - Planning Process & Administration
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     B - Land Use & Transportation
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     C - Federal Performance Measures
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     D - Community Analytics
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     E - Financial Plan
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     F - Future Funding Outlook
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-blue-600 ">
+                  <a href="/" className="underline text-[#26428b] ">
                     G - Definitions & Acronyms
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-blue-600 ">
+                  <a
+                    href="https://www.dvrpc.org/plan/planhistory/"
+                    className="underline text-[#26428b]"
+                    target="_blank"
+                  >
                     Amendments
                   </a>
                 </li>
@@ -100,41 +104,41 @@ const Resources = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Resources
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
-                  <a href="/" className="underline text-blue-600">
+                  <a href="/" className="underline text-[#26428b]">
                     Long-Range Plan Home Page
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-blue-600">
+                  <a href="/" className="underline text-[#26428b]">
                     Transportation Improvement Program (TIP)
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-blue-600">
+                  <a href="/" className="underline text-[#26428b]">
                     Congestion Management Process (CMP)
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-blue-600">
+                  <a href="/" className="underline text-[#26428b]">
                     Comprehensive Economic Development Strategy (CEDS)
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-blue-600">
+                  <a href="/" className="underline text-[#26428b]">
                     Regional Vision Zero
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-blue-600">
+                  <a href="/" className="underline text-[#26428b]">
                     Air Quality Conformity
                   </a>
                 </li>
@@ -144,13 +148,13 @@ const Resources = () => {
         </div>
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Get involved
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 Every resident has a role to play in shaping our region’s
                 future. By staying informed, speaking up, and engaging in
@@ -160,32 +164,32 @@ const Resources = () => {
               </p>
               <Link
                 className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
-                to="/"
+                to="https://www.dvrpc.org/getinvolved"
               >
-                Stay Connected
+                Visit our Stay Connected page to get started
               </Link>
             </div>
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Frequently Asked Questions
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <Accordion label="What is the purpose of the Plan?">
                 <p>
-                  Update: Connections 2050 is Greater Philadelphia's Long-Range
-                  Plan (Plan). The Plan serves as the blueprint to guide growth
-                  and development in our region and to prioritize funding for
-                  capital transportation investment accordingly. The Plan looks
-                  ahead to how our region will grow and change—considering
-                  population trends, the economy, the environment, and
-                  technology—to guide investments in roads, transit, biking,
-                  walking, and other transportation modes.
+                  <i>Update: Connections 2050</i> is Greater Philadelphia's
+                  Long-Range Plan (Plan). The Plan serves as the blueprint to
+                  guide growth and development in our region and to prioritize
+                  funding for capital transportation investment accordingly. The
+                  Plan looks ahead to how our region will grow and
+                  change—considering population trends, the economy, the
+                  environment, and technology—to guide investments in roads,
+                  transit, biking, walking, and other transportation modes.
                 </p>
               </Accordion>
               <Accordion label="Who develops the Plan?">

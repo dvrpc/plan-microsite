@@ -31,7 +31,7 @@ const WhatIsThePlan = () => {
           <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
             <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
-            <Link to="/financial">Financial Plan</Link>
+            <Link to="/financial">Financial</Link>
             <ChevronRightIcon width="1.5%" />
             <Link>Funding Gap</Link>
           </div>
@@ -46,7 +46,7 @@ const WhatIsThePlan = () => {
             </p>
             <p className="md:text-2xl text-lg">
               <strong>Greater investment is needed to:</strong>
-              <ul className="*:ml-4 list-disc">
+              <ul className="*:ml-6 list-disc">
                 <li>
                   <strong>Maintain and modernize</strong> our aging
                   transportation infrastructure
@@ -69,7 +69,7 @@ const WhatIsThePlan = () => {
               The Diminishing Gas Tax
             </h2>
           </div>
-          <div className="flex md:p-6 p-2 pt-0 md:flex-row flex-col-reverse">
+          <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
             <div className="space-y-6">
               <p>
                 Most transportation funding comes from{" "}
@@ -95,10 +95,9 @@ const WhatIsThePlan = () => {
                 continue to grow.
               </p>
             </div>
-            <img
-              src={PurchasingPower}
-              className="md:w-2/3 md:ml-6 w-1/2 mx-auto"
-            />
+            <div className="md:ml-6 w-1/2 mx-auto">
+              <img src={PurchasingPower} />
+            </div>
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
@@ -109,7 +108,7 @@ const WhatIsThePlan = () => {
                 Limited Local Funding
               </h2>
             </div>
-            <div className="md:grid grid-cols-5 space-y-6 md:p-6 p-2 pt-0 flex flex-col">
+            <div className="md:grid grid-cols-5 space-y-6 md:p-6 p-2 md:pt-0 flex flex-col">
               <div className="col-span-3 space-y-6">
                 <p>
                   <strong>
@@ -138,9 +137,9 @@ const WhatIsThePlan = () => {
               </div>
               <img src={LocalFunding} className="col-span-2" />
 
-              <div className="relative col-span-5">
-                <img src={FundingBox1} className="p-2" />
-                <div className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-4 md:p-4 p-6 top-0 text-[0.5rem] md:text-base">
+              <div className="relative col-span-5 w-fit">
+                <img src={FundingBox1} className="p-2 h-[20rem]" />
+                <div className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-4 md:p-4 top-0 p-10">
                   <strong>
                     Transportation access directly affects opportunity.
                   </strong>
@@ -352,10 +351,10 @@ const WhatIsThePlan = () => {
                 reliability more quickly and cost-effectively than major
                 construction projects. For example:
               </p>
-              <div className="md:grid grid-cols-3 gap-x-2">
-                <div className="relative md:mt-2">
-                  <img src={FundingBox2} className="p-2" />
-                  <div className="absolute top-[5%] md:left-[5%] text-white p-4 text-sm">
+              <div className="flex flex-col md:flex-row gap-x-2 w-fit mx-auto">
+                <div className="relative md:h-[22rem] h-[17rem]">
+                  <img src={FundingBox2} className="p-2 h-full" />
+                  <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
                     <strong>
                       Transportation Systems Management and Operations
                     </strong>
@@ -367,8 +366,8 @@ const WhatIsThePlan = () => {
                     </p>
                   </div>
                 </div>
-                <div className="relative">
-                  <img src={FundingBox3} className="p-2" />
+                <div className="relative md:h-[22rem] w-fit h-[17rem]">
+                  <img src={FundingBox3} className="p-2 h-full" />
                   <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
                     <strong>Smaller, targeted improvements</strong>
                     <p>
@@ -378,8 +377,8 @@ const WhatIsThePlan = () => {
                     </p>
                   </div>
                 </div>
-                <div className="relative">
-                  <img src={FundingBox4} className="p-2" />
+                <div className="relative md:h-[22rem] w-fit h-[17rem]">
+                  <img src={FundingBox4} className="p-2 h-full" />
                   <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
                     <strong>Repairs and upgrades</strong>
                     <p>
@@ -410,8 +409,7 @@ const WhatIsThePlan = () => {
                 className="mx-auto text-white bg-[#063446] p-2 font-bold md:text-2xl text-xl text-center"
                 to="/taking-action"
               >
-                Click here to read more about how the Region can meet the
-                challenges ahead
+                Read more about how the region can meet the challenges ahead
               </Link>
             </div>
           </div>
