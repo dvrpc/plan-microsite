@@ -115,12 +115,13 @@ const MRPList = () => {
               Major Regional Project List
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              Explore all projects included in Update: Connections 2050. Each
-              project is classified as{" "}
+              Explore all projects included in <i>Update: Connections 2050</i>.
+              Each project is classified as{" "}
               <Tooltip
                 title="Projects in this category are funded with anticipated regional dollars. Those in the first two plan periods are also listed in the current Transportation Improvement Program (TIP). Funding has been identified, and anticipated timing and costs reflect programmed amounts, though schedules and budgets may be refined as projects advance through design and implementation."
                 position="top"
                 trigger="click"
+                theme="purple"
               >
                 <span className="underline hover:cursor-pointer">Funded</span>
               </Tooltip>
@@ -211,7 +212,7 @@ const MRPList = () => {
             <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 overflow-x-auto">
               <table className="table-auto">
                 <thead className="text-left">
-                  <tr>
+                  <tr className="*:py-4 *:px-4">
                     <th>
                       <Tooltip
                         title="Unique identifier for Major Regional Projects (MRPs). The first two letters indicate the state; the third letter indicates project type—roadway (R), transit (T), illustrative (I), or external (X); and the final three digits are a unique number."
@@ -276,16 +277,38 @@ const MRPList = () => {
                     </th>
                     <th>
                       <Tooltip
-                        title="Transit MRPs are categorized by their primary purpose—such as preserving or expanding the system. Categories include T1. Transit Preservation and Modernization 
-T2. Transit Operational Improvements
-T3. Transit System Expansion
-T4. Transit Other
-Roadway MRPs often address multiple goals at once, such as improving safety, operations, pavement conditions, and green transportation. Categories include R1. Pavement Preservation and Modernization
-R2. Bridge Preservation
-R3. Substantive Safety
-R4. Mobility Operational Improvements
-R5. Roadway System Expansion
-R6. Green Transportation"
+                        html={
+                          <div className="text-left text-sm">
+                            Transit MRPs are categorized by their primary
+                            purpose—such as preserving or expanding the system.
+                            Categories include 
+                            <ul className="list-disc ml-4">
+                              <li>
+                                T1. Transit Preservation and Modernization{" "}
+                              </li>
+                              <li>T2. Transit Operational Improvements</li>
+                              <li>T3. Transit System Expansion</li>
+                              <li>T4. Transit Other</li>
+                            </ul>
+                            Roadway MRPs often address multiple goals at once,
+                            such as improving safety, operations, pavement
+                            conditions, and green transportation. Categories
+                            include 
+                            <ul className="list-disc ml-4">
+                              <li>
+                                R1. Pavement Preservation and Modernization
+                              </li>{" "}
+                              <li>R2. Bridge Preservation</li>
+                              <li> R3. Substantive Safety</li>
+                              <li>
+                                {" "}
+                                R4. Mobility Operational Improvements
+                              </li>{" "}
+                              <li>R5. Roadway System Expansion</li>
+                              <li> R6. Green</li>{" "}
+                            </ul>
+                          </div>
+                        }
                         position="top"
                         trigger="click"
                       >
@@ -303,7 +326,7 @@ R6. Green Transportation"
                       <>
                         {filteredProjects[idx - 1]?.funding !==
                           project.funding && (
-                          <tr>
+                          <tr className="*:py-4 *:px-4">
                             <td
                               className="md:text-2xl text-lg font-bold w-full text-white"
                               style={{
@@ -315,7 +338,7 @@ R6. Green Transportation"
                             </td>
                           </tr>
                         )}
-                        <tr class="even:bg-gray-50">
+                        <tr class="even:bg-gray-50 *:py-4 *:px-4">
                           <td>{project.id}</td>
                           <td>{project.facility}</td>
                           <td>{project.scope}</td>
