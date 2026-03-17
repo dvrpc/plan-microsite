@@ -15,8 +15,10 @@ const Resources = () => {
       <div className="flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
-            <Link to="/">Home</Link>
+          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
+            <Link className="underline" to="/">
+              Home
+            </Link>
             <ChevronRightIcon width="1.5%" />
             <Link>Documents & Resources</Link>
           </div>

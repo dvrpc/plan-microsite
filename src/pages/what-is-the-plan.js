@@ -38,13 +38,13 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="md:w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
-          <div className="flex items-center w-full md:p-4 p-2 relative mt-4">
+          <div className="flex items-center w-full md:p-6 p-2 relative mt-4">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               The DVRPC Region
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0">
+          <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
             <DvrpcMap />
             <p>
               Greater Philadelphia is one of the nation’s most historic and
@@ -90,13 +90,13 @@ const WhatIsThePlan = () => {
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 The Long-Range Plan
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 pt-0 md:p-6 p-2">
+            <div className="flex flex-col space-y-6 md:pt-0 md:p-6 p-2">
               <p>
                 At its core, the Plan expresses a{" "}
                 <strong>vision for Greater Philadelphia in 2050</strong>—what
@@ -125,13 +125,13 @@ const WhatIsThePlan = () => {
         </div>
         <div className="w-full bg-[#eef4fb] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] md:mx-auto">
-            <div className="flex items-center w-full md:p-4 p-2 relative">
+            <div className="flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Putting the Plan into Action
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0">
+            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
               <p>
                 While the Plan is updated every four years, implementation
                 happens every day. DVRPC and its partners move projects forward

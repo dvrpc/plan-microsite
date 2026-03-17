@@ -5,7 +5,7 @@ import Connections from "../images/connections-2050.svg"
 
 const Footer = () => {
   return (
-    <footer className="text-[#dfebf5]">
+    <footer className="text-white">
       <div className="bg-[#0c2e39] grid grid-cols-3 text-xl text-center underline py-8 md:px-[15%] px-8">
         <Link to="https://www.dvrpc.org/plan">Download the Plan</Link>
         <Link to="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254">
@@ -22,11 +22,15 @@ const Footer = () => {
           215-592-1800
           <br />
         </p>
-        <p className="flex space-x-4">
-          <a>Long-Range Planning Home</a>
-          <a>Public Comments</a>
-          <a>Download or Print</a>
-          <a>Get Involved</a>
+        <p className="flex divide-x *:px-4">
+          <a className="!pl-0" href="https://www.dvrpc.org/plan">
+            Long-Range Planning Home
+          </a>
+          <a href="https://apps.dvrpc.org/ords/r/dvrpcintranetapps/lrp-comment/comment-list">
+            Public Comments
+          </a>
+          <Link to="/resources">Download or Print</Link>
+          <a href="https://www.dvrpc.org/getinvolved">Get Involved</a>
         </p>
       </div>
     </footer>

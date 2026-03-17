@@ -22,33 +22,35 @@ const IndexPage = () => {
     <Layout>
       <div
         className="bg-[#cce5f3] flex flex-col items-center relative bg-cover"
-        style={{ backgroundImage: `url(${Bg})` }}
+        style={{
+          backgroundImage: `url(${Bg})`,
+        }}
       >
         <Connections
           fill="#dfebf5"
-          className="z-10 md:my-20 my-10 w-2/3 md:w-1/4"
+          className="z-10 md:my-20 my-10 w-2/3 md:w-1/4 drop-shadow-lg"
         />
       </div>
       <div className="text-[#dfebf5] mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative md:px-[16%] px-4">
         <RegionOutline className="absolute top-[5%] z-10 md:w-1/3" />
-        <h1 className="md:text-3xl text-lg md:p-12 pb-0 z-50 p-2">
+        <h1 className="md:text-3xl text-lg md:p-12 pb-0 z-50 p-2 drop-shadow-lg">
           <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span> is
           Greater Philadelphia's Long-Range Plan (Plan). The Plan serves as the
           blueprint to guide growth and development in our region and to
-          prioritize funding for capital transportation investment, accordingly.
+          prioritize funding for capital transportation investment accordingly.
         </h1>
-        <h2 className="md:text-5xl z-50 md:mt-24 md:mb-18 my-8">
+        <h2 className="md:text-5xl z-50 md:mt-24 md:mb-18 my-8 drop-shadow-lg">
           The Regional Vision for 2050 is a Greater Philadelphia that provides:
         </h2>
 
-        <div className="md:-ml-[5%] md:-mr-[5%] md:my-20">
+        <div className="md:-ml-[5%] md:-mr-[5%] md:mt-20">
           <Bubbles />
         </div>
       </div>
 
-      <div className="w-full bg-[#eef4fb] flex flex-col">
+      <div className="w-full flex flex-col">
         <Link
-          className="text-3xl underline my-6 p-2 bg-[#0c2e39] text-white text-center mx-auto"
+          className="text-3xl underline my-6 md:my-12 p-2 bg-[#0c2e39] text-white text-center mx-auto"
           to="/vision"
         >
           Learn more about the Vision
