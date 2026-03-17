@@ -31,7 +31,7 @@ const IndexPage = () => {
           className="z-10 md:my-20 my-10 w-2/3 md:w-1/4 drop-shadow-lg"
         />
       </div>
-      <div className="text-[#dfebf5] mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative md:px-[16%] px-4">
+      <div className="text-white mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative md:px-[16%] px-4">
         <RegionOutline className="absolute top-[5%] z-10 md:w-1/3" />
         <h1 className="md:text-3xl text-lg md:p-12 pb-0 z-50 p-2 drop-shadow-lg">
           <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span> is
@@ -59,7 +59,7 @@ const IndexPage = () => {
           Explore the Plan
         </h2>
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] h-[90vh] mx-auto pt-4 mx-6">
-          <div className="flex flex-col underline md:text-4xl space-y-6 md:w-2/5 md:-ml-[0.75%] -ml-[4%]">
+          <div className="flex flex-col underline md:text-4xl space-y-6 md:w-2/5 md:-ml-[1%] -ml-[4%]">
             <ExploreLink>
               <Link to="/what-is-the-plan">What Is the Plan?</Link>
             </ExploreLink>
