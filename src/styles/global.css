@@ -219,6 +219,12 @@ table {
   color: var(--poor);
 }
 
+.title,
+.value,
+.period {
+  color: #063446 !important;
+}
+
 /* legend */
 .legend {
   background-color: #ffffff;

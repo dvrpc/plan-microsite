@@ -45,6 +45,7 @@ const WhatIsThePlan = () => {
             </h2>
           </div>
           <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
+            <p>Use the interactive map to explore the region.</p>
             <DvrpcMap />
             <p>
               Greater Philadelphia is one of the nation’s most historic and
