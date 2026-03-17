@@ -22,6 +22,7 @@ body {
   padding: 0;
   font-family: "Source Sans 3";
   background-color: #dfebf5;
+  color: #063446;
 }
 
 h1,
@@ -31,7 +32,7 @@ h3 {
 }
 
 a {
-  font-family: "Inclusive Sans";
+  font-family: "Source Sans 3";
 }
 
 footer {

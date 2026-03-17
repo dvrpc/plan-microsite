@@ -31,7 +31,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         selectedIndex={selectedIndex}
         onChange={setSelectedIndex}
       >
-        <TabList className="flex text-white">
+        <TabList className="flex text-white md:w-2/3 md:ml-auto md:*:rounded-t-lg">
           <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white w-1/2">
             Land Use Vision
           </Tab>
@@ -39,7 +39,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             Plan Centers
           </Tab>
         </TabList>
-        <TabPanels className="bg-[#093446] p-3 text-white flex-1">
+        <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2 pl-[33%]">
           <TabPanel className="p-2">
             <span>
               Shows how the region can grow in smart, balanced ways by aligning
@@ -78,10 +78,8 @@ const Vision = () => {
       <div className="bg-white flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
-            <Link className="underline" to="/">
-              Home
-            </Link>
+          <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
+            <Link to="/">Home</Link>
             <ChevronRightIcon width="1.5%" />
             <Link>Vision</Link>
           </div>
@@ -121,7 +119,7 @@ const Vision = () => {
             </h2>
           </div>
         </div>
-        <div className="md:w-[68%] w-full relative border-l-4 border-[#063446] text-[#063446]">
+        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
           <div className="flex items-center w-full md:p-4 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="md:text-2xl text-lg font-bold">
@@ -143,21 +141,18 @@ const Vision = () => {
           </div>
         </div>
         <div className="relative h-full w-full">
-          <div className="flex flex-col space-y-6">
-            <div className="relative h-full w-full">
-              <div className="md:absolute z-[100] flex h-full md:w-1/3 md:pl-[17%] bg-[#063446]">
-                <Tabs
-                  selectedLayer={selectedLayer}
-                  selectedIndex={selectedTab}
-                  setSelectedIndex={setSelectedTab}
-                />
+          <div className="flex h-full md:flex-row flex-col">
+            <div className="md:w-2/5 z-[100] flex md:min-h-full">
+              <Tabs
+                selectedLayer={selectedLayer}
+                selectedIndex={selectedTab}
+                setSelectedIndex={setSelectedTab}
+              />
 
-                <div className="ml-auto">
-                  <Legend selectedLayer={selectedLayer} />
-                </div>
-              </div>
-              <VisionMap selectedLayer={selectedLayer} />
+              <Legend selectedLayer={selectedLayer} />
             </div>
+
+            <VisionMap selectedLayer={selectedLayer} />
           </div>
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
@@ -171,46 +166,35 @@ const Vision = () => {
             </p>
           </div>
         </div>
-        <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex items-center w-full md:p-6 p-2 relative">
-              <Accordion label="Vision Survey Feedback">
-                <p>
-                  The regional vision reflects the ideas and priorities of the
-                  people who live and work in Greater Philadelphia. Through a
-                  public survey with both multiple-choice and open-ended
-                  questions, participants shared what they liked (or didn’t)
-                  about the previous Plan and suggested what to add, change, or
-                  leave out. We also asked for feedback on new topics like
-                  infrastructure and utility services.
-                </p>
-                <p>
-                  More than <strong>1,300 people from every county</strong>{" "}
-                  weighed in, and their input helped shape this vision. Here’s a
-                  snapshot of what we heard:
-                </p>
-                <img src={Feedback} className="md:w-2/3 mx-auto" />
-              </Accordion>
-            </div>
-          </div>
-        </div>
-        <div className="w-full relative">
-          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex items-center w-full md:p-6 p-2 relative">
-              <Accordion label="Building Blocks of the Vision">
-                <p>
-                  The Plan is built around five key{" "}
-                  <strong>Plan Elements</strong>: Transportation, Economy,
-                  Communities, Environment, and Infrastructure and Utility
-                  Services. Each element includes three <strong>Goals</strong>{" "}
-                  that move us closer to our regional vision, along with{" "}
-                  <strong>Strategies</strong> that outline how to achieve them
-                  and identify who can help make them happen.
-                </p>
-                <img src={Elements} className="md:w-2/3 mx-auto" />
-              </Accordion>
-            </div>
-          </div>
+        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446] md:p-6 md:pt-0 p-2 space-y-6">
+          <Accordion label="Vision Survey Feedback">
+            <p>
+              The regional vision reflects the ideas and priorities of the
+              people who live and work in Greater Philadelphia. Through a public
+              survey with both multiple-choice and open-ended questions,
+              participants shared what they liked (or didn’t) about the previous
+              Plan and suggested what to add, change, or leave out. We also
+              asked for feedback on new topics like infrastructure and utility
+              services.
+            </p>
+            <p>
+              More than <strong>1,300 people from every county</strong> weighed
+              in, and their input helped shape this vision. Here’s a snapshot of
+              what we heard:
+            </p>
+            <img src={Feedback} className="md:w-2/3 mx-auto" />
+          </Accordion>
+          <Accordion label="Building Blocks of the Vision">
+            <p>
+              The Plan is built around five key <strong>Plan Elements</strong>:
+              Transportation, Economy, Communities, Environment, and
+              Infrastructure & Utility Services. Each element includes three{" "}
+              <strong>Goals</strong> that move us closer to our regional vision,
+              along with <strong>Strategies</strong> that outline how to achieve
+              them and identify who can help make them happen.
+            </p>
+            <img src={Elements} className="md:w-2/3 mx-auto" />
+          </Accordion>
         </div>
       </div>
     </Layout>

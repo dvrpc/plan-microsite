@@ -90,7 +90,7 @@ const Trends = () => {
                   they commute, these changes continue to reshape travel demand,
                   housing markets, and economic opportunity across the region.
                 </p>
-                <h4 className="mx-auto text-[#16819a] font-bold text-lg">
+                <h4 className="mx-auto text-[#16819a] font-bold text-lg font-[scriptorama-markdown-jf]">
                   MEANS OF TRANSPORTAION TO WORK BY MODE SHARE
                 </h4>
                 <img
@@ -146,7 +146,7 @@ const Trends = () => {
                   around <strong>privacy, copyright, bias, resource use</strong>
                   , and community impact.
                 </p>
-                <h4 className="mx-auto text-[#16819a] font-bold text-lg">
+                <h4 className="mx-auto text-[#16819a] font-bold text-lg font-[scriptorama-markdown-jf]">
                   AI PROCESSING FOR TRANSPORTATION
                 </h4>
                 <img
@@ -233,7 +233,7 @@ const Trends = () => {
                   </strong>
                   .
                 </p>
-                <h4 className="mx-auto text-[#179650] font-bold text-lg">
+                <h4 className="mx-auto text-[#179650] font-bold text-lg font-[scriptorama-markdown-jf]">
                   TRACKING PROGRESS DASHBOARD
                 </h4>
                 <svg

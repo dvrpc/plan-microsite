@@ -48,7 +48,7 @@ const landuse = {
 
 export const Legend = ({ selectedLayer }) => {
   return (
-    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:w-1/2 [&>*]:m-3 [&>*]:text-xs">
+    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:m-3 [&>*]:text-xs">
       {selectedLayer === "landuse" && (
         <div class="flex flex-col z-[100] absolute">
           <div class="flex gap-2">
