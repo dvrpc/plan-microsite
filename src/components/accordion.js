@@ -25,7 +25,7 @@ const Accordion = ({ label, children, color, size }) => {
             style={{ color: color ? color : "#063446" }}
           />
         </DisclosureButton>
-        <DisclosurePanel className="mt-2 flex flex-col gap-y-6">
+        <DisclosurePanel className="mt-2 flex flex-col gap-y-4">
           {children}
         </DisclosurePanel>
       </Disclosure>

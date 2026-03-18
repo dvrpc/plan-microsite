@@ -73,8 +73,8 @@ const WhatIsThePlan = () => {
               The Diminishing Gas Tax
             </h2>
           </div>
-          <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
-            <div className="space-y-6">
+          <div className="flex md:p-6 p-2 md:pt-0 md:grid md:grid-cols-5 flex-col-reverse">
+            <div className="space-y-6 md:col-span-3">
               <p>
                 Most transportation funding comes from{" "}
                 <strong>taxes on gasoline and petroleum products</strong>, but
@@ -99,7 +99,7 @@ const WhatIsThePlan = () => {
                 continue to grow.
               </p>
             </div>
-            <div className="md:ml-6 w-1/2 mx-auto">
+            <div className="ml-6 col-span-1 mx-auto">
               <img src={PurchasingPower} />
             </div>
           </div>
@@ -138,32 +138,31 @@ const WhatIsThePlan = () => {
                   better positioned to maintain their systems and make
                   innovative investments that promote long-term economic growth.
                 </p>
-              </div>
-              <img src={LocalFunding} className="col-span-2" />
-
-              <div className="relative col-span-5 w-fit">
-                <img src={FundingBox1} className="p-2 h-[20rem]" />
-                <div className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-4 md:p-4 top-0 p-10">
-                  <strong>
-                    Transportation access directly affects opportunity.
-                  </strong>
-                  <p>
-                    In a survey by the Federal Reserve Bank of Philadelphia, 16%
-                    of participants earning below the basic cost of living
-                    identified transportation as a major barrier to improving
-                    their economic situation.
-                  </p>
-                  <p>
-                    Recognizing this, the City of Philadelphia, in partnership
-                    with SEPTA and community organizations, launched the{" "}
-                    <strong>Zero Fare pilot program</strong>, providing free
-                    transit for more than 25,000 Philadelphians living at or
-                    near the poverty line. Programs like Zero Fare are vital,
-                    but their long-term success—and the region’s broader
-                    goals—depend on stable, sustainable funding.
-                  </p>
+                <div className="relative col-span-5 w-fit">
+                  <img src={FundingBox1} className="p-2 h-[20rem]" />
+                  <div className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-4 md:p-4 top-0 p-10">
+                    <strong>
+                      Transportation access directly affects opportunity.
+                    </strong>
+                    <p>
+                      In a survey by the Federal Reserve Bank of Philadelphia,
+                      16% of participants earning below the basic cost of living
+                      identified transportation as a major barrier to improving
+                      their economic situation.
+                    </p>
+                    <p>
+                      Recognizing this, the City of Philadelphia, in partnership
+                      with SEPTA and community organizations, launched the{" "}
+                      <strong>Zero Fare pilot program</strong>, providing free
+                      transit for more than 25,000 Philadelphians living at or
+                      near the poverty line. Programs like Zero Fare are vital,
+                      but their long-term success—and the region’s broader
+                      goals—depend on stable, sustainable funding.
+                    </p>
+                  </div>
                 </div>
               </div>
+              <img src={LocalFunding} className="col-span-2" />
             </div>
           </div>
         </div>

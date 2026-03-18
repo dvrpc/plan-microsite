@@ -85,7 +85,7 @@ const MrpWebmap = () => {
         </div>
         <div className="relative h-full w-full">
           <div className="md:absolute z-[100] flex h-full md:w-1/3 md:pl-[17%] bg-[#063446] md:flex-row flex-col">
-            <div className="text-white p-3 text-sm space-y-4">
+            <div className="text-white p-3 space-y-4">
               <p>
                 The map shows MRPs categorized by one or more transportation
                 improvement categories.
@@ -96,10 +96,12 @@ const MrpWebmap = () => {
                 (prioritized and programmed within anticipated revenues) or{" "}
                 <strong>Unfunded</strong> (aspirational projects aligned with
                 the Plan’s goals that could move forward if new funding becomes
-                available). There are also <strong>Externally Funded</strong>{" "}
-                projects that don’t use regional dollars, but must be considered
-                due to their impacts on the regional network and air quality
-                conformity.
+                available). <strong>Illustrative</strong> are preservation
+                projects that can advance into the TIP when repairs are needed,
+                and funding is available. There are also{" "}
+                <strong>Externally Funded</strong> projects that don’t use
+                regional dollars, but must be considered due to their impacts on
+                the regional network and air quality conformity.
               </p>
             </div>
             <Legend selectedLayer={selectedLayer} />
@@ -183,7 +185,10 @@ const MrpWebmap = () => {
             <p>
               In addition to the Transportation Improvement Program (TIP), the
               region’s financial plan is closely linked to the{" "}
-              <a href="https://www.dvrpc.org/congestionmanagement/">
+              <a
+                href="https://www.dvrpc.org/congestionmanagement/"
+                className="underline"
+              >
                 Congestion Management Process (CMP)
               </a>
               .
@@ -212,6 +217,12 @@ const MrpWebmap = () => {
               must also include <strong>supplemental strategies</strong> to
               prevent new lanes from quickly filling back up with traffic.
             </p>
+            <Link
+              className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
+              to="/mrp-list"
+            >
+              View the MRPs in table format
+            </Link>
           </div>
         </div>
       </div>

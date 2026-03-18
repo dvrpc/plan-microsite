@@ -114,7 +114,7 @@ const WhatIsThePlan = () => {
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Change won't come overnight, and it won't happen by doing things
-              the same old way. Achieving our vision will take{" "}
+              the same old way. Achieving this vision will take{" "}
               <strong>bold action and collaboration</strong> acrosss the region,
               with everyone playing a part.
             </p>
@@ -132,7 +132,7 @@ const WhatIsThePlan = () => {
             <p className="text-[#063446] md:text-2xl text-lg">
               Explore how the region's five Plan Elements are being put into
               action through <strong>high-level strategies</strong> and specific{" "}
-              <strong>implementation actions</strong>. Filter by these topics,{" "}
+              <strong>implementation actions</strong>. Filter by topics and{" "}
               <strong>responsible parties</strong>, or use the keyword search to
               find the initiatives most relevant to your work.
             </p>
@@ -211,12 +211,12 @@ const WhatIsThePlan = () => {
                         </h2>
                       )}
                       <div className="flex items-start space-x-2">
-                        <span
-                          className="h-[10px] w-[10px] block mt-2 p-1"
-                          style={{
-                            backgroundColor: elementHex[strategy.element],
-                          }}
-                        ></span>
+                        <p
+                          className="md:text-xl text-lg font-bold"
+                          style={{ color: elementHex[strategy.element] }}
+                        >
+                          {strategy.id})
+                        </p>
 
                         <div>
                           <p

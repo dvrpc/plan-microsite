@@ -115,32 +115,50 @@ const Resources = () => {
             <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
               <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
-                  <a href="/" className="underline text-[#26428b]">
+                  <a
+                    href="https://www.dvrpc.org/plan/"
+                    className="underline text-[#26428b]"
+                  >
                     Long-Range Plan Home Page
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-[#26428b]">
+                  <a
+                    href="https://www.dvrpc.org/tip/"
+                    className="underline text-[#26428b]"
+                  >
                     Transportation Improvement Program (TIP)
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-[#26428b]">
+                  <a
+                    href="https://www.dvrpc.org/congestionmanagement/"
+                    className="underline text-[#26428b]"
+                  >
                     Congestion Management Process (CMP)
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-[#26428b]">
+                  <a
+                    href="https://www.dvrpc.org/economic/"
+                    className="underline text-[#26428b]"
+                  >
                     Comprehensive Economic Development Strategy (CEDS)
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-[#26428b]">
+                  <a
+                    href="https://www.dvrpc.org/transportation/safety/"
+                    className="underline text-[#26428b]"
+                  >
                     Regional Vision Zero
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-[#26428b]">
+                  <a
+                    href="https://www.dvrpc.org/airquality/conformity/"
+                    className="underline text-[#26428b]"
+                  >
                     Air Quality Conformity
                   </a>
                 </li>

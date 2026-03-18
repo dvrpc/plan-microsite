@@ -39,7 +39,7 @@ const Flipcard = ({ color, front, back }) => {
         onKeyDown={e => keyDown(e)}
       >
         <div
-          className="flip-card-inner border-2 rounded-lg"
+          className="flip-card-inner border-2 rounded-md"
           style={{ borderColor: color }}
         >
           <div
@@ -51,12 +51,12 @@ const Flipcard = ({ color, front, back }) => {
             <div aria-describedby="flip-desc">{front}</div>
           </div>
           <div
-            className="flip-card-back border-2 rounded-lg text-white"
+            className="flip-card-back border-2 rounded-md text-white"
             aria-hidden="true"
             id="back"
             style={{ backgroundColor: color, borderColor: color }}
           >
-            <div className="md:w-[70%] w-[90%] text-xs">{back}</div>
+            <div className="md:w-[70%] w-[90%] text-sm">{back}</div>
           </div>
         </div>
       </div>
