@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => {
   return (
-    <header className="bg-[#063446] flex p-6">
+    <header className="bg-[#0c2e39] flex p-6">
       <Link className="md:w-[10%] w-1/4" to="https://www.dvrpc.org">
         <Dvrpc fill="#dfebf5" width="100%" />
       </Link>

@@ -43,7 +43,6 @@ export default function Navigation() {
     <>
       <div className="w-full">
         <nav className="relative flex flex-wrap items-center justify-between mx-auto lg:justify-between bg-[#dfebf5]">
-          {/* Logo  */}
           <Disclosure>
             {({ open }) => (
               <>
