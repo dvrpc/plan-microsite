@@ -39,7 +39,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             Plan Centers
           </Tab>
         </TabList>
-        <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2 pl-[33%]">
+        <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2 md:pl-[33%]">
           <TabPanel className="p-2">
             <span>
               Shows how the region can grow in smart, balanced ways by aligning
@@ -75,17 +75,19 @@ const Vision = () => {
 
   return (
     <Layout>
-      <div className="bg-white flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
-            <Link to="/">Home</Link>
+          <div className="flex text-white font-bold md:w-[68%] mx-auto md:px-7 px-10 z-50 relative items-center mt-4">
+            <Link className="underline" to="/">
+              Home
+            </Link>
             <ChevronRightIcon width="1.5%" />
             <Link>Vision</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               What Do We Want the Region to Look Like in 2050?
             </h2>
@@ -111,24 +113,22 @@ const Vision = () => {
               The Regional Vision for 2050 is a Greater Philadelphia that
               provides:
             </h2>
-            <div className="pb-6">
-              <Bubbles />
-            </div>
-            <h2 className="md:text-3xl text-lg pb-0 z-50 mx-auto text-center">
-              Click on each Plan Element above to explore more
-            </h2>
           </div>
+          <div className="pb-6 mx-auto">
+            <Bubbles />
+          </div>
+          <h2 className="md:text-3xl text-lg pb-0 z-50 mx-auto text-center">
+            Click on each Plan Element above to explore more
+          </h2>
         </div>
-        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
-          <div className="flex items-center w-full md:p-4 p-2 relative">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
+          <div className="flex items-center w-full md:p-6 p-2 relative mt-4">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="md:text-2xl text-lg font-bold">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               Explore the Vision in Maps
             </h2>
           </div>
-        </div>
-        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
-          <div className="items-center w-full md:p-6 p-2 relative space-y-6">
+          <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
             <p>
               <strong>What will Greater Philadelphia look like in 2050?</strong>{" "}
               The Plan envisions <strong>dense, connected communities</strong>{" "}
@@ -138,6 +138,13 @@ const Vision = () => {
               reducing financial and environmental costs.
             </p>
             <p>Use the interactive map to explore this vision in two layers:</p>
+            <p>
+              These maps use existing passenger rail and a proposed line to
+              create a <strong>visual guide to strategic growth</strong>—helping
+              Greater Philadelphia build on its assets, protect open space, and
+              support walkable, vibrant communities where people can live, work,
+              and play.
+            </p>
           </div>
         </div>
         <div className="relative h-full w-full">
@@ -155,46 +162,36 @@ const Vision = () => {
             <VisionMap selectedLayer={selectedLayer} />
           </div>
         </div>
-        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446]">
-          <div className="items-center w-full md:p-6 p-2 relative space-y-6">
-            <p>
-              These maps use existing passenger rail and a proposed line to
-              create a <strong>visual guide to strategic growth</strong>—helping
-              Greater Philadelphia build on its assets, protect open space, and
-              support walkable, vibrant communities where people can live, work,
-              and play.
-            </p>
-          </div>
-        </div>
-        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446] md:p-6 md:pt-0 p-2 space-y-6">
-          <Accordion label="Vision Survey Feedback">
-            <p>
-              The regional vision reflects the ideas and priorities of the
-              people who live and work in Greater Philadelphia. Through a public
-              survey with both multiple-choice and open-ended questions,
-              participants shared what they liked (or didn’t) about the previous
-              Plan and suggested what to add, change, or leave out. We also
-              asked for feedback on new topics like infrastructure and utility
-              services.
-            </p>
-            <p>
-              More than <strong>1,300 people from every county</strong> weighed
-              in, and their input helped shape this vision. Here’s a snapshot of
-              what we heard:
-            </p>
-            <img src={Feedback} className="md:w-2/3 mx-auto" />
-          </Accordion>
-          <Accordion label="Building Blocks of the Vision">
-            <p>
-              The Plan is built around five key <strong>Plan Elements</strong>:
-              Transportation, Economy, Communities, Environment, and
-              Infrastructure & Utility Services. Each element includes three{" "}
-              <strong>Goals</strong> that move us closer to our regional vision,
-              along with <strong>Strategies</strong> that outline how to achieve
-              them and identify who can help make them happen.
-            </p>
-            <img src={Elements} className="md:w-2/3 mx-auto" />
-          </Accordion>
+        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446] md:p-6 p-2 space-y-6">
+          <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
+            Vision Survey Feedback
+          </h2>
+          <p>
+            The regional vision reflects the ideas and priorities of the people
+            who live and work in Greater Philadelphia. Through a public survey
+            with both multiple-choice and open-ended questions, participants
+            shared what they liked (or didn’t) about the previous Plan and
+            suggested what to add, change, or leave out. We also asked for
+            feedback on new topics like infrastructure and utility services.
+          </p>
+          <p>
+            More than <strong>1,300 people from every county</strong> weighed
+            in, and their input helped shape this vision. Here’s a snapshot of
+            what we heard:
+          </p>
+          <img src={Feedback} className="md:w-2/3 mx-auto" />
+          <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
+            Building Blocks of the Vision
+          </h2>
+          <p>
+            The Plan is built around five key <strong>Plan Elements</strong>:
+            Transportation, Economy, Communities, Environment, and
+            Infrastructure & Utility Services. Each element includes three{" "}
+            <strong>Goals</strong> that move us closer to our regional vision,
+            along with <strong>Strategies</strong> that outline how to achieve
+            them and identify who can help make them happen.
+          </p>
+          <img src={Elements} className="md:w-2/3 mx-auto" />
         </div>
       </div>
     </Layout>

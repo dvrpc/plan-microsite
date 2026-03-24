@@ -10,7 +10,7 @@ import { Link } from "gatsby"
 const Bubbles = () => {
   return (
     <div
-      className="md:flex md:space-x-2 md:[&>*]:w-[16rem] [&>*]:relative md:[&>*]:h-auto w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-center items-center md:my-12 font-[Inclusive Sans]! leading-tight justify-center grid grid-cols-2 md:text-[0.9vw] text-xs grid-rows-3 md:grid-rows-1 gap-y-4"
+      className="md:space-x-2 md:[&>*]:w-[15rem] md:[&>*]:h-auto w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-center items-center md:my-12 font-[Inclusive Sans]! leading-tight gap-y-4"
       id="bubbles"
     >
       <div className="relative">
