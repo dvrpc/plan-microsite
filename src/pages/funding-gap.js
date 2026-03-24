@@ -28,7 +28,7 @@ const WhatIsThePlan = () => {
       <div className="bg-[#eef4fb] flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
+          <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
             </Link>
@@ -40,8 +40,8 @@ const WhatIsThePlan = () => {
             <Link>Funding Gap</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] bg-[#0c2e39] w-full flex flex-col relative px-10 py-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">Filling the Funding Gap</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               To make our shared regional vision a reality, we need{" "}
@@ -67,14 +67,14 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="md:w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
-          <div className="flex items-center w-full md:p-4 relative mt-4">
+          <div className="flex items-center w-full md:p-6 relative mt-4">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               The Diminishing Gas Tax
             </h2>
           </div>
-          <div className="flex md:p-6 p-2 md:pt-0 md:grid md:grid-cols-5 flex-col-reverse">
-            <div className="space-y-6 md:col-span-3">
+          <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
+            <div className="space-y-6 min-w-[66%]">
               <p>
                 Most transportation funding comes from{" "}
                 <strong>taxes on gasoline and petroleum products</strong>, but
@@ -99,21 +99,21 @@ const WhatIsThePlan = () => {
                 continue to grow.
               </p>
             </div>
-            <div className="ml-6 col-span-1 mx-auto">
+            <div className="md:ml-6 mx-auto h-fit md:w-full w-1/2">
               <img src={PurchasingPower} />
             </div>
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className=" flex items-center w-full p-4 relative">
+            <div className=" flex items-center w-full p-6 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Limited Local Funding
               </h2>
             </div>
-            <div className="md:grid grid-cols-5 space-y-6 md:p-6 p-2 md:pt-0 flex flex-col">
-              <div className="col-span-3 space-y-6">
+            <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
+              <div id="llf" className="space-y-6 w-[95%]">
                 <p>
                   <strong>
                     Only 3% of Greater Philadelphia’s regional transportation
@@ -138,37 +138,46 @@ const WhatIsThePlan = () => {
                   better positioned to maintain their systems and make
                   innovative investments that promote long-term economic growth.
                 </p>
-                <div className="relative col-span-5 w-fit">
-                  <img src={FundingBox1} className="p-2 h-[20rem]" />
-                  <div className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-4 md:p-4 top-0 p-10">
-                    <strong>
-                      Transportation access directly affects opportunity.
-                    </strong>
-                    <p>
-                      In a survey by the Federal Reserve Bank of Philadelphia,
-                      16% of participants earning below the basic cost of living
-                      identified transportation as a major barrier to improving
-                      their economic situation.
-                    </p>
-                    <p>
-                      Recognizing this, the City of Philadelphia, in partnership
-                      with SEPTA and community organizations, launched the{" "}
-                      <strong>Zero Fare pilot program</strong>, providing free
-                      transit for more than 25,000 Philadelphians living at or
-                      near the poverty line. Programs like Zero Fare are vital,
-                      but their long-term success—and the region’s broader
-                      goals—depend on stable, sustainable funding.
-                    </p>
-                  </div>
-                </div>
               </div>
-              <img src={LocalFunding} className="col-span-2" />
+              <div className="md:ml-6 mx-auto h-fit md:mt-auto md:w-full">
+                <img src={LocalFunding} />
+              </div>
+            </div>
+            <div className="relative w-full">
+              <img
+                id="funding-box-1"
+                src={FundingBox1}
+                className="p-2 md:h-[20rem] h-[22rem] w-full"
+              />
+              <div
+                className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-2 md:p-4 top-0 p-10"
+                id="funding-box-1-text"
+              >
+                <strong>
+                  Transportation access directly affects opportunity.
+                </strong>
+                <p>
+                  In a survey by the Federal Reserve Bank of Philadelphia, 16%
+                  of participants earning below the basic cost of living
+                  identified transportation as a major barrier to improving
+                  their economic situation.
+                </p>
+                <p>
+                  Recognizing this, the City of Philadelphia, in partnership
+                  with SEPTA and community organizations, launched the{" "}
+                  <strong>Zero Fare pilot program</strong>, providing free
+                  transit for more than 25,000 Philadelphians living at or near
+                  the poverty line. Programs like Zero Fare are vital, but their
+                  long-term success—and the region’s broader goals—depend on
+                  stable, sustainable funding.
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div className="w-full bg-[#eef4fb] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex items-center w-full md:p-4 p-2 relative">
+            <div className="flex items-center w-full md:p-6 p-2 relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Funding Options
@@ -192,7 +201,7 @@ const WhatIsThePlan = () => {
                 to learn about them.
               </strong>
 
-              <div className="grid md:grid-cols-4 grid-cols-2 grid-rows-2 gap-y-4 gap-x-4">
+              <div id="flip-cards" className="grid gap-y-4 gap-x-2">
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
@@ -259,7 +268,7 @@ const WhatIsThePlan = () => {
                   back={
                     <span>
                       Adds a flat fee or surcharge per unit of electricity used
-                      to power electric vehicles.
+                      to power electric vehicles.{" "}
                       <strong>Potential benefits:</strong> Replicates the gas
                       tax for EVs.
                     </span>
@@ -315,7 +324,7 @@ const WhatIsThePlan = () => {
                   back={
                     <span>
                       Applies variable charges to on-street parking based on
-                      demand, while reducing the cost of off-street spaces.
+                      demand, while reducing the cost of off-street spaces.{" "}
                       <strong>Potential benefits:</strong> Decreases traffic in
                       central business districts from drivers looking for
                       parking spaces and better accounts for the value of land
@@ -336,7 +345,7 @@ const WhatIsThePlan = () => {
                   back={
                     <span>
                       Employs variable tolls to manage demand on a facility or
-                      within a specific zone.
+                      within a specific zone.{" "}
                       <strong>Potential benefits:</strong> Reduces congestion
                       and encourages more efficient use of transportation
                       infrastructure, while generating revenue to provide more
@@ -358,9 +367,9 @@ const WhatIsThePlan = () => {
                 <div className="relative md:h-[22rem] h-[17rem]">
                   <img src={FundingBox2} className="p-2 h-full" />
                   <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
-                    <strong>
+                    <h3 className="text-lg font-bold">
                       Transportation Systems Management and Operations
-                    </strong>
+                    </h3>
                     <p>
                       (TSMO) strategies like signal timing upgrades, ramp
                       metering, real-time travel info, and incident management
@@ -372,7 +381,9 @@ const WhatIsThePlan = () => {
                 <div className="relative md:h-[22rem] w-fit h-[17rem]">
                   <img src={FundingBox3} className="p-2 h-full" />
                   <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
-                    <strong>Smaller, targeted improvements</strong>
+                    <h3 className="text-lg font-bold">
+                      Smaller, targeted improvements
+                    </h3>
                     <p>
                       —like intersection redesigns or transit enhancements—can
                       deliver many of the benefits of large projects at a
@@ -383,7 +394,7 @@ const WhatIsThePlan = () => {
                 <div className="relative md:h-[22rem] w-fit h-[17rem]">
                   <img src={FundingBox4} className="p-2 h-full" />
                   <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
-                    <strong>Repairs and upgrades</strong>
+                    <h3 className="text-lg font-bold">Repairs and upgrades</h3>
                     <p>
                       can support multiple travel options, such as fixing
                       bridges important to transit or maintaining well-used
@@ -412,7 +423,7 @@ const WhatIsThePlan = () => {
                 className="mx-auto text-white bg-[#063446] p-2 font-bold md:text-2xl text-xl text-center"
                 to="/taking-action"
               >
-                Read more about how the region can meet the challenges ahead
+                Learn how the Region Can Meet the Challenges Ahead
               </Link>
             </div>
           </div>
