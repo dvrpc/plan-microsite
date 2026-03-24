@@ -21,6 +21,7 @@ import { Legend } from "../components/mrpmap"
 import AppContext from "../components/AppContext"
 import Modal from "../components/modal"
 import InfoIcon from "../images/info-icon.svg"
+import FundingBox1 from "../images/funding-box-1.png"
 
 const MrpWebmap = () => {
   const [selectedLayer, setSelectedLayer] = useState("popABS")
@@ -39,10 +40,10 @@ const MrpWebmap = () => {
 
   return (
     <Layout>
-      <div className="bg-[#eaf3fb] flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
+          <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
             </Link>
@@ -54,8 +55,8 @@ const MrpWebmap = () => {
             <Link>MRP Webmap</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               Major Regional Projects
             </h2>
@@ -76,7 +77,7 @@ const MrpWebmap = () => {
           </div>
         </div>
         <div className="md:w-[68%] w-full relative border-l-4 border-[#063446]">
-          <div className="flex items-center w-full md:p-4 p-2 relative">
+          <div className="flex items-center w-full md:p-6 p-2 relative">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               MRP Web Map
@@ -84,11 +85,14 @@ const MrpWebmap = () => {
           </div>
         </div>
         <div className="relative h-full w-full">
-          <div className="md:absolute z-[100] flex h-full md:w-1/3 md:pl-[17%] bg-[#063446] md:flex-row flex-col">
-            <div className="text-white p-3 space-y-4">
+          <div
+            id="mrp-map-text"
+            className="md:absolute z-[98] flex h-full md:w-1/3 md:pl-[17%] bg-[#0c2e39] md:flex-row flex-col"
+          >
+            <div className="text-white p-3 space-y-4 text-sm">
               <p>
                 The map shows MRPs categorized by one or more transportation
-                improvement categories.
+                improvement category.
               </p>
               <p>
                 <strong>Roadway</strong> and <strong>Transit</strong> projects
@@ -182,46 +186,60 @@ const MrpWebmap = () => {
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
           <div className="flex flex-col space-y-6 md:p-6 p-2 text-[#063446]">
-            <p>
-              In addition to the Transportation Improvement Program (TIP), the
-              region’s financial plan is closely linked to the{" "}
-              <a
-                href="https://www.dvrpc.org/congestionmanagement/"
-                className="underline"
+            <div className="relative w-full">
+              <img
+                id="mrp-box-1"
+                src={FundingBox1}
+                className="p-2 md:h-[27rem] h-[20rem] w-full"
+              />
+              <div
+                className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-2 md:p-4 top-0 p-10"
+                id="mrp-box-1-text"
               >
-                Congestion Management Process (CMP)
-              </a>
-              .
-            </p>
-            <p>
-              The CMP identifies the <strong>most congested corridors</strong>{" "}
-              in Greater Philadelphia and recommends{" "}
-              <strong>design and technology solutions</strong> to reduce traffic
-              and improve mobility. CMP strategies support the Plan’s broader
-              goals by helping to:
-            </p>
-            <ul className="list-disc ml-4">
-              <li>Increase mobility and reliability</li>
-              <li>Integrate modes and improve transit access</li>
-              <li>Modernize and maintain the transportation network</li>
-              <li>Advance Vision Zero and improve safety</li>
-              <li>
-                Support goods movement, security, and emergency preparedness
-              </li>
-              <li>Invest in Plan Centers where growth is focused</li>
-            </ul>
-            <p>
-              Federal regulations require that any{" "}
-              <strong>project adding lanes or other capacity</strong> for
-              single-occupancy vehicles must align with the CMP. These projects
-              must also include <strong>supplemental strategies</strong> to
-              prevent new lanes from quickly filling back up with traffic.
-            </p>
+                <p>
+                  In addition to the Transportation Improvement Program (TIP),
+                  the region’s financial plan is closely linked to the{" "}
+                  <a
+                    href="https://www.dvrpc.org/congestionmanagement/"
+                    className="underline"
+                  >
+                    Congestion Management Process (CMP)
+                  </a>
+                  .
+                </p>
+                <p>
+                  The CMP identifies the{" "}
+                  <strong>most congested corridors</strong> in Greater
+                  Philadelphia and recommends{" "}
+                  <strong>design and technology solutions</strong> to reduce
+                  traffic and improve mobility. CMP strategies support the
+                  Plan’s broader goals by helping to:
+                </p>
+                <ul className="list-disc ml-4">
+                  <li>Increase mobility and reliability</li>
+                  <li>Integrate modes and improve transit access</li>
+                  <li>Modernize and maintain the transportation network</li>
+                  <li>Advance Vision Zero and improve safety</li>
+                  <li>
+                    Support goods movement, security, and emergency preparedness
+                  </li>
+                  <li>Invest in Plan Centers where growth is focused</li>
+                </ul>
+                <p>
+                  Federal regulations require that any{" "}
+                  <strong>project adding lanes or other capacity</strong> for
+                  single-occupancy vehicles must align with the CMP. These
+                  projects must also include{" "}
+                  <strong>supplemental strategies</strong> to prevent new lanes
+                  from quickly filling back up with traffic.
+                </p>
+              </div>
+            </div>
             <Link
               className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
               to="/mrp-list"
             >
-              View the MRPs in table format
+              View the MRPs in Table Format
             </Link>
           </div>
         </div>

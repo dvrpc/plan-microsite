@@ -27,7 +27,7 @@ const DVRPCMap = ({ children, features }) => {
   const onMouseLeave = useCallback(() => setCursor("grab"), [])
 
   return (
-    <div className="h-[575px] w-full">
+    <div className="h-[600px] w-full">
       <Map
         mapStyle="mapbox://styles/crvanpollard/ck5fpyqti0v971itf7edp2eyd"
         interactiveLayerIds={["mrp-lines"]}

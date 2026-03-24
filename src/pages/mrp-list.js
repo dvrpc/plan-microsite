@@ -40,8 +40,8 @@ const MRPList = () => {
   ]
   const fundingHex = {
     "Roadway Funded": "#0078ae",
-    "Roadway Unfunded": "#67abd1",
-    "Transit Funded": "#00783e",
+    "Roadway Unfunded": "#12435e",
+    "Transit Funded": "#01542c",
     "Transit Unfunded": "#bcd85f",
     "Externally Funded": "#704775",
     "Externally Unfunded": "#ad5b87",
@@ -101,7 +101,7 @@ const MRPList = () => {
       <div className="bg-[#cbe5f3] flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
+          <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
             </Link>
@@ -113,8 +113,8 @@ const MRPList = () => {
             <Link>Major Regional Project List</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               Major Regional Project List
             </h2>
@@ -122,10 +122,10 @@ const MRPList = () => {
               Explore all projects included in <i>Update: Connections 2050</i>.
               Each project is classified as{" "}
               <Tooltip
+                theme="tomato"
                 title="Projects in this category are funded with anticipated regional dollars. Those in the first two plan periods are also listed in the current Transportation Improvement Program (TIP). Funding has been identified, and anticipated timing and costs reflect programmed amounts, though schedules and budgets may be refined as projects advance through design and implementation."
                 position="top"
                 trigger="click"
-                theme="purple"
               >
                 <span className="underline hover:cursor-pointer">Funded</span>
               </Tooltip>

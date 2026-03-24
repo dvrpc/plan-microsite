@@ -6,7 +6,7 @@ import AppContext from "./AppContext"
 export const Legend = () => {
   return (
     <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:w-1/2 [&>*]:m-3 [&>*]:text-xs">
-      <div className="flex flex-col z-[100] absolute">
+      <div className="flex flex-col z-[98] absolute">
         <h3>Update Connections 2050 Major Regional Projects</h3>
         <div className="flex gap-2">
           <span
@@ -99,6 +99,7 @@ const MrpMap = ({ selectedLayer }) => {
           longitude={clickedFeature.longitude}
           latitude={clickedFeature.latitude}
           onClose={() => setClickedFeature(null)}
+          className="z-[99]"
         >
           <strong>{clickedFeature.feature.properties.facility}</strong>
           <table className="[&>*:nth-child(even)]:bg-gray-100">
