@@ -10,17 +10,19 @@ import DvrpcMap from "../components/dvrpcmap"
 const WhatIsThePlan = () => {
   return (
     <Layout>
-      <div className="bg-[#eef4fb] flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[70%] mx-auto z-50 relative items-center underline mt-4">
-            <Link to="/">Home</Link>
+          <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
+            <Link className="underline" to="/">
+              Home
+            </Link>
             <ChevronRightIcon width="1.5%" />
             <Link>About</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-12 py-6 space-y-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">What Is the Plan?</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span>{" "}
@@ -37,7 +39,7 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-[68%] bg-[#eef4fb] relative border-l-4 border-[#0c2e39]">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
           <div className="flex items-center w-full md:p-6 p-2 relative mt-4">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
