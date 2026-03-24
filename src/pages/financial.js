@@ -51,16 +51,13 @@ import Roadwaymoi from "../images/roadwaymoi.png"
 import Roadwayre from "../images/roadwayre.png"
 import Roadwaygt from "../images/roadwaygt.png"
 import Roadwayss from "../images/roadwayss.png"
-import Arrow1 from "../images/arrow-1.png"
-import Arrow2 from "../images/arrow-2.png"
-import Arrow3 from "../images/arrow-3.png"
 import Block1 from "../images/block-1.png"
 import Block2 from "../images/block-2.png"
 import Block3 from "../images/block-3.png"
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
   return (
-    <div className="flex justify-center z-100 h-full w-full">
+    <div className="flex justify-center z-100 h-full w-full bg-white">
       <TabGroup
         className="w-full h-full flex flex-col"
         selectedIndex={selectedIndex}
@@ -74,9 +71,9 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             Transit Needs
           </Tab>
         </TabList>
-        <TabPanels className="bg-white md:p-8 text-white min-w-full">
+        <TabPanels className="text-white">
           <TabPanel>
-            <>
+            <div>
               <div className="grid grid-cols-4 grid grid-rows-2 md:p-4 auto-rows-auto *:border-r-4 [&>*:nth-child(-n+4)]:border-b-4 [&>*:nth-child(4n)]:border-r-0 md:*:p-4">
                 <div className="text-[#714876] md:font-bold">
                   <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
@@ -195,7 +192,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
               </div>
-            </>
+            </div>
           </TabPanel>
           <TabPanel>
             <>
@@ -402,12 +399,24 @@ const WhatIsThePlan = () => {
     else if (selectedTab === 1) setSelectedLayer("empABS")
   }, [selectedTab])
 
+  const enlarge = (id, others) => {
+    document.querySelector(`#${id}`).classList.toggle("scale-[70%]")
+    document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
+
+    others.map(id => {
+      if (document.querySelector(`#${id}`).classList.contains("scale-[125%]")) {
+        document.querySelector(`#${id}`).classList.toggle("scale-[70%]")
+        document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
+      }
+    })
+  }
+
   return (
     <Layout>
-      <div className="bg-[#eaf3fb] flex flex-col items-center">
+      <div className="flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
+          <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
             </Link>
@@ -415,8 +424,8 @@ const WhatIsThePlan = () => {
             <Link>Financial</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               How Will We Fund the Future?
             </h2>
@@ -434,106 +443,92 @@ const WhatIsThePlan = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-[68%] relative border-l-4 border-[#063446] relative">
-          <div className="flex items-center w-full md:p-4 p-2 relative">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
+          <div className="flex items-center w-full md:p-6 p-2 md:pt-0 relative mt-4">
             <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-            <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
+            <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               Understanding Our Transportation Needs
             </h2>
           </div>
-          <p className="text-[#063446] md:ml-[1.5%]">
-            To reach our vision for a{" "}
-            <strong>safe, modern, multimodal transportation system</strong>,
-            DVRPC estimates how much investment will be needed and compares it
-            to how much funding is available.
-          </p>
-          <img src={Arrow1} className="absolute md:left-[15%] md:top-[25%]" />
-          <img
-            src={Arrow2}
-            className="absolute md:right-0 md:top-[20%] scale-[75%]"
-          />
-          <img
-            src={Arrow3}
-            className="absolute md:bottom-[8%] md:right-[60%]"
-          />
-          <div
-            id="block-1"
-            className="absolute md:top-[20%]"
-            onClick={() =>
-              document
-                .querySelector("#block-1")
-                .classList.toggle("scale-[150%]")
-            }
-          >
-            <div className="absolute text-sm md:m-6 space-y-2 text-[#063446] flex flex-col">
-              <span>
-                DVRPC estimates reasonably anticipated funding for the
-                Pennsylvania and New Jersey subregions for roadways and transit.
-                There is limited ability to move funds between modes.
-              </span>
-              <span>
-                These are allocated to specific types of projects based on the
-                Plan’s vision, goals, policies, and identified needs.
-              </span>
+          <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
+            <p className="text-[#063446]">
+              To reach our vision for a{" "}
+              <strong>safe, modern, multimodal transportation system</strong>,
+              DVRPC estimates how much investment will be needed and compares it
+              to how much funding is available. Click on the text boxes below to
+              learn more.
+            </p>
+            <div className="relative md:py-14 pb-20">
+              <div
+                id="block-1"
+                className="absolute scale-[70%]"
+                onClick={() => enlarge("block-1", ["block-2", "block-3"])}
+              >
+                <div className="absolute text-sm m-6 space-y-2 text-[#063446] flex flex-col">
+                  <span>
+                    DVRPC estimates reasonably anticipated funding for the
+                    Pennsylvania and New Jersey subregions for roadways and
+                    transit. There is limited ability to move funds between
+                    modes.
+                  </span>
+                  <span>
+                    These are allocated to specific types of projects based on
+                    the Plan’s vision, goals, policies, and identified needs.
+                  </span>
+                </div>
+                <img src={Block1} />
+              </div>
+              <div
+                id="block-2"
+                className="absolute scale-[70%]"
+                onClick={() => enlarge("block-2", ["block-1", "block-3"])}
+              >
+                <div className="absolute m-8 text-sm space-y-2 text-[#063446] flex flex-col">
+                  <span>
+                    <strong>$78.4 billion in funding</strong> is expected from
+                    federal, state, and local sources.
+                  </span>
+                </div>
+                <img src={Block2} />
+              </div>
+              <div
+                id="block-3"
+                className="absolute scale-[70%]"
+                onClick={() => enlarge("block-3", ["block-1", "block-2"])}
+              >
+                <div className="absolute m-6 text-sm space-y-2 text-[#063446] flex flex-col">
+                  <span>
+                    <strong>$162.9 billion</strong> to achieve the
+                    transportation vision.
+                  </span>
+                  <span>
+                    The estimate does not yet include the full cost of:
+                  </span>
+                  <ul className="list-disc *:ml-4 !text-sm">
+                    <li>Substantive safety improvements</li>
+                    <li>
+                      Preservation of existing roadway and transit networks
+                    </li>
+                    <li>New bicycle and pedestrian facilities</li>
+                    <li>Operational improvements</li>
+                    <li>Network Expansion</li>
+                  </ul>
+                </div>
+                <img src={Block3} />
+              </div>
+              <img src={Revenue} className="mx-auto w-4/5" />
             </div>
-            <img src={Block1} />
           </div>
-          <div
-            id="block-2"
-            className="absolute md:right-0 md:top-[25%]"
-            onClick={() =>
-              document
-                .querySelector("#block-2")
-                .classList.toggle("scale-[200%]")
-            }
-          >
-            <div className="absolute md:m-8 text-sm space-y-2 text-[#063446] flex flex-col">
-              <span>
-                <strong>$78.4 billion in funding</strong> is expected from
-                federal, state, and local sources.
-              </span>
-            </div>
-            <img src={Block2} />
-          </div>
-          <div
-            id="block-3"
-            className="absolute md:bottom-[6%] md:right-[30%]"
-            onClick={() =>
-              document
-                .querySelector("#block-3")
-                .classList.toggle("scale-[150%]")
-            }
-          >
-            <div className="absolute md:m-6 text-sm space-y-2 text-[#063446] flex flex-col">
-              <span>
-                <strong>$162.9 billion</strong> to achieve the transportation
-                vision.
-              </span>
-              <span>The estimate does not yet include the full cost of:</span>
-              <ul className="list-disc *:ml-4 !text-sm">
-                <li>Substantive safety improvements</li>
-                <li>Preservation of existing roadway and transit networks</li>
-                <li>New bicycle and pedestrian facilities</li>
-                <li>Operational improvements</li>
-                <li>Network Expansion</li>
-              </ul>
-            </div>
-            <img src={Block3} />
-          </div>
-          <img
-            src={Revenue}
-            className="w-3/5 mx-auto md:mb-[45%] md:mt-[30%]"
-          />
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-20">
-            <div className=" flex items-center w-full md:p-4 p-2 relative">
+            <div className=" flex items-center w-full md:p-6 p-2  relative">
               <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
-              <h2 className="md:text-2xl text-lg text-[#063446] font-bold md:ml-[1.5%]">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Allocating Available Revenue
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 pt-0 md:p-6 p-2">
+            <div className="flex flex-col space-y-6 pt-0 md:p-6 md:pt-0 p-2">
               <p>
                 <strong>
                   The Plan prioritizes investing in the transportation system
@@ -556,16 +551,20 @@ const WhatIsThePlan = () => {
             </div>
           </div>
         </div>
-
-        <div className="relative h-full w-full flex">
-          <Tabs selectedIndex={selectedTab} setSelectedIndex={setSelectedTab} />
+        <div className="w-full bg-white relative">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-10">
+            <Tabs
+              selectedIndex={selectedTab}
+              setSelectedIndex={setSelectedTab}
+            />
+          </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative p-10 flex">
           <Link
             className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
             to="/mrp-list"
           >
-            See the Major Regional Projects funded with available Revenue
+            See the Major Regional Projects Funded with Available Revenue
           </Link>
         </div>
       </div>
