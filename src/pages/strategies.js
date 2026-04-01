@@ -107,7 +107,7 @@ const WhatIsThePlan = () => {
             <Link>Strategies</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               Strategies: Turning Vision into Action
@@ -194,8 +194,8 @@ const WhatIsThePlan = () => {
 
         <div className="w-full bg-[#eaf3fb] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex flex-col space-y-6 p-6 pt-0">
-              <div className="flex w-full md:p-4 relative flex-col space-y-6">
+            <div className="flex flex-col space-y-4 p-6 pt-0">
+              <div className="flex w-full md:p-4 relative flex-col space-y-4">
                 {filteredStrategies &&
                   filteredStrategies.length > 0 &&
                   filteredStrategies.map((strategy, idx) => (

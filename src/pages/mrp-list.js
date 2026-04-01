@@ -113,13 +113,13 @@ const MRPList = () => {
             <Link>Major Regional Project List</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               Major Regional Project List
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              Explore all projects included in <i>Update: Connections 2050</i>.
+              Explore all projects included in <em>Update: Connections 2050</em>.
               Each project is classified as{" "}
               <Tooltip
                 theme="tomato"
@@ -213,7 +213,7 @@ const MRPList = () => {
 
         <div className="w-full bg-[#eaf3fb] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0 overflow-x-auto">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 pt-0 overflow-x-auto">
               <table className="table-auto">
                 <thead className="text-left">
                   <tr className="*:py-4 *:px-4">

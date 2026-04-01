@@ -640,7 +640,7 @@ const WhatIsThePlan = () => {
             <Link>Plan Elements</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">Plan Elements</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">

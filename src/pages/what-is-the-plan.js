@@ -21,11 +21,11 @@ const WhatIsThePlan = () => {
             <Link>About</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">What Is the Plan?</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span>{" "}
+              <span className="italic font-bold">Update: Connections 2050</span>{" "}
               is Greater Philadelphia's Long-Range Plan (Plan). The Plan serves
               as the blueprint to guide growth and development in our region and
               to prioritize funding for capital transportation investment
@@ -46,7 +46,7 @@ const WhatIsThePlan = () => {
               The DVRPC Region
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
+          <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
             <p>Use the interactive map to explore the region.</p>
             <DvrpcMap />
             <p>
@@ -99,7 +99,7 @@ const WhatIsThePlan = () => {
                 The Long-Range Plan
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:pt-0 md:p-6 p-2">
+            <div className="flex flex-col space-y-4 md:pt-0 md:p-6 p-2">
               <p>
                 At its core, the Plan expresses a{" "}
                 <strong>vision for Greater Philadelphia in 2050</strong>—what
@@ -134,7 +134,7 @@ const WhatIsThePlan = () => {
                 Putting the Plan into Action
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
               <p>
                 While the Plan is updated every four years, implementation
                 happens every day. DVRPC and its partners move projects forward

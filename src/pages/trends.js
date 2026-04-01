@@ -53,7 +53,7 @@ const Trends = () => {
                 Remote Work and Post-COVID Commute Patterns
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
               <p>
                 Remote and hybrid work have reshaped travel behavior across
                 Greater Philadelphia, changing where people live, how they get
@@ -113,7 +113,7 @@ const Trends = () => {
                 Artificial Intelligence
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 md:pt-0 p-2">
+            <div className="flex flex-col space-y-4 md:p-6 md:pt-0 p-2">
               <p>
                 <Tooltip
                   title="Artificial intelligence (AI) refers to computer systems that can perform tasks that typically require human intelligence—such as learning, analyzing data, recognizing patterns, and making decisions."
@@ -162,7 +162,7 @@ const Trends = () => {
                 Ridesharing and Automated Vehicle Programs
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 md:pt-0 p-2">
+            <div className="flex flex-col space-y-4 md:p-6 md:pt-0 p-2">
               <p>
                 New mobility options—from shared rides to automated shuttles—are
                 expanding access to transportation and redefining how people
@@ -201,7 +201,7 @@ const Trends = () => {
                 </h2>
               </div>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 md:pt-0 p-2">
+            <div className="flex flex-col space-y-4 md:p-6 md:pt-0 p-2">
               <p>
                 DVRPC’s{" "}
                 <a

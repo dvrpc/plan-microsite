@@ -54,7 +54,7 @@ const TakingAction = () => {
                 Big Moves, Big Support
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 Ambitious ideas can’t move forward without strong support. Too
                 many critical projects are delayed or underfunded, even as costs
@@ -119,7 +119,7 @@ const TakingAction = () => {
                 What DVRPC Is Doing
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 DVRPC brings together people and ideas to tackle the region’s
                 toughest challenges. As the metropolitan planning organization
@@ -189,7 +189,7 @@ const TakingAction = () => {
                 What Local Governments Can Do
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 Local governments play a key role in building a stronger, more
                 connected region by turning long-range plan goals and strategies

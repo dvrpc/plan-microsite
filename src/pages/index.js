@@ -47,7 +47,7 @@ const IndexPage = () => {
       <div className="text-white mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative md:px-[16%] px-4">
         <RegionOutline className="absolute top-[15%] z-10 md:w-2/5" />
         <h1 className="md:text-3xl text-lg md:p-12 pb-0 z-50 p-2 drop-shadow-lg">
-          <span className="italic font-bold">UPDATE: CONNECTIONS 2050</span> is
+          <span className="italic font-bold">Update: Connections 2050</span> is
           Greater Philadelphia's Long-Range Plan (Plan). The Plan serves as the
           blueprint to guide growth and development in our region and to
           prioritize funding for capital transportation investment accordingly.
@@ -72,7 +72,7 @@ const IndexPage = () => {
           Explore the Plan
         </h2>
 
-        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] min-h-[100vh] md:mx-auto space-y-6 pl-6 flex flex-col py-4">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] min-h-[100vh] md:mx-auto space-y-4 pl-6 flex flex-col py-4">
           <Disclosure>
             <DisclosureButton>
               <div className="flex items-center gap-x-4 md:-ml-[2.25rem]">
@@ -86,7 +86,7 @@ const IndexPage = () => {
               <p className="md:w-1/3 block text-left">
                 DVRPC is mandated to develop a long-range transportation plan
                 every four years to ensure orderly growth and development of the
-                region over the next few decades. Update: Connections 2050
+                region over the next few decades. <em>Update: Connections 2050</em>{" "}
                 includes a shared regional vision, a set of goals to support
                 that vision, and strategies for local, regional, and state
                 partners to make progress towards those goals. It also includes

@@ -44,7 +44,7 @@ const Resources = () => {
                 Download & Print
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
                   <a href="/" className="underline text-[#26428b] ">
@@ -112,7 +112,7 @@ const Resources = () => {
                 Resources
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
                   <a
@@ -174,7 +174,7 @@ const Resources = () => {
                 Get involved
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <p>
                 Every resident has a role to play in shaping our region’s
                 future. By staying informed, speaking up, and engaging in
@@ -199,7 +199,7 @@ const Resources = () => {
                 Frequently Asked Questions
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0 text-[#063446]">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <Accordion label="What is the purpose of the Plan?">
                 <p>
                   <i>Update: Connections 2050</i> is Greater Philadelphia's

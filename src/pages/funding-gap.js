@@ -74,7 +74,7 @@ const WhatIsThePlan = () => {
             </h2>
           </div>
           <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
-            <div className="space-y-6 min-w-[66%]">
+            <div className="space-y-4 min-w-[66%]">
               <p>
                 Most transportation funding comes from{" "}
                 <strong>taxes on gasoline and petroleum products</strong>, but
@@ -113,7 +113,7 @@ const WhatIsThePlan = () => {
               </h2>
             </div>
             <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
-              <div id="llf" className="space-y-6 w-[95%]">
+              <div id="llf" className="space-y-4 w-[95%]">
                 <p>
                   <strong>
                     Only 3% of Greater Philadelphia’s regional transportation
@@ -183,7 +183,7 @@ const WhatIsThePlan = () => {
                 Funding Options
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 md:p-6 p-2 pt-0">
+            <div className="flex flex-col space-y-4 md:p-6 p-2 pt-0">
               <p>
                 Our current transportation funding model isn’t keeping up with
                 today’s needs. It must be{" "}

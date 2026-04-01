@@ -88,7 +88,7 @@ const WhatIsThePlan = () => {
             <Link>Forecasts</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               Where Are We Headed?
@@ -115,7 +115,7 @@ const WhatIsThePlan = () => {
               Explore the Forecasts in Maps
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
+          <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
             <p>
               How will Greater Philadelphia’s people and jobs be distributed by
               2050? These interactive maps show where growth and decline are
@@ -233,7 +233,7 @@ const WhatIsThePlan = () => {
         </div>
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
-          <div className="flex flex-col space-y-6 md:m-6 m-2 text-[#063446]">
+          <div className="flex flex-col space-y-4 md:m-6 m-2 text-[#063446]">
             {selectedTab === 0 && (
               <>
                 <p>

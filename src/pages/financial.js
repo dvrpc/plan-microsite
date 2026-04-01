@@ -424,7 +424,7 @@ const WhatIsThePlan = () => {
             <Link>Financial</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               How Will We Fund the Future?
@@ -450,7 +450,7 @@ const WhatIsThePlan = () => {
               Understanding Our Transportation Needs
             </h2>
           </div>
-          <div className="flex flex-col space-y-6 md:p-6 p-2 md:pt-0">
+          <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
             <p className="text-[#063446]">
               To reach our vision for a{" "}
               <strong>safe, modern, multimodal transportation system</strong>,
@@ -528,7 +528,7 @@ const WhatIsThePlan = () => {
                 Allocating Available Revenue
               </h2>
             </div>
-            <div className="flex flex-col space-y-6 pt-0 md:p-6 md:pt-0 p-2">
+            <div className="flex flex-col space-y-4 pt-0 md:p-6 md:pt-0 p-2">
               <p>
                 <strong>
                   The Plan prioritizes investing in the transportation system

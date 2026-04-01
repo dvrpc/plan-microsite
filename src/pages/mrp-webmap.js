@@ -55,7 +55,7 @@ const MrpWebmap = () => {
             <Link>MRP Webmap</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-6 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               Major Regional Projects
@@ -185,7 +185,7 @@ const MrpWebmap = () => {
         </div>
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
-          <div className="flex flex-col space-y-6 md:p-6 p-2 text-[#063446]">
+          <div className="flex flex-col space-y-4 md:p-6 p-2 text-[#063446]">
             <div className="relative w-full">
               <img
                 id="mrp-box-1"
