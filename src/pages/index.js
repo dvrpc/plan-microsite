@@ -28,8 +28,25 @@ const ExploreLink = ({ children }) => {
 }
 
 const IndexPage = () => {
-  const [activeDisclosurePanel, setActiveDisclosurePanel] =
-    useState("what-is-the-plan")
+  const panels = [
+    "what-is-the-plan",
+    "shaping-future",
+    "look-like",
+    "how-we-fund",
+    "make-it-happen",
+  ]
+
+  const closePanels = id => {
+    panels.map(panel => {
+      if (panel !== id && document.querySelector(`#${panel}`)) {
+        const openState = document
+          .querySelector(`#${panel}`)
+          .getAttribute("data-headlessui-state")
+        if (openState === "open")
+          document.querySelector(`#${panel}`).firstChild.click()
+      }
+    })
+  }
 
   return (
     <Layout>
@@ -45,7 +62,7 @@ const IndexPage = () => {
         />
       </div>
       <div className="text-white mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative md:px-[16%] px-4">
-        <RegionOutline className="absolute top-[15%] z-10 md:w-2/5" />
+        <RegionOutline className="absolute top-[15%] lg:top-[10%] z-10 md:w-2/5 lg:w-1/3" />
         <h1 className="md:text-3xl text-lg md:p-12 pb-0 z-50 p-2 drop-shadow-lg">
           <span className="italic font-bold">Update: Connections 2050</span> is
           Greater Philadelphia's Long-Range Plan (Plan). The Plan serves as the
@@ -73,25 +90,31 @@ const IndexPage = () => {
         </h2>
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] min-h-[100vh] md:mx-auto space-y-4 pl-6 flex flex-col py-4">
-          <Disclosure>
-            <DisclosureButton>
-              <div className="flex items-center gap-x-4 md:-ml-[2.25rem]">
+          <Disclosure as="div" id="what-is-the-plan">
+            <DisclosureButton className="w-full">
+              <button
+                className="flex items-center gap-x-4 md:-ml-[2.25rem] w-full"
+                onClick={() => closePanels("what-is-the-plan")}
+              >
                 <Dot className="max-w-[1.25rem] md:block hidden" />
                 <p className="md:text-4xl underline md:w-1/2 block text-left">
                   What Is The Plan?
                 </p>
-              </div>
+              </button>
             </DisclosureButton>
-            <DisclosurePanel className="w-full flex md:flex-row flex-col">
+            <DisclosurePanel
+              className="w-full flex md:flex-row flex-col"
+              id="what-is-the-plan"
+            >
               <p className="md:w-1/3 block text-left">
                 DVRPC is mandated to develop a long-range transportation plan
                 every four years to ensure orderly growth and development of the
-                region over the next few decades. <em>Update: Connections 2050</em>{" "}
-                includes a shared regional vision, a set of goals to support
-                that vision, and strategies for local, regional, and state
-                partners to make progress towards those goals. It also includes
-                a financial plan that programs $78 billion in local, state, and
-                federal capital funding.
+                region over the next few decades.{" "}
+                <em>Update: Connections 2050</em> includes a shared regional
+                vision, a set of goals to support that vision, and strategies
+                for local, regional, and state partners to make progress towards
+                those goals. It also includes a financial plan that programs $78
+                billion in local, state, and federal capital funding.
               </p>
               <img
                 src={WhatIsThePlan}
@@ -99,19 +122,19 @@ const IndexPage = () => {
               />
             </DisclosurePanel>
           </Disclosure>
-          <Disclosure>
-            <DisclosureButton>
-              <div className="flex items-center gap-x-4 md:-ml-[2.25rem]">
+          <Disclosure as="div" id="shaping-future">
+            <DisclosureButton className="w-full">
+              <button
+                className="flex items-center gap-x-4 md:-ml-[2.25rem] w-full"
+                onClick={() => closePanels("shaping-future")}
+              >
                 <Dot className="max-w-[1.25rem] md:block hidden" />
                 <p className="md:text-4xl underline md:w-1/2 block text-left">
                   What Is Shaping Our Future?
                 </p>
-              </div>
+              </button>
             </DisclosureButton>
-            <DisclosurePanel
-              className="w-full flex md:flex-row flex-col"
-              id="shaping-future"
-            >
+            <DisclosurePanel className="w-full flex md:flex-row flex-col">
               <p className="md:w-1/3 block text-left">
                 The Plan analyzes key trends shaping our future and provides
                 quantitative indicators to reveal where we are now and to track
@@ -123,14 +146,17 @@ const IndexPage = () => {
               />
             </DisclosurePanel>
           </Disclosure>
-          <Disclosure>
-            <DisclosureButton>
-              <div className="flex items-center gap-x-4 md:-ml-[2.25rem]">
+          <Disclosure as="div" id="look-like">
+            <DisclosureButton className="w-full">
+              <button
+                className="flex items-center gap-x-4 md:-ml-[2.25rem] w-full"
+                onClick={() => closePanels("look-like")}
+              >
                 <Dot className="max-w-[1.25rem] md:block hidden" />
                 <p className="md:text-4xl underline md:w-1/2 block text-left">
                   What Do We Want the Region to Look Like in 2050?
                 </p>
-              </div>
+              </button>
             </DisclosureButton>
             <DisclosurePanel className="w-full flex md:flex-row flex-col">
               <p className="md:w-1/3 block text-left">
@@ -145,14 +171,17 @@ const IndexPage = () => {
               />
             </DisclosurePanel>
           </Disclosure>
-          <Disclosure>
-            <DisclosureButton>
-              <div className="flex items-center gap-x-4 md:-ml-[2.25rem]">
+          <Disclosure as="div" id="how-we-fund">
+            <DisclosureButton className="w-full">
+              <button
+                className="flex items-center gap-x-4 md:-ml-[2.25rem] w-full"
+                onClick={() => closePanels("how-we-fund")}
+              >
                 <Dot className="max-w-[1.25rem] md:block hidden" />
                 <p className="md:text-4xl underline md:w-1/2 block text-left">
                   How Will We Fund the Future?
                 </p>
-              </div>
+              </button>
             </DisclosureButton>
             <DisclosurePanel className="w-full flex md:flex-row flex-col">
               <p className="md:w-1/3 block text-left">
@@ -166,14 +195,17 @@ const IndexPage = () => {
               />
             </DisclosurePanel>
           </Disclosure>
-          <Disclosure>
-            <DisclosureButton>
-              <div className="flex items-center gap-x-4 md:-ml-[2.25rem]">
+          <Disclosure as="div" id="make-it-happen">
+            <DisclosureButton className="w-full">
+              <button
+                className="flex items-center gap-x-4 md:-ml-[2.25rem] w-full"
+                onClick={() => closePanels("make-it-happen")}
+              >
                 <Dot className="max-w-[1.25rem] md:block hidden" />
                 <p className="md:text-4xl underline md:w-1/2 block text-left">
                   How Can We Make It Happen?
                 </p>
-              </div>
+              </button>
             </DisclosureButton>
             <DisclosurePanel className="w-full flex md:flex-row flex-col">
               <p className="md:w-1/3 block text-left">

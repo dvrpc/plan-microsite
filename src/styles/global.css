@@ -228,7 +228,7 @@ table {
 
 /* legend */
 .legend {
-  background-color: #ffffff;
+  background-color: #00394c;
   color: #ffffff;
   text-align: left;
   padding: 18px 18px 14px;
@@ -498,4 +498,9 @@ table {
   #mrp-box-1 {
     height: 48rem;
   }
+}
+
+.face {
+  background-color: #00394c;
+  padding: 0.15rem;
 }
