@@ -28,14 +28,19 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         onChange={setSelectedIndex}
       >
         <TabList className="flex text-white md:w-2/3 md:ml-auto md:*:rounded-t-lg">
-          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#0078af] data-[selected]:text-[#0078af] [&:not([data-selected])]:text-white w-1/2">
+          <Tab className="p-3 font-bold data-[selected]:bg-[#0078af] [&:not([data-selected])]:bg-white data-[selected]:text-white [&:not([data-selected])]:text-[#0078af] w-1/2">
             Population
           </Tab>
-          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#704775] data-[selected]:text-[#704775] [&:not([data-selected])]:text-white w-1/2">
+          <Tab className="p-3 font-bold data-[selected]:bg-[#704775] [&:not([data-selected])]:bg-white data-[selected]:text-white [&:not([data-selected])]:text-[#704775] w-1/2">
             Employment
           </Tab>
         </TabList>
-        <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2 pl-[33%]">
+        <TabPanels
+          className="p-3 text-white flex-1 space-y-2 pl-[33%]"
+          style={{
+            backgroundColor: selectedIndex === 0 ? "#0078af" : "#704775",
+          }}
+        >
           <TabPanel>
             <span>
               By 2050, the Greater Philadelphia region is projected to add about{" "}
@@ -133,7 +138,7 @@ const WhatIsThePlan = () => {
                 decrease
               </li>
               <li>
-                <strong>Percent Change</strong>: the proportional change
+                }<strong>Percent Change</strong>: the proportional change
                 compared with today
               </li>
               <li>
