@@ -504,3 +504,9 @@ table {
   background-color: #00394c;
   padding: 0.15rem;
 }
+
+@media screen and (min-width: 1024px) {
+  #mobile-nav {
+    display: none;
+  }
+}

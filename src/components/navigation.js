@@ -7,15 +7,13 @@ export default function Navigation() {
     { title: "About", path: "/what-is-the-plan" },
     {
       title: "Trends & Forces",
-      path: "",
       children: [
         { title: "Trends", path: "/trends" },
         { title: "Forecasts", path: "/forecasts" },
       ],
     },
     {
-      title: "Vision",
-      path: "/vision",
+      title: "Long-Range Plan",
       children: [
         { title: "Vision", path: "/vision" },
         { title: "Plan Elements", path: "/plan-elements" },
@@ -23,8 +21,7 @@ export default function Navigation() {
       ],
     },
     {
-      title: "Financial",
-      path: "",
+      title: "Funding",
       children: [
         { title: "Financial", path: "/financial" },
         { title: "Funding Gap", path: "/funding-gap" },
@@ -46,8 +43,11 @@ export default function Navigation() {
           <Disclosure>
             {({ open }) => (
               <>
-                <div className="flex flex-wrap items-center justify-between w-full lg:w-auto sm:hidden p-2">
-                  <Disclosure.Button aria-label="Toggle Menu">
+                <div
+                  className="flex flex-wrap items-center justify-between w-full lg:w-auto p-2"
+                  id="mobile-nav"
+                >
+                  <Disclosure.Button>
                     <svg
                       className="w-6 h-6 fill-current"
                       xmlns="http://www.w3.org/2000/svg"
@@ -81,7 +81,7 @@ export default function Navigation() {
 
           {/* menu  */}
           <div className="hidden text-center lg:flex lg:items-center mx-auto">
-            <ul className="items-center pt-6 lg:pt-0 list-reset lg:flex lg:text-xl">
+            <ul className="items-center pt-6 lg:pt-0 lg:flex lg:text-xl">
               <NavMenu navigation={navigation} />
             </ul>
           </div>
@@ -133,7 +133,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
       {({ open }) => (
         <>
           <Menu.Button
-            className={`flex items-center gap-x-1 transition-all rounded-md outline-none focus:outline-none 
+            className={`flex items-center gap-x-1 transition-all focus:outline-2 focus:outline-blue-600 
              ${mobile ? "px-4 py-2 -ml-4" : "inline-block px-4"}`}
           >
             <span>{menu.title}</span>
@@ -147,7 +147,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
             leaveFrom="lg:transform lg:opacity-100 lg:scale-100"
             leaveTo="lg:transform lg:opacity-0 lg:scale-95"
           >
-            <Menu.Items className="z-[100] lg:w-56 origin-top-left rounded-md lg:absolute lg:right-0 focus:outline-none bg-[#dfebf5] text-left">
+            <Menu.Items className="z-[100] lg:w-56 origin-top-left focus:outline-2 focus:outline-blue-600  lg:absolute lg:right-0 bg-[#dfebf5] text-left">
               <div className={`${!mobile ? "py-3" : ""}`}>
                 {items.map((item, index) => (
                   <Menu.Item as="div" key={index}>
