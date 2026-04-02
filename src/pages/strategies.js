@@ -115,8 +115,10 @@ const WhatIsThePlan = () => {
             <p className="md:text-2xl text-lg pb-0 z-50">
               Change won't come overnight, and it won't happen by doing things
               the same old way. Achieving this vision will take{" "}
-              <strong>bold action and collaboration</strong> acrosss the region,
-              with everyone playing a part.
+              <strong className="text-white">
+                bold action and collaboration
+              </strong>{" "}
+              acrosss the region, with everyone playing a part.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Even though each goal and strategy shows up just once,

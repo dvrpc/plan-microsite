@@ -31,15 +31,20 @@ const Trends = () => {
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Each update to the region’s Plan begins with a look at the{" "}
-              <strong>forces shaping Greater Philadelphia’s future</strong>.
-              DVRPC studies social, economic, and land use trends to understand
-              how the region is changing and how those changes might affect our
-              communities, economy, and environment in the decades ahead.
+              <strong className="text-white">
+                forces shaping Greater Philadelphia’s future
+              </strong>
+              . DVRPC studies social, economic, and land use trends to
+              understand how the region is changing and how those changes might
+              affect our communities, economy, and environment in the decades
+              ahead.
             </p>
             <p className="md:text-2xl text-lg">
               This research helps DVRPC and its partners{" "}
-              <strong>anticipate future needs and craft policies</strong> that
-              move the region toward its shared vision. DVRPC continues to
+              <strong className="text-white">
+                anticipate future needs and craft policies
+              </strong>{" "}
+              that move the region toward its shared vision. DVRPC continues to
               monitor trends that will shape how the region grows and adapts in
               the years ahead.
             </p>

@@ -100,16 +100,22 @@ const WhatIsThePlan = () => {
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Population and employment forecasts help planners understand{" "}
-              <strong>how the Greater Philadelphia region might grow</strong> in
-              the coming decades and how that growth will affect housing,
+              <strong className="text-white">
+                how the Greater Philadelphia region might grow
+              </strong>{" "}
+              in the coming decades and how that growth will affect housing,
               transportation, jobs, and quality of life.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               While no one can predict the future, forecasts give us a roadmap
-              to make <strong>smarter investments</strong> in roads, buses,
-              trains, and communities. Overall, the region is expected to see{" "}
-              <strong>steady growth in both people and jobs</strong> through
-              2050.
+              to make{" "}
+              <strong className="text-white">smarter investments</strong> in
+              roads, buses, trains, and communities. Overall, the region is
+              expected to see{" "}
+              <strong className="text-white">
+                steady growth in both people and jobs
+              </strong>{" "}
+              through 2050.
             </p>
           </div>
         </div>

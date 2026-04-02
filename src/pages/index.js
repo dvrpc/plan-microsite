@@ -98,7 +98,7 @@ const IndexPage = () => {
               >
                 <Dot className="max-w-[1.25rem] md:block hidden" />
                 <p className="md:text-4xl underline md:w-1/2 block text-left">
-                  What Is The Plan?
+                  What Is the Plan?
                 </p>
               </button>
             </DisclosureButton>

@@ -645,9 +645,14 @@ const WhatIsThePlan = () => {
             <h2 className="md:text-3xl text-xl font-bold">Plan Elements</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               The Plan is organized into five key elements—
-              <strong>Transportation, Economy, Communities, Environment</strong>
-              , and <strong>Infrastructure and Utility Services</strong>—each
-              with three goals that guide our regional vision. Explore the
+              <strong className="text-white">
+                Transportation, Economy, Communities, Environment
+              </strong>
+              , and{" "}
+              <strong className="text-white">
+                Infrastructure and Utility Services
+              </strong>
+              —each with three goals that guide our regional vision. Explore the
               elements below to see what the vision looks like in practice.
             </p>
           </div>

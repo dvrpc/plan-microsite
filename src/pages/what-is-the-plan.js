@@ -23,9 +23,13 @@ const WhatIsThePlan = () => {
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
           <div className="md:w-[68%] mx-auto space-y-4">
-            <h2 className="md:text-3xl text-xl font-bold">What Is the Plan?</h2>
+            <h2 className="md:text-3xl text-xl font-bold text-white">
+              What Is the Plan?
+            </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              <span className="italic font-bold">Update: Connections 2050</span>{" "}
+              <span className="italic font-bold text-white">
+                Update: Connections 2050
+              </span>{" "}
               is Greater Philadelphia's Long-Range Plan (Plan). The Plan serves
               as the blueprint to guide growth and development in our region and
               to prioritize funding for capital transportation investment

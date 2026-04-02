@@ -45,22 +45,30 @@ const WhatIsThePlan = () => {
             <h2 className="text-3xl font-bold">Filling the Funding Gap</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               To make our shared regional vision a reality, we need{" "}
-              <strong>more transportation funding</strong> from both existing
-              federal, state, and local sources, as well as new sources.
+              <strong className="text-white">
+                more transportation funding
+              </strong>{" "}
+              from both existing federal, state, and local sources, as well as
+              new sources.
             </p>
             <p className="md:text-2xl text-lg">
-              <strong>Greater investment is needed to:</strong>
+              <strong className="text-white">
+                Greater investment is needed to:
+              </strong>
               <ul className="*:ml-6 list-disc">
                 <li>
-                  <strong>Maintain and modernize</strong> our aging
-                  transportation infrastructure
+                  <strong className="text-white">Maintain and modernize</strong>{" "}
+                  our aging transportation infrastructure
                 </li>
                 <li>
-                  <strong>Support emerging technologies</strong>
+                  <strong className="text-white">
+                    Support emerging technologies
+                  </strong>
                 </li>
                 <li>
-                  <strong>Expand access</strong> so more people can reach jobs,
-                  education services, and essential services
+                  <strong className="text-white">Expand access</strong> so more
+                  people can reach jobs, education services, and essential
+                  services
                 </li>
               </ul>
             </p>
