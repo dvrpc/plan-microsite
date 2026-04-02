@@ -15,7 +15,7 @@ const TakingAction = () => {
       <div className="flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
+          <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
             </Link>
@@ -23,8 +23,8 @@ const TakingAction = () => {
             <Link>Take Action</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] bg-[#0c2e39] w-full flex flex-col relative px-10 py-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               How Can We Make It Happen?
             </h2>
@@ -39,7 +39,7 @@ const TakingAction = () => {
             </p>
             <p className="md:text-2xl text-lg">
               Creating the future we want will take collaboration, creativity,
-              and commitment. Everyone has a part to play—from governments
+              and commitment. Everyone has a part to play—from government
               agencies and businesses to community organizations and residents.
               Together, we can make our shared vision for Greater Philadelphia a
               reality.
@@ -89,7 +89,7 @@ const TakingAction = () => {
                 <li>
                   <strong>
                     State legislation enabling local governments to raise funds
-                  </strong>
+                  </strong>{" "}
                   for their own transportation priorities.
                 </li>
                 <li>
@@ -206,28 +206,53 @@ const TakingAction = () => {
               <ul className="list-disc ml-4">
                 <li>
                   <strong>Put Plan strategies into practice.</strong> Visit the
-                  Strategies web page for actionable steps communities can take
-                  to advance the regional vision, organized by topic area.
+                  <Link className="underline" to="/strategies">
+                    Strategies
+                  </Link>{" "}
+                  web page for actionable steps communities can take to advance
+                  the regional vision, organized by topic area.
                 </li>
                 <li>
                   <strong>Link local efforts to funding.</strong> Participate in
-                  the Municipal Exchange to hear from subject matter experts on
-                  a variety of municipal challenges. Learn of grant
-                  opportunities and technical assistance programs that can help
-                  local governments secure funding for projects that advance the
-                  Long-Range Plan’s goals.
+                  the{" "}
+                  <a
+                    className="underline"
+                    target="_blank"
+                    href="https://www.dvrpc.org/committees/me/"
+                  >
+                    Municipal Exchange
+                  </a>{" "}
+                  to hear from subject matter experts on a variety of municipal
+                  challenges. Learn of grant opportunities and technical
+                  assistance programs that can help local governments secure
+                  funding for projects that advance the Long-Range Plan’s goals.
                 </li>
                 <li>
-                  <strong>Access planning tools and guidance.</strong> Explore
-                  Municipal Resources for data resources to support sound
-                  decision-making, effective local planning, and informed
-                  approaches to community growth and housing needs.
+                  <strong>Access planning tools and guidance.</strong> Explore{" "}
+                  <a
+                    className="underline"
+                    target="_blank"
+                    href="https://www.dvrpc.org/municipalresources/"
+                  >
+                    Municipal Resources
+                  </a>{" "}
+                  for data resources to support sound decision-making, effective
+                  local planning, and informed approaches to community growth
+                  and housing needs.
                 </li>
                 <li>
                   <strong>Visit the Municipal Help Desk.</strong> Not sure where
-                  to start? Use the Municipal Help Desk to connect with the
-                  right DVRPC staff for support with planning, public
-                  engagement, data, grants, funding, and implementation.
+                  to start? Use the{" "}
+                  <a
+                    className="underline"
+                    target="_blank"
+                    href="https://www.dvrpc.org/municipalhelpdesk/"
+                  >
+                    Municipal Help Desk
+                  </a>{" "}
+                  to connect with the right DVRPC staff for support with
+                  planning, public engagement, data, grants, funding, and
+                  implementation.
                 </li>
               </ul>
               <p>
@@ -240,7 +265,7 @@ const TakingAction = () => {
                 className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
                 to="https://www.dvrpc.org/getinvolved"
               >
-                Click Here for Ways To Stay Connected
+                Stay Connected
               </Link>
             </div>
           </div>

@@ -15,7 +15,7 @@ const Resources = () => {
       <div className="flex flex-col items-center">
         <div className="w-full h-full">
           <img src={Bg} className="absolute object-cover h-2/5 w-full" />
-          <div className="flex text-white font-bold w-[68%] mx-auto z-50 relative items-center mt-4">
+          <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
             </Link>
@@ -23,8 +23,8 @@ const Resources = () => {
             <Link>Documents & Resources</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] bg-[#063446] w-full flex flex-col relative px-12 py-6 mt-[10%]">
-          <div className="md:w-[70%] mx-auto space-y-4">
+        <div className="text-[#dfebf5] bg-[#0c2e39] w-full flex flex-col relative px-10 py-6 mt-[10%]">
+          <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               Plan Documents & Resources
             </h2>
@@ -186,7 +186,7 @@ const Resources = () => {
                 className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
                 to="https://www.dvrpc.org/getinvolved"
               >
-                Visit our Stay Connected page to get started
+                Visit Our Stay Connected Page to Get Started
               </Link>
             </div>
           </div>
