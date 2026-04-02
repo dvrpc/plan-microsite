@@ -205,7 +205,7 @@ const TakingAction = () => {
               </p>
               <ul className="list-disc ml-4">
                 <li>
-                  <strong>Put Plan strategies into practice.</strong> Visit the
+                  <strong>Put Plan strategies into practice.</strong> Visit the{" "}
                   <Link className="underline" to="/strategies">
                     Strategies
                   </Link>{" "}
