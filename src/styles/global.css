@@ -510,3 +510,45 @@ table {
     display: none;
   }
 }
+
+@media screen and (max-width: 1475px) {
+  #text-div {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  #text-div {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 885px) {
+  #text-div {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 764px) {
+  #funding-box-1-text {
+    top: 20%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  #funding-box-1-text {
+    top: 10%;
+  }
+}
+
+@media screen and (max-width: 506px) {
+  #text-div {
+    font-size: 0.65rem;
+  }
+}
+
+@media screen and (max-width: 442px) {
+  #text-div {
+    font-size: 0.55rem;
+  }
+}

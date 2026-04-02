@@ -107,7 +107,7 @@ const WhatIsThePlan = () => {
                 continue to grow.
               </p>
             </div>
-            <div className="md:ml-6 mx-auto h-fit md:w-full w-1/2">
+            <div className="md:ml-6 mx-auto h-fit md:w-full w-1/2 lg:w-1/5">
               <img src={PurchasingPower} />
             </div>
           </div>
@@ -147,18 +147,17 @@ const WhatIsThePlan = () => {
                   innovative investments that promote long-term economic growth.
                 </p>
               </div>
-              <div className="md:ml-6 mx-auto h-fit md:mt-auto md:w-full">
+              <div className="md:ml-6 mx-auto h-fit md:mt-auto md:w-full lg:w-1/2">
                 <img src={LocalFunding} />
               </div>
             </div>
-            <div className="relative w-full">
-              <img
-                id="funding-box-1"
-                src={FundingBox1}
-                className="p-2 md:h-[20rem] h-[22rem] w-full"
-              />
+            <div
+              className="relative w-full flex justify-center mx-auto lg:w-[75%]"
+              id="text-div"
+            >
+              <img src={FundingBox1} className="p-2 w-full" />
               <div
-                className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-2 md:p-4 top-0 p-10"
+                className="absolute md:left-[5%] text-white space-y-2 md:p-4 top-5 lg:top-[10%] w-4/5"
                 id="funding-box-1-text"
               >
                 <strong>

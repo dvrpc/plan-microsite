@@ -1,4 +1,4 @@
-import React, { Fragment } from "react"
+import React, { useRef, Fragment } from "react"
 import { Link } from "gatsby"
 import { Menu, Transition, Disclosure } from "@headlessui/react"
 
@@ -128,6 +128,10 @@ const MenuItem = ({ item, mobile }) => {
 }
 
 const DropdownMenu = ({ menu, items, mobile }) => {
+  const url =
+    typeof window !== "undefined" ? window.location.pathname.slice(0, -1) : ""
+  const isActive = useRef(false)
+
   return (
     <Menu as="div" className="relative">
       {({ open }) => (
@@ -136,7 +140,9 @@ const DropdownMenu = ({ menu, items, mobile }) => {
             className={`flex items-center gap-x-1 transition-all focus:outline-2 focus:outline-blue-600 
              ${mobile ? "px-4 py-2 -ml-4" : "inline-block px-4"}`}
           >
-            <span>{menu.title}</span>
+            <span style={{ fontWeight: isActive.current ? "bold" : "normal" }}>
+              {menu.title}
+            </span>
           </Menu.Button>
           <Transition
             as={Fragment}
@@ -149,17 +155,20 @@ const DropdownMenu = ({ menu, items, mobile }) => {
           >
             <Menu.Items className="z-[100] lg:w-56 origin-top-left focus:outline-2 focus:outline-blue-600  lg:absolute lg:right-0 bg-[#dfebf5] text-left">
               <div className={`${!mobile ? "py-3" : ""}`}>
-                {items.map((item, index) => (
-                  <Menu.Item as="div" key={index}>
-                    {({ active }) => (
-                      <Link to={item.path}>
-                        <a className="flex space-x-2 lg:space-x-4 items-center px-5 py-2">
-                          <span> {item.title}</span>
-                        </a>
-                      </Link>
-                    )}
-                  </Menu.Item>
-                ))}
+                {items.map((item, index) => {
+                  if (item.path === url) isActive.current = true
+                  return (
+                    <Menu.Item as="div" key={index}>
+                      {({ active }) => (
+                        <Link to={item.path}>
+                          <a className="flex space-x-2 lg:space-x-4 items-center px-5 py-2">
+                            <span>{item.title}</span>
+                          </a>
+                        </Link>
+                      )}
+                    </Menu.Item>
+                  )
+                })}
               </div>
             </Menu.Items>
           </Transition>
