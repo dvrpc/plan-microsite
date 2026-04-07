@@ -5,7 +5,8 @@ import { LngLatBounds } from "mapbox-gl"
 import AppContext from "./AppContext"
 
 const DVRPCMap = ({ children, features }) => {
-  const { mapRef, clickedFeature, setClickedFeature } = useContext(AppContext)
+  const { mapRef, clickedFeature, setClickedFeature, onHover, onHoverLeave } =
+    useContext(AppContext)
   const maxExtent = new LngLatBounds([
     [-76.09405517578125, 39.49211914385648],
     [-74.32525634765625, 40.614734298694216],
@@ -30,15 +31,19 @@ const DVRPCMap = ({ children, features }) => {
     <div className="h-[600px] w-full">
       <Map
         mapStyle="mapbox://styles/crvanpollard/ck5fpyqti0v971itf7edp2eyd"
-        interactiveLayerIds={["mrp-lines"]}
+        interactiveLayerIds={[
+          "mrp-lines",
+          "county-outline",
+          "municipality-outline",
+        ]}
         ref={mapRef}
         initialViewState={{ bounds: maxExtent }}
         mapboxAccessToken="pk.eyJ1IjoidGhhY2hhZG9yaWFuZHZycGMiLCJhIjoiY2x6Ymw5bjNoMDIxdTJscHJlbDMxMzM1ZyJ9.AZoU09L4abDOTWEUM5Uwdw"
         minZoom={8}
         onClick={onClick}
         cursor={cursor}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
+        onMouseEnter={!onHover.current ? onMouseEnter : onHover}
+        onMouseLeave={!onHoverLeave.current ? onMouseLeave : onHoverLeave}
       >
         {children}
         <Source

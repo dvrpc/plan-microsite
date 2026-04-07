@@ -6,6 +6,7 @@ import Dot from "../images/dot.svg"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import PlanProcess from "../images/plan-process@4x.png"
 import DvrpcMap from "../components/dvrpcmap"
+import WhatMap, { Legend } from "../components/whatmap"
 
 const WhatIsThePlan = () => {
   return (
@@ -50,9 +51,12 @@ const WhatIsThePlan = () => {
               The DVRPC Region
             </h2>
           </div>
-          <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
+          <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 relative">
             <p>Use the interactive map to explore the region.</p>
-            <DvrpcMap />
+            <div className="relative flex">
+              <Legend />
+              <WhatMap />
+            </div>
             <p>
               Greater Philadelphia is one of the nation’s most historic and
               dynamic regions. Once an industrial powerhouse, it has evolved

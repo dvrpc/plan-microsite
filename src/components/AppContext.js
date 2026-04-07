@@ -4,6 +4,8 @@ const AppContext = createContext()
 export const AppProvider = props => {
   const mapRef = useRef(null)
   const [clickedFeature, setClickedFeature] = useState(null)
+  const onHover = useRef(null)
+  const onHoverLeave = useRef(null)
 
   return (
     <AppContext.Provider
@@ -11,6 +13,8 @@ export const AppProvider = props => {
         mapRef,
         clickedFeature,
         setClickedFeature,
+        onHover,
+        onHoverLeave,
       }}
     >
       {props.children}
