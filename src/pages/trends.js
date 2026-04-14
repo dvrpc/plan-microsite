@@ -193,7 +193,7 @@ const Trends = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-[#d5d1db] relative">
+        <div className="w-full bg-[#bce8d2] relative">
           <div className="md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot

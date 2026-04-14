@@ -153,7 +153,7 @@ const WhatIsThePlan = () => {
                 decrease
               </li>
               <li>
-                }<strong>Percent Change</strong>: the proportional change
+                <strong>Percent Change</strong>: the proportional change
                 compared with today
               </li>
               <li>
