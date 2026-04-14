@@ -33,9 +33,7 @@ const WhatIsThePlan = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="underline" to="/financial">
-              Financial
-            </Link>
+            <Link>Financial</Link>
             <ChevronRightIcon width="1.5%" />
             <Link>Funding Gap</Link>
           </div>

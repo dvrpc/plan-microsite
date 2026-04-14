@@ -13,23 +13,23 @@ export default function Navigation() {
       ],
     },
     {
-      title: "Long-Range Plan",
+      title: "Policy",
       children: [
-        { title: "Vision", path: "/vision" },
+        { title: "Regional Vision", path: "/vision" },
         { title: "Plan Elements", path: "/plan-elements" },
         { title: "Strategies", path: "/strategies" },
       ],
     },
     {
-      title: "Funding",
+      title: "Financial",
       children: [
-        { title: "Financial", path: "/financial" },
+        { title: "Needs & Revenue", path: "/financial" },
         { title: "Funding Gap", path: "/funding-gap" },
         { title: "MRP Web Map", path: "/mrp-webmap" },
         { title: "MRP List", path: "/mrp-list" },
       ],
     },
-    { title: "Take Action", path: "/taking-action" },
+    { title: "Taking Action", path: "/taking-action" },
     {
       title: "Documents & Resources",
       path: "/resources",
