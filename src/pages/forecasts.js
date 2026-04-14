@@ -80,6 +80,15 @@ const WhatIsThePlan = () => {
     else if (selectedTab === 1) setSelectedLayer("empABS")
   }, [selectedTab])
 
+  const labelMap = {
+    popABS: "Absolute Change in Population",
+    popPER: "Percent Change in Population",
+    pop: "2050 Population Forecast",
+    empABS: "Absolute Change in Employment",
+    empPER: "Percent Change in Employment",
+    emp: "2050 Employment Forecast",
+  }
+
   return (
     <Layout>
       <div className="flex flex-col items-center">
@@ -171,7 +180,7 @@ const WhatIsThePlan = () => {
           <div className="absolute right-0 md:top-0 top-[40%] w-52 m-3">
             <Menu>
               <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full">
-                Select Layer
+                {labelMap[selectedLayer]}
                 <ChevronDownIcon className="ml-auto size-4 fill-black" />
               </MenuButton>
 
