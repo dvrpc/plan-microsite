@@ -49,7 +49,7 @@ export const Legend = () => {
 const layerDef = {
   id: "rail-lines",
   type: "line",
-  source: "rail-lines",
+  "source-layer": "passengerrail",
   filter: ["all", ["!=", "type", "Surface Trolley"], ["!=", "type", "AMTRAK"]],
   paint: {
     "line-width": 2,
@@ -81,22 +81,37 @@ const stationDef = {
   id: "transit-stations",
   type: "circle",
   source: "transit-stations",
-  "source-layer": "transitstops",
+  "source-layer": "passengerrailstations",
   paint: {
     "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 2, 12, 8],
     "circle-color": [
       "case",
-      ["==", ["get", "gtfs"], "septa_rail"],
+      [
+        "any",
+        ["==", ["get", "line"], "Airport Line"],
+        ["==", ["get", "line"], "Chestnut Hill East Line"],
+        ["==", ["get", "line"], "Chestnut Hill West Line"],
+        ["==", ["get", "line"], "Cynwyd Line"],
+        ["==", ["get", "line"], "Fox Chase Line"],
+        ["==", ["get", "line"], "Lansdale/Doylestown Line"],
+        ["==", ["get", "line"], "Manayunk/Norristown Line"],
+        ["==", ["get", "line"], "Media/Wawa Line"],
+        ["==", ["get", "line"], "Paoli/Thorndale Line"],
+        ["==", ["get", "line"], "Warminster Line"],
+        ["==", ["get", "line"], "West Trenton Line"],
+        ["==", ["get", "line"], "Wilmington/Newark Line"],
+        ["==", ["get", "line"], "Trenton Line"],
+      ],
       "#0159B8",
       [
         "any",
-        ["==", ["get", "route_names"], '["Broad Street Line"]'],
-        ["==", ["get", "route_names"], '["Market-Frankford Line"]'],
+        ["==", ["get", "line"], "Broad Street Line"],
+        ["==", ["get", "line"], "Market/Frankford Line"],
       ],
       "#7F3F98",
-      ["==", ["get", "gtfs"], "patco"],
+      ["==", ["get", "operator"], "PATCO"],
       "#019653",
-      ["==", ["get", "gtfs"], "njt_rail"],
+      ["==", ["get", "operator"], "NJ Transit"],
       "#F9A13F",
       "#cccccc",
       // surface trolley, amtrak
@@ -104,11 +119,24 @@ const stationDef = {
   },
   filter: [
     "any",
-    ["==", "route_names", '["Broad Street Line"]'],
-    ["==", "route_names", '["Market-Frankford Line"]'],
-    ["==", "gtfs", "patco"],
-    ["==", "gtfs", "septa_rail"],
-    ["==", "gtfs", "njt_rail"],
+    ["==", "line", "Broad Street Line"],
+    ["==", "line", "Market/Frankford Line"],
+    ["==", "operator", "PATCO"],
+    ["==", "type", "Commuter Rail"],
+    ["==", "operator", "NJ Transit"],
+    ["==", "line", "Airport Line"],
+    ["==", "line", "Chestnut Hill East Line"],
+    ["==", "line", "Chestnut Hill West Line"],
+    ["==", "line", "Cynwyd Line"],
+    ["==", "line", "Fox Chase Line"],
+    ["==", "line", "Lansdale/Doylestown Line"],
+    ["==", "line", "Manayunk/Norristown Line"],
+    ["==", "line", "Media/Wawa Line"],
+    ["==", "line", "Paoli/Thorndale Line"],
+    ["==", "line", "Warminster Line"],
+    ["==", "line", "West Trenton Line"],
+    ["==", "line", "Wilmington/Newark Line"],
+    ["==", "line", "Trenton Line"],
   ],
 }
 
@@ -118,10 +146,9 @@ const WhatMap = ({ selectedLayer }) => {
     <DvrpcMap>
       <Source
         id="rail-lines"
-        type="geojson"
-        data={
-          "https://arcgis.dvrpc.org/portal/rest/services/Transportation/PassengerRail/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=geojson"
-        }
+        type="vector"
+        promoteId="id"
+        url="https://tiles.dvrpc.org/data/transportation/passengerrail"
       >
         <Layer {...layerDef} />
       </Source>
@@ -129,7 +156,7 @@ const WhatMap = ({ selectedLayer }) => {
         id="transit-stations"
         type="vector"
         promoteId="id"
-        url="https://tiles.dvrpc.org/data/eta.json"
+        url="https://tiles.dvrpc.org/data/transportation/passengerrailstations"
       >
         <Layer {...stationDef} />
       </Source>
