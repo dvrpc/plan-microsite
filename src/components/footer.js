@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import Dvrpc from "../images/dvrpc-mini.svg"
-import Connections from "../images/connections-2050.svg"
 
 const Footer = () => {
   return (
@@ -14,8 +13,9 @@ const Footer = () => {
         <Link to="http://www.dvrpc.org/getinvolved">Get Involved</Link>
       </div>
       <div className="bg-[#16819a] md:px-16 md:py-6 p-4">
-        {/* TODO: add link to dvrpc home */}
-        <Dvrpc fill="#dfebf5" className="md:w-[10%] w-1/3" />
+        <Link to="https://www.dvrpc.org">
+          <Dvrpc fill="#dfebf5" className="md:w-[10%] w-1/3" />
+        </Link>
         <p>
           190 N Independence Mall West, 8th Floor <br />
           Philadelphia, PA 19106-1520 <br />
