@@ -39,6 +39,7 @@ const elementIndex = {
 }
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
+  // p-4 to all tabs image width of paragraph text
   return (
     <div className="flex justify-center z-100 h-full">
       <TabGroup
@@ -73,7 +74,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                 A safe, modern, multimodal, network for all
               </h2>
             </div>
-            <img src={Transportation} className="w-1/2 mx-auto" />
+            <img
+              src={Transportation}
+              className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
+            />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <div className="flex space-x-6">
@@ -102,7 +106,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     .
                   </p>
                 </div>
-                <h2 className="md:text-2xl text-xl font-bold p-2 text-[#423d59]">
+                <h2 className="md:text-2xl text-xl font-bold p-4 text-[#423d59]">
                   Transportation Goals
                 </h2>
                 <div className="flex space-x-6 md:my-4">
@@ -187,7 +191,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                 prosperity
               </p>
             </div>
-            <img src={Economy} className="w-1/2 mx-auto" />
+            <img
+              src={Economy}
+              className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
+            />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <div className="flex space-x-6">
@@ -214,7 +221,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     .
                   </p>
                 </div>
-                <h2 className="md:text-2xl text-xl font-bold p-2 text-[#711e53]">
+                <h2 className="md:text-2xl text-xl font-bold p-4 text-[#711e53]">
                   Economic Goals
                 </h2>
                 <div className="flex space-x-6 md:my-4">
@@ -296,7 +303,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                 Integrated, healthy, and walkable communities
               </p>
             </div>
-            <img src={Communities} className="w-1/2 mx-auto" />
+            <img
+              src={Communities}
+              className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
+            />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <div className="flex space-x-6">
@@ -315,7 +325,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <strong>vibrant, resilient places for all</strong>.
                   </p>
                 </div>
-                <p className="md:text-2xl text-lg font-bold p-2 text-[#004c6d]">
+                <p className="md:text-2xl text-lg font-bold p-4 text-[#004c6d]">
                   Community Goals
                 </p>
                 <div className="flex space-x-6 md:my-4">
@@ -398,7 +408,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                 ecological systems
               </p>
             </div>
-            <img src={Environment} className="w-1/2 mx-auto" />
+            <img
+              src={Environment}
+              className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
+            />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <div className="flex space-x-6">
@@ -426,7 +439,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     productivity, and learning.
                   </p>
                 </div>
-                <p className="md:text-2xl text-lg font-bold p-2 text-[#006227]">
+                <p className="md:text-2xl text-lg font-bold p-4 text-[#006227]">
                   Environment Goals
                 </p>
                 <div className="flex space-x-6 md:my-4">
@@ -504,7 +517,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                 services resilient to the effects of extreme weather
               </p>
             </div>
-            <img src={Infrastructure} className="w-1/2 mx-auto" />
+            <img
+              src={Infrastructure}
+              className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
+            />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
                 <div className="flex space-x-6">
@@ -526,7 +542,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     which we all depend.
                   </p>
                 </div>
-                <p className="md:text-2xl text-lg font-bold p-2 text-[#147272]">
+                <p className="md:text-2xl text-lg font-bold p-4 text-[#147272]">
                   Infrastructure and Utility Services Goals
                 </p>
                 <div className="flex space-x-6 md:my-4">
@@ -644,16 +660,11 @@ const WhatIsThePlan = () => {
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">Plan Elements</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              The Plan is organized into five key elements—
-              <strong className="text-white">
-                Transportation, Economy, Communities, Environment
-              </strong>
-              , and{" "}
-              <strong className="text-white">
-                Infrastructure and Utility Services
-              </strong>
-              —each with three goals that guide our regional vision. Explore the
-              elements below to see what the vision looks like in practice.
+              The Plan is organized into five key elements— Transportation,
+              Economy, Communities, Environment , and Infrastructure and Utility
+              Services —each with three goals that guide our regional vision.
+              Explore the elements below to see what the vision looks like in
+              practice.
             </p>
           </div>
         </div>

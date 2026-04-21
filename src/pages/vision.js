@@ -32,10 +32,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         onChange={setSelectedIndex}
       >
         <TabList className="flex text-white md:w-2/3 md:ml-auto md:*:rounded-t-lg">
-          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white w-1/2">
+          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#093446] [&:not([data-selected])]:bg-[#95b5c5] [&:not([data-selected])]:text-[#093446] text-white w-1/2">
             Land Use Vision
           </Tab>
-          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#16819a] [&:not([data-selected])]:bg-[#95b5c5] text-white w-1/2">
+          <Tab className="p-3 focus:font-bold data-[selected]:bg-[#093446] [&:not([data-selected])]:bg-[#95b5c5] [&:not([data-selected])]:text-[#093446] text-white w-1/2">
             Plan Centers
           </Tab>
         </TabList>
@@ -140,14 +140,15 @@ const Vision = () => {
               region can make the most of existing transportation options while
               reducing financial and environmental costs.
             </p>
-            <p>Use the interactive map to explore this vision in two layers:</p>
             <p>
-              These maps use existing passenger rail and a proposed line to
-              create a <strong>visual guide to strategic growth</strong>—helping
-              Greater Philadelphia build on its assets, protect open space, and
-              support walkable, vibrant communities where people can live, work,
-              and play.
+              These maps use existing passenger rail and the proposed
+              Glassboro-Camden Line to create a{" "}
+              <strong>visual guide to strategic growth</strong>—helping Greater
+              Philadelphia build on its assets, protect open space, and support
+              walkable, vibrant communities where people can live, work, and
+              play.
             </p>
+            <p>Use the interactive map to explore this vision in two layers:</p>
           </div>
         </div>
         <div className="relative h-full w-full">
@@ -178,9 +179,10 @@ const Vision = () => {
             feedback on new topics like infrastructure and utility services.
           </p>
           <p>
-            More than <strong>1,300 people from every county</strong> weighed
-            in, and their input helped shape this vision. Here’s a snapshot of
-            what we heard:
+            More than{" "}
+            <strong>1,300 people representing each of our nine counties</strong>{" "}
+            weighed in, and their input helped shape this vision. Here’s a
+            snapshot of what we heard:
           </p>
           <img src={Feedback} className="md:w-2/3 mx-auto" />
           <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
@@ -196,6 +198,12 @@ const Vision = () => {
           </p>
           <img src={Elements} className="md:w-2/3 mx-auto" />
         </div>
+        <Link
+          className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
+          to="/plan-elements"
+        >
+          Explore the Plan Elements
+        </Link>
       </div>
     </Layout>
   )

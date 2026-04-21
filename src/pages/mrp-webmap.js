@@ -68,17 +68,9 @@ const MrpWebmap = () => {
             <p className="md:text-2xl text-lg pb-0 z-50">
               A portion of funding is reserved for smaller projects to be added
               in future Transportation Improvement Program (TIP) updates. The
-              remaining funds support{" "}
-              <strong className="text-white">
-                Major Regional Projects (MRPs)
-              </strong>
-              , which are large-scale transportation investments that{" "}
-              <strong className="text-white">cost more than $40 million</strong>{" "}
-              and/or{" "}
-              <strong className="text-white">
-                significantly impact travel across the region
-              </strong>
-              .
+              remaining funds support Major Regional Projects (MRPs) , which are
+              large-scale transportation investments that cost more than $40
+              million and/or significantly impact travel across the region .
             </p>
           </div>
         </div>

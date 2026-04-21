@@ -22,6 +22,7 @@ import Siif from "../images/siif.png"
 import Pp from "../images/pp.png"
 import Cgp from "../images/cgp.png"
 
+// Diminishing gas tax image sizing
 const WhatIsThePlan = () => {
   return (
     <Layout>
@@ -42,31 +43,20 @@ const WhatIsThePlan = () => {
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="text-3xl font-bold">Filling the Funding Gap</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              To make our shared regional vision a reality, we need{" "}
-              <strong className="text-white">
-                more transportation funding
-              </strong>{" "}
-              from both existing federal, state, and local sources, as well as
-              new sources.
+              To make our shared regional vision a reality, we need more
+              transportation funding from both existing federal, state, and
+              local sources, as well as new sources.
             </p>
             <p className="md:text-2xl text-lg">
-              <strong className="text-white">
-                Greater investment is needed to:
-              </strong>
+              Greater investment is needed to:
               <ul className="*:ml-6 list-disc">
                 <li>
-                  <strong className="text-white">Maintain and modernize</strong>{" "}
-                  our aging transportation infrastructure
+                  Maintain and modernize our aging transportation infrastructure
                 </li>
+                <li>Support emerging technologies</li>
                 <li>
-                  <strong className="text-white">
-                    Support emerging technologies
-                  </strong>
-                </li>
-                <li>
-                  <strong className="text-white">Expand access</strong> so more
-                  people can reach jobs, education services, and essential
-                  services
+                  Expand access so more people can reach jobs, education
+                  services, and essential services
                 </li>
               </ul>
             </p>

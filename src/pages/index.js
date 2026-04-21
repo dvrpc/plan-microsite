@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
-import Connections from "../images/connections-2050.svg"
+import Connections from "../images/connections-2050.png"
 import RegionOutline from "../images/region-outline.svg"
 import Hero from "../images/home-image.png"
 import Dot from "../images/dot.svg"
@@ -56,24 +56,24 @@ const IndexPage = () => {
           backgroundImage: `url(${Bg})`,
         }}
       >
-        <Connections
-          fill="#dfebf5"
+        <img
+          src={Connections}
           className="z-10 md:my-20 my-10 w-2/3 md:w-1/4 drop-shadow-lg"
         />
       </div>
       <div className="text-white mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative md:px-[16%] px-4">
-        <RegionOutline className="absolute top-[15%] lg:top-[10%] z-10 md:w-2/5 lg:w-1/3" />
+        <RegionOutline className="absolute top-[15%] lg:top-[10%] z-10 md:w-2/5 lg:w-[30%]" />
         <h1 className="md:text-3xl text-lg md:p-12 pb-0 z-50 p-2 drop-shadow-lg">
-          <span className="italic font-bold">Update: Connections 2050</span> is
-          Greater Philadelphia's Long-Range Plan (Plan). The Plan serves as the
+          <span className="italic">Update: Connections 2050</span> is Greater
+          Philadelphia's Long-Range Plan (Plan). The Plan serves as the
           blueprint to guide growth and development in our region and to
           prioritize funding for capital transportation investment accordingly.
         </h1>
-        <h2 className="md:text-5xl z-50 md:mt-24 md:mb-18 my-8 drop-shadow-lg">
+        <h2 className="md:text-5xl z-50 md:mt-16 md:mb-18 my-8 drop-shadow-lg">
           The Regional Vision for 2050 is a Greater Philadelphia that provides:
         </h2>
 
-        <div className="md:-ml-[5%] md:-mr-[5%] md:mt-20">
+        <div className="md:-ml-[5%] md:-mr-[5%] md:mt-16">
           <Bubbles />
         </div>
       </div>
@@ -89,7 +89,7 @@ const IndexPage = () => {
           Explore the Plan
         </h2>
 
-        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] min-h-[100vh] md:mx-auto space-y-4 pl-6 flex flex-col py-4">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] min-h-[100vh] md:mx-auto space-y-8 pl-6 flex flex-col py-4">
           <Disclosure as="div" id="what-is-the-plan">
             <DisclosureButton className="w-full">
               <button

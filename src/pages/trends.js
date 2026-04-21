@@ -30,23 +30,17 @@ const Trends = () => {
               What Is Shaping Our Future?
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              Each update to the region’s Plan begins with a look at the{" "}
-              <strong className="text-white">
-                forces shaping Greater Philadelphia’s future
-              </strong>
-              . DVRPC studies social, economic, and land use trends to
-              understand how the region is changing and how those changes might
-              affect our communities, economy, and environment in the decades
-              ahead.
+              Each update to the region’s Plan begins with a look at the forces
+              shaping Greater Philadelphia’s future. DVRPC studies social,
+              economic, and land use trends to understand how the region is
+              changing and how those changes might affect our communities,
+              economy, and environment in the decades ahead.
             </p>
             <p className="md:text-2xl text-lg">
-              This research helps DVRPC and its partners{" "}
-              <strong className="text-white">
-                anticipate future needs and craft policies
-              </strong>{" "}
-              that move the region toward its shared vision. DVRPC continues to
-              monitor trends that will shape how the region grows and adapts in
-              the years ahead.
+              This research helps DVRPC and its partners anticipate future needs
+              and craft policies that move the region toward its shared vision.
+              DVRPC continues to monitor trends that will shape how the region
+              grows and adapts in the years ahead.
             </p>
           </div>
         </div>
@@ -193,7 +187,7 @@ const Trends = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-[#bce8d2] relative">
+        <div className="w-full bg-[#8CC0BF] relative">
           <div className="md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot

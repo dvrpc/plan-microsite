@@ -28,12 +28,10 @@ const WhatIsThePlan = () => {
               What Is the Plan?
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              <span className="italic font-bold text-white">
-                Update: Connections 2050
-              </span>{" "}
-              is Greater Philadelphia's Long-Range Plan (Plan). The Plan serves
-              as the blueprint to guide growth and development in our region and
-              to prioritize funding for capital transportation investment
+              <span className="italic">Update: Connections 2050</span> is
+              Greater Philadelphia's Long-Range Plan (Plan). The Plan serves as
+              the blueprint to guide growth and development in our region and to
+              prioritize funding for capital transportation investment
               accordingly.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
@@ -57,6 +55,7 @@ const WhatIsThePlan = () => {
               <Legend />
               <WhatMap />
             </div>
+
             <p>
               Greater Philadelphia is one of the nation’s most historic and
               dynamic regions. Once an industrial powerhouse, it has evolved

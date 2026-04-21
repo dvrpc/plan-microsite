@@ -119,8 +119,8 @@ const MRPList = () => {
               Major Regional Project List
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              Explore all projects included in <em>Update: Connections 2050</em>.
-              Each project is classified as{" "}
+              Explore all projects included in <em>Update: Connections 2050</em>
+              . Each project is classified as{" "}
               <Tooltip
                 theme="tomato"
                 title="Projects in this category are funded with anticipated regional dollars. Those in the first two plan periods are also listed in the current Transportation Improvement Program (TIP). Funding has been identified, and anticipated timing and costs reflect programmed amounts, though schedules and budgets may be refined as projects advance through design and implementation."
@@ -131,6 +131,7 @@ const MRPList = () => {
               </Tooltip>
               ,{" "}
               <Tooltip
+                theme="tomato"
                 title="Due to the limited funding available for achieving the region’s vision, some MRPs are categorized as Unfunded, though they remain aspirations to complete as more funding becomes available. Anticipated timing for these projects is listed, but cost remains in current-year dollars until the project is programmed."
                 position="top"
                 trigger="click"
@@ -139,6 +140,7 @@ const MRPList = () => {
               </Tooltip>
               ,{" "}
               <Tooltip
+                theme="tomato"
                 title="Illustrative projects are not considered unfunded; rather, they will advance into the Plan and TIP depending on the timing of their repair needs and project readiness. Illustrative projects can be completed by drawing from the balance of unallocated system preservation funds, but not all of them will be able to advance due to limited revenues."
                 position="top"
                 trigger="click"
@@ -149,6 +151,7 @@ const MRPList = () => {
               </Tooltip>
               , or{" "}
               <Tooltip
+                theme="tomato"
                 title="These projects are generally funded through toll revenues, but some will be funded from other non-federal sources. They are largely developed outside the regional planning process, and roadway system expansion projects in this category are excluded from the Needs Assessment and the four percent cap on roadway system expansion investments."
                 position="top"
                 trigger="click"

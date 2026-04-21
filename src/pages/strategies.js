@@ -114,11 +114,8 @@ const WhatIsThePlan = () => {
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Change won't come overnight, and it won't happen by doing things
-              the same old way. Achieving this vision will take{" "}
-              <strong className="text-white">
-                bold action and collaboration
-              </strong>{" "}
-              acrosss the region, with everyone playing a part.
+              the same old way. Achieving this vision will take bold action and
+              collaboration acrosss the region, with everyone playing a part.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Even though each goal and strategy shows up just once,
@@ -184,7 +181,7 @@ const WhatIsThePlan = () => {
               type="text"
               onChange={e => setFilter(e.target.value)}
               value={filter}
-              className="input"
+              className="input block w-full rounded-sm border border-gray-200 bg-gray-50 bg-none py-2 px-4 text-base leading-6 text-black text-opacity-80 transition-all"
             />
             {filteredStrategies && filteredStrategies.length > 0 ? (
               <div className="text-gray-500">
