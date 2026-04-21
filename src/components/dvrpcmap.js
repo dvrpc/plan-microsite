@@ -30,7 +30,7 @@ const DVRPCMap = ({ children, features }) => {
   return (
     <div className="h-[600px] w-full">
       <Map
-        mapStyle="mapbox://styles/crvanpollard/ck5fpyqti0v971itf7edp2eyd"
+        mapStyle="mapbox://styles/crvanpollard/clmqidmqj04uh01ma2mkla3yz"
         interactiveLayerIds={[
           "mrp-lines",
           "county-outline",
@@ -63,6 +63,7 @@ const DVRPCMap = ({ children, features }) => {
           />
 
           <Layer
+            beforeId={"admin-0-boundary-disputed"}
             id="municipality-outline"
             type="line"
             source-layer="municipalities"
@@ -73,12 +74,13 @@ const DVRPCMap = ({ children, features }) => {
           />
 
           <Layer
+            beforeId={"admin-0-boundary-disputed"}
             id="county-outline"
             type="line"
             source-layer="county"
             paint={{
               "line-width": 2.5,
-              "line-color": "#fff",
+              "line-color": "#808080",
             }}
           />
         </Source>

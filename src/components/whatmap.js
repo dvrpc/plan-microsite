@@ -13,8 +13,6 @@ const Circle = ({ color }) => {
       fill={color}
       stroke={color}
     >
-      <circle cx="50" cy="50" r="32" stroke-width="2" />
-
       <line x1="0" y1="50" x2="100" y2="50" stroke-width="5" />
     </svg>
   )
@@ -150,16 +148,16 @@ const WhatMap = ({ selectedLayer }) => {
         promoteId="id"
         url="https://tiles.dvrpc.org/data/transportation/passengerrail"
       >
-        <Layer {...layerDef} />
+        <Layer beforeId={"admin-0-boundary-disputed"} {...layerDef} />
       </Source>
-      <Source
-        id="transit-stations"
-        type="vector"
-        promoteId="id"
-        url="https://tiles.dvrpc.org/data/transportation/passengerrailstations"
-      >
-        <Layer {...stationDef} />
-      </Source>
+      {/* <Source */}
+      {/*   id="transit-stations" */}
+      {/*   type="vector" */}
+      {/*   promoteId="id" */}
+      {/*   url="https://tiles.dvrpc.org/data/transportation/passengerrailstations" */}
+      {/* > */}
+      {/*   <Layer {...stationDef} /> */}
+      {/* </Source> */}
     </DvrpcMap>
   )
 }
