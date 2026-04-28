@@ -77,7 +77,11 @@ const Vision = () => {
     <Layout>
       <div className="flex flex-col items-center">
         <div className="w-full h-full">
-          <img src={Bg} className="absolute object-cover h-2/5 w-full" />
+          <img
+            alt="Stylized image of the DVPRC region."
+            src={Bg}
+            className="absolute object-cover h-2/5 w-full"
+          />
           <div className="flex text-white font-bold md:w-[68%] mx-auto md:px-7 px-10 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
@@ -184,7 +188,22 @@ const Vision = () => {
             weighed in, and their input helped shape this vision. Here’s a
             snapshot of what we heard:
           </p>
-          <img src={Feedback} className="md:w-2/3 mx-auto" />
+          <img
+            alt="10 colorful blurb graphics with quotes from vision survey participants, including:
+●	Help make choosing alternative transportation easier. Help people want to choose biking or walking.
+●	Reduce car dependency
+●	Encourage on-site electricity generation, such as small-scale solar and wind
+●	Emphasize that renewable electricity and fuel resources are the goal for transportation AND buildings.
+●	Emphasize water quality and safety.
+●	Make affordable access to the green spaces.
+●	Put more emphasis on affordable housing
+●	Build more transit-oriented development
+●	Include local food and goods production
+●	Add language that describes the variety of communities and districts to be served, including residential and business, high-density and rural, wealthy and low-resourced, etc.
+"
+            src={Feedback}
+            className="md:w-2/3 mx-auto"
+          />
           <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
             Building Blocks of the Vision
           </h2>
@@ -196,7 +215,11 @@ const Vision = () => {
             along with <strong>Strategies</strong> that outline how to achieve
             them and identify who can help make them happen.
           </p>
-          <img src={Elements} className="md:w-2/3 mx-auto" />
+          <img
+            src={Elements}
+            alt="Pyramid graphic made of 3 colorful puzzle pieces. The top is Plan Elements: 1) Transportation; 2) Economy, 3) Communities, 4) Environment, and 5) Infrastructure and Utility Services. The middle says 3 Goals each. The bottom says ~5 Strategies each"
+            className="md:w-2/3 mx-auto"
+          />
         </div>
         <Link
           className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"

@@ -77,6 +77,8 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             <img
               src={Transportation}
               className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
+              alt="Transportation vision illustration showing a roundabout with pedestrians, autonomous vehicles, bikes, buildings, and greenery, conveying a safe, modern, multimodal
+transportation network for all."
             />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
@@ -192,6 +194,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               </p>
             </div>
             <img
+              alt="Economy vision illustration showing an active port city. A container ship sails on a river, cranes unload cargo, a train crosses a bridge at River Station, and people gather in buildings."
               src={Economy}
               className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
             />
@@ -306,6 +309,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             <img
               src={Communities}
               className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
+              alt="Communities vision illustration of a bustling urban street with diverse buildings, trees, people strolling, and vehicles. A small park and outdoor cafe seating add vibrancy and life."
             />
             <div className="md:w-[68%] relative mx-auto md:border-l-4 border-[#063446]">
               <div className="flex w-full md:p-4 p-2 relative flex-col">
@@ -409,6 +413,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               </p>
             </div>
             <img
+              alt="Environment vision illustration of a rural and urban landscape with wind turbines, a tractor in fields, farm stands, and people in a park enjoying trails and picnicking on the grass."
               src={Environment}
               className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
             />
@@ -518,6 +523,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               </p>
             </div>
             <img
+              alt="Infrastructure and Utility Services vision illustration of a futuristic cityscape with trains, solar panels, wind turbines, smart buildings with Wi-Fi signals, and electric car charging stations, conveying clean electricity for all buildings and transportation."
               src={Infrastructure}
               className="w-1/2 md:w-[68%] mx-auto md:pl-[5rem]"
             />
@@ -643,7 +649,11 @@ const WhatIsThePlan = () => {
     <Layout>
       <div className="flex flex-col items-center">
         <div className="w-full h-full">
-          <img src={Bg} className="absolute object-cover h-2/5 w-full" />
+          <img
+            src={Bg}
+            className="absolute object-cover h-2/5 w-full"
+            alt="Stylized image of the DVPRC region."
+          />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home

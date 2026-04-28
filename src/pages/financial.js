@@ -143,7 +143,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       <p>75%</p>
                     </div>
                     <img src={NjTransitPm} />
-                    <img src={Transitpm} className="mt-auto" />
+                    <img
+                      src={Transitpm}
+                      className="mt-auto"
+                      alt="Illustration of bus."
+                    />
                   </div>
                 </div>
                 <div className="text-[#0078ae] md:font-bold">
@@ -173,7 +177,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       <p>12.5%</p>
                     </div>
                     <img src={NjTransitExp} />
-                    <img src={Transittse} className="mt-auto" />
+                    <img
+                      src={Transittse}
+                      className="mt-auto"
+                      alt="Illustration of construction worker."
+                    />
                   </div>
                 </div>
                 <div className="text-[#20a9a6] md:font-bold">
@@ -188,7 +196,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       <p>4.3%</p>
                     </div>
                     <img src={NjTransitOther} className="w-3 mx-auto" />
-                    <img src={Transitother} className="mt-auto" />
+                    <img
+                      src={Transitother}
+                      className="mt-auto"
+                      alt="Illustration depicting contract and money."
+                    />
                   </div>
                 </div>
               </div>
@@ -294,7 +306,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>35%</p>
                   </div>
                   <img src={NjRoadwayPpm} />
-                  <img src={Roadwayppm} className="mt-auto" />
+                  <img
+                    src={Roadwayppm}
+                    className="mt-auto"
+                    alt="Illustration of construction equipment"
+                  />
                 </div>
                 <div className="text-[#6f6688] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -309,7 +325,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>19%</p>
                   </div>
                   <img src={NjRoadwayBp} />
-                  <img src={Roadwaybp} className="mt-auto" />
+                  <img
+                    src={Roadwaybp}
+                    className="mt-auto"
+                    alt="Illustration of bridge construction"
+                  />
                 </div>
                 <div className="text-[#009eb8] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -324,7 +344,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>2%</p>
                   </div>
                   <img src={NjRoadwaySs} className="w-3 mx-auto" />
-                  <img src={Roadwayss} className="mt-auto" />
+                  <img
+                    src={Roadwayss}
+                    className="mt-auto"
+                    alt="Illustration of crosswalk"
+                  />
                 </div>
                 <div className="text-[#0078ae] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -339,7 +363,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>14%</p>
                   </div>
                   <img src={NjRoadwayMoi} />
-                  <img src={Roadwaymoi} className="mt-auto" />
+                  <img
+                    src={Roadwaymoi}
+                    className="mt-auto"
+                    alt="Illustration traffic signs."
+                  />
                 </div>
                 <div className="text-[#24964f] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -354,7 +382,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>4%</p>
                   </div>
                   <img src={NjRoadwayRe} className="w-10 mx-auto" />
-                  <img src={Roadwayre} className="mt-auto" />
+                  <img
+                    src={Roadwayre}
+                    className="mt-auto"
+                    alt="Illustration of roadway construction worker."
+                  />
                 </div>
                 <div className="text-[#026227] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -369,7 +401,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <p>26%</p>
                   </div>
                   <img src={NjRoadwayGt} />
-                  <img src={Roadwaygt} className="mt-auto" />
+                  <img
+                    src={Roadwaygt}
+                    className="mt-auto"
+                    alt="Illustration of someone walking and someone biking."
+                  />
                 </div>
               </div>
             </>
@@ -516,7 +552,11 @@ const WhatIsThePlan = () => {
                 </div>
                 <img src={Block3} />
               </div>
-              <img src={Revenue} className="mx-auto w-4/5" />
+              <img
+                alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
+                src={Revenue}
+                className="mx-auto w-4/5"
+              />
             </div>
           </div>
         </div>

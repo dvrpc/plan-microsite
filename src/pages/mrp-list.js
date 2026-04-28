@@ -100,7 +100,11 @@ const MRPList = () => {
     <Layout>
       <div className="bg-[#cbe5f3] flex flex-col items-center">
         <div className="w-full h-full">
-          <img src={Bg} className="absolute object-cover h-2/5 w-full" />
+          <img
+            src={Bg}
+            alt="Stylized image of the DVPRC region."
+            className="absolute object-cover h-2/5 w-full"
+          />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home

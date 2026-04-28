@@ -22,13 +22,16 @@ import Siif from "../images/siif.png"
 import Pp from "../images/pp.png"
 import Cgp from "../images/cgp.png"
 
-// Diminishing gas tax image sizing
 const WhatIsThePlan = () => {
   return (
     <Layout>
       <div className="bg-[#eef4fb] flex flex-col items-center">
         <div className="w-full h-full">
-          <img src={Bg} className="absolute object-cover h-2/5 w-full" />
+          <img
+            alt="Stylized image of the DVPRC region."
+            src={Bg}
+            className="absolute object-cover h-2/5 w-full"
+          />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
@@ -96,7 +99,10 @@ const WhatIsThePlan = () => {
               </p>
             </div>
             <div className="md:ml-6 mx-auto h-fit md:w-full w-1/2 lg:w-1/5">
-              <img src={PurchasingPower} />
+              <img
+                alt="Illustration of two gas pumps, drawn to scale of the purchasing power per gallon in 1993 (18.4 c/gal) and 2023 (6.6 c/gal)."
+                src={PurchasingPower}
+              />
             </div>
           </div>
         </div>
@@ -136,7 +142,10 @@ const WhatIsThePlan = () => {
                 </p>
               </div>
               <div className="md:ml-6 mx-auto h-fit md:mt-auto md:w-full lg:w-1/2">
-                <img src={LocalFunding} />
+                <img
+                  src={LocalFunding}
+                  alt="Bar chart made of stacked dollar bills comparing funding from three sources: federal (63%, 49.76 billion $), state (34%, 26.44 billion), and local (3%, 2.21 billion $)."
+                />
               </div>
             </div>
             <div
@@ -200,7 +209,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Mbuf} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Mbuf}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Mileage-based User Fees 
+○	Charges drivers by the mile for travel on a defined roadway network. 
+○	Potential benefits: Stabilizes revenue compared with the gas tax, as they are less affected by fuel prices or changes in vehicle fuel efficiency.
+"
+                      />
                       <p className="md:w-2/3 leading-none">
                         Mileage Based User Fee
                       </p>
@@ -219,7 +235,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Cpf} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Cpf}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Commercial Property VMT Fee 
+○	Administers a location-based fee to commercial real estate based on the annual vehicle miles they generate. 
+○	Potential benefits: Promotes more efficient business location decisions.
+"
+                      />
                       <p className="md:w-2/3 leading-none">
                         Commercial Property VMT Fee
                       </p>
@@ -238,7 +261,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Ht} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Ht}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Toll Existing Highways 
+○	Exerts a user fee on designated limited-access roads and bridges. 
+○	Potential benefits: Can help to manage demand for finite highway space.
+"
+                      />
                       <p className="md:w-2/3 leading-none">Highway Tolls</p>
                     </div>
                   }
@@ -254,7 +284,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Es} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Es}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Electricity Surtax for Home or Public Charging 
+○	Adds a flat fee or surcharge for units of electricity used to power electric vehicles. 
+○	Potential benefits: Replicates the gas for EVs.]
+"
+                      />
                       <p className="md:w-2/3 leading-none">
                         Electricity Surtax for Home or Public Charging
                       </p>
@@ -273,7 +310,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Tdc} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Tdc}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Tradeable Driving Credits 
+○	Allocates a quota of mileage driving rights each year. 
+○	Potential benefits: Provides an incentive to use other modes by allowing those who drive less to sell their credits to those who drive more.
+"
+                      />
                       <p className="md:w-2/3 leading-none">
                         Tradeable Driving Credits
                       </p>
@@ -292,7 +336,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Siif} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Siif}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Safety/Infrastructure Investment Fees
+○	Scales vehicle registration fees based on vehicle weight and size. 
+○	Potential benefits: Charges vehicle owners for societal costs of increased emissions, road damage, and safety risks that all rise with heavier vehicle weights.
+"
+                      />
                       <p className="md:w-2/3 leading-none">
                         Safety/Infrastructure Investment Fees
                       </p>
@@ -312,7 +363,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Pp} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Pp}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Parking Pricing 
+○	Applies variable charges to on-street parking based on demand, while reducing the cost of off-street spaces. 
+○	Potential benefits: Decreases traffic in central business districts from drivers looking for parking spaces and better accounts for the value of land used for vehicle parking.
+"
+                      />
                       <p className="md:w-2/3 leading-none">Parking Pricing</p>
                     </div>
                   }
@@ -331,7 +389,14 @@ const WhatIsThePlan = () => {
                 <Flipcard
                   front={
                     <div className="flex flex-col items-center text-center space-y-2">
-                      <img src={Cgp} className="md:w-1/3 w-1/2" />
+                      <img
+                        src={Cgp}
+                        className="md:w-1/3 w-1/2"
+                        alt="●	Congestion Pricing 
+○	Employs variable tolls to manage demand on a facility or within a specific zone. 
+○	Potential benefits: Reduces congestion and encourages more efficient use of transportation infrastructure, while generating revenue to provide more transportation options.
+"
+                      />
                       <p className="md:w-2/3 leading-none">
                         Congestion Pricing
                       </p>

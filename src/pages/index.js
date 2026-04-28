@@ -57,12 +57,22 @@ const IndexPage = () => {
         }}
       >
         <img
+          alt="DVRPC Long-Range logo"
           src={Connections}
           className="z-10 md:my-20 my-10 w-2/3 md:w-1/4 drop-shadow-lg"
         />
       </div>
       <div className="text-white mx-auto w-full bg-[#0c2e39] flex flex-col items-center text-center relative md:px-[16%] px-4">
-        <RegionOutline className="absolute top-[15%] lg:top-[10%] z-10 md:w-2/5 lg:w-[30%]" />
+        <RegionOutline
+          className="absolute top-[15%] lg:top-[10%] z-10 md:w-2/5 lg:w-[30%]"
+          alt="A colorful outline of the DVRPC region with 5 circles below it that hold the plan elements of the regional vision. The Vision for 2050 is a Greater Philadelphia region that provides:
+●	A safe, modern, multimodal transportation network for all
+●	An innovative and connected economy with opportunity and shared prosperity
+●	Integrated, healthy, and walkable communities
+●	A preserved and restored natural environment and healthy ecological systems
+●	Clean, reliable, and affordable infrastructure and utility services, resilient to the effects of extreme weather
+"
+        />
         <h1 className="md:text-3xl text-lg md:p-12 pb-0 z-50 p-2 drop-shadow-lg">
           <span className="italic">Update: Connections 2050</span> is Greater
           Philadelphia's Long-Range Plan (Plan). The Plan serves as the
@@ -118,7 +128,8 @@ const IndexPage = () => {
               </p>
               <img
                 src={WhatIsThePlan}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%]"
+                alt="Photograph of a DVRPC staff member hosting a DVRPC table at a tented event, talking to a member of the public, and sharing printed materials."
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -141,8 +152,9 @@ const IndexPage = () => {
                 progress towards the region’s vision and goals.
               </p>
               <img
+                alt="Photograph of a Philadelphia Navy Yard Autonomous Shuttle van parked on a street in front of a modern office building."
                 src={ShapingFuture}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%]"
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -167,7 +179,8 @@ const IndexPage = () => {
               </p>
               <img
                 src={LookLike}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%]"
+                alt="Photograph of people enjoying the roof deck and open-air space of a retail space made of shipping containers called the Pod Park in the Northern Liberties neighborhood of Philadelphia."
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -190,8 +203,9 @@ const IndexPage = () => {
                 decades.
               </p>
               <img
+                alt="Photograph of the construction of the Paoli rail station during sunset. The site has steel framing of a 3-story building, cranes, and bucket trucks on a gravel ground. A wayfinding sign saying “Inbound” and “Tickets” is in the foreground."
                 src={HowWeFund}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%]"
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -214,8 +228,9 @@ const IndexPage = () => {
                 public and private sectors.
               </p>
               <img
+                alt="Group of adults and children celebrating by throwing paper confetti on the sidewalk under the shade of a large tree with a colorful city bus behind them, which says “Getting to Green”. "
                 src={Hero}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%]"
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
               />
             </DisclosurePanel>
           </Disclosure>

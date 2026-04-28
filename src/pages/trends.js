@@ -15,7 +15,11 @@ const Trends = () => {
     <Layout>
       <div className="flex flex-col items-center">
         <div className="w-full h-full">
-          <img src={Bg} className="absolute object-cover h-2/5 w-full" />
+          <img
+            alt="Stylized image of the DVPRC region."
+            src={Bg}
+            className="absolute object-cover h-2/5 w-full"
+          />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline" to="/">
               Home
@@ -147,7 +151,7 @@ const Trends = () => {
                 <img
                   src={Ai}
                   className="mx-auto md:w-1/2"
-                  alt="How AI Processing for Transportation Works"
+                  alt="Flow chart showing data collection (Sensors, cameras, traffic data, transit data, and weather) to AI processing (Machine learning, natural language processing, predictive modeling) to real-time adjustments (Real-time traffic adjustments, transit optimization, urban planning insights, risk mitigation)."
                 />
               </Accordion>
             </div>
