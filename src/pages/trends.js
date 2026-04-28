@@ -51,7 +51,10 @@ const Trends = () => {
         <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
-              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+              <Dot
+                width="3%"
+                className="md:absolute md:block -left-[1.5%] hidden"
+              />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Remote Work and Post-COVID Commute Patterns
               </h2>
@@ -111,7 +114,10 @@ const Trends = () => {
         <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className="flex items-center w-full md:p-6 p-2 relative">
-              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+              <Dot
+                width="3%"
+                className="md:absolute md:block -left-[1.5%] hidden"
+              />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Artificial Intelligence
               </h2>
@@ -160,7 +166,10 @@ const Trends = () => {
         <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
-              <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+              <Dot
+                width="3%"
+                className="md:absolute md:block -left-[1.5%] hidden"
+              />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
                 Ridesharing and Automated Vehicle Programs
               </h2>
@@ -196,7 +205,7 @@ const Trends = () => {
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot
                 width="3%"
-                className="md:absolute -left-[1.5%] top-5 hidden"
+                className="md:absolute md:block -left-[1.5%] top-5 hidden"
               />
               <div className="w-full  flex flex-col space-y-4 text-[#063446]">
                 <h2 className="md:text-3xl text-xl font-bold">

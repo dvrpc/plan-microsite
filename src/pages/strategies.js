@@ -131,7 +131,10 @@ const WhatIsThePlan = () => {
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446]">
           <div className="flex items-center w-full md:p-6 p-2 relative">
-            <Dot width="3%" className="md:absolute -left-[1.5%] hidden" />
+            <Dot
+              width="3%"
+              className="md:absolute md:block -left-[1.5%] hidden"
+            />
             <p className="text-[#063446] md:text-2xl text-lg">
               Explore how the region's five Plan Elements are being put into
               action through <strong>high-level strategies</strong> and specific{" "}
