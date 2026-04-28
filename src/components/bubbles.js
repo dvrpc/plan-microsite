@@ -19,7 +19,7 @@ const Bubbles = () => {
           A safe, modern, multimodal{" "}
           <Link
             to="/plan-elements?element=transportation"
-            className="font-bold underline"
+            className="font-bold underline text-white"
           >
             Transportation
           </Link>{" "}
@@ -32,7 +32,7 @@ const Bubbles = () => {
           An innovative and connected{" "}
           <Link
             to="/plan-elements?element=economy"
-            className="font-bold underline"
+            className="font-bold underline text-white"
           >
             Economy
           </Link>{" "}
@@ -45,7 +45,7 @@ const Bubbles = () => {
           Healthy, walkable, and vibrant{" "}
           <Link
             to="/plan-elements?element=communities"
-            className="font-bold underline"
+            className="font-bold underline text-white"
           >
             Communities
           </Link>
@@ -57,7 +57,7 @@ const Bubbles = () => {
           A preserved and restored natural{" "}
           <Link
             to="/plan-elements?element=environment"
-            className="font-bold underline"
+            className="font-bold underline text-white"
           >
             Environment
           </Link>{" "}
@@ -70,7 +70,7 @@ const Bubbles = () => {
           Clean, reliable and affordable{" "}
           <Link
             to="/plan-elements?element=infrastructure"
-            className="font-bold underline"
+            className="font-bold underline text-white"
           >
             Infrastructure and Utility Services
           </Link>{" "}

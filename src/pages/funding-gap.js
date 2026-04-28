@@ -33,13 +33,13 @@ const WhatIsThePlan = () => {
             className="absolute object-cover h-2/5 w-full"
           />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
-            <Link className="underline" to="/">
+            <Link className="underline text-white" to="/">
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>Financial</Link>
+            <Link className="text-white">Financial</Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>Funding Gap</Link>
+            <Link className="text-white">Funding Gap</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#0c2e39] w-full flex flex-col relative px-10 py-6 mt-[10%]">

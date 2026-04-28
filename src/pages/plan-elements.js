@@ -39,7 +39,6 @@ const elementIndex = {
 }
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
-  // p-4 to all tabs image width of paragraph text
   return (
     <div className="flex justify-center z-100 h-full">
       <TabGroup
@@ -655,15 +654,15 @@ const WhatIsThePlan = () => {
             alt="Stylized image of the DVPRC region."
           />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
-            <Link className="underline" to="/">
+            <Link className="underline text-white" to="/">
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="underline" to="/vision">
+            <Link className="underline text-white" to="/vision">
               Vision
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>Plan Elements</Link>
+            <Link className="text-white">Plan Elements</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">

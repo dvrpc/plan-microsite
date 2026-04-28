@@ -117,7 +117,7 @@ const MenuItem = ({ item, mobile }) => {
   return (
     <Link to={item.path}>
       <a
-        className={`underline ${
+        className={`underline text-[#063446] ${
           mobile ? "w-full block px-4 py-2 -ml-4" : "inline-block px-6 py-2"
         }`}
       >
@@ -161,7 +161,7 @@ const DropdownMenu = ({ menu, items, mobile }) => {
                     <Menu.Item as="div" key={index}>
                       {({ active }) => (
                         <Link to={item.path}>
-                          <a className="flex space-x-2 lg:space-x-4 items-center px-5 py-2">
+                          <a className="flex space-x-2 lg:space-x-4 items-center px-5 py-2 text-[#063446]">
                             <span>{item.title}</span>
                           </a>
                         </Link>

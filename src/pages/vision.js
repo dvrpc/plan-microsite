@@ -83,11 +83,11 @@ const Vision = () => {
             className="absolute object-cover h-2/5 w-full"
           />
           <div className="flex text-white font-bold md:w-[68%] mx-auto md:px-7 px-10 z-50 relative items-center mt-4">
-            <Link className="underline" to="/">
+            <Link className="underline text-white" to="/">
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link>Vision</Link>
+            <Link className="text-white">Vision</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
