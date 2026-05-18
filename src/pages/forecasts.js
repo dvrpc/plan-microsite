@@ -127,10 +127,7 @@ const WhatIsThePlan = () => {
         </div>
         <div className="md:w-[68%] relative border-l-4 border-[#063446]">
           <div className="flex items-center w-full md:p-6 p-2 relative">
-            <Dot
-              width="3%"
-              className="md:absolute md:block -left-[1.5%] hidden"
-            />
+            <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
               Explore the Forecasts in Maps
             </h2>
