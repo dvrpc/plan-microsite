@@ -137,7 +137,7 @@ const WhatIsThePlan = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-[#eef4fb] relative">
+        <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] md:mx-auto">
             <div className="flex items-center w-full md:p-6 p-2 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
@@ -180,7 +180,11 @@ const WhatIsThePlan = () => {
                   Infrastructure and Utility Services.
                 </li>
               </ul>
-              <img src={PlanProcess} className="md:w-2/3" />
+              <img
+                src={PlanProcess}
+                className="md:w-2/3"
+                alt="Flow chart starting with the cover of the Update: Connections 2050 Summary Document. Three arrows flow from the document to Work Program, Plan Strategies, and TIP Funded Programs."
+              />
             </div>
           </div>
         </div>

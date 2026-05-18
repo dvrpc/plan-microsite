@@ -152,7 +152,7 @@ const Resources = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.dvrpc.org/transportation/safety/"
+                    href="https://www.dvrpc.org/transportation/safety/visionzero"
                     className="underline text-[#26428b]"
                   >
                     Regional Vision Zero
@@ -173,9 +173,12 @@ const Resources = () => {
         <div className="w-full bg-white relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
-              <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
+              <Dot
+                className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]"
+                id="getinvolved"
+              />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
-                Get involved
+                Get Involved
               </h2>
             </div>
             <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">

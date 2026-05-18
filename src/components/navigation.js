@@ -114,12 +114,18 @@ const NavMenu = props => {
 }
 
 const MenuItem = ({ item, mobile }) => {
+  const url =
+    typeof window !== "undefined" ? window.location.pathname.slice(0, -1) : ""
+  const isActive = useRef(false)
+  if (item.path === url) isActive.current = true
+
   return (
     <Link to={item.path}>
       <a
         className={`underline text-[#063446] ${
           mobile ? "w-full block px-4 py-2 -ml-4" : "inline-block px-6 py-2"
         }`}
+        style={{ fontWeight: isActive.current ? "bold" : "normal" }}
       >
         {item.title}
       </a>

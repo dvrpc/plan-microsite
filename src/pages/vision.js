@@ -87,7 +87,9 @@ const Vision = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="text-white">Vision</Link>
+            <Link className="text-white">Policy </Link>
+            <ChevronRightIcon width="1.5%" />
+            <Link className="text-white">Regional Vision</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
@@ -97,13 +99,10 @@ const Vision = () => {
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Every region needs a roadmap for the future—and that’s what a
-              long-range plan provides.{" "}
-              <strong className="text-white">
-                The regional vision for 2050
-              </strong>{" "}
-              imagines a Greater Philadelphia that is safer, more connected, and
-              more resilient—where communities prosper, people can move easily
-              and affordably, and natural resources are protected.
+              long-range plan provides. The regional vision for 2050 imagines a
+              Greater Philadelphia that is safer, more connected, and more
+              resilient—where communities prosper, people can move easily and
+              affordably, and natural resources are protected.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               DVRPC works with partners across the region to shape this shared
@@ -112,11 +111,10 @@ const Vision = () => {
               maintaining reliable travel on our roads. But it’s about more than
               getting from A to B. Transportation influences where we live, how
               the economy grows, and how we care for the environment. Our plan
-              looks at the <strong className="text-white">big picture</strong>,
-              connecting all the pieces that make our region a great place to
-              live and thrive.
+              looks at the big picture, connecting all the pieces that make our
+              region a great place to live and thrive.
             </p>
-            <h2 className="md:text-5xl mx-auto md:w-3/4 md:text-center md:py-12">
+            <h2 className="md:text-5xl mx-auto md:w-3/4 md:text-center md:py-8">
               The Regional Vision for 2050 is a Greater Philadelphia that
               provides:
             </h2>
@@ -124,7 +122,7 @@ const Vision = () => {
           <div className="pb-6 mx-auto">
             <Bubbles />
           </div>
-          <h2 className="md:text-3xl text-lg pb-0 z-50 mx-auto text-center">
+          <h2 className="text-lg pb-0 z-50 mx-auto text-center">
             Click on each Plan Element above to explore more
           </h2>
         </div>
@@ -170,26 +168,31 @@ const Vision = () => {
             <VisionMap selectedLayer={selectedLayer} />
           </div>
         </div>
-        <div className="md:w-[68%] relative border-l-4 border-[#063446] text-[#063446] md:p-6 p-2 space-y-4">
-          <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
-            Vision Survey Feedback
-          </h2>
-          <p>
-            The regional vision reflects the ideas and priorities of the people
-            who live and work in Greater Philadelphia. Through a public survey
-            with both multiple-choice and open-ended questions, participants
-            shared what they liked (or didn’t) about the previous Plan and
-            suggested what to add, change, or leave out. We also asked for
-            feedback on new topics like infrastructure and utility services.
-          </p>
-          <p>
-            More than{" "}
-            <strong>1,300 people representing each of our nine counties</strong>{" "}
-            weighed in, and their input helped shape this vision. Here’s a
-            snapshot of what we heard:
-          </p>
-          <img
-            alt="10 colorful blurb graphics with quotes from vision survey participants, including:
+        <div className="w-full bg-[#cbe5f3] relative">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
+            <div className="flex flex-col space-y-4 md:p-6 p-2">
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
+                Vision Survey Feedback
+              </h2>
+              <p>
+                The regional vision reflects the ideas and priorities of the
+                people who live and work in Greater Philadelphia. Through a
+                public survey with both multiple-choice and open-ended
+                questions, participants shared what they liked (or didn’t) about
+                the previous Plan and suggested what to add, change, or leave
+                out. We also asked for feedback on new topics like
+                infrastructure and utility services.
+              </p>
+              <p>
+                More than{" "}
+                <strong>
+                  1,300 people representing each of our nine counties
+                </strong>{" "}
+                weighed in, and their input helped shape this vision. Here’s a
+                snapshot of what we heard:
+              </p>
+              <img
+                alt="10 colorful blurb graphics with quotes from vision survey participants, including:
 ●	Help make choosing alternative transportation easier. Help people want to choose biking or walking.
 ●	Reduce car dependency
 ●	Encourage on-site electricity generation, such as small-scale solar and wind
@@ -201,32 +204,34 @@ const Vision = () => {
 ●	Include local food and goods production
 ●	Add language that describes the variety of communities and districts to be served, including residential and business, high-density and rural, wealthy and low-resourced, etc.
 "
-            src={Feedback}
-            className="md:w-2/3 mx-auto"
-          />
-          <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
-            Building Blocks of the Vision
-          </h2>
-          <p>
-            The Plan is built around five key <strong>Plan Elements</strong>:
-            Transportation, Economy, Communities, Environment, and
-            Infrastructure & Utility Services. Each element includes three{" "}
-            <strong>Goals</strong> that move us closer to our regional vision,
-            along with <strong>Strategies</strong> that outline how to achieve
-            them and identify who can help make them happen.
-          </p>
-          <img
-            src={Elements}
-            alt="Pyramid graphic made of 3 colorful puzzle pieces. The top is Plan Elements: 1) Transportation; 2) Economy, 3) Communities, 4) Environment, and 5) Infrastructure and Utility Services. The middle says 3 Goals each. The bottom says ~5 Strategies each"
-            className="md:w-2/3 mx-auto"
-          />
+                src={Feedback}
+                className="md:w-2/3 mx-auto"
+              />
+              <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
+                Building Blocks of the Vision
+              </h2>
+              <p>
+                The Plan is built around five key <strong>Plan Elements</strong>
+                : Transportation, Economy, Communities, Environment, and
+                Infrastructure & Utility Services. Each element includes three{" "}
+                <strong>Goals</strong> that move us closer to our regional
+                vision, along with <strong>Strategies</strong> that outline how
+                to achieve them and identify who can help make them happen.
+              </p>
+              <img
+                src={Elements}
+                alt="Pyramid graphic made of 3 colorful puzzle pieces. The top is Plan Elements: 1) Transportation; 2) Economy, 3) Communities, 4) Environment, and 5) Infrastructure and Utility Services. The middle says 3 Goals each. The bottom says ~5 Strategies each"
+                className="md:w-2/3 mx-auto"
+              />
+              <Link
+                className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
+                to="/plan-elements"
+              >
+                Explore the Plan Elements
+              </Link>
+            </div>
+          </div>
         </div>
-        <Link
-          className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
-          to="/plan-elements"
-        >
-          Explore the Plan Elements
-        </Link>
       </div>
     </Layout>
   )

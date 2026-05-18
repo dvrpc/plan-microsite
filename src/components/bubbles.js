@@ -67,7 +67,7 @@ const Bubbles = () => {
       <div className="relative">
         <Turq width="100%" className="absolute z-10 " />
         <p className="z-50 absolute md:p-3 p-5">
-          Clean, reliable and affordable{" "}
+          Clean, reliable, and affordable{" "}
           <Link
             to="/plan-elements?element=infrastructure"
             className="font-bold underline text-white"

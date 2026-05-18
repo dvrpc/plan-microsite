@@ -5,8 +5,8 @@ import AppContext from "./AppContext"
 
 export const Legend = () => {
   return (
-    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:w-1/2 [&>*]:m-3 [&>*]:text-xs">
-      <div className="flex flex-col z-[98] absolute">
+    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:m-3 [&>*]:text-xs">
+      <div className="flex flex-col z-[98] absolute w-1/5">
         <h3>Update Connections 2050 Major Regional Projects</h3>
         <div className="flex gap-2">
           <span
@@ -98,41 +98,40 @@ const MrpMap = ({ selectedLayer }) => {
           anchor="bottom"
           longitude={clickedFeature.longitude}
           latitude={clickedFeature.latitude}
+          closeOnClick={false}
           onClose={() => setClickedFeature(null)}
-          className="z-[99]"
+          className="z-[99] max-h-64"
         >
           <strong>{clickedFeature.feature.properties.facility}</strong>
-          <table className="[&>*:nth-child(even)]:bg-gray-100">
-            <tr>
-              <td>ID#:</td>
-              <td>{clickedFeature.feature.properties.uc2050_id}</td>
-            </tr>
+          <div className="max-h-[200px] overflow-y-scroll">
+            <table className="[&>*:nth-child(even)]:bg-gray-100">
+              <tr>
+                <td>ID#:</td>
+                <td>{clickedFeature.feature.properties.uc2050_id}</td>
+              </tr>
 
-            <tr>
-              <td>Scope:</td>
-              <td>{clickedFeature.feature.properties.scope}</td>
-            </tr>
-            <tr>
-              <td>Project Categories:</td>
-              <td>{clickedFeature.feature.properties.combined_pcts}</td>
-            </tr>
-            <tr>
-              <td>Counties:</td>
-              <td>{clickedFeature.feature.properties.location}</td>
-            </tr>
-            <tr>
-              <td>State:</td>
-              <td>{clickedFeature.feature.properties.state}</td>
-            </tr>
-            <tr>
-              <td>Funding:</td>
-              <td>{clickedFeature.feature.properties.funding}</td>
-            </tr>
-            <tr>
-              <td>Cost:</td>
-              <td>{clickedFeature.feature.properties.displaycost}</td>
-            </tr>
-          </table>
+              <tr>
+                <td>Scope:</td>
+                <td>{clickedFeature.feature.properties.scope}</td>
+              </tr>
+              <tr>
+                <td>Counties:</td>
+                <td>{clickedFeature.feature.properties.location}</td>
+              </tr>
+              <tr>
+                <td>State:</td>
+                <td>{clickedFeature.feature.properties.state}</td>
+              </tr>
+              <tr>
+                <td>Funding:</td>
+                <td>{clickedFeature.feature.properties.funding}</td>
+              </tr>
+              <tr>
+                <td>Cost:</td>
+                <td>{clickedFeature.feature.properties.displaycost}</td>
+              </tr>
+            </table>
+          </div>
         </Popup>
       )}
       <Source

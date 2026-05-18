@@ -200,10 +200,10 @@ const WhatIsThePlan = () => {
                 state funding models that are consistent with the Plan’s vision
                 and goals.
               </p>
-              <strong className="text-[#063446]">
+              <p className="text-[#063446]">
                 Click on the Potential Federal and State Funding Options below
                 to learn about them.
-              </strong>
+              </p>
 
               <div id="flip-cards" className="grid gap-y-4 gap-x-2">
                 <Flipcard
@@ -341,7 +341,7 @@ const WhatIsThePlan = () => {
                         className="md:w-1/3 w-1/2"
                         alt="●	Safety/Infrastructure Investment Fees
 ○	Scales vehicle registration fees based on vehicle weight and size. 
-○	Potential benefits: Charges vehicle owners for societal costs of increased emissions, road damage, and safety risks that all rise with heavier vehicle weights.
+○	Potential benefits: Charges vehicle owners for societal costs of increased air pollution, road damage, and safety risks that all rise with heavier vehicle weights.
 "
                       />
                       <p className="md:w-2/3 leading-none">

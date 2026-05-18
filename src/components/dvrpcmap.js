@@ -31,11 +31,7 @@ const DVRPCMap = ({ children, features }) => {
     <div className="h-[600px] w-full">
       <Map
         mapStyle="mapbox://styles/crvanpollard/clmqidmqj04uh01ma2mkla3yz"
-        interactiveLayerIds={[
-          "mrp-lines",
-          "county-outline",
-          "municipality-outline",
-        ]}
+        interactiveLayerIds={["mrp-lines"]}
         ref={mapRef}
         initialViewState={{ bounds: maxExtent }}
         mapboxAccessToken="pk.eyJ1IjoidGhhY2hhZG9yaWFuZHZycGMiLCJhIjoiY2x6Ymw5bjNoMDIxdTJscHJlbDMxMzM1ZyJ9.AZoU09L4abDOTWEUM5Uwdw"

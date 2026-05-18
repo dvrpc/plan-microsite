@@ -53,7 +53,7 @@ const MrpWebmap = () => {
             </Link>
             <ChevronRightIcon width="1.5%" />
             <Link className="underline text-white" to="/financial">
-              Financial Plan
+              Financial
             </Link>
             <ChevronRightIcon width="1.5%" />
             <Link className="text-white">MRP Webmap</Link>
@@ -78,112 +78,108 @@ const MrpWebmap = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-[68%] w-full relative border-l-4 border-[#063446]">
-          <div className="flex items-center w-full md:p-6 p-2 relative">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
+          <div className="flex items-center w-full md:p-6 p-2 relative mt-4">
             <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
-              MRP Web Map
+              MRP Webmap
             </h2>
           </div>
-        </div>
-        <div className="relative h-full w-full">
-          <div
-            id="mrp-map-text"
-            className="md:absolute z-[98] flex h-full md:w-1/3 md:pl-[17%] bg-[#0c2e39] md:flex-row flex-col"
-          >
-            <div className="text-white p-3 space-y-4 text-sm">
-              <p>
-                The map shows MRPs categorized by one or more transportation
-                improvement category.
-              </p>
-              <p>
-                <strong>Roadway</strong> and <strong>Transit</strong> projects
-                in this web map are designated as <strong>Funded</strong>{" "}
-                (prioritized and programmed within anticipated revenues) or{" "}
-                <strong>Unfunded</strong> (aspirational projects aligned with
-                the Plan’s goals that could move forward if new funding becomes
-                available). <strong>Illustrative</strong> are preservation
-                projects that can advance into the TIP when repairs are needed,
-                and funding is available. There are also{" "}
-                <strong>Externally Funded</strong> projects that don’t use
-                regional dollars, but must be considered due to their impacts on
-                the regional network and air quality conformity.
-              </p>
+          <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 relative">
+            <p>
+              The map shows MRPs categorized by one or more transportation
+              improvement category.
+            </p>
+            <p>
+              <strong>Roadway</strong> and <strong>Transit</strong> projects in
+              this web map are designated as <strong>Funded</strong>{" "}
+              (prioritized and programmed within anticipated revenues) or{" "}
+              <strong>Unfunded</strong> (aspirational projects aligned with the
+              Plan’s goals that could move forward if new funding becomes
+              available). <strong>Illustrative</strong> are preservation
+              projects that can advance into the TIP when repairs are needed,
+              and funding is available. There are also{" "}
+              <strong>Externally Funded</strong> projects that don’t use
+              regional dollars, but must be considered due to their impacts on
+              the regional network and air quality conformity.
+            </p>
+            <div className="relative flex">
+              <Legend selectedLayer={selectedLayer} />
+              <button
+                className="font-bold z-[100] w-min h-[20px] absolute md:top-0 right-0 m-6"
+                onClick={toggleModal}
+              >
+                <InfoIcon fill="#063446" width="20px" />
+              </button>
+              <MrpMap />
             </div>
-            <Legend selectedLayer={selectedLayer} />
+
+            <Modal toggleModal={toggleModal}>
+              <div className="space-y-4 p-4">
+                <p>
+                  Major Regional Projects (MRPs) are large-scale transportation
+                  investments that cost more than $40 million and/or
+                  significantly impact travel across the region.
+                </p>
+                <p>
+                  Roadway and Transit projects in this webmap are designated as{" "}
+                  <strong>Funded</strong> (prioritized and programmed within
+                  anticipated revenues) or <strong>Unfunded</strong>{" "}
+                  (aspirational projects aligned with the Plan’s goals that
+                  could move forward if new funding becomes available). There
+                  are also <strong>Externally Funded</strong> projects that
+                  don’t use regional dollars, but must be considered due to
+                  their impacts on the regional network and air quality
+                  conformity. For more information on each project, including
+                  the budgets from project categories they’re funded with, and
+                  to view a list of <strong>Unmapped</strong> and{" "}
+                  <strong>Illustrative</strong> projects, see Appendix
+                  F—Financial Plan, linked from{" "}
+                  <a href="https://www.dvrpc.org/plan" target="_blank">
+                    https://www.dvrpc.org/plan
+                  </a>
+                  .
+                </p>
+                <p>
+                  Funded projects are scheduled in one or more of the following
+                  funding periods, depending on whether the project is located
+                  in Pennsylvania or New Jersey.
+                </p>
+
+                <table>
+                  <thead className="bg-[#063446] text-white">
+                    <tr className="*:py-4 *:px-4">
+                      <th>Funding Period</th>
+                      <th>Pennsylvania</th>
+                      <th>New Jersey</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-200 bg-white [&>*:nth-child(even)]:bg-gray-100">
+                    <tr className="*:py-4 *:px-4">
+                      <td>1</td>
+                      <td>2026–2030 (5)</td>
+                      <td>2026–2029 (4)</td>
+                    </tr>
+                    <tr className="*:py-4 *:px-4">
+                      <td>2</td>
+                      <td>2031–2036 (6)</td>
+                      <td>2030–2036 (6)</td>
+                    </tr>
+                    <tr className="*:py-4 *:px-4">
+                      <td>3</td>
+                      <td>2037–2045 (9)</td>
+                      <td>2036–2045 (10)</td>
+                    </tr>
+                    <tr className="*:py-4 *:px-4">
+                      <td>4</td>
+                      <td>2046–2050 (5)</td>
+                      <td>2046–2050 (5)</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </Modal>
           </div>
-          <button
-            className="font-bold z-[100] w-min h-[20px] absolute md:top-0 right-0 m-6"
-            onClick={toggleModal}
-          >
-            <InfoIcon fill="#063446" width="20px" />
-          </button>
-          <MrpMap />
-
-          <Modal toggleModal={toggleModal}>
-            <div className="space-y-4 p-4">
-              <p>
-                Major Regional Projects (MRPs) are large-scale transportation
-                investments that cost more than $40 million and/or significantly
-                impact travel across the region.
-              </p>
-              <p>
-                Roadway and Transit projects in this webmap are designated as{" "}
-                <strong>Funded</strong> (prioritized and programmed within
-                anticipated revenues) or <strong>Unfunded</strong> (aspirational
-                projects aligned with the Plan’s goals that could move forward
-                if new funding becomes available). There are also{" "}
-                <strong>Externally Funded</strong> projects that don’t use
-                regional dollars, but must be considered due to their impacts on
-                the regional network and air quality conformity. For more
-                information on each project, including the budgets from project
-                categories they’re funded with, and to view a list of{" "}
-                <strong>Unmapped</strong> and <strong>Illustrative</strong>{" "}
-                projects, see Appendix F—Financial Plan, linked from{" "}
-                <a href="https://www.dvrpc.org/plan" target="_blank">
-                  https://www.dvrpc.org/plan
-                </a>
-                .
-              </p>
-              <p>
-                Funded projects are scheduled in one or more of the following
-                funding periods, depending on whether the project is located in
-                Pennsylvania or New Jersey.
-              </p>
-
-              <table>
-                <thead className="bg-[#063446] text-white">
-                  <tr className="*:py-4 *:px-4">
-                    <th>Funding Period</th>
-                    <th>Pennsylvania</th>
-                    <th>New Jersey</th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200 bg-white [&>*:nth-child(even)]:bg-gray-100">
-                  <tr className="*:py-4 *:px-4">
-                    <td>1</td>
-                    <td>2026–2030 (5)</td>
-                    <td>2026–2029 (4)</td>
-                  </tr>
-                  <tr className="*:py-4 *:px-4">
-                    <td>2</td>
-                    <td>2031–2036 (6)</td>
-                    <td>2030–2036 (6)</td>
-                  </tr>
-                  <tr className="*:py-4 *:px-4">
-                    <td>3</td>
-                    <td>2037–2045 (9)</td>
-                    <td>2036–2045 (10)</td>
-                  </tr>
-                  <tr className="*:py-4 *:px-4">
-                    <td>4</td>
-                    <td>2046–2050 (5)</td>
-                    <td>2046–2050 (5)</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </Modal>
         </div>
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
@@ -217,7 +213,7 @@ const MrpWebmap = () => {
                   traffic and improve mobility. CMP strategies support the
                   Plan’s broader goals by helping to:
                 </p>
-                <ul className="list-disc ml-4">
+                <ul className="list-disc ml-8">
                   <li>Increase mobility and reliability</li>
                   <li>Integrate modes and improve transit access</li>
                   <li>Modernize and maintain the transportation network</li>

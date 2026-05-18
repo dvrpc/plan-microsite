@@ -61,10 +61,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               employment by municipality throughout the region.
             </span>
           </TabPanel>
-          <span className="italic">
+          <p className="italic mt-2">
             Explore the web map to view absolute change, percent change, and
             total forecasted population by municipality throughout the region.
-          </span>
+          </p>
         </TabPanels>
       </TabGroup>
     </div>
@@ -102,6 +102,8 @@ const WhatIsThePlan = () => {
             <Link className="underline text-white" to="/">
               Home
             </Link>
+            <ChevronRightIcon width="1.5%" />
+            <Link className="text-white">Trends & Forces</Link>
             <ChevronRightIcon width="1.5%" />
             <Link className="text-white">Forecasts</Link>
           </div>
@@ -303,12 +305,12 @@ const WhatIsThePlan = () => {
                   Between 2020 and 2025 alone, jobs in{" "}
                   <strong>hotels, restaurants, and food services</strong> are
                   projected to grow by <strong>67%</strong>, and{" "}
-                  <strong>arts and entertainment</strong> jobs by
+                  <strong>arts and entertainment</strong> jobs by{" "}
                   <strong>41%</strong>, as these sectors rebound from pandemic
                   losses.
                 </p>
                 <p>
-                  By 2050, total regional employment is forecast to reach nearly
+                  By 2050, total regional employment is forecast to reach nearly{" "}
                   <strong>4 million jobs</strong>.
                   <ul className="list-disc ml-8 space-y-2">
                     <li>

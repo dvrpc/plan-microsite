@@ -104,9 +104,7 @@ const WhatIsThePlan = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="underline text-white" to="/vision">
-              Vision
-            </Link>
+            <Link className="text-white">Policy</Link>
             <ChevronRightIcon width="1.5%" />
             <Link className="text-white">Strategies</Link>
           </div>

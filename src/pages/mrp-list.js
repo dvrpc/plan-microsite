@@ -110,9 +110,7 @@ const MRPList = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="underline text-white" to="/financial">
-              Financial Plan
-            </Link>
+            <Link className="text-white">Financial</Link>
             <ChevronRightIcon width="1.5%" />
             <Link className="text-white">Major Regional Project List</Link>
           </div>
@@ -213,7 +211,7 @@ const MRPList = () => {
               type="text"
               onChange={e => setFilter(e.target.value)}
               value={filter}
-              className="input"
+              className="input block w-full rounded-sm border border-gray-200 bg-gray-50 bg-none py-2 px-4 text-base leading-6 text-black text-opacity-80 transition-all"
             />
           </div>
         </div>
@@ -362,6 +360,12 @@ const MRPList = () => {
                     ))}
                 </tbody>
               </table>
+              <Link
+                className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
+                to="/mrp-webmap"
+              >
+                View the MRPs in a web map
+              </Link>
             </div>
           </div>
         </div>

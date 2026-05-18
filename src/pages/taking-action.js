@@ -24,7 +24,7 @@ const TakingAction = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="text-white">Take Action</Link>
+            <Link className="text-white">Taking Action</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] bg-[#0c2e39] w-full flex flex-col relative px-10 py-6 mt-[10%]">
@@ -50,7 +50,7 @@ const TakingAction = () => {
             </p>
           </div>
         </div>
-        <div className="w-full bg-white relative">
+        <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
@@ -174,7 +174,15 @@ const TakingAction = () => {
                   >
                     DVRPC’s annual work program
                   </a>
-                  , the TIP, and collaboration with regional planning partners.
+                  , the{" "}
+                  <a
+                    className="underline"
+                    href="https://www.dvrpc.org/tip/"
+                    target="_blank"
+                  >
+                    Transportation Improvement Program (TIP)
+                  </a>
+                  , and collaboration with regional planning partners.
                 </li>
               </ul>
               <p>
@@ -185,7 +193,7 @@ const TakingAction = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-white relative">
+        <div className="w-full relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />

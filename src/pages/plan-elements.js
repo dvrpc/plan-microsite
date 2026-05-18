@@ -302,7 +302,7 @@ transportation network for all."
                 The Communities Vision for 2050 is:
               </p>
               <p className="md:text-3xl text-lg font-bold">
-                Integrated, healthy, and walkable communities
+                Healthy, walkable, and vibrant communities
               </p>
             </div>
             <img
@@ -381,8 +381,8 @@ transportation network for all."
                   </div>
                   <div>
                     <p className="md:text-2xl text-lg font-bold">
-                      Socioeconomically integrated neighborhoods with quality
-                      education that is accessible to all.
+                      Neighborhoods provide quality education that is accessible
+                      to all.
                     </p>
                     <p>
                       Growth is focused in mixed-use, walkable Centers that make
@@ -407,7 +407,7 @@ transportation network for all."
                 The Environment Vision for 2050 is:
               </p>
               <p className="md:text-3xl text-lg font-bold">
-                A preserved and restored natural environment and healthy
+                A preserved and restored natural environment with thriving
                 ecological systems
               </p>
             </div>
@@ -658,9 +658,7 @@ const WhatIsThePlan = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="underline text-white" to="/vision">
-              Vision
-            </Link>
+            <Link className="text-white">Policy</Link>
             <ChevronRightIcon width="1.5%" />
             <Link className="text-white">Plan Elements</Link>
           </div>
@@ -669,9 +667,9 @@ const WhatIsThePlan = () => {
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">Plan Elements</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              The Plan is organized into five key elements— Transportation,
+              The Plan is organized into five key elements—Transportation,
               Economy, Communities, Environment , and Infrastructure and Utility
-              Services —each with three goals that guide our regional vision.
+              Services—each with three goals that guide our regional vision.
               Explore the elements below to see what the vision looks like in
               practice.
             </p>
