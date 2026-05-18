@@ -52,7 +52,7 @@ const WhatIsThePlan = () => {
             </p>
             <p className="md:text-2xl text-lg">
               Greater investment is needed to:
-              <ul className="*:ml-6 list-disc">
+              <ul className="ml-8 list-disc space-y-2">
                 <li>
                   Maintain and modernize our aging transportation infrastructure
                 </li>
@@ -80,7 +80,7 @@ const WhatIsThePlan = () => {
                 those revenues are shrinking as vehicles become more
                 fuel-efficient and electric.
               </p>
-              <ul className="list-disc *:ml-4">
+              <ul className="list-disc ml-8 space-y-2">
                 <li>
                   The federal gas tax hasn’t increased since{" "}
                   <strong>1993</strong>, and inflation has erased about{" "}

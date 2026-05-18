@@ -144,7 +144,7 @@ const WhatIsThePlan = () => {
               Toggle between sets of maps. Each shows three ways to view the
               forecast for 2050:
             </p>
-            <ul className="list-disc ml-4">
+            <ul className="list-disc ml-8 space-y-2">
               <li>
                 <strong>Absolute Change</strong>: the numeric increase or
                 decrease
@@ -310,7 +310,7 @@ const WhatIsThePlan = () => {
                 <p>
                   By 2050, total regional employment is forecast to reach nearly
                   <strong>4 million jobs</strong>.
-                  <ul className="list-disc ml-4">
+                  <ul className="list-disc ml-8 space-y-2">
                     <li>
                       <strong>Philadelphia</strong> will see the largest share
                       of job growth, with about{" "}

@@ -73,7 +73,7 @@ const TakingAction = () => {
                 through red tape and get projects moving.
               </p>
               <p>Here's what is needed:</p>
-              <ul className="list-disc ml-4">
+              <ul className="list-disc ml-8 space-y-2">
                 <li>
                   <strong>Reliable, long-term federal and state funding</strong>{" "}
                   to maintain and improve infrastructure and support ongoing
@@ -142,7 +142,7 @@ const TakingAction = () => {
               <p>
                 <strong>Our commitment:</strong>
               </p>
-              <ul className="list-disc ml-4">
+              <ul className="list-disc ml-8 space-y-2">
                 <li>
                   <strong>Deliver trusted data and analysis</strong> that
                   empower partners to make informed decisions.
@@ -207,7 +207,7 @@ const TakingAction = () => {
               <p>
                 <strong>Ways to get involved:</strong>
               </p>
-              <ul className="list-disc ml-4">
+              <ul className="list-disc ml-8 space-y-2">
                 <li>
                   <strong>Put Plan strategies into practice.</strong> Visit the{" "}
                   <Link className="underline" to="/strategies">

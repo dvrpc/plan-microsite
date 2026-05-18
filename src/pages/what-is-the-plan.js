@@ -80,7 +80,7 @@ const WhatIsThePlan = () => {
                 Still, our region faces challenges:
               </span>
               <br />
-              <ul className="list-disc ml-4">
+              <ul className="list-disc ml-8 space-y-2">
                 <li>Rising housing costs and affordability pressures</li>
                 <li>Aging infrastructure</li>
                 <li>Shifts in commuting and work patterns</li>
@@ -151,7 +151,7 @@ const WhatIsThePlan = () => {
                 happens every day. DVRPC and its partners move projects forward
                 through two key processes:
               </p>
-              <ul className="list-disc ml-4">
+              <ul className="list-disc ml-8 space-y-2">
                 <li>
                   The{" "}
                   <a
