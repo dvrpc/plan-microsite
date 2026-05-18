@@ -6,19 +6,13 @@ const Footer = () => {
   return (
     <footer className="text-white">
       <div className="bg-[#0c2e39] grid grid-cols-3 text-xl text-center underline py-8 md:px-[15%] px-8">
-        <Link to="https://www.dvrpc.org/plan" className="text-white underline">
+        <Link to="/resources" className="text-white underline">
           Download the Plan
         </Link>
-        <Link
-          to="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254"
-          className="text-white underline"
-        >
+        <Link to="/mrp-webmap" className="text-white underline">
           View Major Regional Projects
         </Link>
-        <Link
-          to="http://www.dvrpc.org/getinvolved"
-          className="text-white underline"
-        >
+        <Link to="/resources#getinvolved" className="text-white underline">
           Get Involved
         </Link>
       </div>
