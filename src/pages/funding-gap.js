@@ -73,7 +73,7 @@ const WhatIsThePlan = () => {
             </h2>
           </div>
           <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
-            <div className="space-y-4 min-w-[66%]">
+            <div className="space-y-4 w-[50%]">
               <p>
                 Most transportation funding comes from{" "}
                 <strong>taxes on gasoline and petroleum products</strong>, but
@@ -103,6 +103,10 @@ const WhatIsThePlan = () => {
                 alt="Illustration of two gas pumps, drawn to scale of the purchasing power per gallon in 1993 (18.4 c/gal) and 2023 (6.6 c/gal)."
                 src={PurchasingPower}
               />
+              <i>
+                Source: Producer Price Index, Construction Materials Index,
+                1993-2023
+              </i>
             </div>
           </div>
         </div>
@@ -141,11 +145,15 @@ const WhatIsThePlan = () => {
                   innovative investments that promote long-term economic growth.
                 </p>
               </div>
-              <div className="md:ml-6 mx-auto h-fit md:mt-auto md:w-full lg:w-1/2">
+              <div className="md:ml-6 mx-auto h-fit md:mt-auto w-1/2 md:w-full lg:w-1/2">
                 <img
                   src={LocalFunding}
                   alt="Bar chart made of stacked dollar bills comparing funding from three sources: federal (63%, 49.76 billion $), state (34%, 26.44 billion), and local (3%, 2.21 billion $)."
                 />
+                <i>
+                  Percentage of funds in billions of year-of-expenditure dollars
+                  by source to the region in a year.
+                </i>
               </div>
             </div>
             <div
