@@ -337,7 +337,7 @@ const Trends = () => {
                     <div className="title">
                       Community
                       <br />
-                      Integration
+                      Income Mix
                     </div>
                     <div className="value">
                       40% to 51% living
