@@ -54,6 +54,7 @@ import Roadwayss from "../images/roadwayss.png"
 import Block1 from "../images/block-1.png"
 import Block2 from "../images/block-2.png"
 import Block3 from "../images/block-3.png"
+import { Tooltip } from "react-tippy"
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
   return (
@@ -163,11 +164,18 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       </div>
                     </div>
                     <img src={NjTransitPm} />
-                    <img
-                      src={Transitpm}
-                      className="mt-auto"
-                      alt="Illustration of bus."
-                    />
+                    <div className="relative mt-auto">
+                      <Tooltip
+                        theme="tomato"
+                        title="Repairs and upgrades transit vehicles, facilities, and infrastructure to keep the system safe, reliable, and accessible."
+                        position="top"
+                        trigger="click"
+                        className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      >
+                        Transit Preservation & Modernization
+                      </Tooltip>
+                      <img src={Transitpm} alt="Illustration of bus." />
+                    </div>
                   </div>
                 </div>
                 <div className="text-[#0078ae] md:font-bold">
@@ -186,7 +194,18 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       </div>
                     </div>
                     <img src={NjTransitOp} className="w-7 mx-auto" />
-                    <img src={Transittoi} className="mt-auto" />
+                    <div className="relative mt-auto">
+                      <Tooltip
+                        theme="tomato"
+                        title="Enhances transit service and performance through operational upgrades, technology, and targeted capacity improvements."
+                        position="top"
+                        trigger="click"
+                        className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      >
+                        Transit Operational Improvements
+                      </Tooltip>
+                      <img src={Transittoi} />
+                    </div>
                   </div>
                 </div>
                 <div className="text-[#24964f] md:font-bold">
@@ -205,11 +224,22 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       </div>
                     </div>
                     <img src={NjTransitExp} />
-                    <img
-                      src={Transittse}
-                      className="mt-auto"
-                      alt="Illustration of construction worker."
-                    />
+                    <div className="relative mt-auto">
+                      <Tooltip
+                        theme="tomato"
+                        title="Builds new transit routes, stations, and services to expand access and connect more people to the region."
+                        position="top"
+                        trigger="click"
+                        className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      >
+                        Transit System Expansion
+                      </Tooltip>
+                      <img
+                        src={Transittse}
+                        className="mt-auto"
+                        alt="Illustration of construction worker."
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="text-[#20a9a6] md:font-bold">
@@ -228,11 +258,21 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       </div>
                     </div>
                     <img src={NjTransitOther} className="w-3 mx-auto" />
-                    <img
-                      src={Transitother}
-                      className="mt-auto"
-                      alt="Illustration depicting contract and money."
-                    />
+                    <div className="relative mt-auto">
+                      <Tooltip
+                        theme="tomato"
+                        title="Covers required transit expenses such as leases, environmental work, and debt payments that keep the system functioning."
+                        position="top"
+                        trigger="click"
+                        className="absolute bottom-0 text-white px-6 p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      >
+                        Transit Other
+                      </Tooltip>
+                      <img
+                        src={Transitother}
+                        alt="Illustration depicting contract and money."
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -366,11 +406,22 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     </div>
                   </div>
                   <img src={NjRoadwayPpm} />
-                  <img
-                    src={Roadwayppm}
-                    className="mt-auto"
-                    alt="Illustration of construction equipment"
-                  />
+                  <div className="relative mt-auto">
+                    <Tooltip
+                      theme="tomato"
+                      title="Keeps roads in good condition by resurfacing, repairing, and upgrading pavement and essential roadway features."
+                      position="top"
+                      trigger="click"
+                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                    >
+                      Pavement Preservation & Modernization
+                    </Tooltip>
+                    <img
+                      src={Roadwayppm}
+                      className="mt-auto"
+                      alt="Illustration of construction equipment"
+                    />
+                  </div>
                 </div>
                 <div className="text-[#6f6688] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -389,11 +440,22 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     </div>
                   </div>
                   <img src={NjRoadwayBp} />
-                  <img
-                    src={Roadwaybp}
-                    className="mt-auto"
-                    alt="Illustration of bridge construction"
-                  />
+                  <div className="relative mt-auto">
+                    <Tooltip
+                      theme="tomato"
+                      title="Maintains and repairs bridges to keep them safe, reliable, and structurally sound for all users."
+                      position="top"
+                      trigger="click"
+                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                    >
+                      Bridge Preservation
+                    </Tooltip>
+                    <img
+                      src={Roadwaybp}
+                      className="mt-auto"
+                      alt="Illustration of bridge construction"
+                    />
+                  </div>
                 </div>
                 <div className="text-[#009eb8] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -412,11 +474,22 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     </div>
                   </div>
                   <img src={NjRoadwaySs} className="w-3 mx-auto" />
-                  <img
-                    src={Roadwayss}
-                    className="mt-auto"
-                    alt="Illustration of crosswalk"
-                  />
+                  <div className="relative mt-auto">
+                    <Tooltip
+                      theme="tomato"
+                      title="Funds targeted improvements that reduce serious crashes and support the Vision Zero goal."
+                      position="top"
+                      trigger="click"
+                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                    >
+                      Substantive Safety
+                    </Tooltip>
+                    <img
+                      src={Roadwayss}
+                      className="mt-auto"
+                      alt="Illustration of crosswalk"
+                    />
+                  </div>
                 </div>
                 <div className="text-[#0078ae] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -434,12 +507,23 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       <p>14%</p>
                     </div>
                   </div>
-                  <img src={NjRoadwayMoi} />
-                  <img
-                    src={Roadwaymoi}
-                    className="mt-auto"
-                    alt="Illustration traffic signs."
-                  />
+                  <div className="relative mt-auto">
+                    <Tooltip
+                      theme="tomato"
+                      title="Improves how the existing transportation system works by reducing congestion and using technology to move people and goods more efficiently."
+                      position="top"
+                      trigger="click"
+                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                    >
+                      Mobility Operational Improvements
+                    </Tooltip>
+                    <img src={NjRoadwayMoi} />
+                    <img
+                      src={Roadwaymoi}
+                      className="mt-auto"
+                      alt="Illustration traffic signs."
+                    />
+                  </div>
                 </div>
                 <div className="text-[#24964f] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -458,11 +542,22 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     </div>
                   </div>
                   <img src={NjRoadwayRe} className="w-10 mx-auto" />
-                  <img
-                    src={Roadwayre}
-                    className="mt-auto"
-                    alt="Illustration of roadway construction worker."
-                  />
+                  <div className="relative mt-auto">
+                    <Tooltip
+                      theme="tomato"
+                      title="Adds or extends roadway capacity in limited ways to relieve bottlenecks and improve connections and mobility."
+                      position="top"
+                      trigger="click"
+                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                    >
+                      Roadway Expansion
+                    </Tooltip>
+                    <img
+                      src={Roadwayre}
+                      className="mt-auto"
+                      alt="Illustration of roadway construction worker."
+                    />
+                  </div>
                 </div>
                 <div className="text-[#026227] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
                   <p className="md:text-center break-all md:break-normal md:text-2xl">
@@ -481,11 +576,22 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     </div>
                   </div>
                   <img src={NjRoadwayGt} />
-                  <img
-                    src={Roadwaygt}
-                    className="mt-auto"
-                    alt="Illustration of someone walking and someone biking."
-                  />
+                  <div className="relative mt-auto">
+                    <Tooltip
+                      theme="tomato"
+                      title="Expands walking, biking, and community-focused projects that improve mobility while reducing environmental impacts."
+                      position="top"
+                      trigger="click"
+                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                    >
+                      Green Transportation
+                    </Tooltip>
+                    <img
+                      src={Roadwaygt}
+                      className="mt-auto"
+                      alt="Illustration of someone walking and someone biking."
+                    />
+                  </div>
                 </div>
               </div>
             </>
