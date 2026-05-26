@@ -8,8 +8,26 @@ import { ChevronDownIcon } from "@heroicons/react/16/solid"
 import Strategies from "../components/strategies.json"
 import Select from "react-select"
 import Accordion from "../components/accordion"
+import * as XLSX from "xlsx"
 
 const WhatIsThePlan = () => {
+  const exportToExcel = () => {
+    const strategiesRet = []
+    const actionsRet = []
+    filteredStrategies.map(strategy => {
+      strategy.actions.map(action =>
+        actionsRet.push({ element: strategy.element, ...action })
+      )
+      const { actions, ...strategyNoActions } = strategy
+      strategiesRet.push(strategyNoActions)
+    })
+    const workbook = XLSX.utils.book_new()
+    const sheet1 = XLSX.utils.json_to_sheet(strategiesRet)
+    const sheet2 = XLSX.utils.json_to_sheet(actionsRet)
+    XLSX.utils.book_append_sheet(workbook, sheet1, "Strategies")
+    XLSX.utils.book_append_sheet(workbook, sheet2, "Actions")
+    XLSX.writeFile(workbook, "data.xlsx")
+  }
   const strategies = { ...Strategies }
   const [element, setElement] = useState("")
   const [party, setParty] = useState([])
@@ -186,9 +204,15 @@ const WhatIsThePlan = () => {
               className="input block w-full rounded-sm border border-gray-200 bg-gray-50 bg-none py-2 px-4 text-base leading-6 text-black text-opacity-80 transition-all"
             />
             {filteredStrategies && filteredStrategies.length > 0 ? (
-              <div className="text-gray-500">
-                Search results: {filteredStrategies.length}
-              </div>
+              <>
+                <div className="text-gray-500">
+                  Search results: {filteredStrategies.length}
+                </div>
+
+                <button className="w-fit underline" onClick={exportToExcel}>
+                  Download data
+                </button>
+              </>
             ) : null}
           </div>
         </div>
@@ -246,7 +270,12 @@ const WhatIsThePlan = () => {
                                         party
                                           .map(term => term.value)
                                           .includes(value)
-                                      ) && <p>{action.description}</p>}
+                                      ) && (
+                                        <p>
+                                          {action.description} (
+                                          {action.tags.join(", ")})
+                                        </p>
+                                      )}
                                     {!party.length && (
                                       <p>
                                         {action.description} (
