@@ -576,69 +576,52 @@ const WhatIsThePlan = () => {
               to how much funding is available. Click on the text boxes below to
               learn more.
             </p>
-            <div className="relative md:py-14 pb-20">
-              <div
-                id="block-1"
-                className="absolute scale-[70%]"
-                onClick={() => enlarge("block-1", ["block-2", "block-3"])}
-              >
-                <div className="absolute text-sm m-6 space-y-2 text-[#063446] flex flex-col">
-                  <span>
-                    DVRPC estimates reasonably anticipated funding for the
-                    Pennsylvania and New Jersey subregions for roadways and
-                    transit. There is limited ability to move funds between
-                    modes.
-                  </span>
-                  <span>
-                    These are allocated to specific types of projects based on
-                    the Plan’s vision, goals, policies, and identified needs.
-                  </span>
+            <div className="py-10">
+              <div className="relative">
+                <div
+                  id="block-1"
+                  className="absolute scale-[70%]"
+                  onClick={() => enlarge("block-1", ["block-2", "block-3"])}
+                >
+                  <div className="absolute m-6 text-sm space-y-2 text-[#063446] flex flex-col">
+                    <span>
+                      <strong>$162.9 billion</strong> to achieve the
+                      transportation vision.
+                    </span>
+                    <span>
+                      The estimate does not yet include the full cost of:
+                    </span>
+                    <ul className="list-disc *:ml-4 !text-sm">
+                      <li>Substantive safety improvements</li>
+                      <li>
+                        Preservation of existing roadway and transit networks
+                      </li>
+                      <li>New bicycle and pedestrian facilities</li>
+                      <li>Operational improvements</li>
+                      <li>Network Expansion</li>
+                    </ul>
+                  </div>
+                  <img src={Block3} />
                 </div>
-                <img src={Block1} />
-              </div>
-              <div
-                id="block-2"
-                className="absolute scale-[70%]"
-                onClick={() => enlarge("block-2", ["block-1", "block-3"])}
-              >
-                <div className="absolute m-8 text-sm space-y-2 text-[#063446] flex flex-col">
-                  <span>
-                    <strong>$78.4 billion in funding</strong> is expected from
-                    federal, state, and local sources.
-                  </span>
+                <div
+                  id="block-2"
+                  className="absolute scale-[70%]"
+                  onClick={() => enlarge("block-2", ["block-1", "block-3"])}
+                >
+                  <div className="absolute m-8 text-sm space-y-2 text-[#063446] flex flex-col">
+                    <span>
+                      <strong>$78.4 billion in funding</strong> is expected from
+                      federal, state, and local sources.
+                    </span>
+                  </div>
+                  <img src={Block2} />
                 </div>
-                <img src={Block2} />
+                <img
+                  alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
+                  src={Revenue}
+                  className="mx-auto md:w-4/5 lg:w-1/2"
+                />
               </div>
-              <div
-                id="block-3"
-                className="absolute scale-[70%]"
-                onClick={() => enlarge("block-3", ["block-1", "block-2"])}
-              >
-                <div className="absolute m-6 text-sm space-y-2 text-[#063446] flex flex-col">
-                  <span>
-                    <strong>$162.9 billion</strong> to achieve the
-                    transportation vision.
-                  </span>
-                  <span>
-                    The estimate does not yet include the full cost of:
-                  </span>
-                  <ul className="list-disc *:ml-4 !text-sm">
-                    <li>Substantive safety improvements</li>
-                    <li>
-                      Preservation of existing roadway and transit networks
-                    </li>
-                    <li>New bicycle and pedestrian facilities</li>
-                    <li>Operational improvements</li>
-                    <li>Network Expansion</li>
-                  </ul>
-                </div>
-                <img src={Block3} />
-              </div>
-              <img
-                alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
-                src={Revenue}
-                className="mx-auto w-4/5"
-              />
             </div>
           </div>
         </div>
@@ -684,9 +667,9 @@ const WhatIsThePlan = () => {
         <div className="w-full bg-[#cbe5f3] relative p-10 flex">
           <Link
             className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
-            to="/mrp-list"
+            to="/funding-gap"
           >
-            See the Major Regional Projects Funded with Available Revenue
+            Learn more about Funding Challenges for the Region
           </Link>
         </div>
       </div>

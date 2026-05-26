@@ -55,6 +55,9 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               the greatest impact.
             </span>
           </TabPanel>
+          <p className="italic p-2">
+            Use the interactive map to explore this vision in two layers:
+          </p>
         </TabPanels>
       </TabGroup>
     </div>
@@ -150,7 +153,6 @@ const Vision = () => {
               walkable, vibrant communities where people can live, work, and
               play.
             </p>
-            <p>Use the interactive map to explore this vision in two layers:</p>
           </div>
         </div>
         <div className="relative h-full w-full">
