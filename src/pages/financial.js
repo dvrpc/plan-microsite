@@ -56,9 +56,38 @@ import Block2 from "../images/block-2.png"
 import Block3 from "../images/block-3.png"
 import { Tooltip } from "react-tippy"
 
+const tabTooltipClass =
+  "absolute bottom-0 max-w-full px-1 py-1 text-[0.6rem] leading-snug text-white underline hover:cursor-pointer md:p-2 md:text-sm lg:text-base"
+
+const StatList = ({ need, funding, allocation }) => (
+  <dl className="space-y-1 text-left">
+    {[
+      ["Need", need],
+      ["Funding", funding],
+      ["Allocation", allocation],
+    ].map(([label, value]) => (
+      <div key={label} className="flex flex-col">
+        <dt>{label}:</dt>
+        <dd className="font-bold">{value}</dd>
+      </div>
+    ))}
+  </dl>
+)
+
+const PennsylvaniaHeader = () => (
+  <>
+    <span className="min-[1510px]:hidden">
+      Penn
+      <br />
+      sylvania
+    </span>
+    <span className="hidden min-[1510px]:inline">Pennsylvania</span>
+  </>
+)
+
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
   return (
-    <div className="flex justify-center z-100 h-full w-full bg-white">
+    <div className="flex justify-center z-[100] h-full w-full bg-white">
       <TabGroup
         className="w-full h-full flex flex-col"
         selectedIndex={selectedIndex}
@@ -72,97 +101,68 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             Transit Needs
           </Tab>
         </TabList>
-        <TabPanels className="text-white">
+        <TabPanels className="w-full overflow-hidden text-white">
           <TabPanel>
-            <div>
-              <div className="grid grid-cols-4 grid grid-rows-2 md:p-4 auto-rows-auto *:border-r-4 [&>*:nth-child(-n+4)]:border-b-4 [&>*:nth-child(4n)]:border-r-0 md:*:p-4">
+            <div className="w-full">
+              <div className="grid w-full auto-rows-fr grid-cols-4 grid-rows-2 text-[0.5rem] leading-tight sm:text-[0.65rem] md:text-xs lg:text-base *:min-w-0 *:break-words *:border-r-2 *:p-1 sm:*:p-2 md:p-4 md:*:border-r-4 md:*:p-4 [&_*]:min-w-0 [&_img]:h-auto [&_img]:max-w-full [&_img]:object-contain [&_p]:!text-[inherit] [&_strong]:!text-[inherit] [&>*:nth-child(-n+4)]:border-b-2 md:[&>*:nth-child(-n+4)]:border-b-4 [&>*:nth-child(4n)]:border-r-0">
                 <div className="text-[#714876] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
-                    <div className="grid md:grid-cols-2">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$37.7 B</p>
-                        <p>$12.9 B</p>
-                        <p>56%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      <PennsylvaniaHeader />
+                    </p>
+                    <StatList
+                      need="$37.7 B"
+                      funding="$12.9 B"
+                      allocation="56%"
+                    />
                     <img src={PaTransitPm} />
                   </div>
                 </div>
                 <div className="text-[#0078ae] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
-                    <div className="grid md:grid-cols-2">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$7.4 B</p>
-                        <p>$1.5 B</p>
-                        <p>6.7%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      <PennsylvaniaHeader />
+                    </p>
+                    <StatList
+                      need="$7.4 B"
+                      funding="$1.5 B"
+                      allocation="6.7%"
+                    />
                     <img src={PaTransitOp} />
                   </div>
                 </div>
                 <div className="text-[#24964f] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
-                    <div className="grid md:grid-cols-2">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$15.0 B</p>
-                        <p>$0.8 B</p>
-                        <p>3.3%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      <PennsylvaniaHeader />
+                    </p>
+                    <StatList
+                      need="$15.0 B"
+                      funding="$0.8 B"
+                      allocation="3.3%"
+                    />
                     <img src={PaTransitExp} />
                   </div>
                 </div>
                 <div className="text-[#20a9a6] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="md:text-center md:text-2xl">Pennsylvania</p>
-                    <div className="grid md:grid-cols-2">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$7.8 B</p>
-                        <p>$7.8 B</p>
-                        <p>34.1%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      <PennsylvaniaHeader />
+                    </p>
+                    <StatList
+                      need="$7.8 B"
+                      funding="$7.8 B"
+                      allocation="34.1%"
+                    />
                     <img src={PaTransitOther} />
                   </div>
                 </div>
                 <div className="text-[#714876] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="md:text-center md:text-2xl">New Jersey</p>
-                    <div className="grid md:grid-cols-2">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$5.1 B</p>
-                        <p>$5.1 B</p>
-                        <p>75%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      New Jersey
+                    </p>
+                    <StatList need="$5.1 B" funding="$5.1 B" allocation="75%" />
                     <img src={NjTransitPm} />
                     <div className="relative mt-auto">
                       <Tooltip
@@ -170,7 +170,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                         title="Repairs and upgrades transit vehicles, facilities, and infrastructure to keep the system safe, reliable, and accessible."
                         position="top"
                         trigger="click"
-                        className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                        className={tabTooltipClass}
                       >
                         Transit Preservation & Modernization
                       </Tooltip>
@@ -179,20 +179,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#0078ae] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="md:text-center md:text-2xl">New Jersey</p>
-                    <div className="grid md:grid-cols-2 md:text-right text-left">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$0.4 B</p>
-                        <p>$0.6 B</p>
-                        <p>8.3%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      New Jersey
+                    </p>
+                    <StatList
+                      need="$0.4 B"
+                      funding="$0.6 B"
+                      allocation="8.3%"
+                    />
                     <img src={NjTransitOp} className="w-7 mx-auto" />
                     <div className="relative mt-auto">
                       <Tooltip
@@ -200,7 +195,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                         title="Enhances transit service and performance through operational upgrades, technology, and targeted capacity improvements."
                         position="top"
                         trigger="click"
-                        className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                        className={tabTooltipClass}
                       >
                         Transit Operational Improvements
                       </Tooltip>
@@ -209,20 +204,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#24964f] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="md:text-center md:text-2xl">New Jersey</p>
-                    <div className="grid md:grid-cols-2 md:text-right text-left">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$8.6 B</p>
-                        <p>$0.8 B</p>
-                        <p>12.5%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      New Jersey
+                    </p>
+                    <StatList
+                      need="$8.6 B"
+                      funding="$0.8 B"
+                      allocation="12.5%"
+                    />
                     <img src={NjTransitExp} />
                     <div className="relative mt-auto">
                       <Tooltip
@@ -230,7 +220,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                         title="Builds new transit routes, stations, and services to expand access and connect more people to the region."
                         position="top"
                         trigger="click"
-                        className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                        className={tabTooltipClass}
                       >
                         Transit System Expansion
                       </Tooltip>
@@ -243,20 +233,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#20a9a6] md:font-bold">
-                  <div className="md:w-1/2 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="md:text-center md:text-2xl">New Jersey</p>
-                    <div className="grid md:grid-cols-2">
-                      <div className="text-left">
-                        <p>Need:</p>
-                        <p>Funding:</p>
-                        <p>Allocation:</p>
-                      </div>
-                      <div className="text-right">
-                        <p>$0.3 B</p>
-                        <p>$0.3 B</p>
-                        <p>4.3%</p>
-                      </div>
-                    </div>
+                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
+                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
+                      New Jersey
+                    </p>
+                    <StatList
+                      need="$0.3 B"
+                      funding="$0.3 B"
+                      allocation="4.3%"
+                    />
                     <img src={NjTransitOther} className="w-3 mx-auto" />
                     <div className="relative mt-auto">
                       <Tooltip
@@ -264,7 +249,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                         title="Covers required transit expenses such as leases, environmental work, and debt payments that keep the system functioning."
                         position="top"
                         trigger="click"
-                        className="absolute bottom-0 text-white px-6 p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                        className={tabTooltipClass}
                       >
                         Transit Other
                       </Tooltip>
@@ -280,131 +265,54 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
           <TabPanel>
             <>
-              <div className="grid grid-cols-6 grid grid-rows-2 md:p-4 auto-rows-auto *:border-r-4 [&>*:nth-child(-n+6)]:border-b-4 [&>*:nth-child(6n)]:border-r-0 md:*:p-6">
+              <div className="grid w-full auto-rows-fr grid-cols-6 grid-rows-2 text-[0.42rem] leading-tight sm:text-[0.55rem] md:text-xs lg:text-base *:min-w-0 *:break-words *:border-r-2 *:p-1 sm:*:p-2 md:p-4 md:*:border-r-4 md:*:p-4 lg:*:p-6 [&_*]:min-w-0 [&_img]:h-auto [&_img]:max-w-full [&_img]:object-contain [&_p]:!text-[inherit] [&_strong]:!text-[inherit] [&>*:nth-child(-n+6)]:border-b-2 md:[&>*:nth-child(-n+6)]:border-b-4 [&>*:nth-child(6n)]:border-r-0">
                 <div className="text-[#714876] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
-                    Pennsylvania
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
+                    <PennsylvaniaHeader />
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$14.3 B</p>
-                      <p>$8.2 B</p>
-                      <p>26%</p>
-                    </div>
-                  </div>
+                  <StatList need="$14.3 B" funding="$8.2 B" allocation="26%" />
                   <img src={PaRoadwayPpm} />
                 </div>
                 <div className="text-[#6f6688] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
-                    Pennsylvania
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
+                    <PennsylvaniaHeader />
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$18.8 B</p>
-                      <p>$14.3 B</p>
-                      <p>45%</p>
-                    </div>
-                  </div>
+                  <StatList need="$18.8 B" funding="$14.3 B" allocation="45%" />
                   <img src={PaRoadwayBp} />
                 </div>
                 <div className="text-[#009eb8] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
-                    Pennsylvania
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
+                    <PennsylvaniaHeader />
                   </p>
-                  <div className="grid md:grid-cols-2 md:text-right text-left">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$2.0 B</p>
-                      <p>$1.9 B</p>
-                      <p>6%</p>
-                    </div>
-                  </div>
+                  <StatList need="$2.0 B" funding="$1.9 B" allocation="6%" />
                   <img src={PaRoadwaySs} className="w-16 mx-auto" />
                 </div>
                 <div className="text-[#0078ae] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
-                    Pennsylvania
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
+                    <PennsylvaniaHeader />
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$7.5 B</p>
-                      <p>$3.2 B</p>
-                      <p>10%</p>
-                    </div>
-                  </div>
+                  <StatList need="$7.5 B" funding="$3.2 B" allocation="10%" />
                   <img src={PaRoadwayMoi} />
                 </div>
                 <div className="text-[#24964f] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
-                    Pennsylvania
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
+                    <PennsylvaniaHeader />
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div classNam="text-right">
-                      <p>$2.0 B</p>
-                      <p>$1.3 B</p>
-                      <p>4%</p>
-                    </div>
-                  </div>
+                  <StatList need="$2.0 B" funding="$1.3 B" allocation="4%" />
                   <img src={PaRoadwayRe} className="w-16 mx-auto" />
                 </div>
                 <div className="text-[#026227] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
-                    Pennsylvania
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
+                    <PennsylvaniaHeader />
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$11.8 B</p>
-                      <p>$3.21 B</p>
-                      <p>10%</p>
-                    </div>
-                  </div>
+                  <StatList need="$11.8 B" funding="$3.21 B" allocation="10%" />
                   <img src={PaRoadwayGt} />
                 </div>
                 <div className="text-[#714876] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
                     New Jersey
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$8.4 B</p>
-                      <p>$5.8 B</p>
-                      <p>35%</p>
-                    </div>
-                  </div>
+                  <StatList need="$8.4 B" funding="$5.8 B" allocation="35%" />
                   <img src={NjRoadwayPpm} />
                   <div className="relative mt-auto">
                     <Tooltip
@@ -412,7 +320,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       title="Keeps roads in good condition by resurfacing, repairing, and upgrading pavement and essential roadway features."
                       position="top"
                       trigger="click"
-                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      className={tabTooltipClass}
                     >
                       Pavement Preservation & Modernization
                     </Tooltip>
@@ -424,21 +332,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#6f6688] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
                     New Jersey
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$4.7 B</p>
-                      <p>$3.1 B</p>
-                      <p>19%</p>
-                    </div>
-                  </div>
+                  <StatList need="$4.7 B" funding="$3.1 B" allocation="19%" />
                   <img src={NjRoadwayBp} />
                   <div className="relative mt-auto">
                     <Tooltip
@@ -446,7 +343,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       title="Maintains and repairs bridges to keep them safe, reliable, and structurally sound for all users."
                       position="top"
                       trigger="click"
-                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      className={tabTooltipClass}
                     >
                       Bridge Preservation
                     </Tooltip>
@@ -458,21 +355,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#009eb8] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
                     New Jersey
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$0.4 B</p>
-                      <p>$0.3 B</p>
-                      <p>2%</p>
-                    </div>
-                  </div>
+                  <StatList need="$0.4 B" funding="$0.3 B" allocation="2%" />
                   <img src={NjRoadwaySs} className="w-3 mx-auto" />
                   <div className="relative mt-auto">
                     <Tooltip
@@ -480,7 +366,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       title="Funds targeted improvements that reduce serious crashes and support the Vision Zero goal."
                       position="top"
                       trigger="click"
-                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      className={tabTooltipClass}
                     >
                       Substantive Safety
                     </Tooltip>
@@ -492,28 +378,17 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#0078ae] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
                     New Jersey
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$4.8 B</p>
-                      <p>$2.3 B</p>
-                      <p>14%</p>
-                    </div>
-                  </div>
+                  <StatList need="$4.8 B" funding="$2.3 B" allocation="14%" />
                   <div className="relative mt-auto">
                     <Tooltip
                       theme="tomato"
                       title="Improves how the existing transportation system works by reducing congestion and using technology to move people and goods more efficiently."
                       position="top"
                       trigger="click"
-                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      className={tabTooltipClass}
                     >
                       Mobility Operational Improvements
                     </Tooltip>
@@ -526,21 +401,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#24964f] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
                     New Jersey
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$1.1 B</p>
-                      <p>$0.7 B</p>
-                      <p>4%</p>
-                    </div>
-                  </div>
+                  <StatList need="$1.1 B" funding="$0.7 B" allocation="4%" />
                   <img src={NjRoadwayRe} className="w-10 mx-auto" />
                   <div className="relative mt-auto">
                     <Tooltip
@@ -548,7 +412,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       title="Adds or extends roadway capacity in limited ways to relieve bottlenecks and improve connections and mobility."
                       position="top"
                       trigger="click"
-                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      className={tabTooltipClass}
                     >
                       Roadway Expansion
                     </Tooltip>
@@ -560,21 +424,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   </div>
                 </div>
                 <div className="text-[#026227] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="md:text-center break-all md:break-normal md:text-2xl">
+                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
                     New Jersey
                   </p>
-                  <div className="grid md:grid-cols-2">
-                    <div className="text-left">
-                      <p>Need:</p>
-                      <p>Funding:</p>
-                      <p>Allocation:</p>
-                    </div>
-                    <div className="text-right">
-                      <p>$6.3 B</p>
-                      <p>$4.3 B</p>
-                      <p>26%</p>
-                    </div>
-                  </div>
+                  <StatList need="$6.3 B" funding="$4.3 B" allocation="26%" />
                   <img src={NjRoadwayGt} />
                   <div className="relative mt-auto">
                     <Tooltip
@@ -582,7 +435,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                       title="Expands walking, biking, and community-focused projects that improve mobility while reducing environmental impacts."
                       position="top"
                       trigger="click"
-                      className="absolute bottom-0 text-white p-2 leading-tight text-[1.5vh] hover:cursor-pointer underline"
+                      className={tabTooltipClass}
                     >
                       Green Transportation
                     </Tooltip>
@@ -606,6 +459,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               <strong>UNFUNDED = $1 Billion YOE</strong>
             </div>
           </div>
+
         </TabPanels>
       </TabGroup>
     </div>
@@ -626,7 +480,7 @@ const WhatIsThePlan = () => {
     document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
 
     others.map(id => {
-      if (document.querySelector(`#${id}`).classList.contains("scale-[125%]")) {
+      if (document.querySelector(`#${id}`) && document.querySelector(`#${id}`).classList.contains("scale-[125%]")) {
         document.querySelector(`#${id}`).classList.toggle("scale-[70%]")
         document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
       }
@@ -768,6 +622,11 @@ const WhatIsThePlan = () => {
               selectedIndex={selectedTab}
               setSelectedIndex={setSelectedTab}
             />
+            <div className="w-1/2 text-right ml-auto italic">
+              Federal rules require us to show all revenues and project costs in
+              “year-of-expenditure” (YOE) dollars, which simply means we adjust
+              for inflation over time.
+            </div>
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative p-10 flex">

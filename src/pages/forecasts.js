@@ -61,7 +61,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               employment by municipality throughout the region.
             </span>
           </TabPanel>
-          <p className="italic mt-2">
+          <p className="italic text-base mt-2">
             Explore the web map to view absolute change, percent change, and
             total forecasted population by municipality throughout the region.
           </p>

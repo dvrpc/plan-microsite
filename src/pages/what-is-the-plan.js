@@ -157,7 +157,7 @@ const WhatIsThePlan = () => {
                   <a
                     href="https://www.dvrpc.org/tip/"
                     target="_blank"
-                    className="font-bold underline"
+                    className="underline"
                   >
                     Transportation Improvement Program (TIP)
                   </a>
@@ -169,7 +169,7 @@ const WhatIsThePlan = () => {
                   <a
                     href="https://www.dvrpc.org/workprogram/"
                     target="_blank"
-                    className="font-bold underline"
+                    className="underline"
                   >
                     Annual Work Program:
                   </a>{" "}

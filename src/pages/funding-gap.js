@@ -72,8 +72,8 @@ const WhatIsThePlan = () => {
               The Diminishing Gas Tax
             </h2>
           </div>
-          <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
-            <div className="space-y-4 w-[50%]">
+          <div className="flex flex-col-reverse gap-6 p-2 md:flex-row md:p-6 md:pt-0">
+            <div className="w-full space-y-4 md:w-1/2">
               <p>
                 Most transportation funding comes from{" "}
                 <strong>taxes on gasoline and petroleum products</strong>, but
@@ -98,12 +98,15 @@ const WhatIsThePlan = () => {
                 continue to grow.
               </p>
             </div>
-            <div className="md:ml-6 mx-auto h-fit md:w-full w-1/2 lg:w-1/5">
-              <img
-                alt="Illustration of two gas pumps, drawn to scale of the purchasing power per gallon in 1993 (18.4 c/gal) and 2023 (6.6 c/gal)."
-                src={PurchasingPower}
-              />
-              <i>
+            <div className="mx-auto h-fit w-full max-w-xs md:w-1/2 md:max-w-md">
+              <div className="w-4/5">
+                <img
+                  alt="Illustration of two gas pumps, drawn to scale of the purchasing power per gallon in 1993 (18.4 c/gal) and 2023 (6.6 c/gal)."
+                  src={PurchasingPower}
+                  className="w-full"
+                />
+              </div>
+              <i className="block text-sm">
                 Source: Producer Price Index, Construction Materials Index,
                 1993-2023
               </i>
@@ -111,15 +114,15 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-10">
             <div className=" flex items-center w-full p-6 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Limited Local Funding
               </h2>
             </div>
-            <div className="flex md:p-6 p-2 md:pt-0 md:flex-row flex-col-reverse">
-              <div id="llf" className="space-y-4 w-[95%]">
+            <div className="flex flex-col-reverse gap-6 p-2 md:flex-row md:p-6 md:pt-0">
+              <div id="llf" className="w-full space-y-4 md:w-1/2">
                 <p>
                   <strong>
                     Only 3% of Greater Philadelphia’s regional transportation
@@ -145,27 +148,35 @@ const WhatIsThePlan = () => {
                   innovative investments that promote long-term economic growth.
                 </p>
               </div>
-              <div className="md:ml-6 mx-auto h-fit md:mt-auto w-1/2 md:w-full lg:w-1/2">
-                <img
-                  src={LocalFunding}
-                  alt="Bar chart made of stacked dollar bills comparing funding from three sources: federal (63%, 49.76 billion $), state (34%, 26.44 billion), and local (3%, 2.21 billion $)."
-                />
-                <i>
+              <div className="mx-auto h-fit w-full max-w-sm md:mt-auto md:w-1/2 md:max-w-none">
+                <div className="w-4/5">
+                  <img
+                    src={LocalFunding}
+                    className="w-full"
+                    alt="Bar chart made of stacked dollar bills comparing funding from three sources: federal (63%, 49.76 billion $), state (34%, 26.44 billion), and local (3%, 2.21 billion $)."
+                  />
+                </div>
+                <i className="block text-sm">
                   Percentage of funds in billions of year-of-expenditure dollars
                   by source to the region in a year.
                 </i>
               </div>
             </div>
+
             <div
-              className="relative w-full flex justify-center mx-auto lg:w-[75%]"
+              className="relative mx-auto flex w-full justify-start lg:w-[75%]"
               id="text-div"
             >
-              <img src={FundingBox1} className="p-2 w-full" />
+              <img
+                src={FundingBox1}
+                className="absolute inset-0 h-full w-full"
+                alt=""
+              />
               <div
-                className="absolute md:left-[5%] text-white space-y-2 md:p-4 top-5 lg:top-[10%] w-4/5"
+                className="relative z-10 w-full space-y-2 px-5 py-8 text-sm leading-snug text-white sm:px-8 sm:text-base md:ml-[5%] md:w-4/5 md:py-10 lg:py-12"
                 id="funding-box-1-text"
               >
-                <strong>
+                <strong className="text-base font-bold sm:text-lg">
                   Transportation access directly affects opportunity.
                 </strong>
                 <p>
@@ -425,17 +436,21 @@ const WhatIsThePlan = () => {
               </div>
               <p>
                 In the near term, we can stretch limited funds by focusing on
-                efficient, affordable, and context-sensitive solutions—projects
+                {" "}<strong>efficient, affordable, and context-sensitive solutions</strong>—projects
                 that solve real problems without overbuilding or overspending.
-                Smarter, smaller investments can improve safety, mobility, and
+                {" "}<strong>Smarter, smaller investments</strong> can improve safety, mobility, and
                 reliability more quickly and cost-effectively than major
                 construction projects. For example:
               </p>
-              <div className="flex flex-col md:flex-row gap-x-2 w-fit mx-auto">
-                <div className="relative md:h-[22rem] h-[17rem]">
-                  <img src={FundingBox2} className="p-2 h-full" />
-                  <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
-                    <h3 className="text-lg font-bold">
+              <div className="mx-auto flex w-full flex-col gap-x-2 md:flex-row">
+                <div className="relative flex flex-1">
+                  <img
+                    src={FundingBox2}
+                    className="absolute inset-0 h-full w-full p-2"
+                    alt=""
+                  />
+                  <div className="relative z-10 p-6 pt-8 text-sm leading-snug text-white sm:text-base md:p-7">
+                    <h3 className="text-base font-bold sm:text-lg">
                       Transportation Systems Management and Operations
                     </h3>
                     <p>
@@ -446,10 +461,14 @@ const WhatIsThePlan = () => {
                     </p>
                   </div>
                 </div>
-                <div className="relative md:h-[22rem] w-fit h-[17rem]">
-                  <img src={FundingBox3} className="p-2 h-full" />
-                  <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
-                    <h3 className="text-lg font-bold">
+                <div className="relative flex flex-1">
+                  <img
+                    src={FundingBox3}
+                    className="absolute inset-0 h-full w-full p-2"
+                    alt=""
+                  />
+                  <div className="relative z-10 p-6 pt-8 text-sm leading-snug text-white sm:text-base md:p-7">
+                    <h3 className="text-base font-bold sm:text-lg">
                       Smaller, targeted improvements
                     </h3>
                     <p>
@@ -459,10 +478,16 @@ const WhatIsThePlan = () => {
                     </p>
                   </div>
                 </div>
-                <div className="relative md:h-[22rem] w-fit h-[17rem]">
-                  <img src={FundingBox4} className="p-2 h-full" />
-                  <div className="absolute top-[5%] md:left-[5%] text-white p-6 text-sm">
-                    <h3 className="text-lg font-bold">Repairs and upgrades</h3>
+                <div className="relative flex flex-1">
+                  <img
+                    src={FundingBox4}
+                    className="absolute inset-0 h-full w-full p-2"
+                    alt=""
+                  />
+                  <div className="relative z-10 p-6 pt-8 text-sm leading-snug text-white sm:text-base md:p-7">
+                    <h3 className="text-base font-bold sm:text-lg">
+                      Repairs and upgrades
+                    </h3>
                     <p>
                       can support multiple travel options, such as fixing
                       bridges important to transit or maintaining well-used

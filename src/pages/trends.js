@@ -334,15 +334,11 @@ const Trends = () => {
                         <use href="#face-notgood" />
                       </svg>
                     </span>
-                    <div className="title">
-                      Community
-                      <br />
-                      Income Mix
-                    </div>
+                    <div className="title">Income Mix</div>
                     <div className="value">
-                      40% to 51% living
+                      40%
                       <br />
-                      in segregated areas
+                      relocation needed for income balance
                     </div>
                     <div className="period">2023</div>
                   </div>

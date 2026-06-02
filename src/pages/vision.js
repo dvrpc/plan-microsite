@@ -55,7 +55,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               the greatest impact.
             </span>
           </TabPanel>
-          <p className="italic p-2">
+          <p className="italic text-base p-2">
             Use the interactive map to explore this vision in two layers:
           </p>
         </TabPanels>

@@ -15,11 +15,11 @@ const Bubbles = () => {
     >
       <div className="relative">
         <Purple width="100%" className="z-10" />
-        <p className="z-50 absolute md:p-3 p-5">
+        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
           A safe, modern, multimodal{" "}
           <Link
             to="/plan-elements?element=transportation"
-            className="font-bold underline text-white"
+            className="font-bold underline text-white block"
           >
             Transportation
           </Link>{" "}
@@ -28,11 +28,11 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Pink width="100%" className="absolute z-10" />
-        <p className="z-50 absolute md:p-3 p-5">
+        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
           An innovative and connected{" "}
           <Link
             to="/plan-elements?element=economy"
-            className="font-bold underline text-white"
+            className="font-bold underline text-white block"
           >
             Economy
           </Link>{" "}
@@ -41,11 +41,11 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Blue width="100%" className="absolute z-10" />
-        <p className="z-50 absolute md:p-3 p-5">
+        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
           Healthy, walkable, and vibrant{" "}
           <Link
             to="/plan-elements?element=communities"
-            className="font-bold underline text-white"
+            className="font-bold underline text-white block"
           >
             Communities
           </Link>
@@ -53,11 +53,11 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Green width="100%" className="absolute z-10" />
-        <p className="z-50 absolute md:p-3 p-5">
+        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
           A preserved and restored natural{" "}
           <Link
             to="/plan-elements?element=environment"
-            className="font-bold underline text-white"
+            className="font-bold underline text-white block"
           >
             Environment
           </Link>{" "}
@@ -66,11 +66,11 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Turq width="100%" className="absolute z-10 " />
-        <p className="z-50 absolute md:p-3 p-5">
+        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
           Clean, reliable, and affordable{" "}
           <Link
             to="/plan-elements?element=infrastructure"
-            className="font-bold underline text-white"
+            className="font-bold underline text-white block"
           >
             Infrastructure and Utility Services
           </Link>{" "}
