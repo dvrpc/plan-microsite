@@ -46,10 +46,6 @@ table {
   font-family: "Source Sans 3";
 }
 
-p, li {
-  font-size: 1.25rem;
-}
-
 .input {
   -webkit-align-items: center;
   -webkit-box-align: center;
