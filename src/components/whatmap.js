@@ -44,8 +44,8 @@ export const Legend = () => {
   )
 }
 
-const layerDef = {
-  id: "rail-lines",
+export const layerDef = {
+  id: "raillines",
   type: "line",
   "source-layer": "passengerrail",
   filter: ["all", ["!=", "type", "Surface Trolley"], ["!=", "type", "AMTRAK"]],
@@ -69,11 +69,12 @@ const layerDef = {
   },
 }
 
-const stationDef = {
-  id: "transit-stations",
+export const stationDef = {
+  id: "transitstations",
   type: "circle",
   source: "transit-stations",
   "source-layer": "passengerrailstations",
+  minzoom: 9,
   paint: {
     "circle-radius": [
       "step",
@@ -141,13 +142,12 @@ const stationDef = {
 const WhatMap = ({ selectedLayer }) => {
   const { clickedFeature, setClickedFeature } = useContext(AppContext)
   return (
-    <DvrpcMap disableCounty={true}>
+    <DvrpcMap>
       <Source
         id="rail-lines"
         type="vector"
         promoteId="id"
         url="https://tiles.dvrpc.org/data/transportation/passengerrail"
-
       >
         <Layer {...layerDef} />
       </Source>

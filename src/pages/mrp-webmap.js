@@ -101,7 +101,15 @@ const MrpWebmap = () => {
               and funding is available. There are also{" "}
               <strong>Externally Funded</strong> projects that don’t use
               regional dollars, but must be considered due to their impacts on
-              the regional network and air quality conformity.
+              the regional network and air quality conformity. <a className="underline" href="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254">View full featured map</a>
+            </p>
+            <p>
+            <a
+              className="underline"
+              href="https://catalog.dvrpc.org/dataset/?q=MRP"
+            >
+              Get Data
+            </a>
             </p>
             <div className="relative flex">
               <Legend selectedLayer={selectedLayer} />

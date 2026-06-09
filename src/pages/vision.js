@@ -21,7 +21,6 @@ import Dot from "../images/dot.svg"
 import Accordion from "../components/accordion"
 import Feedback from "../images/feedback.png"
 import Elements from "../images/elements.png"
-import { Legend } from "../components/visionmap"
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
   return (
@@ -40,6 +39,9 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </Tab>
         </TabList>
         <TabPanels className="bg-[#093446] p-3 text-white flex-1 space-y-2 md:pl-[33%]">
+          <p className="italic text-base p-2">
+            Use the interactive map to explore this vision in two layers:
+          </p>
           <TabPanel className="p-2">
             <span>
               Shows how the region can grow in smart, balanced ways by aligning
@@ -55,8 +57,11 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               the greatest impact.
             </span>
           </TabPanel>
-          <p className="italic text-base p-2">
-            Use the interactive map to explore this vision in two layers:
+
+          <p className="text-base p-2">
+            <a className="text-white underline" href="https://experience.arcgis.com/experience/f9ac0c2d0a72487c98ed22325bf3faef">
+              View the full featured map
+            </a>
           </p>
         </TabPanels>
       </TabGroup>
@@ -70,9 +75,7 @@ const Vision = () => {
 
   useEffect(
     () =>
-      setSelectedLayer(() =>
-        selectedTab === 0 ? "landuse" : "freightcenters"
-      ),
+      setSelectedLayer(() => (selectedTab === 0 ? "landuse" : "planningareas")),
     [selectedTab, setSelectedLayer]
   )
 
@@ -153,6 +156,12 @@ const Vision = () => {
               walkable, vibrant communities where people can live, work, and
               play.
             </p>
+            <a
+              className="underline"
+              href="https://catalog.dvrpc.org/dataset/?q=LRP"
+            >
+              Get Data
+            </a>
           </div>
         </div>
         <div className="relative h-full w-full">
@@ -163,8 +172,6 @@ const Vision = () => {
                 selectedIndex={selectedTab}
                 setSelectedIndex={setSelectedTab}
               />
-
-              <Legend selectedLayer={selectedLayer} />
             </div>
 
             <VisionMap selectedLayer={selectedLayer} />

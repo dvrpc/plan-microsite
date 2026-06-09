@@ -12,9 +12,6 @@ import AppContext from "./AppContext"
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css"
 
-const streetLabelPattern =
-  /(road|street|highway|motorway|trunk|primary|secondary|tertiary|route|shield)/i
-
 const GeocoderControl = props => {
   const ctrl = useControl(
     () => {
@@ -69,7 +66,6 @@ const DVRPCMap = ({
   const onMouseEnter = useCallback(() => setCursor("pointer"), [])
   const onMouseLeave = useCallback(() => setCursor("grab"), [])
 
-
   return (
     <div className="h-[600px] w-full">
       <Map
@@ -87,7 +83,6 @@ const DVRPCMap = ({
         cursor={cursor}
         onMouseEnter={!onHover.current ? onMouseEnter : onHover}
         onMouseLeave={!onHoverLeave.current ? onMouseLeave : onHoverLeave}
-
       >
         <GeocoderControl />
         <NavigationControl />
@@ -146,7 +141,6 @@ const DVRPCMap = ({
             layout={{
               visibility: disableCounty ? "none" : "visible",
             }}
-
           />
         </Source>
       </Map>

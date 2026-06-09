@@ -63,7 +63,14 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
           <p className="italic text-base mt-2">
             Explore the web map to view absolute change, percent change, and
-            total forecasted population by municipality throughout the region.
+            total forecasted population by municipality throughout the region.{" "}
+            <a
+              className="text-white underline"
+              href="https://www.dvrpc.org/webmaps/popempforecasts/"
+            >
+              View the full featured map
+            </a>
+            .
           </p>
         </TabPanels>
       </TabGroup>
@@ -160,6 +167,12 @@ const WhatIsThePlan = () => {
                 municipality in 2050
               </li>
             </ul>
+            <a
+              className="underline"
+              href="https://catalog.dvrpc.org/dataset/dvrpc-2050-population-employment-forecasts-zonal-data-municipalities-version-2-1"
+            >
+              Get Data
+            </a>
           </div>
         </div>
         <div className="relative h-full w-full">
@@ -172,7 +185,7 @@ const WhatIsThePlan = () => {
               />
             </div>
 
-            <div className="absolute left-[30%] z-[101]">
+            <div className="absolute left-[29%] z-[101]">
               <div className="w-52 m-3">
                 <Menu>
                   <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full ">
@@ -254,7 +267,8 @@ const WhatIsThePlan = () => {
           </div>
         </div>
 
-        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
+        <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] flex flex-col">
+          <div className="ml-auto">text</div>
           <div className="flex flex-col space-y-4 md:m-6 m-2 text-[#063446]">
             {selectedTab === 0 && (
               <>

@@ -201,7 +201,7 @@ export const secondaryMapLayers = [
 
 export const Legend = ({ selectedLayer }) => {
   return (
-    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:m-3 [&>*]:text-xs">
+    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] mt-2 [&>*]:text-xs w-full">
       {selectedLayer === "pop" && (
         <div class="flex flex-col z-[100] ">
           <h3 class="legend-h3">People</h3>
@@ -435,7 +435,7 @@ export const Legend = ({ selectedLayer }) => {
 
 const PopEmpMap = ({ selectedLayer }) => {
   return (
-    <DvrpcMap>
+    <DvrpcMap baseStyle="mapbox://styles/crvanpollard/ck5fpyqti0v971itf7edp2eyd">
       <Source
         id="MCD"
         type="geojson"
@@ -451,6 +451,7 @@ const PopEmpMap = ({ selectedLayer }) => {
                 layout={{
                   visibility: selectedLayer === layer.id ? "visible" : "none",
                 }}
+                beforeId="county-outline"
               />
             )
         )}
