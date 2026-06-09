@@ -128,7 +128,6 @@ const VisionMap = ({ selectedLayer }) => {
         }
       >
         <Layer
-          beforeId={"admin-0-boundary-disputed"}
           {...freightcenters}
           layout={{
             visibility: selectedLayer === "freightcenters" ? "visible" : "none",
@@ -136,7 +135,6 @@ const VisionMap = ({ selectedLayer }) => {
         />
       </Source>
       <Source
-        beforeId={"admin-0-boundary-disputed"}
         id="lrp_2050_landusevision"
         type="geojson"
         data={

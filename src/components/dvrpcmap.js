@@ -1,10 +1,52 @@
 import React, { useState, useCallback, useRef, useContext } from "react"
-import Map, { Source, Layer, Popup } from "react-map-gl/mapbox"
+import Map, {
+  useControl,
+  Source,
+  Layer,
+  Popup,
+  NavigationControl,
+} from "react-map-gl/mapbox"
 import "mapbox-gl/dist/mapbox-gl.css"
 import { LngLatBounds } from "mapbox-gl"
 import AppContext from "./AppContext"
+import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
+import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css"
 
-const DVRPCMap = ({ children, features }) => {
+const streetLabelPattern =
+  /(road|street|highway|motorway|trunk|primary|secondary|tertiary|route|shield)/i
+
+const GeocoderControl = props => {
+  const ctrl = useControl(
+    () => {
+      const geocoder = new MapboxGeocoder({
+        ...props,
+        accessToken:
+          "pk.eyJ1IjoidGhhY2hhZG9yaWFuZHZycGMiLCJhIjoiY2x6Ymw5bjNoMDIxdTJscHJlbDMxMzM1ZyJ9.AZoU09L4abDOTWEUM5Uwdw",
+      })
+
+      // Bind optional event listeners passed as props
+      if (props.onLoading) geocoder.on("loading", props.onLoading)
+      if (props.onResults) geocoder.on("results", props.onResults)
+      if (props.onResult) geocoder.on("result", props.onResult)
+      if (props.onError) geocoder.on("error", props.onError)
+
+      return geocoder
+    },
+    {
+      position: props.position || "top-right", // 'top-left', 'top-right', etc.
+    }
+  )
+
+  return null
+}
+
+const DVRPCMap = ({
+  children,
+  features,
+  baseStyle = "",
+  disableCounty = false,
+  disableMuni = false,
+}) => {
   const { mapRef, clickedFeature, setClickedFeature, onHover, onHoverLeave } =
     useContext(AppContext)
   const maxExtent = new LngLatBounds([
@@ -27,10 +69,15 @@ const DVRPCMap = ({ children, features }) => {
   const onMouseEnter = useCallback(() => setCursor("pointer"), [])
   const onMouseLeave = useCallback(() => setCursor("grab"), [])
 
+
   return (
     <div className="h-[600px] w-full">
       <Map
-        mapStyle="mapbox://styles/crvanpollard/clmqidmqj04uh01ma2mkla3yz"
+        mapStyle={
+          !baseStyle
+            ? "mapbox://styles/crvanpollard/cmpn12j9700ba01s26jbr2r9v"
+            : baseStyle
+        }
         interactiveLayerIds={["mrp-lines"]}
         ref={mapRef}
         initialViewState={{ bounds: maxExtent }}
@@ -40,7 +87,22 @@ const DVRPCMap = ({ children, features }) => {
         cursor={cursor}
         onMouseEnter={!onHover.current ? onMouseEnter : onHover}
         onMouseLeave={!onHoverLeave.current ? onMouseLeave : onHoverLeave}
+
       >
+        <GeocoderControl />
+        <NavigationControl />
+        <div
+          id="default-extent-btn"
+          className="overlays shadow"
+          aria-label="Default DVRPC Extent"
+          onClick={() => mapRef.current?.fitBounds(maxExtent)}
+        >
+          <img
+            id="default-extent-img"
+            src="https://www.dvrpc.org/img/banner/new/bug-favicon.png"
+            alt="DVRPC logo"
+          />
+        </div>
         {children}
         <Source
           id="boundaries"
@@ -53,24 +115,26 @@ const DVRPCMap = ({ children, features }) => {
             source-layer="county"
             paint={{
               "fill-color": "#B6C1C6",
-              "fill-opacity": 0.8,
+              "fill-opacity": 0.6,
             }}
             filter={["!=", "dvrpc", "Yes"]}
           />
 
           <Layer
-            beforeId={"admin-0-boundary-disputed"}
             id="municipality-outline"
             type="line"
             source-layer="municipalities"
             paint={{
-              "line-width": 0.5,
-              "line-color": "#efefef",
+              "line-width": 1,
+              "line-color": "#808080",
+            }}
+            filter={["!=", "dvrpc", "No"]}
+            layout={{
+              visibility: disableMuni ? "none" : "visible",
             }}
           />
 
           <Layer
-            beforeId={"admin-0-boundary-disputed"}
             id="county-outline"
             type="line"
             source-layer="county"
@@ -78,6 +142,11 @@ const DVRPCMap = ({ children, features }) => {
               "line-width": 2.5,
               "line-color": "#808080",
             }}
+            filter={["!=", "dvrpc", "No"]}
+            layout={{
+              visibility: disableCounty ? "none" : "visible",
+            }}
+
           />
         </Source>
       </Map>

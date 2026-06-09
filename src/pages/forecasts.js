@@ -163,91 +163,94 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="relative h-full w-full">
-          <div className="flex h-full md:flex-row flex-col">
+          <div className="flex h-full md:flex-row flex-col relative">
             <div className="md:w-2/5 z-[100] flex md:min-h-full">
               <Tabs
                 selectedLayer={selectedLayer}
                 selectedIndex={selectedTab}
                 setSelectedIndex={setSelectedTab}
               />
+            </div>
 
-              <Legend selectedLayer={selectedLayer} />
+            <div className="absolute left-[30%] z-[101]">
+              <div className="w-52 m-3">
+                <Menu>
+                  <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full ">
+                    {labelMap[selectedLayer]}
+                    <ChevronDownIcon className="ml-auto size-4 fill-black" />
+                  </MenuButton>
+
+                  {selectedTab === 0 && (
+                    <MenuItems
+                      transition
+                      anchor="bottom end"
+                      className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out z-[101]"
+                    >
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("popABS")}
+                        >
+                          Absolute Change in Population
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("popPER")}
+                        >
+                          Percent Change in Population
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("pop")}
+                        >
+                          2050 Population Forecast
+                        </button>
+                      </MenuItem>
+                    </MenuItems>
+                  )}
+                  {selectedTab === 1 && (
+                    <MenuItems
+                      transition
+                      anchor="bottom end"
+                      className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out z-[101]"
+                    >
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("empABS")}
+                        >
+                          Absolute Change in Employment
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("empPER")}
+                        >
+                          Percent Change in Employment
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
+                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("emp")}
+                        >
+                          2050 Employment Forecast
+                        </button>
+                      </MenuItem>
+                    </MenuItems>
+                  )}
+                </Menu>
+
+                <Legend selectedLayer={selectedLayer} />
+              </div>
             </div>
 
             <PopEmpMap selectedLayer={selectedLayer} />
-          </div>
-          <div className="absolute right-0 md:top-0 top-[40%] w-52 m-3">
-            <Menu>
-              <MenuButton className="inline-flex items-center gap-2 rounded-md bg-white px-3 py-1.5 text-black w-full">
-                {labelMap[selectedLayer]}
-                <ChevronDownIcon className="ml-auto size-4 fill-black" />
-              </MenuButton>
-
-              {selectedTab === 0 && (
-                <MenuItems
-                  transition
-                  anchor="bottom end"
-                  className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
-                >
-                  <MenuItem>
-                    <button
-                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                      onClick={() => setSelectedLayer("popABS")}
-                    >
-                      Absolute Change in Population
-                    </button>
-                  </MenuItem>
-                  <MenuItem>
-                    <button
-                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                      onClick={() => setSelectedLayer("popPER")}
-                    >
-                      Percent Change in Population
-                    </button>
-                  </MenuItem>
-                  <MenuItem>
-                    <button
-                      className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                      onClick={() => setSelectedLayer("pop")}
-                    >
-                      2050 Population Forecast
-                    </button>
-                  </MenuItem>
-                </MenuItems>
-              )}
-              {selectedTab === 1 && (
-                <MenuItems
-                  transition
-                  anchor="bottom end"
-                  className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out"
-                >
-                  <MenuItem>
-                    <button
-                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                      onClick={() => setSelectedLayer("empABS")}
-                    >
-                      Absolute Change in Employment
-                    </button>
-                  </MenuItem>
-                  <MenuItem>
-                    <button
-                      className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                      onClick={() => setSelectedLayer("empPER")}
-                    >
-                      Percent Change in Employment
-                    </button>
-                  </MenuItem>
-                  <MenuItem>
-                    <button
-                      className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                      onClick={() => setSelectedLayer("emp")}
-                    >
-                      2050 Employment Forecast
-                    </button>
-                  </MenuItem>
-                </MenuItems>
-              )}
-            </Menu>
           </div>
         </div>
 

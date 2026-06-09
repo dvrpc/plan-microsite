@@ -203,7 +203,7 @@ export const Legend = ({ selectedLayer }) => {
   return (
     <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:m-3 [&>*]:text-xs">
       {selectedLayer === "pop" && (
-        <div class="flex flex-col z-[100] absolute">
+        <div class="flex flex-col z-[100] ">
           <h3 class="legend-h3">People</h3>
           <div class="flex gap-2">
             <span
@@ -243,7 +243,7 @@ export const Legend = ({ selectedLayer }) => {
         </div>
       )}
       {selectedLayer === "popABS" && (
-        <div className="flex flex-col z-[100] absolute">
+        <div className="flex flex-col z-[100] ">
           <h3>People</h3>
           <div class="flex gap-2">
             <span
@@ -284,7 +284,7 @@ export const Legend = ({ selectedLayer }) => {
         </div>
       )}
       {selectedLayer === "popPER" && (
-        <div className="flex flex-col z-[100] absolute">
+        <div className="flex flex-col z-[100] ">
           <h3>Percent Change</h3>
           <div className="flex gap-2">
             <span
@@ -317,7 +317,7 @@ export const Legend = ({ selectedLayer }) => {
         </div>
       )}
       {selectedLayer === "emp" && (
-        <div className="flex flex-col z-[100] absolute">
+        <div className="flex flex-col z-[100] ">
           <h3>Employees</h3>
           <div className="flex gap-2">
             <span
@@ -357,7 +357,7 @@ export const Legend = ({ selectedLayer }) => {
         </div>
       )}
       {selectedLayer === "empABS" && (
-        <div className="flex flex-col z-[100] absolute">
+        <div className="flex flex-col z-[100] ">
           <h3>Employees</h3>
           <div class="flex gap-2">
             <span
@@ -397,7 +397,7 @@ export const Legend = ({ selectedLayer }) => {
         </div>
       )}
       {selectedLayer === "empPER" && (
-        <div className="flex flex-col z-[100] absolute">
+        <div className="flex flex-col z-[100] ">
           <h3>Percent Change</h3>
           <div className="flex gap-2">
             <span

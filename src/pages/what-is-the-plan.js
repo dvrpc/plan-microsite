@@ -56,7 +56,6 @@ const WhatIsThePlan = () => {
           <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 relative">
             <p>Use the interactive map to explore the region.</p>
             <div className="relative flex">
-              <Legend />
               <WhatMap />
             </div>
 

@@ -53,22 +53,16 @@ const layerDef = {
     "line-width": 2,
     "line-color": [
       "case",
-      ["==", ["get", "type"], "Regional Rail"],
-      "#0159B8",
       [
         "any",
+        ["==", ["get", "type"], "PATCO"],
+        ["==", ["get", "type"], "Regional Rail"],
         ["==", ["get", "type"], "Subway - Elevated"],
         ["==", ["get", "type"], "Subway"],
-      ],
-      "#7F3F98",
-      ["==", ["get", "type"], "PATCO"],
-      "#019653",
-      [
-        "any",
         ["==", ["get", "type"], "NJ Transit"],
         ["==", ["get", "type"], "NJ Transit Light Rail"],
       ],
-      "#F9A13F",
+      "#7e90a6",
       "#cccccc",
       // surface trolley, amtrak
     ],
@@ -81,7 +75,15 @@ const stationDef = {
   source: "transit-stations",
   "source-layer": "passengerrailstations",
   paint: {
-    "circle-radius": ["interpolate", ["linear"], ["zoom"], 7, 2, 12, 8],
+    "circle-radius": [
+      "step",
+      ["zoom"],
+      ["case", ["boolean", ["feature-state", "hover"], false], 6, 4],
+      10,
+      ["case", ["boolean", ["feature-state", "hover"], false], 8, 6],
+      13,
+      ["case", ["boolean", ["feature-state", "hover"], false], 10, 7],
+    ],
     "circle-color": [
       "case",
       [
@@ -99,21 +101,17 @@ const stationDef = {
         ["==", ["get", "line"], "West Trenton Line"],
         ["==", ["get", "line"], "Wilmington/Newark Line"],
         ["==", ["get", "line"], "Trenton Line"],
-      ],
-      "#0159B8",
-      [
-        "any",
         ["==", ["get", "line"], "Broad Street Line"],
         ["==", ["get", "line"], "Market/Frankford Line"],
+        ["==", ["get", "operator"], "PATCO"],
+        ["==", ["get", "operator"], "NJ Transit"],
       ],
-      "#7F3F98",
-      ["==", ["get", "operator"], "PATCO"],
-      "#019653",
-      ["==", ["get", "operator"], "NJ Transit"],
-      "#F9A13F",
+      "#587ca6",
       "#cccccc",
       // surface trolley, amtrak
     ],
+    "circle-stroke-color": "#fff",
+    "circle-stroke-width": 1,
   },
   filter: [
     "any",
@@ -138,26 +136,29 @@ const stationDef = {
   ],
 }
 
+// add municipal boundaries
+
 const WhatMap = ({ selectedLayer }) => {
   const { clickedFeature, setClickedFeature } = useContext(AppContext)
   return (
-    <DvrpcMap>
+    <DvrpcMap disableCounty={true}>
       <Source
         id="rail-lines"
         type="vector"
         promoteId="id"
         url="https://tiles.dvrpc.org/data/transportation/passengerrail"
+
       >
-        <Layer beforeId={"admin-0-boundary-disputed"} {...layerDef} />
+        <Layer {...layerDef} />
       </Source>
-      {/* <Source */}
-      {/*   id="transit-stations" */}
-      {/*   type="vector" */}
-      {/*   promoteId="id" */}
-      {/*   url="https://tiles.dvrpc.org/data/transportation/passengerrailstations" */}
-      {/* > */}
-      {/*   <Layer {...stationDef} /> */}
-      {/* </Source> */}
+      <Source
+        id="transit-stations"
+        type="vector"
+        promoteId="id"
+        url="https://tiles.dvrpc.org/data/transportation/passengerrailstations"
+      >
+        <Layer {...stationDef} />
+      </Source>
     </DvrpcMap>
   )
 }
