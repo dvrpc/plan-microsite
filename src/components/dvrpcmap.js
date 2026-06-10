@@ -71,7 +71,7 @@ const DVRPCMap = ({
       <Map
         mapStyle={
           !baseStyle
-            ? "mapbox://styles/crvanpollard/cmpn12j9700ba01s26jbr2r9v"
+            ? "mapbox://styles/crvanpollard/ck5fpyqti0v971itf7edp2eyd"
             : baseStyle
         }
         interactiveLayerIds={["mrp-lines"]}

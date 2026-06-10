@@ -142,7 +142,7 @@ export const stationDef = {
 const WhatMap = ({ selectedLayer }) => {
   const { clickedFeature, setClickedFeature } = useContext(AppContext)
   return (
-    <DvrpcMap>
+    <DvrpcMap baseStyle="mapbox://styles/crvanpollard/cmpn12j9700ba01s26jbr2r9v">
       <Source
         id="rail-lines"
         type="vector"
