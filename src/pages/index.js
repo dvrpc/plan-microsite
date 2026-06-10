@@ -129,7 +129,7 @@ const IndexPage = () => {
               <img
                 src={WhatIsThePlan}
                 alt="Photograph of a DVRPC staff member hosting a DVRPC table at a tented event, talking to a member of the public, and sharing printed materials."
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[50%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -154,7 +154,7 @@ const IndexPage = () => {
               <img
                 alt="Photograph of a Philadelphia Navy Yard Autonomous Shuttle van parked on a street in front of a modern office building."
                 src={ShapingFuture}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[50%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -180,7 +180,7 @@ const IndexPage = () => {
               <img
                 src={LookLike}
                 alt="Photograph of people enjoying the roof deck and open-air space of a retail space made of shipping containers called the Pod Park in the Northern Liberties neighborhood of Philadelphia."
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[50%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -205,7 +205,7 @@ const IndexPage = () => {
               <img
                 alt="Photograph of the construction of the Paoli rail station during sunset. The site has steel framing of a 3-story building, cranes, and bucket trucks on a gravel ground. A wayfinding sign saying “Inbound” and “Tickets” is in the foreground."
                 src={HowWeFund}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
+                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[50%]"
               />
             </DisclosurePanel>
           </Disclosure>
@@ -227,11 +227,18 @@ const IndexPage = () => {
                 dedicated efforts and cooperation of many actors across the
                 public and private sectors.
               </p>
-              <img
-                alt="Group of adults and children celebrating by throwing paper confetti on the sidewalk under the shade of a large tree with a colorful city bus behind them, which says “Getting to Green”. "
-                src={Hero}
-                class="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[55%]"
-              />
+              <figure className="right-0 md:absolute md:top-0 md:w-[65%] md:-right-[20%] lg:w-[50%]">
+                <img
+                  alt="Group of adults and children celebrating by throwing paper confetti on the sidewalk under the shade of a large tree with a colorful city bus behind them, which says “Getting to Green”. "
+                  src={Hero}
+                  className="w-full"
+                />
+                <figcaption className="text-sm italic">
+                  Getting to Green-Routes to Roots © 2023 City of Philadelphia
+                  Mural Arts Program / Laura Deutch & Shira Walinsky. Photos by
+                  Steve Weinik.
+                </figcaption>
+              </figure>
             </DisclosurePanel>
           </Disclosure>
         </div>
