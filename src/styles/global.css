@@ -46,6 +46,35 @@ table {
   font-family: "Source Sans 3";
 }
 
+main
+  p:not([class*="text-xs"]):not([class*="text-sm"]):not(
+    [class*="text-base"]
+  ):not([class*="text-lg"]):not([class*="text-xl"]):not(
+    [class*="text-2xl"]
+  ):not([class*="text-3xl"]):not([class*="text-4xl"]):not(
+    [class*="text-5xl"]
+  ):not([class*="text-["]) {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+main
+  :where(
+    #bubbles,
+    #text-div,
+    #flip-cards,
+    .absolute,
+    .legend,
+    .mapboxgl-popup,
+    .tile,
+    [id^="funding-box"],
+    [id^="mrp-box"]
+  )
+  p {
+  font-size: inherit;
+  line-height: inherit;
+}
+
 .input {
   -webkit-align-items: center;
   -webkit-box-align: center;
