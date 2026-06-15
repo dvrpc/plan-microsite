@@ -59,23 +59,12 @@ const planningareas = {
 }
 const planningcenters = {
   id: "planningcenters",
-  type: "circle",
-  source: "lrp_2050_planningcenters",
+  type: "fill",
+  "source-layer": "uc2050_plan_centers",
   paint: {
-    "circle-radius": [
-      "step",
-      ["zoom"],
-      ["case", ["boolean", ["feature-state", "hover"], false], 6, 4],
-      10,
-      ["case", ["boolean", ["feature-state", "hover"], false], 8, 6],
-      13,
-      ["case", ["boolean", ["feature-state", "hover"], false], 10, 7],
-    ],
-    "circle-color": "#fec44f",
-    "circle-stroke-color": "#fff",
-    "circle-stroke-width": 1,
+    "fill-color": "#fec44f",
+    "fill-opacity": 0.8,
   },
-  filter: ["==", "lup_type", "Planned Center"],
 }
 
 const planningneighborhood = {
@@ -146,7 +135,6 @@ const legendSections = [
       {
         label: "Planned Center",
         color: "#fec44f",
-        shape: "circle",
         layerId: "planningcenters",
       },
       {
@@ -312,10 +300,8 @@ const VisionMap = ({ selectedLayer }) => {
       </Source>
       <Source
         id="lrp_2050_planningcenters"
-        type="geojson"
-        data={
-          "https://arcgis.dvrpc.org/portal/rest/services/planning/lrp_2050_planningcenters_points/FeatureServer/0/query?where=1%3D1&fullText=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&defaultSR=&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Foot&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&havingClause=&gdbVersion=&historicMoment=&returnDistinctValues=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&multipatchOption=xyFootprint&resultOffset=&resultRecordCount=&returnTrueCurves=false&returnExceededLimitFeatures=false&quantizationParameters=&returnCentroid=false&timeReferenceUnknownClient=false&maxRecordCountFactor=&sqlFormat=none&resultType=&featureEncoding=esriDefault&datumTransformation=&cacheHint=false&f=geojson"
-        }
+        type="vector"
+        url="https://tiles.dvrpc.org/data/planning/uc2050_plan_centers"
       >
         <Layer
           {...planningcenters}

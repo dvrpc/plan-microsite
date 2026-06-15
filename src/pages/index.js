@@ -233,7 +233,7 @@ const IndexPage = () => {
                   src={Hero}
                   className="w-full"
                 />
-                <figcaption className="text-sm italic">
+                <figcaption className="text-sm italic w-1/2 mx-auto">
                   Getting to Green-Routes to Roots © 2023 City of Philadelphia
                   Mural Arts Program / Laura Deutch & Shira Walinsky. Photos by
                   Steve Weinik.
