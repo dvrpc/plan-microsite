@@ -99,8 +99,14 @@ transportation network for all."
                     The Plan supports a Vision Zero goal to eliminate fatalities
                     and serious injuries on the transportation network by 2050,
                     promotes walking and biking, highlighted by investment in
-                    building out the 850-mile Circuit Trails network, and
-                    transit that{" "}
+                    building out the 850-mile{" "}
+                    <a
+                      href="https://www.dvrpc.org/webmaps/thecircuit/"
+                      className="underline"
+                    >
+                      Circuit Trails network
+                    </a>
+                    , and envisions transit that{" "}
                     <strong>
                       connects urban, suburban, and rural communities
                     </strong>
@@ -165,11 +171,10 @@ transportation network for all."
                       traveled.
                     </p>
                     <p>
-                      There are fewer people driving alone, more people
-                      traveling by resource-efficient mobility options, such as
-                      walking, biking, and taking transit, and reduced air
-                      pollution through the use of twenty-first-century
-                      technologies.
+                      Fewer people driving alone, more people are traveling by
+                      resource-efficient mobility options, such as walking,
+                      biking, and taking transit, and reduced air pollution
+                      through the use of twenty-first-century technologies.
                     </p>
                   </div>
                 </div>

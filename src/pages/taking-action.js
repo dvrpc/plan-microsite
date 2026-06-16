@@ -246,7 +246,7 @@ const TakingAction = () => {
                     target="_blank"
                     href="https://www.dvrpc.org/municipalresources/"
                   >
-                    Municipal Resources
+                    Municipal Support
                   </a>{" "}
                   for data resources to support sound decision-making, effective
                   local planning, and informed approaches to community growth

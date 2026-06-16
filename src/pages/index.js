@@ -77,7 +77,7 @@ const IndexPage = () => {
           <span className="italic">Update: Connections 2050</span> is Greater
           Philadelphia's Long-Range Plan (Plan). The Plan serves as the
           blueprint to guide growth and development in our region and to
-          prioritize funding for capital transportation investment accordingly.
+          prioritize funding for capital transportation investment.
         </h1>
         <h2 className="md:text-5xl z-50 md:mt-16 md:mb-18 my-8 drop-shadow-lg">
           The Regional Vision for 2050 is a Greater Philadelphia that provides:

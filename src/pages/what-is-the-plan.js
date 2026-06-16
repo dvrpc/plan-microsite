@@ -54,7 +54,10 @@ const WhatIsThePlan = () => {
             </h2>
           </div>
           <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 relative">
-            <p>Use the interactive map to explore the region.</p>
+            <p>
+              Zoom in or search an address to explore different areas of the
+              region.
+            </p>
             <div className="relative flex">
               <WhatMap />
             </div>
@@ -64,8 +67,8 @@ const WhatIsThePlan = () => {
               dynamic regions. Once an industrial powerhouse, it has evolved
               into a <strong>diverse economic and cultural hub</strong>. The
               region is a complex mosaic of 350 municipalities, from the
-              nation’s sixth largest city to small rural hamlets with a
-              wide-range of communities in between. Each of these places has
+              nation’s sixth-largest city to small rural hamlets with a wide
+              range of communities in between. Each of these places has
               different needs and varying levels of resources to respond to
               them. Today’s regional economy is powered by{" "}
               <strong>
