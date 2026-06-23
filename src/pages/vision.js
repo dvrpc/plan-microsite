@@ -57,12 +57,6 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               the greatest impact.
             </span>
           </TabPanel>
-
-          <p className="text-base p-2">
-            <a className="text-white underline" href="https://experience.arcgis.com/experience/f9ac0c2d0a72487c98ed22325bf3faef">
-              View the full featured map
-            </a>
-          </p>
         </TabPanels>
       </TabGroup>
     </div>
@@ -167,11 +161,25 @@ const Vision = () => {
         <div className="relative h-full w-full">
           <div className="flex h-full md:flex-row flex-col">
             <div className="md:w-2/5 z-[100] flex md:min-h-full">
-              <Tabs
-                selectedLayer={selectedLayer}
-                selectedIndex={selectedTab}
-                setSelectedIndex={setSelectedTab}
-              />
+              <div className="bg-[#093446] p-3 text-white flex-1 space-y-2 md:pl-[33%]">
+                <p className="italic">
+                  Use the interactive map to explore this vision in two layers:
+                </p>
+                <p>Land Use:</p>
+                <p>
+                  Shows how the region can grow in smart, balanced ways by
+                  aligning future development with existing infrastructure. It
+                  highlights redevelopment opportunities, emerging growth areas,
+                  rural landscapes to preserve, and green spaces that link them
+                  together.
+                </p>
+                <p>Planned Centers:</p>
+                <p>
+                  Identifies specific Centers where future growth is prioritized
+                  and where investments in housing, infrastructure, and jobs can
+                  have the greatest impact.
+                </p>
+              </div>
             </div>
 
             <VisionMap selectedLayer={selectedLayer} />

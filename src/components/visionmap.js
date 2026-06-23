@@ -10,7 +10,7 @@ const glassboro = {
   source: "glassboro-camden",
   paint: {
     "line-width": 2,
-    "line-color": "#587ca6",
+    "line-color": "#843787",
   },
 }
 
@@ -57,13 +57,25 @@ const planningareas = {
     "fill-opacity": 0.8,
   },
 }
+
 const planningcenters = {
-  id: "planningcenters",
-  type: "fill",
-  "source-layer": "uc2050_plan_centers",
-  paint: {
-    "fill-color": "#fec44f",
-    "fill-opacity": 0.8,
+  fill: {
+    id: "planningcenters",
+    type: "fill",
+    "source-layer": "uc2050_plan_centers",
+    paint: {
+      "fill-color": "#b83652",
+      "fill-opacity": 0.5,
+    },
+  },
+  outline: {
+    id: "planningcentersoutline",
+    type: "line",
+    "source-layer": "uc2050_plan_centers",
+    paint: {
+      "line-color": "#45141e",
+      "line-width": 1,
+    },
   },
 }
 
@@ -110,16 +122,6 @@ const landuse = {
 
 const legendSections = [
   {
-    title: "Planning Areas",
-    layerId: "planningareas",
-    items: [
-      { label: "Core City", color: "#457aa8" },
-      { label: "Developed Community", color: "#91add9" },
-      { label: "Growing Suburb", color: "#d5def0" },
-      { label: "Rural Area", color: "#ffffff", border: "#9ca3af" },
-    ],
-  },
-  {
     title: "Land Use Vision",
     layerId: "landuse",
     items: [
@@ -134,14 +136,8 @@ const legendSections = [
     items: [
       {
         label: "Planned Center",
-        color: "#fec44f",
+        color: "#b83652",
         layerId: "planningcenters",
-      },
-      {
-        label: "Planned Neighborhood",
-        color: "#72a5e8",
-        shape: "circle",
-        layerId: "planningneighborhood",
       },
     ],
   },
@@ -162,7 +158,7 @@ const legendSections = [
       },
       {
         label: "Glassboro Camden Line",
-        color: "#72a5e8",
+        color: "#843787",
         shape: "square",
         layerId: "glassboro",
       },
@@ -186,23 +182,34 @@ const visibilityLayout = isVisible => ({
   visibility: isVisible ? "visible" : "none",
 })
 
+const layerVisibilityGroups = {
+  planningcenters: ["planningcenters", "planningcentersoutline"],
+}
+
 const VisionMap = ({ selectedLayer }) => {
   const [isLegendOpen, setIsLegendOpen] = useState(true)
   const [visibleLayers, setVisibleLayers] = useState({
-    planningareas: false,
     landuse: false,
     planningcenters: false,
-    planningneighborhood: false,
+    planningcentersoutline: false,
     transitstations: false,
     raillines: false,
     glassboro: false,
   })
 
   const toggleLayer = layerId => {
-    setVisibleLayers(current => ({
-      ...current,
-      [layerId]: !current[layerId],
-    }))
+    setVisibleLayers(current => {
+      const layerIds = layerVisibilityGroups[layerId] || [layerId]
+      const nextVisibility = !current[layerId]
+
+      return layerIds.reduce(
+        (nextLayers, id) => ({
+          ...nextLayers,
+          [id]: nextVisibility,
+        }),
+        current
+      )
+    })
   }
 
   return (
@@ -278,18 +285,6 @@ const VisionMap = ({ selectedLayer }) => {
         )}
       </div>
       <Source
-        id="lrp_2050_planningareas"
-        type="geojson"
-        data={
-          "https://arcgis.dvrpc.org/portal/rest/services/planning/lrp_2050_planningareas/FeatureServer/0/query?where=1%3D1&fullText=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&defaultSR=&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Foot&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&havingClause=&gdbVersion=&historicMoment=&returnDistinctValues=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&multipatchOption=xyFootprint&resultOffset=&resultRecordCount=&returnTrueCurves=false&returnExceededLimitFeatures=false&quantizationParameters=&returnCentroid=false&returnEnvelope=false&timeReferenceUnknownClient=false&maxRecordCountFactor=&sqlFormat=none&resultType=&featureEncoding=esriDefault&datumTransformation=&cacheHint=false&f=geojson"
-        }
-      >
-        <Layer
-          {...planningareas}
-          layout={visibilityLayout(visibleLayers.planningareas)}
-        />
-      </Source>
-      <Source
         id="lrp_2050_landusevision"
         type="geojson"
         data={
@@ -304,20 +299,13 @@ const VisionMap = ({ selectedLayer }) => {
         url="https://tiles.dvrpc.org/data/planning/uc2050_plan_centers"
       >
         <Layer
-          {...planningcenters}
+          {...planningcenters.fill}
           layout={visibilityLayout(visibleLayers.planningcenters)}
         />
-      </Source>
-      <Source
-        id="lrp_2050_planningneighborhood"
-        type="geojson"
-        data={
-          "https://arcgis.dvrpc.org/portal/rest/services/planning/lrp_2050_plancntrneigh/FeatureServer/0/query?where=1%3D1&fullText=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&defaultSR=&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Foot&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&havingClause=&gdbVersion=&historicMoment=&returnDistinctValues=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&multipatchOption=xyFootprint&resultOffset=&resultRecordCount=&returnTrueCurves=false&returnExceededLimitFeatures=false&quantizationParameters=&returnCentroid=false&timeReferenceUnknownClient=false&maxRecordCountFactor=&sqlFormat=none&resultType=&featureEncoding=esriDefault&datumTransformation=&cacheHint=false&f=geojson"
-        }
-      >
         <Layer
-          {...planningneighborhood}
-          layout={visibilityLayout(visibleLayers.planningneighborhood)}
+          beforeId="county-outline"
+          {...planningcenters.outline}
+          layout={visibilityLayout(visibleLayers.planningcentersoutline)}
         />
       </Source>
       <Source
