@@ -9,8 +9,16 @@ const glassboro = {
   type: "line",
   source: "glassboro-camden",
   paint: {
-    "line-width": 2,
+    "line-width": ["interpolate", ["linear"], ["zoom"], 8, 2.5, 11, 3.5, 14, 5],
     "line-color": "#843787",
+  },
+}
+
+const railLines = {
+  ...layerDef,
+  paint: {
+    ...layerDef.paint,
+    "line-width": ["interpolate", ["linear"], ["zoom"], 8, 2.5, 11, 3.5, 14, 5],
   },
 }
 
@@ -124,6 +132,8 @@ const legendSections = [
   {
     title: "Land Use Vision",
     layerId: "landuse",
+    dataUrl:
+      "https://catalog.dvrpc.org/dataset/dvrpc-connections-2050-land-use-vision",
     items: [
       { label: "Emerging Growth", color: "#d99241" },
       { label: "Greenspace Network", color: "#759f5f" },
@@ -133,6 +143,8 @@ const legendSections = [
   },
   {
     title: "Centers and Neighborhoods",
+    dataUrl:
+      "https://catalog.dvrpc.org/dataset/long-range-plan-2050-planning-centers",
     items: [
       {
         label: "Planned Center",
@@ -143,6 +155,7 @@ const legendSections = [
   },
   {
     title: "Rail Lines and Stations",
+    dataUrl: "https://catalog.dvrpc.org/dataset/?q=passenger+rail",
     items: [
       {
         label: "Rail Station",
@@ -152,14 +165,14 @@ const legendSections = [
       },
       {
         label: "Rail Line",
-        color: "#72a5e8",
-        shape: "square",
+        color: "#7e90a6",
+        shape: "line",
         layerId: "raillines",
       },
       {
         label: "Glassboro Camden Line",
         color: "#843787",
-        shape: "square",
+        shape: "line",
         layerId: "glassboro",
       },
     ],
@@ -168,14 +181,21 @@ const legendSections = [
 
 const LegendSwatch = ({ color, border = "#ffffff", shape = "square" }) => (
   <span
-    className={`h-[20px] w-[20px] ${
+    className={`inline-flex h-[20px] w-[20px] items-center justify-center ${
       shape === "circle" ? "rounded-full" : "rounded-sm"
     }`}
     style={{
-      backgroundColor: color,
-      border: `1px solid ${border}`,
+      backgroundColor: shape === "line" ? "transparent" : color,
+      border: shape === "line" ? "none" : `1px solid ${border}`,
     }}
-  />
+  >
+    {shape === "line" && (
+      <span
+        className="block h-[3px] w-full rounded-full"
+        style={{ backgroundColor: color }}
+      />
+    )}
+  </span>
 )
 
 const visibilityLayout = isVisible => ({
@@ -197,10 +217,14 @@ const VisionMap = ({ selectedLayer }) => {
     glassboro: false,
   })
 
+  const getLayerIds = layerId => layerVisibilityGroups[layerId] || [layerId]
+  const isLayerVisible = layerId =>
+    getLayerIds(layerId).every(id => visibleLayers[id])
+
   const toggleLayer = layerId => {
     setVisibleLayers(current => {
-      const layerIds = layerVisibilityGroups[layerId] || [layerId]
-      const nextVisibility = !current[layerId]
+      const layerIds = getLayerIds(layerId)
+      const nextVisibility = !layerIds.every(id => current[id])
 
       return layerIds.reduce(
         (nextLayers, id) => ({
@@ -230,19 +254,27 @@ const VisionMap = ({ selectedLayer }) => {
             <div className="space-y-3">
               {legendSections.map(section => (
                 <div key={section.title}>
-                  {section.layerId ? (
-                    <label className="mb-1 flex cursor-pointer items-center gap-2">
-                      <input
-                        type="checkbox"
-                        className="h-3.5 w-3.5 rounded border-slate-300 text-sky-700 focus:ring-sky-500"
-                        checked={visibleLayers[section.layerId]}
-                        onChange={() => toggleLayer(section.layerId)}
-                      />
+                  <div className="mb-1 flex items-center justify-between gap-3">
+                    {section.layerId ? (
+                      <label className="flex cursor-pointer items-center gap-2">
+                        <input
+                          type="checkbox"
+                          className="h-3.5 w-3.5 rounded border-slate-300 text-sky-700 focus:ring-sky-500"
+                          checked={isLayerVisible(section.layerId)}
+                          onChange={() => toggleLayer(section.layerId)}
+                        />
+                        <span>{section.title}</span>
+                      </label>
+                    ) : (
                       <span>{section.title}</span>
-                    </label>
-                  ) : (
-                    <span className="mb-1">{section.title}</span>
-                  )}
+                    )}
+                    <a
+                      href={section.dataUrl}
+                      className="shrink-0 text-xs font-bold underline"
+                    >
+                      View data
+                    </a>
+                  </div>
                   <ul className="space-y-1">
                     {section.items.map(item => (
                       <li
@@ -254,7 +286,7 @@ const VisionMap = ({ selectedLayer }) => {
                             <input
                               type="checkbox"
                               className="h-3.5 w-3.5 rounded border-slate-300 text-sky-700 focus:ring-sky-500"
-                              checked={visibleLayers[item.layerId]}
+                              checked={isLayerVisible(item.layerId)}
                               onChange={() => toggleLayer(item.layerId)}
                             />
                             <LegendSwatch {...item} />
@@ -314,7 +346,7 @@ const VisionMap = ({ selectedLayer }) => {
         url="https://tiles.dvrpc.org/data/transportation/passengerrail"
       >
         <Layer
-          {...layerDef}
+          {...railLines}
           layout={visibilityLayout(visibleLayers.raillines)}
         />
       </Source>

@@ -165,7 +165,7 @@ const Vision = () => {
                 <p className="italic">
                   Use the interactive map to explore this vision in two layers:
                 </p>
-                <p>Land Use:</p>
+                <strong>Land Use:</strong>
                 <p>
                   Shows how the region can grow in smart, balanced ways by
                   aligning future development with existing infrastructure. It
@@ -173,7 +173,7 @@ const Vision = () => {
                   rural landscapes to preserve, and green spaces that link them
                   together.
                 </p>
-                <p>Planned Centers:</p>
+                <strong>Planned Centers:</strong>
                 <p>
                   Identifies specific Centers where future growth is prioritized
                   and where investments in housing, infrastructure, and jobs can
