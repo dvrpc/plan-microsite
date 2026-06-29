@@ -8,6 +8,15 @@ import TransportationMeans from "../images/transportation-means.png"
 import Ai from "../images/ai.png"
 import Tp from "../images/tp@4x.png"
 import Accordion from "../components/accordion"
+import Summary from "../pdf/uc2050 summary posted.pdf"
+import Appendices from "../pdf/uc2050 appendices posted.pdf"
+import A from "../pdf/appendix a - uc2050.pdf"
+import B from "../pdf/appendix b - uc2050.pdf"
+import C from "../pdf/appendix c - uc2050.pdf"
+import D from "../pdf/appendix d - uc2050.pdf"
+import E from "../pdf/appendix e - uc2050.pdf"
+import F from "../pdf/appendix f - uc2050.pdf"
+import G from "../pdf/appendix g - uc2050.pdf"
 
 const Resources = () => {
   return (
@@ -51,47 +60,47 @@ const Resources = () => {
             <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={Summary} className="underline text-[#26428b] ">
                     Summary Document
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={Appendices} className="underline text-[#26428b] ">
                     Appendices
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={A} className="underline text-[#26428b] ">
                     A - Planning Process & Administration
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={B} className="underline text-[#26428b] ">
                     B - Land Use & Transportation
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={C} className="underline text-[#26428b] ">
                     C - Federal Performance Measures
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={D} className="underline text-[#26428b] ">
                     D - Community Analytics
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={E} className="underline text-[#26428b] ">
                     E - Financial Plan
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={F} className="underline text-[#26428b] ">
                     F - Future Funding Outlook
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href="/" className="underline text-[#26428b] ">
+                  <a href={G} className="underline text-[#26428b] ">
                     G - Definitions & Acronyms
                   </a>
                 </li>
