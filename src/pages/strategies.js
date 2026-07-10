@@ -278,8 +278,10 @@ const WhatIsThePlan = () => {
                                       )}
                                     {!party.length && (
                                       <p>
-                                        {action.description} (
-                                        {action.tags.join(", ")})
+                                        {action.description}{" "}
+                                        {action.tags.length > 0 && (
+                                          <>({action.tags.join(", ")})</>
+                                        )}
                                       </p>
                                     )}
                                   </>

@@ -435,12 +435,14 @@ const WhatIsThePlan = () => {
                 />
               </div>
               <p>
-                In the near term, we can stretch limited funds by focusing on
-                {" "}<strong>efficient, affordable, and context-sensitive solutions</strong>—projects
-                that solve real problems without overbuilding or overspending.
-                {" "}<strong>Smarter, smaller investments</strong> can improve safety, mobility, and
-                reliability more quickly and cost-effectively than major
-                construction projects. For example:
+                In the near term, we can stretch limited funds by focusing on{" "}
+                <strong>
+                  efficient, affordable, and context-sensitive solutions
+                </strong>
+                —projects that solve real problems without overbuilding or
+                overspending. <strong>Smarter, smaller investments</strong> can
+                improve safety, mobility, and reliability more quickly and
+                cost-effectively than major construction projects. For example:
               </p>
               <div className="mx-auto flex w-full flex-col gap-x-2 md:flex-row">
                 <div className="relative flex flex-1">
@@ -472,9 +474,11 @@ const WhatIsThePlan = () => {
                       Smaller, targeted improvements
                     </h3>
                     <p>
-                      —like intersection redesigns or transit enhancements—can
-                      deliver many of the benefits of large projects at a
-                      fraction of the cost.
+                      &mdash;like intersection redesigns or transit
+                      enhancements—can deliver many of the benefits of large
+                      projects at a fraction of the cost, and they can typically
+                      be completed in less time, allowing those benefits to be
+                      realized sooner.
                     </p>
                   </div>
                 </div>
@@ -489,9 +493,10 @@ const WhatIsThePlan = () => {
                       Repairs and upgrades
                     </h3>
                     <p>
-                      can support multiple travel options, such as fixing
+                      can support multiple travel options&mdash;such as fixing
                       bridges important to transit or maintaining well-used
-                      trails.
+                      trails&mdash;while bringing facilities up to modern design
+                      standards and reducing bottlenecks.
                     </p>
                   </div>
                 </div>

@@ -774,7 +774,7 @@
       {
         "id": 1,
         "name": "Utilize Land Use, Technological, and Financial Tools to Minimize Air Pollution from Infrastructure Systems",
-        "description": "Promote compact, mixed-use development, electrification, and sustainable transportation to reduce vehicle miles traveled and air pollution.",
+        "description": "Promote compact, mixed-use development, electrification, and transportation options to reduce vehicle miles traveled and air pollution.",
         "element": "Infrastructure & Utility Services",
         "actions": [
           {
@@ -860,7 +860,7 @@
             "tags": ["Federal Agencies", "State Agencies", "Nonprofits"]
           },
           {
-            "description": "Lead by example to benchmark, electrify and make government acilities more efficient. Implement and enforce building and electric codes. Adopt policies and regulations that encourage or require building owners to transition towards more efficient, less polluting building stock, such as building performance standards. Support workforce development and planning for the buildings sector.",
+            "description": "Lead by example to benchmark, electrify and make government facilities more efficient. Implement and enforce building and electric codes. Adopt policies and regulations that encourage or require building owners to transition towards more efficient, less polluting building stock, such as building performance standards. Support workforce development and planning for the buildings sector.",
             "tags": ["Municipalities", "Counties"]
           },
           {

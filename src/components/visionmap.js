@@ -147,7 +147,7 @@ const legendSections = [
       "https://catalog.dvrpc.org/dataset/long-range-plan-2050-planning-centers",
     items: [
       {
-        label: "Planned Center",
+        label: "Plan Center",
         color: "#b83652",
         layerId: "planningcenters",
       },

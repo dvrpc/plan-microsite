@@ -273,12 +273,13 @@ const TakingAction = () => {
                 project, policy, and plan contributes to a Greater Philadelphia
                 that works better for everyone.
               </p>
-              <Link
+              <a
                 className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
-                to="https://www.dvrpc.org/getinvolved"
+                href="https://www.dvrpc.org/getinvolved"
+                target="_blank"
               >
                 Stay Connected
-              </Link>
+              </a>
             </div>
           </div>
         </div>

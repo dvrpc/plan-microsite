@@ -95,10 +95,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
       >
         <TabList className="flex text-white -mt-20 md:w-1/4 w-1/2">
           <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#063446] data-[selected]:text-[#063446] [&:not([data-selected])]:text-white w-1/2 rounded-t-lg h-20">
-            Roadway Needs
+            Roadway
           </Tab>
           <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#063446] data-[selected]:text-[#063446] [&:not([data-selected])]:text-white w-1/2 rounded-t-lg h-20">
-            Transit Needs
+            Transit
           </Tab>
         </TabList>
         <TabPanels className="w-full overflow-hidden text-white">
@@ -459,7 +459,6 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
               <strong>UNFUNDED = $1 Billion YOE</strong>
             </div>
           </div>
-
         </TabPanels>
       </TabGroup>
     </div>
@@ -480,7 +479,10 @@ const WhatIsThePlan = () => {
     document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
 
     others.map(id => {
-      if (document.querySelector(`#${id}`) && document.querySelector(`#${id}`).classList.contains("scale-[125%]")) {
+      if (
+        document.querySelector(`#${id}`) &&
+        document.querySelector(`#${id}`).classList.contains("scale-[125%]")
+      ) {
         document.querySelector(`#${id}`).classList.toggle("scale-[70%]")
         document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
       }

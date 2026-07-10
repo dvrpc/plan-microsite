@@ -192,14 +192,15 @@ const MrpWebmap = () => {
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
           <div className="flex flex-col space-y-4 md:p-6 p-2 text-[#063446]">
-            <div className="relative w-full">
+            <div className="relative w-full overflow-hidden">
               <img
                 id="mrp-box-1"
                 src={FundingBox1}
-                className="p-2 md:h-[27rem] h-[20rem] w-full"
+                alt=""
+                className="absolute inset-0 h-full w-full p-2"
               />
               <div
-                className="absolute md:top-[12%] md:left-[5%] text-white md:space-y-2 md:p-4 top-0 p-10"
+                className="relative z-10 space-y-2 p-8 text-sm text-white sm:p-10 sm:text-base md:px-[9%] md:py-[8%]"
                 id="mrp-box-1-text"
               >
                 <p>
