@@ -60,47 +60,92 @@ const Resources = () => {
             <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
               <ul className="ml-8 md:text-2xl text-lg space-y-2">
                 <li>
-                  <a href={Summary} className="underline text-[#26428b] ">
+                  <a
+                    href={Summary}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Summary Document
                   </a>
                 </li>
                 <li>
-                  <a href={Appendices} className="underline text-[#26428b] ">
+                  <a
+                    href={Appendices}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Appendices
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href={A} className="underline text-[#26428b] ">
+                  <a
+                    href={A}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     A - Planning Process & Administration
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href={B} className="underline text-[#26428b] ">
+                  <a
+                    href={B}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     B - Land Use & Transportation
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href={C} className="underline text-[#26428b] ">
+                  <a
+                    href={C}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     C - Federal Performance Measures
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href={D} className="underline text-[#26428b] ">
+                  <a
+                    href={D}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     D - Community Analytics
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href={E} className="underline text-[#26428b] ">
+                  <a
+                    href={E}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     E - Financial Plan
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href={F} className="underline text-[#26428b] ">
+                  <a
+                    href={F}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     F - Future Funding Outlook
                   </a>
                 </li>
                 <li className="ml-8">
-                  <a href={G} className="underline text-[#26428b] ">
+                  <a
+                    href={G}
+                    className="underline text-[#26428b] "
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     G - Definitions & Acronyms
                   </a>
                 </li>
@@ -109,6 +154,7 @@ const Resources = () => {
                     href="https://www.dvrpc.org/plan/planhistory/"
                     className="underline text-[#26428b]"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Amendments
                   </a>
@@ -293,8 +339,11 @@ const Resources = () => {
               <Accordion label="How should local governments use the plan?">
                 <p>
                   Local governments can use the Plan as a regional guide to
-                  inform local decisions and investments. Its strategies,
-                  policies, priority projects, and forecast data can support
+                  inform local decisions and investments. Its{" "}
+                  <Link className="underline" to="/strategies">
+                    strategies
+                  </Link>
+                  , policies, priority projects, and forecast data can support
                   zoning updates, comprehensive plans, capital programming,
                   redevelopment efforts, development review, and grant
                   applications. By aligning local actions with regional

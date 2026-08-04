@@ -247,7 +247,7 @@ const Trends = () => {
                 </strong>
                 .
               </p>
-              <h4 className="mx-auto text-[#179650] font-bold text-lg font-[scriptorama-markdown-jf] my-4">
+              <h4 className="mx-auto text-[#179650] font-bold text-lg font-[scriptorama-markdown-jf] my-4 py-2">
                 TRACKING PROGRESS DASHBOARD
               </h4>
               <svg

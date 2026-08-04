@@ -82,15 +82,16 @@ const MRPList = () => {
     }
     let arr = Object.values(projectsCopy).flat()
     if (filter) {
+      const searchTerm = filter.toLowerCase()
       arr = arr.filter(
         item =>
-          item.id.includes(filter) ||
-          item.facility.toLowerCase().includes(filter) ||
-          item.scope.toLowerCase().includes(filter) ||
-          item.location.toLowerCase().includes(filter) ||
-          item.period.toLowerCase().includes(filter) ||
-          item.cost.toLowerCase().includes(filter) ||
-          item.categories.toLowerCase().includes(filter)
+          String(item.id).toLowerCase().includes(searchTerm) ||
+          item.facility.toLowerCase().includes(searchTerm) ||
+          item.scope.toLowerCase().includes(searchTerm) ||
+          item.location.toLowerCase().includes(searchTerm) ||
+          item.period.toLowerCase().includes(searchTerm) ||
+          item.cost.toLowerCase().includes(searchTerm) ||
+          item.categories.toLowerCase().includes(searchTerm)
       )
     }
     setFilteredProjects([...arr])
@@ -167,52 +168,54 @@ const MRPList = () => {
             </p>
           </div>
         </div>
-        <div className="md:w-[68%] w-full relative border-l-4 border-[#063446]">
-          <div className="flex w-full md:p-6 p-2 relative flex-col">
-            <strong>Start your search:</strong>
-            <span>State</span>
-            <Select
-              options={stateOptions}
-              isMulti
-              value={state}
-              onChange={setState}
-              styles={{
-                multiValue: (provided, { data }) => ({
-                  ...provided,
-                  backgroundColor: "#063446",
-                  color: "#ffffff",
-                }),
-                multiValueLabel: (provided, { data }) => ({
-                  ...provided,
-                  color: "#ffffff",
-                }),
-              }}
-            />
-            <span>Funding Category</span>
-            <Select
-              options={fundingOptions}
-              isMulti
-              value={funding}
-              onChange={setFunding}
-              styles={{
-                multiValue: (provided, { data }) => ({
-                  ...provided,
-                  backgroundColor: fundingHex[data.value],
-                  color: "#ffffff",
-                }),
-                multiValueLabel: (provided, { data }) => ({
-                  ...provided,
-                  color: "#ffffff",
-                }),
-              }}
-            />
-            <span>Keyword</span>
-            <input
-              type="text"
-              onChange={e => setFilter(e.target.value)}
-              value={filter}
-              className="input block w-full rounded-sm border border-gray-200 bg-gray-50 bg-none py-2 px-4 text-base leading-6 text-black text-opacity-80 transition-all"
-            />
+        <div className="relative z-10 w-full bg-[#cbe5f3]">
+          <div className="md:w-[68%] w-full mx-auto border-l-4 border-[#063446]">
+            <div className="flex w-full md:p-6 p-2 relative flex-col">
+              <strong>Start your search:</strong>
+              <span>State</span>
+              <Select
+                options={stateOptions}
+                isMulti
+                value={state}
+                onChange={setState}
+                styles={{
+                  multiValue: (provided, { data }) => ({
+                    ...provided,
+                    backgroundColor: "#063446",
+                    color: "#ffffff",
+                  }),
+                  multiValueLabel: (provided, { data }) => ({
+                    ...provided,
+                    color: "#ffffff",
+                  }),
+                }}
+              />
+              <span>Funding Category</span>
+              <Select
+                options={fundingOptions}
+                isMulti
+                value={funding}
+                onChange={setFunding}
+                styles={{
+                  multiValue: (provided, { data }) => ({
+                    ...provided,
+                    backgroundColor: fundingHex[data.value],
+                    color: "#ffffff",
+                  }),
+                  multiValueLabel: (provided, { data }) => ({
+                    ...provided,
+                    color: "#ffffff",
+                  }),
+                }}
+              />
+              <span>Keyword</span>
+              <input
+                type="text"
+                onChange={e => setFilter(e.target.value)}
+                value={filter}
+                className="input block w-full rounded-sm border border-gray-200 bg-gray-50 bg-none py-2 px-4 text-base leading-6 text-black text-opacity-80 transition-all"
+              />
+            </div>
           </div>
         </div>
 

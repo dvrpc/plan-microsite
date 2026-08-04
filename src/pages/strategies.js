@@ -99,14 +99,27 @@ const WhatIsThePlan = () => {
     let ret = []
     if (element.length > 0) {
       element.map(el => (ret = [...ret, ...strategies[el.value].strategies]))
-      ret = ret.filter(
-        data =>
-          data.name.toLowerCase().includes(filter.toLowerCase()) ||
-          data.description.toLowerCase().includes(filter.toLowerCase())
-      )
+      const searchTerm = filter.toLowerCase()
+      const selectedParties = party.map(term => term.value)
+
+      ret = ret.filter(data => {
+        const matchesKeyword =
+          data.name.toLowerCase().includes(searchTerm) ||
+          data.description.toLowerCase().includes(searchTerm) ||
+          data.actions.some(action =>
+            action.description.toLowerCase().includes(searchTerm)
+          )
+        const matchesParty =
+          selectedParties.length === 0 ||
+          data.actions.some(action =>
+            action.tags.some(tag => selectedParties.includes(tag))
+          )
+
+        return matchesKeyword && matchesParty
+      })
     }
     setFilteredStrategies(ret)
-  }, [element, party, setFilteredStrategies, filter])
+  }, [element, party, filter])
 
   return (
     <Layout>

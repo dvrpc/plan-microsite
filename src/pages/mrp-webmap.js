@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Bg from "../images/bg.png"
 import Dot from "../images/dot.svg"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
-import MrpMap from "../components/mrpmap"
+import MrpMap, { fundingCategories } from "../components/mrpmap"
 import {
   Tab,
   TabGroup,
@@ -26,6 +26,17 @@ import FundingBox1 from "../images/funding-box-1.png"
 const MrpWebmap = () => {
   const [selectedLayer, setSelectedLayer] = useState("popABS")
   const [selectedTab, setSelectedTab] = useState(0)
+  const [visibleFunding, setVisibleFunding] = useState(
+    fundingCategories.map(category => category.label)
+  )
+
+  const toggleFunding = funding => {
+    setVisibleFunding(current =>
+      current.includes(funding)
+        ? current.filter(category => category !== funding)
+        : [...current, funding]
+    )
+  }
 
   const toggleModal = event => {
     event.preventDefault()
@@ -52,11 +63,9 @@ const MrpWebmap = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="text-white">
-              Financial
-            </Link>
+            <Link className="text-white">Financial</Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="text-white">MRP Webmap</Link>
+            <Link className="text-white">MRP Web Map</Link>
           </div>
         </div>
         <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
@@ -82,7 +91,7 @@ const MrpWebmap = () => {
           <div className="flex items-center w-full md:p-6 p-2 relative mt-4">
             <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
             <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
-              MRP Webmap
+              MRP Web Map
             </h2>
           </div>
           <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 relative">
@@ -105,6 +114,7 @@ const MrpWebmap = () => {
               <a
                 className="underline"
                 href="https://experience.arcgis.com/experience/5a00c76b8da041378b37c682cf5b9254"
+                target="_blank"
               >
                 View full featured map
               </a>
@@ -113,19 +123,23 @@ const MrpWebmap = () => {
               <a
                 className="underline"
                 href="https://catalog.dvrpc.org/dataset/?q=MRP"
+                target="_blank"
               >
                 Get Data
               </a>
             </p>
             <div className="relative flex">
-              <Legend selectedLayer={selectedLayer} />
+              <Legend
+                visibleFunding={visibleFunding}
+                onToggleFunding={toggleFunding}
+              />
               <button
                 className="font-bold z-[100] w-min h-[20px] absolute md:top-[30%] -right-2 m-6"
                 onClick={toggleModal}
               >
                 <InfoIcon fill="#063446" width="20px" />
               </button>
-              <MrpMap />
+              <MrpMap visibleFunding={visibleFunding} />
             </div>
 
             <Modal toggleModal={toggleModal}>
@@ -198,6 +212,12 @@ const MrpWebmap = () => {
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39]">
           <div className="flex flex-col space-y-4 md:p-6 p-2 text-[#063446]">
+            <Link
+              className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white"
+              to="/mrp-list"
+            >
+              View the MRPs in Table Format
+            </Link>
             <div className="relative w-full overflow-hidden">
               <img
                 id="mrp-box-1"
@@ -248,12 +268,6 @@ const MrpWebmap = () => {
                 </p>
               </div>
             </div>
-            <Link
-              className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
-              to="/mrp-list"
-            >
-              View the MRPs in Table Format
-            </Link>
           </div>
         </div>
       </div>
