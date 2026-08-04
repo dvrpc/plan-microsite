@@ -116,7 +116,7 @@ const IndexPage = () => {
               className="w-full flex md:flex-row flex-col"
               id="what-is-the-plan"
             >
-              <p className="md:w-1/3 block text-left">
+              <p className="md:w-1/3 pt-4 block text-left">
                 DVRPC is mandated to develop a long-range transportation plan
                 every four years to ensure orderly growth and development of the
                 region over the next few decades.{" "}
@@ -146,7 +146,7 @@ const IndexPage = () => {
               </button>
             </DisclosureButton>
             <DisclosurePanel className="w-full flex md:flex-row flex-col">
-              <p className="md:w-1/3 block text-left">
+              <p className="md:w-1/3 pt-4 block text-left">
                 The Plan analyzes key trends shaping our future and provides
                 quantitative indicators to reveal where we are now and to track
                 progress towards the region’s vision and goals.
@@ -171,7 +171,7 @@ const IndexPage = () => {
               </button>
             </DisclosureButton>
             <DisclosurePanel className="w-full flex md:flex-row flex-col">
-              <p className="md:w-1/3 block text-left">
+              <p className="md:w-1/3 pt-4 block text-left">
                 At the heart of a long-range plan is a broadly shared regional
                 vision that articulates where we collectively want the region to
                 be in 25 years. This vision was generated through extensive
@@ -197,7 +197,7 @@ const IndexPage = () => {
               </button>
             </DisclosureButton>
             <DisclosurePanel className="w-full flex md:flex-row flex-col">
-              <p className="md:w-1/3 block text-left">
+              <p className="md:w-1/3 pt-4 block text-left">
                 The Plan outlines capital investments in transportation
                 infrastructure to help achieve the Plan’s vision in the coming
                 decades.
@@ -222,7 +222,7 @@ const IndexPage = () => {
               </button>
             </DisclosureButton>
             <DisclosurePanel className="w-full flex md:flex-row flex-col">
-              <p className="md:w-1/3 block text-left">
+              <p className="md:w-1/3 pt-4 block text-left">
                 Achieving the vision requires building partnerships and the
                 dedicated efforts and cooperation of many actors across the
                 public and private sectors.

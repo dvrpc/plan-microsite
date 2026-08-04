@@ -158,6 +158,7 @@ const Vision = () => {
             </a>
           </div>
         </div>
+
         <div className="relative h-full w-full">
           <div className="flex h-full md:flex-row flex-col">
             <div className="md:w-2/5 z-[100] flex md:min-h-full">
@@ -185,12 +186,15 @@ const Vision = () => {
             <VisionMap selectedLayer={selectedLayer} />
           </div>
         </div>
-        <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
-            <div className="flex flex-col space-y-4 md:p-6 p-2">
+        <div className="w-full h-full bg-[#cbe5f3]">
+          <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] mx-auto">
+            <div className="flex items-center w-full md:p-6 p-2 relative">
+              <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Vision Survey Feedback
               </h2>
+            </div>
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
               <p>
                 The regional vision reflects the ideas and priorities of the
                 people who live and work in Greater Philadelphia. Through a
@@ -224,9 +228,19 @@ const Vision = () => {
                 src={Feedback}
                 className="md:w-2/3 mx-auto"
               />
+            </div>
+          </div>
+        </div>
+
+        <div className="w-full h-full">
+          <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] mx-auto">
+            <div className="flex items-center w-full md:p-6 p-2 relative">
+              <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
                 Building Blocks of the Vision
               </h2>
+            </div>
+            <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0">
               <p>
                 The Plan is built around five key <strong>Plan Elements</strong>
                 : Transportation, Economy, Communities, Environment, and

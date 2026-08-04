@@ -52,7 +52,7 @@ const MrpWebmap = () => {
               Home
             </Link>
             <ChevronRightIcon width="1.5%" />
-            <Link className="underline text-white" to="/financial">
+            <Link className="text-white">
               Financial
             </Link>
             <ChevronRightIcon width="1.5%" />

@@ -384,25 +384,14 @@ main
 
 @media screen and (max-width: 933px) {
   #mrp-box-1 {
-    height: 33rem;
-  }
-}
-
-@media screen and (max-width: 855px) {
-  #mrp-box-1 {
-    height: 36rem;
+    height: 100%;
   }
 }
 
 @media screen and (max-width: 764px) {
   #mrp-box-1-text {
-    top: 5%;
-  }
-}
-
-@media screen and (max-width: 470px) {
-  #mrp-box-1 {
-    height: 48rem;
+    top: 0;
+    padding-top: 4rem;
   }
 }
 

@@ -49,7 +49,7 @@ const Resources = () => {
             </p>
           </div>
         </div>
-        <div className="w-full bg-white relative">
+        <div className="w-full bg-[#dfebf5] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
@@ -179,7 +179,7 @@ const Resources = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-white relative">
+        <div className="w-full bg-[#dfebf5] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot

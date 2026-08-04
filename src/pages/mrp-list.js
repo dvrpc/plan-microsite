@@ -42,7 +42,7 @@ const MRPList = () => {
     "Roadway Funded": "#0078ae",
     "Roadway Unfunded": "#12435e",
     "Transit Funded": "#01542c",
-    "Transit Unfunded": "#bcd85f",
+    "Transit Unfunded": "#648007",
     "Externally Funded": "#704775",
     "Externally Unfunded": "#ad5b87",
     "Roadway Illustrative": "#4b4c4d",

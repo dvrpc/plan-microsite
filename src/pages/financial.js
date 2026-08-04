@@ -57,7 +57,7 @@ import Block3 from "../images/block-3.png"
 import { Tooltip } from "react-tippy"
 
 const tabTooltipClass =
-  "absolute bottom-0 max-w-full px-1 py-1 text-[0.6rem] leading-snug text-white underline hover:cursor-pointer md:p-2 md:text-sm lg:text-base"
+  "absolute bottom-[8%] left-[12%] right-[8%] block w-auto overflow-hidden whitespace-normal break-normal px-1 py-1 text-center text-[clamp(0.6rem,0.8vw,1rem)] leading-snug text-white underline [overflow-wrap:break-word] hover:cursor-pointer md:px-2 md:py-1"
 
 const StatList = ({ need, funding, allocation }) => (
   <dl className="space-y-1 text-left">
