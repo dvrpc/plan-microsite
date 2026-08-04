@@ -108,6 +108,7 @@ const DVRPCMap = ({
             id="dvrpcnt"
             type="fill"
             source-layer="county"
+            slot="bottom"
             paint={{
               "fill-color": "#B6C1C6",
               "fill-opacity": 0.6,
@@ -118,6 +119,7 @@ const DVRPCMap = ({
           <Layer
             id="municipality-outline"
             type="line"
+            slot="middle"
             source-layer="municipalities"
             paint={{
               "line-width": 1,
@@ -132,6 +134,7 @@ const DVRPCMap = ({
           <Layer
             id="county-outline"
             type="line"
+            slot="middle"
             source-layer="county"
             paint={{
               "line-width": 2.5,

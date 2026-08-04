@@ -10,12 +10,12 @@ import { Link } from "gatsby"
 const Bubbles = () => {
   return (
     <div
-      className="md:space-x-2 md:[&>*]:w-[15rem] md:[&>*]:h-auto w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-center items-center md:my-12 font-[Inclusive Sans]! leading-tight gap-y-4"
+      className="md:space-x-2 md:[&>*]:w-[15rem] md:[&>*]:h-auto w-full [&>*]:flex [&>*]:items-center [&>*]:justify-center text-center items-center md:my-12 font-[Inclusive Sans]! gap-y-4"
       id="bubbles"
     >
       <div className="relative">
         <Purple width="100%" className="z-10" />
-        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
+        <p className="z-50 absolute p-7 text-center text-white">
           A safe, modern, multimodal{" "}
           <Link
             to="/plan-elements?element=transportation"
@@ -28,7 +28,7 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Pink width="100%" className="absolute z-10" />
-        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
+        <p className="z-50 absolute p-7 text-center text-white">
           An innovative and connected{" "}
           <Link
             to="/plan-elements?element=economy"
@@ -41,7 +41,7 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Blue width="100%" className="absolute z-10" />
-        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
+        <p className="z-50 absolute p-7 text-center text-white">
           Healthy, walkable, and vibrant{" "}
           <Link
             to="/plan-elements?element=communities"
@@ -53,7 +53,7 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Green width="100%" className="absolute z-10" />
-        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
+        <p className="z-50 absolute p-7 text-center text-white">
           A preserved and restored natural{" "}
           <Link
             to="/plan-elements?element=environment"
@@ -66,7 +66,7 @@ const Bubbles = () => {
       </div>
       <div className="relative">
         <Turq width="100%" className="absolute z-10 " />
-        <p className="z-50 absolute md:p-3 p-5 text-center text-base">
+        <p className="z-50 absolute p-7 text-center text-white">
           Clean, reliable, and affordable{" "}
           <Link
             to="/plan-elements?element=infrastructure"

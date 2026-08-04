@@ -54,8 +54,8 @@ main
   ):not([class*="text-3xl"]):not([class*="text-4xl"]):not(
     [class*="text-5xl"]
   ):not([class*="text-["]) {
-  font-size: 1.125rem;
-  line-height: 1.6;
+  font-size: 1.2rem;
+  line-height: 1.4;
 }
 
 main

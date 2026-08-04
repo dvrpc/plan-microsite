@@ -47,6 +47,7 @@ export const Legend = () => {
 export const layerDef = {
   id: "raillines",
   type: "line",
+  slot: "middle",
   "source-layer": "passengerrail",
   filter: ["all", ["!=", "type", "Surface Trolley"], ["!=", "type", "AMTRAK"]],
   paint: {
@@ -73,6 +74,7 @@ export const stationDef = {
   id: "transitstations",
   type: "circle",
   source: "transit-stations",
+  slot: "middle",
   "source-layer": "passengerrailstations",
   minzoom: 9,
   paint: {
