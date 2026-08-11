@@ -323,7 +323,11 @@ const VisionMap = ({ selectedLayer }) => {
           "https://arcgis.dvrpc.org/portal/rest/services/planning/lrp_2050_landusevision/FeatureServer/0/query?where=1%3D1&fullText=&objectIds=&time=&geometry=&geometryType=esriGeometryEnvelope&inSR=&defaultSR=&spatialRel=esriSpatialRelIntersects&distance=&units=esriSRUnit_Foot&relationParam=&outFields=*&returnGeometry=true&maxAllowableOffset=&geometryPrecision=&outSR=&havingClause=&gdbVersion=&historicMoment=&returnDistinctValues=false&returnIdsOnly=false&returnCountOnly=false&returnExtentOnly=false&orderByFields=&groupByFieldsForStatistics=&outStatistics=&returnZ=false&returnM=false&multipatchOption=xyFootprint&resultOffset=&resultRecordCount=&returnTrueCurves=false&returnExceededLimitFeatures=false&quantizationParameters=&returnCentroid=false&returnEnvelope=false&timeReferenceUnknownClient=false&maxRecordCountFactor=&sqlFormat=none&resultType=&featureEncoding=esriDefault&datumTransformation=&cacheHint=false&f=geojson"
         }
       >
-        <Layer {...landuse} layout={visibilityLayout(visibleLayers.landuse)} />
+        <Layer
+          {...landuse}
+          beforeId="dvrpcnt"
+          layout={visibilityLayout(visibleLayers.landuse)}
+        />
       </Source>
       <Source
         id="lrp_2050_planningcenters"
@@ -332,11 +336,12 @@ const VisionMap = ({ selectedLayer }) => {
       >
         <Layer
           {...planningcenters.fill}
+          beforeId="dvrpcnt"
           layout={visibilityLayout(visibleLayers.planningcenters)}
         />
         <Layer
-          beforeId="county-outline"
           {...planningcenters.outline}
+          beforeId="dvrpcnt"
           layout={visibilityLayout(visibleLayers.planningcentersoutline)}
         />
       </Source>
@@ -347,6 +352,7 @@ const VisionMap = ({ selectedLayer }) => {
       >
         <Layer
           {...railLines}
+          beforeId="dvrpcnt"
           layout={visibilityLayout(visibleLayers.raillines)}
         />
       </Source>
@@ -357,6 +363,7 @@ const VisionMap = ({ selectedLayer }) => {
       >
         <Layer
           {...stationDef}
+          beforeId="dvrpcnt"
           layout={visibilityLayout(visibleLayers.transitstations)}
         />
       </Source>
@@ -369,6 +376,7 @@ const VisionMap = ({ selectedLayer }) => {
       >
         <Layer
           {...glassboro}
+          beforeId="dvrpcnt"
           layout={visibilityLayout(visibleLayers.glassboro)}
         />
       </Source>

@@ -1,16 +1,12 @@
 import React, { useState, useCallback, useRef, useContext } from "react"
-import Map, {
-  useControl,
-  Source,
-  Layer,
-  Popup,
-  NavigationControl,
-} from "react-map-gl/mapbox"
+import Map, { useControl, Popup, NavigationControl } from "react-map-gl/mapbox"
 import "mapbox-gl/dist/mapbox-gl.css"
 import { LngLatBounds } from "mapbox-gl"
 import AppContext from "./AppContext"
 import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder"
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css"
+import Bounds from "./bounds"
+import WhatBounds from "./whatbounds"
 
 const GeocoderControl = props => {
   const ctrl = useControl(
@@ -43,6 +39,7 @@ const DVRPCMap = ({
   baseStyle = "",
   disableCounty = false,
   disableMuni = false,
+  useStyleSlots = false,
 }) => {
   const { mapRef, clickedFeature, setClickedFeature, onHover, onHoverLeave } =
     useContext(AppContext)
@@ -98,54 +95,12 @@ const DVRPCMap = ({
             alt="DVRPC logo"
           />
         </div>
+        {useStyleSlots ? (
+          <WhatBounds disableCounty={disableCounty} disableMuni={disableMuni} />
+        ) : (
+          <Bounds disableCounty={disableCounty} disableMuni={disableMuni} />
+        )}
         {children}
-        <Source
-          id="boundaries"
-          type="vector"
-          url="https://tiles.dvrpc.org/data/dvrpc-municipal.json"
-        >
-          <Layer
-            id="dvrpcnt"
-            type="fill"
-            source-layer="county"
-            slot="bottom"
-            paint={{
-              "fill-color": "#B6C1C6",
-              "fill-opacity": 0.6,
-            }}
-            filter={["!=", "dvrpc", "Yes"]}
-          />
-
-          <Layer
-            id="municipality-outline"
-            type="line"
-            slot="middle"
-            source-layer="municipalities"
-            paint={{
-              "line-width": 1,
-              "line-color": "#808080",
-            }}
-            filter={["!=", "dvrpc", "No"]}
-            layout={{
-              visibility: disableMuni ? "none" : "visible",
-            }}
-          />
-
-          <Layer
-            id="county-outline"
-            type="line"
-            slot="middle"
-            source-layer="county"
-            paint={{
-              "line-width": 2.5,
-              "line-color": "#808080",
-            }}
-            filter={["!=", "dvrpc", "No"]}
-            layout={{
-              visibility: disableCounty ? "none" : "visible",
-            }}
-          />
-        </Source>
       </Map>
     </div>
   )
