@@ -378,12 +378,6 @@ main
 
 @media screen and (max-width: 1300px) {
   #mrp-box-1 {
-    height: 30rem;
-  }
-}
-
-@media screen and (max-width: 933px) {
-  #mrp-box-1 {
     height: 100%;
   }
 }

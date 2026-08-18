@@ -219,6 +219,10 @@ const MrpWebmap = () => {
               View the MRPs in Table Format
             </Link>
             <div className="relative w-full overflow-hidden">
+              <div
+                aria-hidden="true"
+                className="absolute inset-[5%] bg-[#6c4473]"
+              />
               <img
                 id="mrp-box-1"
                 src={FundingBox1}
