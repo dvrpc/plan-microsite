@@ -492,8 +492,8 @@ const WhatIsThePlan = () => {
   return (
     <Layout>
       <div className="flex flex-col items-center">
-        <div className="w-full h-full">
-          <img src={Bg} className="absolute object-cover h-2/5 w-full" />
+        <div className="relative w-full h-24 md:h-[10vw] max-h-40">
+          <img src={Bg} className="absolute inset-0 object-cover h-full w-full" />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline text-white" to="/">
               Home
@@ -504,7 +504,7 @@ const WhatIsThePlan = () => {
             <Link className="text-white">Needs & Revenue</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               How Will We Fund the Future?

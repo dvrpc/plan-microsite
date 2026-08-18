@@ -76,11 +76,11 @@ const Vision = () => {
   return (
     <Layout>
       <div className="flex flex-col items-center">
-        <div className="w-full h-full">
+        <div className="relative w-full h-24 md:h-[10vw] max-h-40">
           <img
             alt="Stylized image of the DVPRC region."
             src={Bg}
-            className="absolute object-cover h-2/5 w-full"
+            className="absolute inset-0 object-cover h-full w-full"
           />
           <div className="flex text-white font-bold md:w-[68%] mx-auto md:px-7 px-10 z-50 relative items-center mt-4">
             <Link className="underline text-white" to="/">
@@ -92,7 +92,7 @@ const Vision = () => {
             <Link className="text-white">Regional Vision</Link>
           </div>
         </div>
-        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4 mt-[10%]">
+        <div className="text-[#dfebf5] w-full bg-[#0c2e39] flex flex-col relative px-10 py-6 space-y-4">
           <div className="md:w-[68%] mx-auto space-y-4">
             <h2 className="md:text-3xl text-xl font-bold">
               What Do We Want the Region to Look Like in 2050?
