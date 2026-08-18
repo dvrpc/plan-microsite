@@ -271,7 +271,6 @@ const WhatIsThePlan = () => {
         </div>
 
         <div className="md:w-[68%] relative border-l-4 border-[#0c2e39] flex flex-col">
-          <div className="ml-auto">text</div>
           <div className="flex flex-col space-y-4 md:m-6 m-2 text-[#063446]">
             {selectedTab === 0 && (
               <>
