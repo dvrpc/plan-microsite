@@ -72,6 +72,15 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             </a>
             .
           </p>
+          <small>
+            <b>Data Source:</b> DVRPC, DVRPC 2050 Pop Employment, 2026.{" "}
+            <a
+              className="underline text-white"
+              href="https://catalog.dvrpc.org/dataset/dvrpc-2050-population-employment-forecasts-zonal-data-municipalities-version-2-1"
+            >
+              Get the data
+            </a>
+          </small>
         </TabPanels>
       </TabGroup>
     </div>
@@ -167,12 +176,6 @@ const WhatIsThePlan = () => {
                 municipality in 2050
               </li>
             </ul>
-            <a
-              className="underline"
-              href="https://catalog.dvrpc.org/dataset/dvrpc-2050-population-employment-forecasts-zonal-data-municipalities-version-2-1"
-            >
-              Get Data
-            </a>
           </div>
         </div>
         <div className="relative h-full w-full">

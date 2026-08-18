@@ -180,6 +180,15 @@ const Vision = () => {
                   and where investments in housing, infrastructure, and jobs can
                   have the greatest impact.
                 </p>
+                <small>
+                  <b>Data Source:</b> DVRPC, DVPRC LRP, 2026.{" "}
+                  <a
+                    className="underline text-white"
+                    href="https://catalog.dvrpc.org/dataset/?q=LRP"
+                  >
+                    Get the data
+                  </a>
+                </small>
               </div>
             </div>
 

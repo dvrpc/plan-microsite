@@ -119,15 +119,6 @@ const MrpWebmap = () => {
                 View full featured map
               </a>
             </p>
-            <p>
-              <a
-                className="underline"
-                href="https://catalog.dvrpc.org/dataset/?q=MRP"
-                target="_blank"
-              >
-                Get Data
-              </a>
-            </p>
             <div className="relative flex">
               <Legend
                 visibleFunding={visibleFunding}
@@ -141,6 +132,15 @@ const MrpWebmap = () => {
               </button>
               <MrpMap visibleFunding={visibleFunding} />
             </div>
+            <small>
+              <b>Data Source:</b> DVRPC, Connections 2050 MRP, 2026.{" "}
+              <a
+                className="underline"
+                href="https://catalog.dvrpc.org/dataset/?q=MRP"
+              >
+                Get the data
+              </a>
+            </small>
 
             <Modal toggleModal={toggleModal}>
               <div className="space-y-4 p-4">
