@@ -250,6 +250,12 @@ const Resources = () => {
               >
                 Visit Our Stay Connected Page to Get Started
               </Link>
+              <Link
+                className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
+                to="https://www.surveymonkey.com/r/LZB58KR"
+              >
+                Take our short survey
+              </Link>
             </div>
           </div>
         </div>
