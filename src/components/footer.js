@@ -31,7 +31,7 @@ const Footer = () => {
             className="!pl-0 text-white underline"
             href="https://www.dvrpc.org/plan"
           >
-            Long-Range Planning Home
+            Long-Range Plan
           </a>
           <a
             href="https://apps.dvrpc.org/ords/r/dvrpcintranetapps/lrp-comment/comment-list"
