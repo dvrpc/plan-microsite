@@ -17,7 +17,11 @@ const Footer = () => {
         </Link>
       </div>
       <div className="bg-[#16819a] md:px-16 md:py-6 p-4">
-        <Link to="https://www.dvrpc.org">
+        <Link
+          to="https://www.dvrpc.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Dvrpc fill="#dfebf5" className="md:w-[10%] w-1/3" alt="DVRPC Logo" />
         </Link>
         <p>
@@ -30,12 +34,16 @@ const Footer = () => {
           <a
             className="!pl-0 text-white underline"
             href="https://www.dvrpc.org/plan"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Long-Range Plan
           </a>
           <a
             href="https://apps.dvrpc.org/ords/r/dvrpcintranetapps/lrp-comment/comment-list"
             className="text-white underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Public Comments
           </a>
@@ -45,6 +53,8 @@ const Footer = () => {
           <a
             href="https://www.dvrpc.org/getinvolved"
             className="text-white underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Get Involved
           </a>

@@ -271,6 +271,8 @@ const VisionMap = ({ selectedLayer }) => {
                     <a
                       href={section.dataUrl}
                       className="shrink-0 text-xs font-bold underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       View data
                     </a>

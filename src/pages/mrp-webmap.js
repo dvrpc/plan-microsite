@@ -137,6 +137,8 @@ const MrpWebmap = () => {
               <a
                 className="underline"
                 href="https://catalog.dvrpc.org/dataset/?q=MRP"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Get the data
               </a>
@@ -163,7 +165,11 @@ const MrpWebmap = () => {
                   to view a list of <strong>Unmapped</strong> and{" "}
                   <strong>Illustrative</strong> projects, see Appendix
                   F—Financial Plan, linked from{" "}
-                  <a href="https://www.dvrpc.org/plan" target="_blank">
+                  <a
+                    href="https://www.dvrpc.org/plan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     https://www.dvrpc.org/plan
                   </a>
                   .
@@ -239,6 +245,8 @@ const MrpWebmap = () => {
                   <a
                     href="https://www.dvrpc.org/congestionmanagement/"
                     className="underline text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Congestion Management Process (CMP)
                   </a>

@@ -177,6 +177,8 @@ const Resources = () => {
                   <a
                     href="https://www.dvrpc.org/plan/"
                     className="underline text-[#26428b]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Long-Range Plan Home Page
                   </a>
@@ -185,6 +187,8 @@ const Resources = () => {
                   <a
                     href="https://www.dvrpc.org/tip/"
                     className="underline text-[#26428b]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Transportation Improvement Program (TIP)
                   </a>
@@ -193,6 +197,8 @@ const Resources = () => {
                   <a
                     href="https://www.dvrpc.org/congestionmanagement/"
                     className="underline text-[#26428b]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Congestion Management Process (CMP)
                   </a>
@@ -201,6 +207,8 @@ const Resources = () => {
                   <a
                     href="https://www.dvrpc.org/economic/"
                     className="underline text-[#26428b]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Comprehensive Economic Development Strategy (CEDS)
                   </a>
@@ -209,6 +217,8 @@ const Resources = () => {
                   <a
                     href="https://www.dvrpc.org/transportation/safety/visionzero"
                     className="underline text-[#26428b]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Regional Vision Zero
                   </a>
@@ -217,6 +227,8 @@ const Resources = () => {
                   <a
                     href="https://www.dvrpc.org/airquality/conformity/"
                     className="underline text-[#26428b]"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Air Quality Conformity
                   </a>
@@ -247,12 +259,16 @@ const Resources = () => {
               <Link
                 className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
                 to="https://www.dvrpc.org/getinvolved"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Visit Our Stay Connected Page to Get Started
               </Link>
               <Link
                 className="md:text-2xl text-lg mx-auto p-2 bg-[#063446] text-white my-4"
                 to="https://www.surveymonkey.com/r/LZB58KR"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Take our short survey
               </Link>

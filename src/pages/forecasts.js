@@ -67,6 +67,8 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             <a
               className="text-white underline"
               href="https://www.dvrpc.org/webmaps/popempforecasts/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               View the full featured map
             </a>
@@ -77,6 +79,8 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             <a
               className="underline text-white"
               href="https://catalog.dvrpc.org/dataset/dvrpc-2050-population-employment-forecasts-zonal-data-municipalities-version-2-1"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Get the data
             </a>

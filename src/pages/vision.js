@@ -153,6 +153,8 @@ const Vision = () => {
             <a
               className="underline"
               href="https://catalog.dvrpc.org/dataset/?q=LRP"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Get Data
             </a>
@@ -185,6 +187,8 @@ const Vision = () => {
                   <a
                     className="underline text-white"
                     href="https://catalog.dvrpc.org/dataset/?q=LRP"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Get the data
                   </a>

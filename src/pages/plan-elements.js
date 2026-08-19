@@ -103,6 +103,8 @@ transportation network for all."
                     <a
                       href="https://www.dvrpc.org/webmaps/thecircuit/"
                       className="underline"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Circuit Trails network
                     </a>
