@@ -493,7 +493,10 @@ const WhatIsThePlan = () => {
     <Layout>
       <div className="flex flex-col items-center">
         <div className="relative w-full h-24 md:h-[10vw] max-h-40">
-          <img src={Bg} className="absolute inset-0 object-cover h-full w-full" />
+          <img
+            src={Bg}
+            className="absolute inset-0 object-cover h-full w-full"
+          />
           <div className="flex text-white font-bold w-[68%] mx-auto px-7 z-50 relative items-center mt-4">
             <Link className="underline text-white" to="/">
               Home
@@ -543,7 +546,9 @@ const WhatIsThePlan = () => {
                 <div
                   id="block-1"
                   className="absolute scale-[70%]"
-                  onClick={() => enlarge("block-1", ["block-2", "block-3"])}
+                  onClick={() =>
+                    enlarge("block-1", ["block-2", "block-3", "block-4"])
+                  }
                 >
                   <div className="absolute m-6 text-sm space-y-2 text-[#063446] flex flex-col">
                     <span>
@@ -568,7 +573,9 @@ const WhatIsThePlan = () => {
                 <div
                   id="block-2"
                   className="absolute scale-[70%]"
-                  onClick={() => enlarge("block-2", ["block-1", "block-3"])}
+                  onClick={() =>
+                    enlarge("block-2", ["block-1", "block-3", "block-4"])
+                  }
                 >
                   <div className="absolute m-8 text-sm space-y-2 text-[#063446] flex flex-col">
                     <span>
@@ -577,6 +584,29 @@ const WhatIsThePlan = () => {
                     </span>
                   </div>
                   <img src={Block2} />
+                </div>
+                <div
+                  id="block-4"
+                  className="absolute right-[4vw] top-[8%] z-10 h-[320px] w-[380px] origin-right scale-[70%] cursor-pointer md:right-[-12vw]"
+                  onClick={() =>
+                    enlarge("block-4", ["block-1", "block-2", "block-3"])
+                  }
+                >
+                  <div className="absolute inset-0 flex flex-col gap-3 overflow-hidden px-8 py-7 text-[9px] leading-[1.3] text-[#063446]">
+                    <p>
+                      Each subregion in Pennsylvania and New Jersey receives a
+                      portion of reasonably anticipated federal and state
+                      roadway and transit funding based on the Plan’s vision,
+                      goals, policies, and identified needs.
+                    </p>
+                    <p>
+                      Roadway and transit funds come from{" "}
+                      <strong>separate sources</strong>, and there’s{" "}
+                      <strong>limited flexibility</strong> to move money between
+                      them.
+                    </p>
+                  </div>
+                  <img className="h-full w-full" src={Block1} alt="" />
                 </div>
                 <img
                   alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
