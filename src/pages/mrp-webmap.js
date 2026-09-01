@@ -190,22 +190,22 @@ const MrpWebmap = () => {
                   </thead>
                   <tbody className="divide-y divide-gray-200 bg-white [&>*:nth-child(even)]:bg-gray-100">
                     <tr className="*:py-4 *:px-4">
-                      <td>1</td>
+                      <td className="flex items-center justify-center">1</td>
                       <td>2026–2030 (5)</td>
                       <td>2026–2029 (4)</td>
                     </tr>
                     <tr className="*:py-4 *:px-4">
-                      <td>2</td>
+                      <td className="flex items-center justify-center">2</td>
                       <td>2031–2036 (6)</td>
                       <td>2030–2036 (6)</td>
                     </tr>
                     <tr className="*:py-4 *:px-4">
-                      <td>3</td>
+                      <td className="flex items-center justify-center">3</td>
                       <td>2037–2045 (9)</td>
                       <td>2036–2045 (10)</td>
                     </tr>
                     <tr className="*:py-4 *:px-4">
-                      <td>4</td>
+                      <td className="flex items-center justify-center">4</td>
                       <td>2046–2050 (5)</td>
                       <td>2046–2050 (5)</td>
                     </tr>
