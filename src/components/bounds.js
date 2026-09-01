@@ -20,7 +20,7 @@ const Bounds = ({ disableCounty = false, disableMuni = false }) => (
       type="line"
       source-layer="municipalities"
       beforeId="road-label"
-      paint={{ "line-width": 0.8, "line-color": "#808080" }}
+      paint={{ "line-width": 0.7, "line-color": "#808080" }}
       filter={["!=", "dvrpc", "No"]}
       layout={{ visibility: disableMuni ? "none" : "visible" }}
     />
