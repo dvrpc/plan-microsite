@@ -183,7 +183,9 @@ const Vision = () => {
                   have the greatest impact.
                 </p>
                 <small>
-                  <b>Data Source:</b> DVRPC, DVPRC LRP, 2026.{" "}
+                  <b>Data Source:</b> DVRPC, DVRPC Connections 2050 Land Use
+                  Vision; Long Range Plan 2050 Planning Centers; Passenger Rail;
+                  Passenger Rail Stations, 2026.{" "}
                   <a
                     className="underline text-white"
                     href="https://catalog.dvrpc.org/dataset/?q=LRP"

@@ -75,7 +75,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             .
           </p>
           <small>
-            <b>Data Source:</b> DVRPC, DVRPC 2050 Pop Employment, 2026.{" "}
+            <b>Data Source:</b> DVRPC, DVRPC 2050 Population & Employment, 2026.{" "}
             <a
               className="underline text-white"
               href="https://catalog.dvrpc.org/dataset/dvrpc-2050-population-employment-forecasts-zonal-data-municipalities-version-2-1"
@@ -92,12 +92,12 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
 }
 
 const WhatIsThePlan = () => {
-  const [selectedLayer, setSelectedLayer] = useState("popABS")
+  const [selectedLayer, setSelectedLayer] = useState("pop")
   const [selectedTab, setSelectedTab] = useState(0)
 
   useEffect(() => {
-    if (selectedTab === 0) setSelectedLayer("popABS")
-    else if (selectedTab === 1) setSelectedLayer("empABS")
+    if (selectedTab === 0) setSelectedLayer("pop")
+    else if (selectedTab === 1) setSelectedLayer("emp")
   }, [selectedTab])
 
   const labelMap = {
@@ -208,6 +208,14 @@ const WhatIsThePlan = () => {
                     >
                       <MenuItem>
                         <button
+                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("pop")}
+                        >
+                          2050 Population Forecast
+                        </button>
+                      </MenuItem>
+                      <MenuItem>
+                        <button
                           className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
                           onClick={() => setSelectedLayer("popABS")}
                         >
@@ -222,14 +230,6 @@ const WhatIsThePlan = () => {
                           Percent Change in Population
                         </button>
                       </MenuItem>
-                      <MenuItem>
-                        <button
-                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("pop")}
-                        >
-                          2050 Population Forecast
-                        </button>
-                      </MenuItem>
                     </MenuItems>
                   )}
                   {selectedTab === 1 && (
@@ -238,6 +238,14 @@ const WhatIsThePlan = () => {
                       anchor="bottom end"
                       className="w-52 rounded-xl border bg-white p-1 text-black transition duration-100 ease-out z-[101]"
                     >
+                      <MenuItem>
+                        <button
+                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
+                          onClick={() => setSelectedLayer("emp")}
+                        >
+                          2050 Employment Forecast
+                        </button>
+                      </MenuItem>
                       <MenuItem>
                         <button
                           className="group flex gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
@@ -252,14 +260,6 @@ const WhatIsThePlan = () => {
                           onClick={() => setSelectedLayer("empPER")}
                         >
                           Percent Change in Employment
-                        </button>
-                      </MenuItem>
-                      <MenuItem>
-                        <button
-                          className="group flex items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-white/10 text-left"
-                          onClick={() => setSelectedLayer("emp")}
-                        >
-                          2050 Employment Forecast
                         </button>
                       </MenuItem>
                     </MenuItems>
