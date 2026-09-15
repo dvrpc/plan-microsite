@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
 import Dot from "../images/dot.svg"
@@ -8,15 +8,16 @@ import TransportationMeans from "../images/transportation-means.png"
 import Ai from "../images/ai.png"
 import Tp from "../images/tp@4x.png"
 import Accordion from "../components/accordion"
-import Summary from "../pdf/uc2050 summary posted.pdf"
-import Appendices from "../pdf/uc2050 appendices posted.pdf"
-import A from "../pdf/appendix a - uc2050.pdf"
-import B from "../pdf/appendix b - uc2050.pdf"
-import C from "../pdf/appendix c - uc2050.pdf"
-import D from "../pdf/appendix d - uc2050.pdf"
-import E from "../pdf/appendix e - uc2050.pdf"
-import F from "../pdf/appendix f - uc2050.pdf"
-import G from "../pdf/appendix g - uc2050.pdf"
+const pdfUrl = (filename) => withPrefix(`/pdf/${encodeURIComponent(filename)}`)
+const Summary = pdfUrl("uc2050 summary posted.pdf")
+const Appendices = pdfUrl("uc2050 appendices posted.pdf")
+const A = pdfUrl("appendix a - uc2050.pdf")
+const B = pdfUrl("appendix b - uc2050.pdf")
+const C = pdfUrl("appendix c - uc2050.pdf")
+const D = pdfUrl("appendix d - uc2050.pdf")
+const E = pdfUrl("appendix e - uc2050.pdf")
+const F = pdfUrl("appendix f - uc2050.pdf")
+const G = pdfUrl("appendix g - uc2050.pdf")
 
 const Resources = () => {
   return (
