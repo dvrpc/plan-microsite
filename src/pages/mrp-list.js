@@ -1,17 +1,21 @@
-import React, { useState, useEffect } from "react"
+import React, { useContext, useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Bg from "../images/bg.png"
 import Dot from "../images/dot.svg"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import { ChevronDownIcon } from "@heroicons/react/16/solid"
-import Projects from "../components/projects.json"
+import AppContext from "../components/AppContext"
 import Select from "react-select"
 import Accordion from "../components/accordion"
 import { Tooltip } from "react-tippy"
 
 const MRPList = () => {
-  const projects = { ...Projects }
+  const {
+    mrpProjects: projects,
+    mrpProjectsLoading,
+    mrpProjectsError,
+  } = useContext(AppContext)
   const [state, setState] = useState([])
   const [funding, setFunding] = useState([])
   const [filteredProjects, setFilteredProjects] = useState()
@@ -49,7 +53,9 @@ const MRPList = () => {
   }
 
   useEffect(() => {
-    let projectsCopy = { ...projects }
+    let projectsCopy = Object.fromEntries(
+      Object.entries(projects).map(([key, items]) => [key, [...items]])
+    )
     if (state.length > 0) {
       const states = state.map(option => option.value)
       Object.keys(projectsCopy).map(key => {
@@ -61,7 +67,7 @@ const MRPList = () => {
     if (funding.length > 0) {
       let ret = {}
       funding.map(el => {
-        ret[el.value] = projectsCopy[el.value]
+        ret[el.value] = projectsCopy[el.value] ?? []
       })
       projectsCopy = { ...ret }
     }
@@ -95,7 +101,7 @@ const MRPList = () => {
       )
     }
     setFilteredProjects([...arr])
-  }, [state, funding, setFilteredProjects, filter, sortKey, sortKeyHist])
+  }, [projects, state, funding, filter, sortKey, sortKeyHist])
 
   return (
     <Layout>
@@ -222,6 +228,13 @@ const MRPList = () => {
         <div className="w-full bg-[#eaf3fb] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className="flex flex-col space-y-4 md:p-6 p-2 pt-0 overflow-x-auto">
+              {mrpProjectsLoading && <p role="status">Loading projects…</p>}
+              {mrpProjectsError && <p role="alert">{mrpProjectsError}</p>}
+              {!mrpProjectsLoading &&
+                !mrpProjectsError &&
+                filteredProjects?.length === 0 && (
+                  <p role="status">No projects match your filters.</p>
+                )}
               <table className="table-auto">
                 <thead className="text-left">
                   <tr className="*:py-4 *:px-4">
