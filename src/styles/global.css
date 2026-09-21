@@ -364,6 +364,43 @@ main
   background-color: #6c4473 !important;
 }
 
+.tippy-tooltip.financial-purple-theme {
+  --financial-tooltip-color: #714876;
+}
+
+.tippy-tooltip.financial-blue-theme {
+  --financial-tooltip-color: #0078ae;
+}
+
+.tippy-tooltip.financial-green-theme {
+  --financial-tooltip-color: #24964f;
+}
+
+.tippy-tooltip.financial-teal-theme {
+  --financial-tooltip-color: #20a9a6;
+}
+
+.tippy-tooltip.financial-lavender-theme {
+  --financial-tooltip-color: #6f6688;
+}
+
+.tippy-tooltip.financial-cyan-theme {
+  --financial-tooltip-color: #009eb8;
+}
+
+.tippy-tooltip.financial-dark-green-theme {
+  --financial-tooltip-color: #026227;
+}
+
+.tippy-tooltip.financial-theme {
+  background-color: var(--financial-tooltip-color);
+  color: #fff;
+}
+
+.tippy-tooltip.financial-theme [x-circle] {
+  background-color: var(--financial-tooltip-color) !important;
+}
+
 @media screen and (min-width: 764px) and (max-width: 1055px) {
   #mrp-map-text {
     padding-left: 13%;

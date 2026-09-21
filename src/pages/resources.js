@@ -8,7 +8,7 @@ import TransportationMeans from "../images/transportation-means.png"
 import Ai from "../images/ai.png"
 import Tp from "../images/tp@4x.png"
 import Accordion from "../components/accordion"
-const pdfUrl = (filename) => withPrefix(`/pdf/${encodeURIComponent(filename)}`)
+const pdfUrl = filename => withPrefix(`/pdf/${encodeURIComponent(filename)}`)
 const Summary = pdfUrl("uc2050 summary posted.pdf")
 const Appendices = pdfUrl("uc2050 appendices posted.pdf")
 const A = pdfUrl("appendix a - uc2050.pdf")
@@ -127,7 +127,7 @@ const Resources = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    E - Financial Plan
+                    E - Future Funding Outlook
                   </a>
                 </li>
                 <li className="ml-8">
@@ -137,7 +137,7 @@ const Resources = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    F - Future Funding Outlook
+                    F - Financial Plan
                   </a>
                 </li>
                 <li className="ml-8">
@@ -206,7 +206,7 @@ const Resources = () => {
                 </li>
                 <li>
                   <a
-                    href="https://www.dvrpc.org/economic/"
+                    href="https://www.dvrpc.org/our-work/economic-development/comprehensive-economic-development-strategy"
                     className="underline text-[#26428b]"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -350,7 +350,7 @@ const Resources = () => {
                   , which provides centralized access to all DVRPC datasets and
                   mapping applications. Simply filter by the{" "}
                   <a
-                    href="https://catalog.dvrpc.org/dataset/?category=Long-Range+Plan"
+                    href="https://catalog.dvrpc.org/dataset/long-range-plan-2050-planning-areas"
                     target="_blank"
                     className="underline"
                   >

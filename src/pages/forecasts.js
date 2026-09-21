@@ -293,7 +293,7 @@ const WhatIsThePlan = () => {
                 </p>
                 <p>
                   The region’s population is also <strong>getting older</strong>
-                  . Fewer births and longer lifespans, mean that by 2050, the
+                  . Fewer births and longer lifespans mean that by 2050 the
                   share of residents aged{" "}
                   <strong>65 and older will grow by nearly 50%</strong>, while
                   those under 30 will decline slightly. This shift mirrors

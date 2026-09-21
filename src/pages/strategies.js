@@ -152,7 +152,7 @@ const WhatIsThePlan = () => {
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
               Even though each goal and strategy shows up just once,
-              crosscutting themes&mdash;like how goods move around the region,
+              cross-cutting themes&mdash;like how goods move around the region,
               how we use land, how easy it is to get where you need to go, and
               how we use new technology&mdash;pop up throughout the plan.
             </p>
@@ -241,11 +241,11 @@ const WhatIsThePlan = () => {
                       {filteredStrategies[idx - 1]?.element !==
                         strategy.element && (
                         <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
-                          Strategies for Achieving{" "}
+                          Strategies for Achieving Our{" "}
                           <span style={{ color: elementHex[strategy.element] }}>
                             {strategy.element}
                           </span>{" "}
-                          Our Goals
+                          Goals
                         </h2>
                       )}
                       <div className="flex items-start space-x-2">

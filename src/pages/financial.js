@@ -94,10 +94,10 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         onChange={setSelectedIndex}
       >
         <TabList className="flex text-white -mt-20 md:w-1/4 w-1/2">
-          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#063446] data-[selected]:text-[#063446] [&:not([data-selected])]:text-white w-1/2 rounded-t-lg h-20">
+          <Tab className="p-3 font-bold data-[selected]:bg-[#063446] [&:not([data-selected])]:bg-white data-[selected]:text-white [&:not([data-selected])]:text-[#063446] w-1/2 rounded-t-lg h-20">
             Roadway
           </Tab>
-          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#063446] data-[selected]:text-[#063446] [&:not([data-selected])]:text-white w-1/2 rounded-t-lg h-20">
+          <Tab className="p-3 font-bold data-[selected]:bg-[#063446] [&:not([data-selected])]:bg-white data-[selected]:text-white [&:not([data-selected])]:text-[#063446] w-1/2 rounded-t-lg h-20">
             Transit
           </Tab>
         </TabList>
@@ -166,7 +166,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={NjTransitPm} />
                     <div className="relative mt-auto">
                       <Tooltip
-                        theme="tomato"
+                        theme="financial financial-purple"
                         title="Repairs and upgrades transit vehicles, facilities, and infrastructure to keep the system safe, reliable, and accessible."
                         position="top"
                         trigger="click"
@@ -191,7 +191,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={NjTransitOp} className="w-7 mx-auto" />
                     <div className="relative mt-auto">
                       <Tooltip
-                        theme="tomato"
+                        theme="financial financial-blue"
                         title="Enhances transit service and performance through operational upgrades, technology, and targeted capacity improvements."
                         position="top"
                         trigger="click"
@@ -216,7 +216,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={NjTransitExp} />
                     <div className="relative mt-auto">
                       <Tooltip
-                        theme="tomato"
+                        theme="financial financial-green"
                         title="Builds new transit routes, stations, and services to expand access and connect more people to the region."
                         position="top"
                         trigger="click"
@@ -245,7 +245,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                     <img src={NjTransitOther} className="w-3 mx-auto" />
                     <div className="relative mt-auto">
                       <Tooltip
-                        theme="tomato"
+                        theme="financial financial-teal"
                         title="Covers required transit expenses such as leases, environmental work, and debt payments that keep the system functioning."
                         position="top"
                         trigger="click"
@@ -316,7 +316,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayPpm} />
                   <div className="relative mt-auto">
                     <Tooltip
-                      theme="tomato"
+                      theme="financial financial-purple"
                       title="Keeps roads in good condition by resurfacing, repairing, and upgrading pavement and essential roadway features."
                       position="top"
                       trigger="click"
@@ -339,7 +339,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayBp} />
                   <div className="relative mt-auto">
                     <Tooltip
-                      theme="tomato"
+                      theme="financial financial-lavender"
                       title="Maintains and repairs bridges to keep them safe, reliable, and structurally sound for all users."
                       position="top"
                       trigger="click"
@@ -362,7 +362,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwaySs} className="w-3 mx-auto" />
                   <div className="relative mt-auto">
                     <Tooltip
-                      theme="tomato"
+                      theme="financial financial-cyan"
                       title="Funds targeted improvements that reduce serious crashes and support the Vision Zero goal."
                       position="top"
                       trigger="click"
@@ -384,7 +384,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <StatList need="$4.8 B" funding="$2.3 B" allocation="14%" />
                   <div className="relative mt-auto">
                     <Tooltip
-                      theme="tomato"
+                      theme="financial financial-blue"
                       title="Improves how the existing transportation system works by reducing congestion and using technology to move people and goods more efficiently."
                       position="top"
                       trigger="click"
@@ -408,7 +408,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayRe} className="w-10 mx-auto" />
                   <div className="relative mt-auto">
                     <Tooltip
-                      theme="tomato"
+                      theme="financial financial-green"
                       title="Adds or extends roadway capacity in limited ways to relieve bottlenecks and improve connections and mobility."
                       position="top"
                       trigger="click"
@@ -431,7 +431,7 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
                   <img src={NjRoadwayGt} />
                   <div className="relative mt-auto">
                     <Tooltip
-                      theme="tomato"
+                      theme="financial financial-dark-green"
                       title="Expands walking, biking, and community-focused projects that improve mobility while reducing environmental impacts."
                       position="top"
                       trigger="click"

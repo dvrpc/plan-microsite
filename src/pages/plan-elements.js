@@ -173,8 +173,8 @@ transportation network for all."
                       traveled.
                     </p>
                     <p>
-                      Fewer people driving alone, more people are traveling by
-                      resource-efficient mobility options, such as walking,
+                      Fewer people driving alone, more people traveling by
+                      resource-efficient mobility options such as walking,
                       biking, and taking transit, and reduced air pollution
                       through the use of twenty-first-century technologies.
                     </p>

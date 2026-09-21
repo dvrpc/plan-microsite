@@ -365,6 +365,7 @@ const VisionMap = ({ selectedLayer }) => {
       >
         <Layer
           {...stationDef}
+          filter={["!=", stationDef.paint["circle-color"], "#cccccc"]}
           beforeId="dvrpcnt"
           layout={visibilityLayout(visibleLayers.transitstations)}
         />

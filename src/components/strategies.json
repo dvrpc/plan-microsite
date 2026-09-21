@@ -12,7 +12,7 @@
             "tags": ["DVRPC"]
           },
           {
-            "description": "Use government procurement to advance vehicle safety technologies, such as lane keeping and frontend collision avoidance.",
+            "description": "Use government procurement to advance vehicle safety technologies, such as lane keeping and front-end collision avoidance.",
             "tags": ["Municipalities", "Counties"]
           },
           {
@@ -320,7 +320,7 @@
         "element": "Economy",
         "actions": [
           {
-            "description": "Partner with anchor institutions and private-sector stakeholders to establish, grow, and maintain innovation districts—especially in transit-accessible, mixeduse areas. These districts require supportive zoning, infrastructure investments, and public amenities to attract talent and foster collaboration.",
+            "description": "Partner with anchor institutions and private-sector stakeholders to establish, grow, and maintain innovation districts—especially in transit-accessible, mixed-use areas. These districts require supportive zoning, infrastructure investments, and public amenities to attract talent and foster collaboration.",
             "tags": [
               "Municipalities",
               "Counties",
@@ -476,7 +476,7 @@
             "tags": ["Municipalities", "Counties", "Nonprofits"]
           },
           {
-            "description": "Prioritize infrastructure and other investments in the region’s Centers (See Appendix B—Demographics & Land Use). ",
+            "description": "Prioritize infrastructure and other investments in the region’s Centers.",
             "tags": ["Counties", "DVRPC"]
           },
           {
@@ -596,7 +596,7 @@
             "tags": ["Municipalities", "Counties", "DOTs", "State Agencies"]
           },
           {
-            "description": "Provide data, tools, coordination and technical assistance to refine and help implement preservation frameworks such as the DVRPCGreenspace Network.",
+            "description": "Provide data, tools, coordination and technical assistance to refine and help implement preservation frameworks such as the DVRPC and Greenspace Network.",
             "tags": ["DVRPC"]
           },
           {
@@ -799,7 +799,7 @@
             ]
           },
           {
-            "description": "Support cleaner fuels, and implement more stringent vehicle pollutant standards; provide incentives for no and low-carbon vehicles and related infrastructure; electrify fleets; deploy charging facilities; enforce anti-idling policies. ",
+            "description": "Support cleaner fuels, and implement more stringent vehicle pollutant standards; provide incentives for no- and low-carbon vehicles and related infrastructure; electrify fleets; deploy charging facilities; enforce anti-idling policies. ",
             "tags": [
               "Municipalities",
               "Counties",

@@ -176,16 +176,16 @@ const Vision = () => {
                   rural landscapes to preserve, and green spaces that link them
                   together.
                 </p>
-                <strong>Planned Centers:</strong>
+                <strong>Plan Centers:</strong>
                 <p>
                   Identifies specific Centers where future growth is prioritized
                   and where investments in housing, infrastructure, and jobs can
                   have the greatest impact.
                 </p>
                 <small>
-                  <b>Data Source:</b> DVRPC, DVRPC Connections 2050 Land Use
-                  Vision; Long Range Plan 2050 Planning Centers; Passenger Rail;
-                  Passenger Rail Stations, 2026.{" "}
+                  <b>Data Source:</b> DVRPC, DVRPC U:C2050 Land Use Vision; Long
+                  Range Plan 2050 Planning Centers; Passenger Rail; Passenger
+                  Rail Stations, 2026.{" "}
                   <a
                     className="underline text-white"
                     href="https://catalog.dvrpc.org/dataset/?q=LRP"
