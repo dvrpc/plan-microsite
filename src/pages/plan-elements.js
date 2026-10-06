@@ -174,7 +174,7 @@ transportation network for all."
                     </p>
                     <p>
                       Fewer people driving alone, more people traveling by
-                      resource-efficient mobility options such as walking,
+                      resource-efficient mobility options, such as walking,
                       biking, and taking transit, and reduced air pollution
                       through the use of twenty-first-century technologies.
                     </p>

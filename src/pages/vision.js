@@ -164,11 +164,11 @@ const Vision = () => {
         <div className="relative h-full w-full">
           <div className="flex h-full md:flex-row flex-col">
             <div className="md:w-2/5 z-[100] flex md:min-h-full">
-              <div className="bg-[#093446] p-3 text-white flex-1 space-y-2 md:pl-[33%]">
+              <div className="bg-[#093446] p-3 text-white flex-1 md:pl-[33%]">
                 <p className="italic">
                   Use the interactive map to explore this vision in two layers:
                 </p>
-                <strong>Land Use:</strong>
+                <h3 className="mt-2">Land Use:</h3>
                 <p>
                   Shows how the region can grow in smart, balanced ways by
                   aligning future development with existing infrastructure. It
@@ -176,7 +176,7 @@ const Vision = () => {
                   rural landscapes to preserve, and green spaces that link them
                   together.
                 </p>
-                <strong>Plan Centers:</strong>
+                <h3 className="mt-2">Plan Centers:</h3>
                 <p>
                   Identifies specific Centers where future growth is prioritized
                   and where investments in housing, infrastructure, and jobs can
@@ -188,7 +188,7 @@ const Vision = () => {
                   Rail Stations, 2026.{" "}
                   <a
                     className="underline text-white"
-                    href="https://catalog.dvrpc.org/dataset/?q=LRP"
+                    href="https://catalog.dvrpc.org/dataset/update-connections-2050-long-range-plan-centers"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
