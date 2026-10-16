@@ -143,6 +143,20 @@ const Trends = () => {
                 around <strong>privacy, copyright, bias, resource use</strong>,
                 and community impact.
               </p>
+              <p>
+                Beyond transportation, AI can change job tasks and the skills
+                employers need, with implications for workers, businesses, and
+                the regional economy. Productivity gains and new opportunities
+                may be unevenly distributed, making workforce training and
+                access to these tools important considerations.
+              </p>
+              <p>
+                The data centers supporting AI also bring planning questions for
+                communities. Their electricity and cooling needs can add demand
+                for energy and water, requiring coordination among local
+                governments, utilities, and residents as communities weigh
+                economic opportunities and infrastructure needs.
+              </p>
               <h4 className="mx-auto text-[#16819a] font-bold text-lg font-[scriptorama-markdown-jf]">
                 AI PROCESSING FOR TRANSPORTATION
               </h4>
@@ -159,7 +173,7 @@ const Trends = () => {
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold ">
-                Ridesharing and Automated Vehicle Programs
+                Ridesharing, E-Micromobility, and Automated Vehicle Programs
               </h2>
             </div>
             <div className="flex flex-col space-y-4 md:p-6 md:pt-0 p-2">
@@ -209,6 +223,15 @@ const Trends = () => {
                 and Conshohocken Cab. While these services show promise, they
                 can be expensive and are designed to complement, rather than
                 replace, existing fixed-route transit options.
+              </p>
+              <p>
+                E-micromobility, including electric bicycles and scooters, can
+                expand options for short trips and connections to transit. These
+                devices also raise safety concerns for riders and people
+                walking, particularly where they share space with faster or
+                heavier vehicles. Safe street design, connected bicycle
+                facilities, and clear operating and parking guidance can help
+                communities support these options while protecting all users.
               </p>
             </div>
           </div>

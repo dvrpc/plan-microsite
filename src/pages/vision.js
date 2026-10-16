@@ -152,7 +152,7 @@ const Vision = () => {
             </p>
             <a
               className="underline"
-              href="https://catalog.dvrpc.org/dataset/?q=LRP"
+              href="https://catalog.dvrpc.org/dataset/update-connections-2050-long-range-plan-centers"
               target="_blank"
               rel="noopener noreferrer"
             >

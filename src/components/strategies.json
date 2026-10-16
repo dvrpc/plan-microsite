@@ -9,15 +9,24 @@
         "actions": [
           {
             "description": "Conduct analysis, support planning, and coordinate efforts among agencies to implement and prioritize Regional Vision Zero initiatives. ",
-            "tags": ["DVRPC"]
+            "tags": [
+              "DVRPC"
+            ]
           },
           {
             "description": "Use government procurement to advance vehicle safety technologies, such as lane keeping and front-end collision avoidance.",
-            "tags": ["Municipalities", "Counties"]
+            "tags": [
+              "Municipalities",
+              "Counties"
+            ]
           },
           {
             "description": "Adopt Safe Routes to School programs with attention to pedestrian amenities, including safe sidewalks, crossing signals, and street lighting.",
-            "tags": ["Municipalities", "Counties", "DOTs"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "DOTs"
+            ]
           },
           {
             "description": "Design projects using Safe Systems principles and implement proven safety countermeasures, ADA upgrades, and pedestrian-focused infrastructure.",
@@ -31,11 +40,18 @@
           },
           {
             "description": "Partner with community organizations to conduct culturally competent outreach—such as listening sessions, translated materials, and neighborhood pop-ups—to better serve transit-reliant populations, including seniors, people with disabilities, low-income residents, and immigrants.",
-            "tags": ["Municipalities", "Transit Agencies"]
+            "tags": [
+              "Municipalities",
+              "Transit Agencies"
+            ]
           },
           {
             "description": "Deploy interoperable technologies and use Traffic Incident Management (TIM) to coordinate emergency response, enhance work zone safety, detect incidents to quickly and safely clear them, and reduce secondary and signalized intersection crashes.",
-            "tags": ["DOTs", "Emergency Responders", "Toll Authorities"]
+            "tags": [
+              "DOTs",
+              "Emergency Responders",
+              "Toll Authorities"
+            ]
           },
           {
             "description": "Develop and strengthen regional transportation infrastructure resiliency, security planning, and cybersecurity measures.",
@@ -57,7 +73,10 @@
         "actions": [
           {
             "description": "Continue to update asset management plans that apply lowest life-cycle cost approaches, prioritize infrastructure preservation in investment decisions, bring infrastructure up to modern design standards when reconstructing facilities, and utilize sustainable construction and maintenance practices.",
-            "tags": ["DOTs", "Transit Agencies"]
+            "tags": [
+              "DOTs",
+              "Transit Agencies"
+            ]
           },
           {
             "description": "Preserve rail rights-of-way and coordinate regional freight plans. Update zoning regulations for truck parking. Update zoning regulations for truck parking and support co-location of infrastructure in transportation corridors.\r",
@@ -102,7 +121,9 @@
         "actions": [
           {
             "description": "Expand rail and bus services and frequency, implement unified fare systems, coordinate scheduling, and enhance first- and last-mile solutions. Offer flexible transit service that can adapt to changing travel demand, including more service between suburban areas and throughout the day. Implement ADA compliance projects at transit stations.",
-            "tags": ["Transit Agencies"]
+            "tags": [
+              "Transit Agencies"
+            ]
           },
           {
             "description": "Collaborate with legislators to generate additional and consistent funding at local, state, and federal levels. Provide policy support for transit expansion.",
@@ -115,15 +136,25 @@
           },
           {
             "description": "Coordinate and implement transit-first strategies such as transit signal priority, off-board fare payment, and dedicated bus lanes in high-ridership locations.",
-            "tags": ["Municipalities", "DOTs", "Transit Agencies"]
+            "tags": [
+              "Municipalities",
+              "DOTs",
+              "Transit Agencies"
+            ]
           },
           {
             "description": "Coordinate and inform regional efforts to improve transit connectivity and integrate multimodal transportation options.",
-            "tags": ["DVRPC"]
+            "tags": [
+              "DVRPC"
+            ]
           },
           {
             "description": "Establish essential service hubs and expand paratransit services for vulnerable populations.",
-            "tags": ["Municipalities", "Counties", "Transit Agencies"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "Transit Agencies"
+            ]
           }
         ]
       },
@@ -135,23 +166,44 @@
         "actions": [
           {
             "description": "Expand pedestrian and bike infrastructure, complete Circuit Trails, and advance multimodal planning. Design facilities for people of all ages and abilities, including public restrooms and places to sit or rest.",
-            "tags": ["Municipalities", "Counties", "DOTs", "DVRPC"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "DOTs",
+              "DVRPC"
+            ]
           },
           {
             "description": "Develop and implement a comprehensive maintenance plan to upkeep a sustained state of good repair.",
-            "tags": ["Municipalities", "Counties", "DOTs", "Transit Agencies"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "DOTs",
+              "Transit Agencies"
+            ]
           },
           {
             "description": "Improve multimodal connections, enhance transit access, and develop integrated data platforms for trip planning.",
-            "tags": ["Municipalities", "DOTs", "Transit Agencies"]
+            "tags": [
+              "Municipalities",
+              "DOTs",
+              "Transit Agencies"
+            ]
           },
           {
             "description": "Develop real-time data, trip routing, and payment systems to support multimodal transportation networks.",
-            "tags": ["Municipalities", "Transit Agencies", "Private\r\nSector"]
+            "tags": [
+              "Municipalities",
+              "Transit Agencies",
+              "Private\r\nSector"
+            ]
           },
           {
             "description": "Support micromobility services like bike share and e-scooters, and implement curbside management to support multimodal use and efficient deliveries.",
-            "tags": ["Municipalities", "Private\r\nSector"]
+            "tags": [
+              "Municipalities",
+              "Private\r\nSector"
+            ]
           }
         ]
       },
@@ -163,27 +215,47 @@
         "actions": [
           {
             "description": "Lead the CMP and regional travel demand management programs.",
-            "tags": ["DVRPC"]
+            "tags": [
+              "DVRPC"
+            ]
           },
           {
             "description": "Promote employer-based strategies that prioritize public transit use, with telework options supported where transit is limited. Expand ridesharing and vanpool programs, including partnerships for seniors without smartphones, and improve service to underserved communities.",
-            "tags": ["Transit Agencies", "TMAs", "Private\r\nSector", "DVRPC"]
+            "tags": [
+              "Transit Agencies",
+              "TMAs",
+              "Private\r\nSector",
+              "DVRPC"
+            ]
           },
           {
             "description": "License and regulate private mobility services to operate only if they serve everyone, share data, integrate with transit and other transportation providers, follow curb regulations, and meet safety standards. Periodically renew licenses if these requirements are being met.",
-            "tags": ["Municipalities", "State Agencies"]
+            "tags": [
+              "Municipalities",
+              "State Agencies"
+            ]
           },
           {
             "description": "Limit new roadway capacity to appropriate areas, as identified by the CMP, and focus construction of new capacity on missing links, priority bottlenecks, and economic development.",
-            "tags": ["DOTs", "DVRPC"]
+            "tags": [
+              "DOTs",
+              "DVRPC"
+            ]
           },
           {
             "description": "Partner with employers, institutions, and transit agencies to implement commuter benefits, such as SEPTA’s Key Advantage and Key Commuter programs, promote ridesharing, and deploy localized mobility solutions.",
-            "tags": ["Transit Agencies", "TMAs"]
+            "tags": [
+              "Transit Agencies",
+              "TMAs"
+            ]
           },
           {
             "description": "Implement advanced integrated traffic signal and transit management systems, and apply integrated corridor management techniques to proactively manage and operate traffic across modes and jurisdictions.",
-            "tags": ["Municipalities", "DOTs", "Transit Agencies"]
+            "tags": [
+              "Municipalities",
+              "DOTs",
+              "Transit Agencies"
+            ]
           }
         ]
       }
@@ -199,15 +271,25 @@
         "actions": [
           {
             "description": "Provide digital skills training across all age groups, with a focus on school-age children.",
-            "tags": ["Nonprofits", "School Districts", "Academia"]
+            "tags": [
+              "Nonprofits",
+              "School Districts",
+              "Academia"
+            ]
           },
           {
             "description": "Partner across sectors to maintain and promote workforce development programs that align with changing industry needs.",
-            "tags": ["PPP"]
+            "tags": [
+              "PPP"
+            ]
           },
           {
             "description": "Offer reskilling and upskilling opportunities for formerly incarcerated individuals to re-enter the workforce.",
-            "tags": ["State Agencies", "Nonprofits", "Private\r\nSector"]
+            "tags": [
+              "State Agencies",
+              "Nonprofits",
+              "Private\r\nSector"
+            ]
           },
           {
             "description": "Develop and expand workforce training programs in clean technologies, public transit services, building efficiency, construction trades, and other job sectors with high demand for skilled labor to develop a pipeline of skilled tradespeople.",
@@ -230,15 +312,24 @@
         "actions": [
           {
             "description": "Offer hands-on support and streamlined guidance to help entrepreneurs navigate business formation processes, including licensing, permitting, and accessing early-stage resources.",
-            "tags": ["Municipalities", "State Agencies", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "State Agencies",
+              "Nonprofits"
+            ]
           },
           {
             "description": "Update zoning codes and land use policies to enable flexible, small-scale production spaces and live-work opportunities that support a range of industries—from light manufacturing and biomanufacturing to circular economy and other innovative business models.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Create training programs and policy supports that improve access to local and regional procurement opportunities, especially for underrepresented or early-stage businesses.",
-            "tags": ["Municipalities", "Private\r\nSector"]
+            "tags": [
+              "Municipalities",
+              "Private\r\nSector"
+            ]
           },
           {
             "description": "Identify and promote appropriate sites for business development across the full life-cycle of emerging and maturing industries, ensuring they can scale, grow jobs, and attract a skilled workforce.",
@@ -251,7 +342,10 @@
           },
           {
             "description": "Strengthen small business networks and cooperative models that foster industry connections and bolster long-term economic resilience.",
-            "tags": ["Nonprofits", "Professional\r\nOrganizations"]
+            "tags": [
+              "Nonprofits",
+              "Professional\r\nOrganizations"
+            ]
           },
           {
             "description": "Provide accessible capital and technical support for innovative, high-impact industries and entrepreneurs creating newer, cleaner, smarter models for manufacturing.",
@@ -284,7 +378,10 @@
           },
           {
             "description": "Modernize freight infrastructure to enhance supply chain efficiency and connectivity.",
-            "tags": ["DOTs", "DVRPC"]
+            "tags": [
+              "DOTs",
+              "DVRPC"
+            ]
           },
           {
             "description": "Enhance access to critical international gateways via landside improvements at maritime ports and airports.",
@@ -300,7 +397,10 @@
           },
           {
             "description": "Identify and preserve key industrial areas, especially those with multimodal transportation access.",
-            "tags": ["Municipalities", "Counties"]
+            "tags": [
+              "Municipalities",
+              "Counties"
+            ]
           },
           {
             "description": "Update zoning and permitting to support agritourism in rural areas and urban indoor farming in developed communities.",
@@ -340,7 +440,10 @@
           },
           {
             "description": "Facilitate innovation in traditionally underserved communities through maker spaces, broadband infrastructure, and STEM education programs that connect local residents with future-facing job opportunities.",
-            "tags": ["Municipalities", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "Nonprofits"
+            ]
           },
           {
             "description": "Promote circular economy principles by supporting business-to-business collaboration, resource-sharing platforms, and practices that reduce waste and improve system efficiency.",
@@ -375,7 +478,10 @@
           },
           {
             "description": "Offer credit-building, financial literacy services, and digital translation tools in multiple languages to serve immigrant communities and those with limited English proficiency.",
-            "tags": ["Municipalities", "Mission-Driven Lending Institutions"]
+            "tags": [
+              "Municipalities",
+              "Mission-Driven Lending Institutions"
+            ]
           },
           {
             "description": "Administer mentorship programs, facilitate employer connections, and provide housing assistance for low-income workers.",
@@ -397,7 +503,9 @@
           },
           {
             "description": "Implement zoning reforms that increase density around transit hubs to connect residents to employment opportunities and to facilitate the spillover benefits associated with the physical clustering of industries and employers.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           }
         ]
       }
@@ -413,43 +521,71 @@
         "actions": [
           {
             "description": "Update land use and zoning regulations to allow for a broader range of housing options (e.g., missing middle housing, ADUs, co-housing, shared housing, and cooperatives).",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Revise zoning and tax policies to allow for densification that preserves existing affordable housing.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Establish incentives or requirements for constructing dedicated affordable housing, with targeted efforts in resource-rich areas.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Streamline land development permitting and expand by-right development.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Engage local developers, real estate professionals, and community members to identify housing needs.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Enact home maintenance programs to help households access and sustain quality housing.",
-            "tags": ["Municipalities", "State Agencies", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "State Agencies",
+              "Nonprofits"
+            ]
           },
           {
             "description": "Integrate housing supply strategies into comprehensive downtown and suburban revitalization plans through data-driven planning and\nregulatory reforms.",
-            "tags": ["Municipalities", "Counties", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "Nonprofits"
+            ]
           },
           {
             "description": "Conduct detailed inventories of land available for housing development, including brownfields and public agency controlled land.",
-            "tags": ["Counties", "State Agencies"]
+            "tags": [
+              "Counties",
+              "State Agencies"
+            ]
           },
           {
             "description": "Encourage the use of lower-cost construction materials and techniques to reduce housing costs, including through updates to building codes.",
-            "tags": ["Municipalities", "Nonprofits", "Private\r\nSector"]
+            "tags": [
+              "Municipalities",
+              "Nonprofits",
+              "Private\r\nSector"
+            ]
           },
           {
             "description": "Build more housing units with a larger variety of housing types and ownership options.",
-            "tags": ["Nonprofits", "Private\r\nSector"]
+            "tags": [
+              "Nonprofits",
+              "Private\r\nSector"
+            ]
           }
         ]
       },
@@ -461,23 +597,36 @@
         "actions": [
           {
             "description": "Update zoning regulations, incentives, and land development standards to support mixed-use infill and transit-oriented development.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Use incentives and flexible standards to encourage adaptive reuse and rehabilitation of underutilized commercial and industrial structures in a way that preserves neighborhood character and supports increased density.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Leverage local land banks, code enforcement, and other tools to address blight, decay, and abandonment, creating opportunities for redevelopment and housing in former commercial and industrial areas.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Inventory and formally protect environmentally sensitive lands, cultural resources, and historic sites, and support redevelopment frameworks that align with community needs and contribute to neighborhood identity.",
-            "tags": ["Municipalities", "Counties", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "Nonprofits"
+            ]
           },
           {
             "description": "Prioritize infrastructure and other investments in the region’s Centers.",
-            "tags": ["Counties", "DVRPC"]
+            "tags": [
+              "Counties",
+              "DVRPC"
+            ]
           },
           {
             "description": "Revise zoning and building codes to avoid development in flood -prone areas and enhance structural resilience against extreme weather events.",
@@ -498,19 +647,33 @@
         "actions": [
           {
             "description": "Develop Complete Streets that prioritize pedestrians, cyclists, and public transit users.",
-            "tags": ["Municipalities", "Counties", "DOTs"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "DOTs"
+            ]
           },
           {
             "description": "Develop and implement parking standards that reduce minimum requirements and better manage existing parking resources.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Launch targeted assistance programs, deploy warning systems, and establish cooling centers to support communities during extreme heat.",
-            "tags": ["Municipalities", "Counties"]
+            "tags": [
+              "Municipalities",
+              "Counties"
+            ]
           },
           {
             "description": "Update local infrastructure with universal design “8 to 80” initiatives, including sidewalks, bus shelters, benches, and public restrooms. Make communities more age-friendly by improving ease of access and transit options for seniors.",
-            "tags": ["Municipalities", "Counties", "Transit Agencies", "TMAs"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "Transit Agencies",
+              "TMAs"
+            ]
           },
           {
             "description": "Seek opportunities to reconnect neighborhoods separated by transportation infrastructure through targeted access improvements that expand connectivity to the broader community.",
@@ -532,15 +695,24 @@
         "actions": [
           {
             "description": "Utilize streetscaping, public art, and placemaking strategies to animate public spaces.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Strengthen the role of neighborhood schools and libraries as community and social centers by partnering with government agencies, healthcare providers, and nonprofits to provide support services—such as health clinics, employment support, food pantries, English language learning opportunities, and/or financial literacy programs—tailored to community needs.",
-            "tags": ["Municipalities", "Nonprofits", "School Districts"]
+            "tags": [
+              "Municipalities",
+              "Nonprofits",
+              "School Districts"
+            ]
           },
           {
             "description": "Partner with community organizations to develop programming and events that intentionally showcase the tapestry of cultures within a community.",
-            "tags": ["Municipalities", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "Nonprofits"
+            ]
           }
         ]
       },
@@ -552,19 +724,31 @@
         "actions": [
           {
             "description": "Share with the public information on how government works and how to get more involved in it, including in K–12 civic education curriculum.",
-            "tags": ["Municipalities", "School Districts"]
+            "tags": [
+              "Municipalities",
+              "School Districts"
+            ]
           },
           {
             "description": "Lead community engagement initiatives that include interpretation and translation services at public meetings.",
-            "tags": ["Municipalities", "School Districts"]
+            "tags": [
+              "Municipalities",
+              "School Districts"
+            ]
           },
           {
             "description": "Empower neighborhood groups and residents to form community organizations that guide decision-making and policy development for their communities.",
-            "tags": ["Municipalities", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "Nonprofits"
+            ]
           },
           {
             "description": "Work with state and local governments to determine data needs, and build local government data management and processing capacity.",
-            "tags": ["Municipalities", "DVRPC"]
+            "tags": [
+              "Municipalities",
+              "DVRPC"
+            ]
           }
         ]
       }
@@ -580,7 +764,11 @@
         "actions": [
           {
             "description": "Establish and manage local open space funding programs including dedicated funding mechanisms to secure and maintain these lands and expand access to parks in developed communities.",
-            "tags": ["Municipalities", "Counties", "State Agencies"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "State Agencies"
+            ]
           },
           {
             "description": "Implement land acquisitions, conservation easements, and preservation-focused land development techniques using a combination of public and private funding.",
@@ -593,15 +781,26 @@
           },
           {
             "description": "Design and implement wildlife crossings to reduce habitat fragmentation, prevent vehicle collisions, and support safe migration routes for wildlife. ",
-            "tags": ["Municipalities", "Counties", "DOTs", "State Agencies"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "DOTs",
+              "State Agencies"
+            ]
           },
           {
-            "description": "Provide data, tools, coordination and technical assistance to refine and help implement preservation frameworks such as the DVRPC and Greenspace Network.",
-            "tags": ["DVRPC"]
+            "description": "Provide data, tools, coordination and technical assistance to refine and help implement preservation frameworks such as the DVRPC Greenspace Network.",
+            "tags": [
+              "DVRPC"
+            ]
           },
           {
             "description": "Document and develop opportunities for transportation project mitigations.",
-            "tags": ["Counties", "DOTs", "DVRPC"]
+            "tags": [
+              "Counties",
+              "DOTs",
+              "DVRPC"
+            ]
           }
         ]
       },
@@ -632,7 +831,10 @@
           },
           {
             "description": "Transform asphalt-heavy schoolyards into green schoolyards that offer shade, play space, and stormwater benefits. Lead community greening initiatives and public education campaigns on the benefits of urban nature. Partner with local governments to secure funding and technical assistance for green infrastructure projects.",
-            "tags": ["Nonprofits", "School Districts"]
+            "tags": [
+              "Nonprofits",
+              "School Districts"
+            ]
           }
         ]
       },
@@ -653,7 +855,10 @@
           },
           {
             "description": "Set and enforce pollution standards; regulate industrial operations; and promote innovation, research, funding, and incentives for clean technologies and pollution-reduction strategies.",
-            "tags": ["Federal Agencies", "State Agencies"]
+            "tags": [
+              "Federal Agencies",
+              "State Agencies"
+            ]
           },
           {
             "description": "Partner with industrial stakeholders to adopt clean technology and support “freight-as-a-good neighbor” initiatives that increase safety, reduce overall air pollution, and improve health and quality of life for workers and neighbors.",
@@ -685,7 +890,9 @@
         "actions": [
           {
             "description": "Enact and enforce local ordinances and zoning codes to control stormwater runoff, manage impervious surfaces, maintain naturally functioning floodplains and protect water quality.",
-            "tags": ["Municipalities"]
+            "tags": [
+              "Municipalities"
+            ]
           },
           {
             "description": "Collaborate on restoration projects for streams and floodplains, including the installation of riparian buffers and stream channel restorations to maintain naturally functioning water systems.",
@@ -749,7 +956,12 @@
           },
           {
             "description": "Create and implement long-term strategic plans to develop more parks in areas with limited open spaces and prioritize capital investments and maintenance in existing parks.",
-            "tags": ["Municipalities", "Counties", "Nonprofits", "DVRPC"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "Nonprofits",
+              "DVRPC"
+            ]
           },
           {
             "description": "Build multi-use trails that provide nonmotorized access to parks and natural areas. ",
@@ -763,7 +975,11 @@
           },
           {
             "description": "Improve signage and wayfinding in communities and along trails to facilitate better access to parks.",
-            "tags": ["Municipalities", "Counties", "Nonprofits"]
+            "tags": [
+              "Municipalities",
+              "Counties",
+              "Nonprofits"
+            ]
           }
         ]
       }
@@ -857,19 +1073,30 @@
         "actions": [
           {
             "description": "Continue to manage programs that fund weatherization, efficiency, and electrification in buildings. Support workforce development through training and certifications to build the skilled labor necessary to implement these upgrades; and lead by example by building and maintaining efficient, high-performing federal and state buildings.",
-            "tags": ["Federal Agencies", "State Agencies", "Nonprofits"]
+            "tags": [
+              "Federal Agencies",
+              "State Agencies",
+              "Nonprofits"
+            ]
           },
           {
             "description": "Lead by example to benchmark, electrify and make government facilities more efficient. Implement and enforce building and electric codes. Adopt policies and regulations that encourage or require building owners to transition towards more efficient, less polluting building stock, such as building performance standards. Support workforce development and planning for the buildings sector.",
-            "tags": ["Municipalities", "Counties"]
+            "tags": [
+              "Municipalities",
+              "Counties"
+            ]
           },
           {
             "description": "Provide affordable and reliable electricity to support building electrification. Provide clear data and information about grid reliability and grid services in support of distributed generation and demand response. Support customer upgrades to electrify and improve the efficiency of hot water, heating, and cooling systems.",
-            "tags": ["Utilities"]
+            "tags": [
+              "Utilities"
+            ]
           },
           {
             "description": "Evaluate and implement opportunities for more efficient, cleaner, and innovative building portfolios.",
-            "tags": ["Private\r\nSector"]
+            "tags": [
+              "Private\r\nSector"
+            ]
           },
           {
             "description": "Seek opportunities to enhance efficiency and building performance. Consider integrating renewable power, distributed resources, and storage into owned buildings directly and/ or through power purchase agreements or other  contracting methods.",
@@ -882,7 +1109,9 @@
           },
           {
             "description": "Upgrade to efficient appliances, electrify home systems, and adopt power-saving practices in the home.",
-            "tags": ["Individuals"]
+            "tags": [
+              "Individuals"
+            ]
           }
         ]
       },
@@ -894,27 +1123,43 @@
         "actions": [
           {
             "description": "Accelerate the modernization of the grid through technical assistance, removal of barriers, provision of incentives, and regulatory changes. Enact policies that require or encourage utilities to provide clean, affordable electricity.",
-            "tags": ["Federal Agencies", "State Agencies"]
+            "tags": [
+              "Federal Agencies",
+              "State Agencies"
+            ]
           },
           {
             "description": "Conduct long-term planning and investment to ensure reliable and affordable electric supply, integrate intermittent generation resources, facilitate demand response, and meet the increased demand for electricity. Provide predictable and reliable interconnection data and processes to support the development of grid-scale renewable and battery storage projects. Ensure that rate design and ratemaking practices support integration of grid-scale and aggregated renewables and demand response, while maintaining affordability.",
-            "tags": ["Utilities", "Regional Transmission\r\nOrganizations"]
+            "tags": [
+              "Utilities",
+              "Regional Transmission\r\nOrganizations"
+            ]
           },
           {
             "description": "Establish local policies and update zoning to support investments in renewables. Procure renewable power for government facilities through power purchase agreements or other means. Explore opportunities to integrate microgrids into both existing and planned developments. Engage in federal and state-level regulatory and ratemaking processes to ensure that local perspectives and priorities are considered.",
-            "tags": ["Municipalities", "Counties"]
+            "tags": [
+              "Municipalities",
+              "Counties"
+            ]
           },
           {
             "description": "Launch community-led power programs, establish cooperative power purchasing, and create workforce development partnerships. ",
-            "tags": ["Nonprofits", "Private\r\nSector"]
+            "tags": [
+              "Nonprofits",
+              "Private\r\nSector"
+            ]
           },
           {
             "description": "Choose clean power sources for homes and business.",
-            "tags": ["Individuals"]
+            "tags": [
+              "Individuals"
+            ]
           },
           {
             "description": "Conduct research on electrification.",
-            "tags": ["Academia"]
+            "tags": [
+              "Academia"
+            ]
           }
         ]
       },

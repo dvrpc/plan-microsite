@@ -62,8 +62,6 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
             </span>
           </TabPanel>
           <p className="italic text-base mt-2">
-            Explore the web map to view absolute change, percent change, and
-            total forecasted population by municipality throughout the region.{" "}
             <a
               className="text-white underline"
               href="https://www.dvrpc.org/webmaps/popempforecasts/"

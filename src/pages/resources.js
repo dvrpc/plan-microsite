@@ -127,7 +127,7 @@ const Resources = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    E - Future Funding Outlook
+                    E - Funding Sources & Future Funding Outlook
                   </a>
                 </li>
                 <li className="ml-8">
