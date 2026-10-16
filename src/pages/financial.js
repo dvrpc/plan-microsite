@@ -555,15 +555,16 @@ const WhatIsThePlan = () => {
                       <strong>$162.9 billion</strong> to achieve the
                       transportation vision.
                     </span>
-                    <span>This forecast includes:</span>
+                    <span>
+                      The estimate does not yet include the full cost of:
+                    </span>
                     <ul className="list-disc *:ml-4 !text-sm">
-                      <li>Substantive safety improvements</li>
                       <li>
-                        Preservation of existing roadway and transit networks
+                        Achieving Vision Zero (eliminating traffic deaths and
+                        serious injuries)
                       </li>
-                      <li>New bicycle and pedestrian facilities</li>
-                      <li>Operational improvements</li>
-                      <li>Network Expansion</li>
+                      <li>Reducing transportation-related air pollution</li>
+                      <li>Preparing infrastructure for extreme weather </li>
                     </ul>
                   </div>
                   <img src={Block3} />
