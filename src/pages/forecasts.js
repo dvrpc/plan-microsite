@@ -291,7 +291,7 @@ const WhatIsThePlan = () => {
                 </p>
                 <p>
                   The region’s population is also <strong>getting older</strong>
-                  . Fewer births and longer lifespans mean that by 2050 the
+                  . Fewer births and longer lifespans mean that, by 2050 the
                   share of residents aged{" "}
                   <strong>65 and older will grow by nearly 50%</strong>, while
                   those under 30 will decline slightly. This shift mirrors
@@ -333,7 +333,7 @@ const WhatIsThePlan = () => {
                 <p>
                   By 2050, total regional employment is forecast to reach nearly{" "}
                   <strong>4 million jobs</strong>.
-                  <ul className="list-disc ml-8 space-y-2">
+                  <ul className="list-disc ml-8 space-y-2 mt-2">
                     <li>
                       <strong>Philadelphia</strong> will see the largest share
                       of job growth, with about{" "}
@@ -341,7 +341,7 @@ const WhatIsThePlan = () => {
                     </li>
                     <li>
                       <strong>Montgomery and Chester counties</strong> will also
-                      expand, with <strong>16% and 13%</strong> more jobs,
+                      expand, with <strong>16% and 13%</strong> more jobs
                       respectively.
                     </li>
                     <li>

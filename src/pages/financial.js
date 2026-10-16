@@ -60,15 +60,18 @@ const tabTooltipClass =
   "absolute bottom-[8%] left-[12%] right-[8%] block w-auto overflow-hidden whitespace-normal break-normal px-1 py-1 text-center text-[clamp(0.6rem,0.8vw,1rem)] leading-snug text-white underline [overflow-wrap:break-word] hover:cursor-pointer md:px-2 md:py-1"
 
 const StatList = ({ need, funding, allocation }) => (
-  <dl className="space-y-1 text-left">
+  <dl className="space-y-1 text-left min-[1510px]:mx-auto min-[1510px]:w-full min-[1510px]:max-w-[20rem]">
     {[
       ["Need", need],
       ["Funding", funding],
       ["Allocation", allocation],
     ].map(([label, value]) => (
-      <div key={label} className="flex flex-col">
+      <div
+        key={label}
+        className="flex flex-col min-[1510px]:flex-row min-[1510px]:items-baseline min-[1510px]:justify-between min-[1510px]:gap-x-2"
+      >
         <dt>{label}:</dt>
-        <dd className="font-bold">{value}</dd>
+        <dd className="font-bold min-[1510px]:whitespace-nowrap">{value}</dd>
       </div>
     ))}
   </dl>
@@ -591,15 +594,15 @@ const WhatIsThePlan = () => {
                     enlarge("block-4", ["block-1", "block-2", "block-3"])
                   }
                 >
-                  <div className="absolute inset-0 flex flex-col gap-3 overflow-hidden px-8 py-7 text-[9px] leading-[1.3] text-[#063446]">
-                    <p>
+                  <div className="absolute inset-0 flex flex-col gap-3 px-8 py-7 text-[clamp(0.75rem,0.9vw,0.875rem)] leading-[1.3] text-[#063446]">
+                    <p className="text-[length:inherit]">
                       Federal and state roadway and transit funding for the
                       region is allocated primarily through formulas. Projects
                       in each Pennsylvania and New Jersey subregion are then
                       programmed using those funds, guided by the Plan’s vision,
                       goals, policies, and identified needs.
                     </p>
-                    <p>
+                    <p className="text-[length:inherit]">
                       Roadway and transit funds come from{" "}
                       <strong>separate sources</strong>, and there’s{" "}
                       <strong>limited flexibility</strong> to move money between

@@ -312,8 +312,8 @@ const Resources = () => {
                   investments—such as new transit lines, highway improvements,
                   or major bicycle and pedestrian corridors—that cost more than
                   $40 million and/or significantly impact travel across the
-                  region. These projects must appear in the Plan to be eligible
-                  for federal funding.
+                  region. These projects must be funded in the Plan to be
+                  eligible for federal funding.
                 </p>
               </Accordion>
               <Accordion label="How does a project get considered for the Plan?">
@@ -350,7 +350,7 @@ const Resources = () => {
                   , which provides centralized access to all DVRPC datasets and
                   mapping applications. Simply filter by the{" "}
                   <a
-                    href="https://catalog.dvrpc.org/dataset/long-range-plan-2050-planning-areas"
+                    href="https://catalog.dvrpc.org/dataset/?category=Long-Range+Plan"
                     target="_blank"
                     className="underline"
                   >
@@ -418,7 +418,15 @@ const Resources = () => {
                   input. You can stay involved by following updates, attending
                   public meetings, reviewing draft documents, or joining DVRPC
                   committees and outreach events. Want to provide feedback now?
-                  Take our survey.
+                  Take our{" "}
+                  <a
+                    href="https://www.surveymonkey.com/r/LZB58KR"
+                    target="_blank"
+                    className="underline"
+                  >
+                    survey
+                  </a>
+                  .
                 </p>
               </Accordion>
               <Accordion label="How can residents get involved in shaping the Plan?">

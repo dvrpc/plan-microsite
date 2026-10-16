@@ -76,7 +76,7 @@ export const stationDef = {
   source: "transit-stations",
   slot: "middle",
   "source-layer": "passengerrailstations",
-  minzoom: 9,
+  minzoom: 8,
   paint: {
     "circle-radius": [
       "step",
