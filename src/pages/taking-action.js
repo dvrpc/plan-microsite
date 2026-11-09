@@ -120,7 +120,7 @@ const TakingAction = () => {
             <div className=" flex items-center w-full md:p-6 p-2 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
-                What DVRPC Is Doing
+                What DVRPC is Doing
               </h2>
             </div>
             <div className="flex flex-col space-y-4 md:p-6 p-2 md:pt-0 text-[#063446]">
@@ -134,10 +134,10 @@ const TakingAction = () => {
               </p>
               <p>
                 In a world that’s changing fast, DVRPC grounds decisions in
-                data, technical expertise, and a commitment to innovation and
-                improving communities for all. In a region as large and diverse
-                as ours, strong, trusted leadership is essential—and DVRPC will
-                continue to step up.
+                data, technical expertise, and a commitment to improving
+                communities for all. In a region as large and diverse as ours,
+                strong, trusted leadership is essential—and DVRPC will continue
+                to step up.
               </p>
               <p>
                 <strong>Our commitment:</strong>

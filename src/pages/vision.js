@@ -98,21 +98,15 @@ const Vision = () => {
               What Do We Want the Region to Look Like in 2050?
             </h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              Every region needs a roadmap for the future—and that’s what a
-              long-range plan provides. The regional vision for 2050 imagines a
-              Greater Philadelphia that is safer, more connected, and more
-              resilient—where communities prosper, people can move easily and
-              affordably, and natural resources are protected.
+              A long-range plan provides a roadmap for the region's future.
             </p>
             <p className="md:text-2xl text-lg pb-0 z-50">
-              DVRPC works with partners across the region to shape this shared
-              vision. The plan guides major transportation decisions, such as
-              making biking and walking safer, improving transit, and
-              maintaining reliable travel on our roads. But it’s about more than
-              getting from A to B. Transportation influences where we live, how
-              the economy grows, and how we care for the environment. Our plan
-              looks at the big picture, connecting all the pieces that make our
-              region a great place to live and thrive.
+              DVRPC works with partners across the region to develop this
+              roadmap, which is about more than getting from A to B.
+              Transportation influences where we live, how the economy grows,
+              and how we care for the environment. Our plan looks at the big
+              picture, connecting all the pieces that make our region a great
+              place to live and thrive.
             </p>
             <h2 className="md:text-5xl mx-auto md:w-3/4 md:text-center md:py-8">
               The Regional Vision for 2050 is a Greater Philadelphia that

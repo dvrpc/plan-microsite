@@ -56,9 +56,6 @@ import Block2 from "../images/block-2.png"
 import Block3 from "../images/block-3.png"
 import { Tooltip } from "react-tippy"
 
-const tabTooltipClass =
-  "absolute bottom-[8%] left-[12%] right-[8%] block w-auto overflow-hidden whitespace-normal break-normal px-1 py-1 text-center text-[clamp(0.6rem,0.8vw,1rem)] leading-snug text-white underline [overflow-wrap:break-word] hover:cursor-pointer md:px-2 md:py-1"
-
 const StatList = ({ need, funding, allocation }) => (
   <dl className="space-y-1 text-left min-[1510px]:mx-auto min-[1510px]:w-full min-[1510px]:max-w-[20rem]">
     {[
@@ -77,394 +74,369 @@ const StatList = ({ need, funding, allocation }) => (
   </dl>
 )
 
-const PennsylvaniaHeader = () => (
-  <>
-    <span className="min-[1510px]:hidden">
-      Penn
-      <br />
-      sylvania
-    </span>
-    <span className="hidden min-[1510px]:inline">Pennsylvania</span>
-  </>
+const allocations = {
+  Roadway: [
+    {
+      label: "Pavement Preservation & Modernization",
+      color: "#714876",
+      description:
+        "Keeps roads in good condition by resurfacing, repairing, and upgrading pavement and essential roadway features.",
+      theme: "financial financial-purple",
+      artwork: Roadwayppm,
+      pa: {
+        need: "$14.3 B",
+        funding: "$8.2 B",
+        allocation: "26%",
+        image: PaRoadwayPpm,
+        imageClass: "",
+      },
+      nj: {
+        need: "$8.4 B",
+        funding: "$5.8 B",
+        allocation: "35%",
+        image: NjRoadwayPpm,
+        imageClass: "",
+      },
+    },
+    {
+      label: "Bridge Preservation",
+      color: "#6f6688",
+      description:
+        "Maintains and repairs bridges to keep them safe, reliable, and structurally sound for all users.",
+      theme: "financial financial-lavender",
+      artwork: Roadwaybp,
+      pa: {
+        need: "$18.8 B",
+        funding: "$14.3 B",
+        allocation: "45%",
+        image: PaRoadwayBp,
+        imageClass: "",
+      },
+      nj: {
+        need: "$4.7 B",
+        funding: "$3.1 B",
+        allocation: "19%",
+        image: NjRoadwayBp,
+        imageClass: "",
+      },
+    },
+    {
+      label: "Substantive Safety",
+      color: "#009eb8",
+      description:
+        "Funds targeted improvements that reduce serious crashes and support the Vision Zero goal.",
+      theme: "financial financial-cyan",
+      artwork: Roadwayss,
+      pa: {
+        need: "$2.0 B",
+        funding: "$1.9 B",
+        allocation: "6%",
+        image: PaRoadwaySs,
+        imageClass: "w-16 mx-auto",
+      },
+      nj: {
+        need: "$0.4 B",
+        funding: "$0.3 B",
+        allocation: "2%",
+        image: NjRoadwaySs,
+        imageClass: "w-3 mx-auto",
+      },
+    },
+    {
+      label: "Mobility Operational Improvements",
+      color: "#0078ae",
+      description:
+        "Improves how the existing transportation system works by reducing congestion and using technology to move people and goods more efficiently.",
+      theme: "financial financial-blue",
+      artwork: Roadwaymoi,
+      pa: {
+        need: "$7.5 B",
+        funding: "$3.2 B",
+        allocation: "10%",
+        image: PaRoadwayMoi,
+        imageClass: "",
+      },
+      nj: {
+        need: "$4.8 B",
+        funding: "$2.3 B",
+        allocation: "14%",
+        image: NjRoadwayMoi,
+        imageClass: "",
+      },
+    },
+    {
+      label: "Roadway Expansion",
+      color: "#24964f",
+      description:
+        "Adds or extends roadway capacity in limited ways to relieve bottlenecks and improve connections and mobility.",
+      theme: "financial financial-green",
+      artwork: Roadwayre,
+      pa: {
+        need: "$2.0 B",
+        funding: "$1.3 B",
+        allocation: "4%",
+        image: PaRoadwayRe,
+        imageClass: "w-16 mx-auto",
+      },
+      nj: {
+        need: "$1.1 B",
+        funding: "$0.7 B",
+        allocation: "4%",
+        image: NjRoadwayRe,
+        imageClass: "w-10 mx-auto",
+      },
+    },
+    {
+      label: "Green Transportation",
+      color: "#026227",
+      description:
+        "Expands walking, biking, and community-focused projects that improve mobility while reducing environmental impacts.",
+      theme: "financial financial-dark-green",
+      artwork: Roadwaygt,
+      pa: {
+        need: "$11.8 B",
+        funding: "$3.21 B",
+        allocation: "10%",
+        image: PaRoadwayGt,
+        imageClass: "",
+      },
+      nj: {
+        need: "$6.3 B",
+        funding: "$4.3 B",
+        allocation: "26%",
+        image: NjRoadwayGt,
+        imageClass: "",
+      },
+    },
+  ],
+  Transit: [
+    {
+      label: "Transit Preservation & Modernization",
+      color: "#714876",
+      description:
+        "Repairs and upgrades transit vehicles, facilities, and infrastructure to keep the system safe, reliable, and accessible.",
+      theme: "financial financial-purple",
+      artwork: Transitpm,
+      pa: {
+        need: "$37.7 B",
+        funding: "$12.9 B",
+        allocation: "56%",
+        image: PaTransitPm,
+        imageClass: "",
+      },
+      nj: {
+        need: "$5.1 B",
+        funding: "$5.1 B",
+        allocation: "75%",
+        image: NjTransitPm,
+        imageClass: "",
+      },
+    },
+    {
+      label: "Transit Operational Improvements",
+      color: "#0078ae",
+      description:
+        "Enhances transit service and performance through operational upgrades, technology, and targeted capacity improvements.",
+      theme: "financial financial-blue",
+      artwork: Transittoi,
+      pa: {
+        need: "$7.4 B",
+        funding: "$1.5 B",
+        allocation: "6.7%",
+        image: PaTransitOp,
+        imageClass: "",
+      },
+      nj: {
+        need: "$0.4 B",
+        funding: "$0.6 B",
+        allocation: "8.3%",
+        image: NjTransitOp,
+        imageClass: "w-7 mx-auto",
+      },
+    },
+    {
+      label: "Transit System Expansion",
+      color: "#24964f",
+      description:
+        "Builds new transit routes, stations, and services to expand access and connect more people to the region.",
+      theme: "financial financial-green",
+      artwork: Transittse,
+      pa: {
+        need: "$15.0 B",
+        funding: "$0.8 B",
+        allocation: "3.3%",
+        image: PaTransitExp,
+        imageClass: "",
+      },
+      nj: {
+        need: "$8.6 B",
+        funding: "$0.8 B",
+        allocation: "12.5%",
+        image: NjTransitExp,
+        imageClass: "",
+      },
+    },
+    {
+      label: "Transit Other",
+      color: "#20a9a6",
+      description:
+        "Covers required transit expenses such as leases, environmental work, and debt payments that keep the system functioning.",
+      theme: "financial financial-teal",
+      artwork: Transitother,
+      pa: {
+        need: "$7.8 B",
+        funding: "$7.8 B",
+        allocation: "34.1%",
+        image: PaTransitOther,
+        imageClass: "",
+      },
+      nj: {
+        need: "$0.3 B",
+        funding: "$0.3 B",
+        allocation: "4.3%",
+        image: NjTransitOther,
+        imageClass: "w-3 mx-auto",
+      },
+    },
+  ],
+}
+
+const allocationTabClass =
+  "h-12 min-w-0 flex-1 sm:w-36 sm:flex-none rounded-t-lg border-0 [&:not([data-selected])]:bg-white px-4 py-3 font-bold text-[#063446] data-[selected]:bg-[#063446] data-[selected]:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#063446]"
+
+const allocationToggleClass =
+  "min-w-0 flex-1 rounded-full px-5 py-2 font-bold text-[#063446] data-[selected]:bg-[#063446] data-[selected]:text-white data-[selected]:shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#063446]"
+
+const AllocationLegend = () => (
+  <div
+    aria-label="Funding key"
+    className="text-[#083346] flex flex-wrap justify-end max-w-full w-fit ml-auto gap-y-2 my-2 px-4 sm:px-0"
+  >
+    <div className="flex min-w-0 items-start gap-x-2 pr-2">
+      <div
+        aria-hidden="true"
+        className="h-6 w-6 shrink-0 bg-[#083346] rounded-full"
+      />
+      <strong>FUNDED = $1 Billion YOE</strong>
+    </div>
+    <div className="flex min-w-0 items-start gap-x-2 sm:border-l-2 border-[#083346] sm:pl-2">
+      <div
+        aria-hidden="true"
+        className="h-6 w-6 shrink-0 rounded-full border-2 border-[#083346]"
+      />
+      <strong>UNFUNDED = $1 Billion YOE</strong>
+    </div>
+  </div>
 )
 
 const Tabs = ({ selectedIndex, setSelectedIndex }) => {
+  const [selectedState, setSelectedState] = useState(0)
+  const states = [
+    { key: "pa", label: "Pennsylvania" },
+    { key: "nj", label: "New Jersey" },
+  ]
+
   return (
-    <div className="flex justify-center z-[100] h-full w-full bg-white">
-      <TabGroup
-        className="w-full h-full flex flex-col"
-        selectedIndex={selectedIndex}
-        onChange={setSelectedIndex}
+    <TabGroup
+      className="allocation-graphic relative flow-root w-full"
+      selectedIndex={selectedState}
+      onChange={setSelectedState}
+    >
+      <TabList
+        aria-label="Allocation state"
+        className="absolute bottom-full left-0 flex h-12 w-full items-end bg-transparent sm:w-auto"
       >
-        <TabList className="flex text-white -mt-20 md:w-1/4 w-1/2">
-          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#063446] data-[selected]:text-[#063446] [&:not([data-selected])]:text-white w-1/2 rounded-t-lg h-20">
-            Roadway
+        {states.map(state => (
+          <Tab key={state.key} className={allocationTabClass}>
+            {state.label}
           </Tab>
-          <Tab className="p-3 font-bold data-[selected]:bg-white [&:not([data-selected])]:bg-[#063446] data-[selected]:text-[#063446] [&:not([data-selected])]:text-white w-1/2 rounded-t-lg h-20">
-            Transit
-          </Tab>
-        </TabList>
-        <TabPanels className="w-full overflow-hidden text-white">
-          <TabPanel>
-            <>
-              <div className="grid w-full auto-rows-fr grid-cols-6 grid-rows-2 text-[0.42rem] leading-tight sm:text-[0.55rem] md:text-xs lg:text-base *:min-w-0 *:break-words *:border-r-2 *:p-1 sm:*:p-2 md:p-4 md:*:border-r-4 md:*:p-4 lg:*:p-6 [&_*]:min-w-0 [&_img]:h-auto [&_img]:max-w-full [&_img]:object-contain [&_p]:!text-[inherit] [&_strong]:!text-[inherit] [&>*:nth-child(-n+6)]:border-b-2 md:[&>*:nth-child(-n+6)]:border-b-4 [&>*:nth-child(6n)]:border-r-0">
-                <div className="text-[#714876] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    <PennsylvaniaHeader />
-                  </p>
-                  <StatList need="$14.3 B" funding="$8.2 B" allocation="26%" />
-                  <img src={PaRoadwayPpm} />
-                </div>
-                <div className="text-[#6f6688] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    <PennsylvaniaHeader />
-                  </p>
-                  <StatList need="$18.8 B" funding="$14.3 B" allocation="45%" />
-                  <img src={PaRoadwayBp} />
-                </div>
-                <div className="text-[#009eb8] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    <PennsylvaniaHeader />
-                  </p>
-                  <StatList need="$2.0 B" funding="$1.9 B" allocation="6%" />
-                  <img src={PaRoadwaySs} className="w-16 mx-auto" />
-                </div>
-                <div className="text-[#0078ae] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    <PennsylvaniaHeader />
-                  </p>
-                  <StatList need="$7.5 B" funding="$3.2 B" allocation="10%" />
-                  <img src={PaRoadwayMoi} />
-                </div>
-                <div className="text-[#24964f] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    <PennsylvaniaHeader />
-                  </p>
-                  <StatList need="$2.0 B" funding="$1.3 B" allocation="4%" />
-                  <img src={PaRoadwayRe} className="w-16 mx-auto" />
-                </div>
-                <div className="text-[#026227] md:font-bold space-y-4 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    <PennsylvaniaHeader />
-                  </p>
-                  <StatList need="$11.8 B" funding="$3.21 B" allocation="10%" />
-                  <img src={PaRoadwayGt} />
-                </div>
-                <div className="text-[#714876] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    New Jersey
-                  </p>
-                  <StatList need="$8.4 B" funding="$5.8 B" allocation="35%" />
-                  <img src={NjRoadwayPpm} />
-                  <div className="relative mt-auto">
-                    <Tooltip
-                      theme="financial financial-purple"
-                      title="Keeps roads in good condition by resurfacing, repairing, and upgrading pavement and essential roadway features."
-                      position="top"
-                      trigger="click"
-                      className={tabTooltipClass}
-                    >
-                      Pavement Preservation & Modernization
-                    </Tooltip>
-                    <img
-                      src={Roadwayppm}
-                      className="mt-auto"
-                      alt="Illustration of construction equipment"
-                    />
-                  </div>
-                </div>
-                <div className="text-[#6f6688] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    New Jersey
-                  </p>
-                  <StatList need="$4.7 B" funding="$3.1 B" allocation="19%" />
-                  <img src={NjRoadwayBp} />
-                  <div className="relative mt-auto">
-                    <Tooltip
-                      theme="financial financial-lavender"
-                      title="Maintains and repairs bridges to keep them safe, reliable, and structurally sound for all users."
-                      position="top"
-                      trigger="click"
-                      className={tabTooltipClass}
-                    >
-                      Bridge Preservation
-                    </Tooltip>
-                    <img
-                      src={Roadwaybp}
-                      className="mt-auto"
-                      alt="Illustration of bridge construction"
-                    />
-                  </div>
-                </div>
-                <div className="text-[#009eb8] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    New Jersey
-                  </p>
-                  <StatList need="$0.4 B" funding="$0.3 B" allocation="2%" />
-                  <img src={NjRoadwaySs} className="w-3 mx-auto" />
-                  <div className="relative mt-auto">
-                    <Tooltip
-                      theme="financial financial-cyan"
-                      title="Funds targeted improvements that reduce serious crashes and support the Vision Zero goal."
-                      position="top"
-                      trigger="click"
-                      className={tabTooltipClass}
-                    >
-                      Substantive Safety
-                    </Tooltip>
-                    <img
-                      src={Roadwayss}
-                      className="mt-auto"
-                      alt="Illustration of crosswalk"
-                    />
-                  </div>
-                </div>
-                <div className="text-[#0078ae] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    New Jersey
-                  </p>
-                  <StatList need="$4.8 B" funding="$2.3 B" allocation="14%" />
-                  <div className="relative mt-auto">
-                    <Tooltip
-                      theme="financial financial-blue"
-                      title="Improves how the existing transportation system works by reducing congestion and using technology to move people and goods more efficiently."
-                      position="top"
-                      trigger="click"
-                      className={tabTooltipClass}
-                    >
-                      Mobility Operational Improvements
-                    </Tooltip>
-                    <img src={NjRoadwayMoi} />
-                    <img
-                      src={Roadwaymoi}
-                      className="mt-auto"
-                      alt="Illustration traffic signs."
-                    />
-                  </div>
-                </div>
-                <div className="text-[#24964f] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    New Jersey
-                  </p>
-                  <StatList need="$1.1 B" funding="$0.7 B" allocation="4%" />
-                  <img src={NjRoadwayRe} className="w-10 mx-auto" />
-                  <div className="relative mt-auto">
-                    <Tooltip
-                      theme="financial financial-green"
-                      title="Adds or extends roadway capacity in limited ways to relieve bottlenecks and improve connections and mobility."
-                      position="top"
-                      trigger="click"
-                      className={tabTooltipClass}
-                    >
-                      Roadway Expansion
-                    </Tooltip>
-                    <img
-                      src={Roadwayre}
-                      className="mt-auto"
-                      alt="Illustration of roadway construction worker."
-                    />
-                  </div>
-                </div>
-                <div className="text-[#026227] md:font-bold flex flex-col md:gap-y-4 gap-y-2 md:text-base text-xs">
-                  <p className="break-all text-[0.52rem] sm:text-[0.65rem] md:text-center md:text-base md:break-normal lg:text-2xl">
-                    New Jersey
-                  </p>
-                  <StatList need="$6.3 B" funding="$4.3 B" allocation="26%" />
-                  <img src={NjRoadwayGt} />
-                  <div className="relative mt-auto">
-                    <Tooltip
-                      theme="financial financial-dark-green"
-                      title="Expands walking, biking, and community-focused projects that improve mobility while reducing environmental impacts."
-                      position="top"
-                      trigger="click"
-                      className={tabTooltipClass}
-                    >
-                      Green Transportation
-                    </Tooltip>
-                    <img
-                      src={Roadwaygt}
-                      className="mt-auto"
-                      alt="Illustration of someone walking and someone biking."
-                    />
-                  </div>
-                </div>
-              </div>
-            </>
+        ))}
+      </TabList>
+      <TabPanels>
+        {states.map(state => (
+          <TabPanel key={state.key}>
+            <TabGroup selectedIndex={selectedIndex} onChange={setSelectedIndex}>
+              <TabList
+                aria-label={`${state.label} transportation mode`}
+                className="mx-4 mt-4 flex w-56 max-w-[calc(100%-2rem)] rounded-full border border-[#063446]/20 bg-[#eaf3fb] p-1"
+              >
+                {Object.keys(allocations).map(mode => (
+                  <Tab key={mode} className={allocationToggleClass}>
+                    {mode}
+                  </Tab>
+                ))}
+              </TabList>
+              <TabPanels>
+                {Object.entries(allocations).map(([mode, categories]) => (
+                  <TabPanel key={mode} className="p-4">
+                    <h3 className="mb-4 text-lg font-bold text-[#063446]">
+                      {state.label} {mode} Allocations
+                    </h3>
+                    <div className="allocation-grid grid gap-y-6">
+                      {categories.map(category => {
+                        const figures = category[state.key]
+                        return (
+                          <div
+                            key={category.label}
+                            className="flex min-w-0 flex-col gap-3 border-r border-[#063446]/20 px-3 text-sm last:border-r-0"
+                            style={{ color: category.color }}
+                          >
+                            <h4 className="min-h-[4.5rem] font-bold leading-snug">
+                              <Tooltip
+                                title={category.description}
+                                theme={category.theme}
+                                position="top"
+                                trigger="mouseenter focus click"
+                                tag="button"
+                                tabIndex={0}
+                                className="max-w-full break-words text-left underline decoration-dotted underline-offset-4"
+                              >
+                                {category.label}
+                              </Tooltip>
+                            </h4>
+                            <StatList
+                              need={figures.need}
+                              funding={figures.funding}
+                              allocation={figures.allocation}
+                            />
+                            <div className="flex aspect-[315/229] w-full items-start justify-center">
+                              <img
+                                src={figures.image}
+                                className={`h-auto max-h-full max-w-full object-contain object-top ${figures.imageClass}`}
+                                alt={`${state.label} ${category.label}: ${figures.funding} funded of ${figures.need} needed`}
+                              />
+                            </div>
+                            <div className="relative mt-auto aspect-[332/470] w-full">
+                              <img
+                                src={category.artwork}
+                                className="h-full w-full object-contain object-bottom"
+                                alt=""
+                              />
+                              <Tooltip
+                                title={category.description}
+                                theme={category.theme}
+                                position="top"
+                                trigger="mouseenter focus click"
+                                tag="button"
+                                tabIndex={0}
+                                className="absolute bottom-[8%] left-[12%] right-[8%] break-words text-center text-xs leading-snug text-white underline"
+                              >
+                                {category.label}
+                              </Tooltip>
+                            </div>
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </TabPanel>
+                ))}
+              </TabPanels>
+            </TabGroup>
           </TabPanel>
-          <TabPanel>
-            <div className="w-full">
-              <div className="grid w-full auto-rows-fr grid-cols-4 grid-rows-2 text-[0.5rem] leading-tight sm:text-[0.65rem] md:text-xs lg:text-base *:min-w-0 *:break-words *:border-r-2 *:p-1 sm:*:p-2 md:p-4 md:*:border-r-4 md:*:p-4 [&_*]:min-w-0 [&_img]:h-auto [&_img]:max-w-full [&_img]:object-contain [&_p]:!text-[inherit] [&_strong]:!text-[inherit] [&>*:nth-child(-n+4)]:border-b-2 md:[&>*:nth-child(-n+4)]:border-b-4 [&>*:nth-child(4n)]:border-r-0">
-                <div className="text-[#714876] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      <PennsylvaniaHeader />
-                    </p>
-                    <StatList
-                      need="$37.7 B"
-                      funding="$12.9 B"
-                      allocation="56%"
-                    />
-                    <img src={PaTransitPm} />
-                  </div>
-                </div>
-                <div className="text-[#0078ae] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      <PennsylvaniaHeader />
-                    </p>
-                    <StatList
-                      need="$7.4 B"
-                      funding="$1.5 B"
-                      allocation="6.7%"
-                    />
-                    <img src={PaTransitOp} />
-                  </div>
-                </div>
-                <div className="text-[#24964f] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      <PennsylvaniaHeader />
-                    </p>
-                    <StatList
-                      need="$15.0 B"
-                      funding="$0.8 B"
-                      allocation="3.3%"
-                    />
-                    <img src={PaTransitExp} />
-                  </div>
-                </div>
-                <div className="text-[#20a9a6] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col space-y-4">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      <PennsylvaniaHeader />
-                    </p>
-                    <StatList
-                      need="$7.8 B"
-                      funding="$7.8 B"
-                      allocation="34.1%"
-                    />
-                    <img src={PaTransitOther} />
-                  </div>
-                </div>
-                <div className="text-[#714876] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      New Jersey
-                    </p>
-                    <StatList need="$5.1 B" funding="$5.1 B" allocation="75%" />
-                    <img src={NjTransitPm} />
-                    <div className="relative mt-auto">
-                      <Tooltip
-                        theme="financial financial-purple"
-                        title="Repairs and upgrades transit vehicles, facilities, and infrastructure to keep the system safe, reliable, and accessible."
-                        position="top"
-                        trigger="click"
-                        className={tabTooltipClass}
-                      >
-                        Transit Preservation & Modernization
-                      </Tooltip>
-                      <img src={Transitpm} alt="Illustration of bus." />
-                    </div>
-                  </div>
-                </div>
-                <div className="text-[#0078ae] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      New Jersey
-                    </p>
-                    <StatList
-                      need="$0.4 B"
-                      funding="$0.6 B"
-                      allocation="8.3%"
-                    />
-                    <img src={NjTransitOp} className="w-7 mx-auto" />
-                    <div className="relative mt-auto">
-                      <Tooltip
-                        theme="financial financial-blue"
-                        title="Enhances transit service and performance through operational upgrades, technology, and targeted capacity improvements."
-                        position="top"
-                        trigger="click"
-                        className={tabTooltipClass}
-                      >
-                        Transit Operational Improvements
-                      </Tooltip>
-                      <img src={Transittoi} />
-                    </div>
-                  </div>
-                </div>
-                <div className="text-[#24964f] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      New Jersey
-                    </p>
-                    <StatList
-                      need="$8.6 B"
-                      funding="$0.8 B"
-                      allocation="12.5%"
-                    />
-                    <img src={NjTransitExp} />
-                    <div className="relative mt-auto">
-                      <Tooltip
-                        theme="financial financial-green"
-                        title="Builds new transit routes, stations, and services to expand access and connect more people to the region."
-                        position="top"
-                        trigger="click"
-                        className={tabTooltipClass}
-                      >
-                        Transit System Expansion
-                      </Tooltip>
-                      <img
-                        src={Transittse}
-                        className="mt-auto"
-                        alt="Illustration of construction worker."
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="text-[#20a9a6] md:font-bold">
-                  <div className="lg:w-3/4 md:text-base text-xs mx-auto flex flex-col gap-y-4 h-full">
-                    <p className="text-[0.6rem] sm:text-xs md:text-center md:text-lg lg:text-2xl">
-                      New Jersey
-                    </p>
-                    <StatList
-                      need="$0.3 B"
-                      funding="$0.3 B"
-                      allocation="4.3%"
-                    />
-                    <img src={NjTransitOther} className="w-3 mx-auto" />
-                    <div className="relative mt-auto">
-                      <Tooltip
-                        theme="financial financial-teal"
-                        title="Covers required transit expenses such as leases, environmental work, and debt payments that keep the system functioning."
-                        position="top"
-                        trigger="click"
-                        className={tabTooltipClass}
-                      >
-                        Transit Other
-                      </Tooltip>
-                      <img
-                        src={Transitother}
-                        alt="Illustration depicting contract and money."
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </TabPanel>
-          <div className="text-[#083346] flex md:ml-auto w-fit md:flex-row flex-col gap-y-2 md:my-0 my-2">
-            <div className="flex gap-x-2 md:border-r-2 border-[#083346] pr-2">
-              <div className="h-6 w-6 bg-[#083346] rounded-full" />{" "}
-              <strong>FUNDED = $1 Billion YOE</strong>
-            </div>
-            <div className="flex gap-x-2 md:pl-2">
-              <div className="h-6 w-6 rounded-full border-2 border-[#083346]" />{" "}
-              <strong>UNFUNDED = $1 Billion YOE</strong>
-            </div>
-          </div>
-        </TabPanels>
-      </TabGroup>
-    </div>
+        ))}
+      </TabPanels>
+      <AllocationLegend />
+    </TabGroup>
   )
 }
 
@@ -621,7 +593,7 @@ const WhatIsThePlan = () => {
           </div>
         </div>
         <div className="w-full bg-[#cbe5f3] relative">
-          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-20">
+          <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-12">
             <div className=" flex items-center w-full md:p-6 p-2  relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
               <h2 className="md:text-2xl text-lg text-[#063446] font-bold">
@@ -644,9 +616,9 @@ const WhatIsThePlan = () => {
                 modernizing existing assets.
               </p>
               <p>
-                Click on the tabs below to view the needs and allocated funding
-                to the various roadway and transit project categories in the
-                Plan.
+                Choose Pennsylvania or New Jersey, then Roadway or Transit, to
+                view each state's needs and allocated funding by project
+                category. The key explains the funded and unfunded amounts.
               </p>
             </div>
           </div>
@@ -657,7 +629,7 @@ const WhatIsThePlan = () => {
               selectedIndex={selectedTab}
               setSelectedIndex={setSelectedTab}
             />
-            <div className="w-1/2 text-right ml-auto italic">
+            <div className="w-full px-4 text-right ml-auto italic sm:w-3/4 sm:px-0 lg:w-1/2">
               Federal rules require us to show all revenues and project costs in
               “year-of-expenditure” (YOE) dollars, which simply means we adjust
               for inflation over time.

@@ -47,10 +47,10 @@ const WhatIsThePlan = () => {
             <h2 className="text-3xl font-bold">Filling the Funding Gap</h2>
             <p className="md:text-2xl text-lg pb-0 z-50">
               To make our shared regional vision a reality, we need more
-              transportation funding from both existing federal, state, and
-              local sources, as well as new sources.
+              transportation funding from existing federal, state, and local
+              sources, as well as new sources.
             </p>
-            <p className="md:text-2xl text-lg">
+            <p className="md:text-2xl">
               Greater investment is needed to:
               <ul className="ml-8 list-disc space-y-2">
                 <li>
@@ -80,18 +80,20 @@ const WhatIsThePlan = () => {
                 those revenues are shrinking as vehicles become more
                 fuel-efficient and electric.
               </p>
-              <ul className="list-disc ml-8 space-y-2">
-                <li>
-                  The federal gas tax hasn’t increased since{" "}
-                  <strong>1993</strong>, and inflation has erased about{" "}
-                  <strong>64%</strong> of its purchasing power.
-                </li>
-                <li>
-                  Since 2008, Congress has transferred{" "}
-                  <strong>$275 billion</strong> from the general fund to keep
-                  the Highway and Transit Trust Funds solvent.
-                </li>
-              </ul>
+              <p>
+                <ul className="list-disc ml-8 space-y-2">
+                  <li>
+                    The federal gas tax hasn’t increased since{" "}
+                    <strong>1993</strong>, and inflation has erased about{" "}
+                    <strong>64%</strong> of its purchasing power.
+                  </li>
+                  <li>
+                    Since 2008, Congress has transferred{" "}
+                    <strong>$275 billion</strong> from the general fund to keep
+                    the Highway and Transit Trust Funds solvent.
+                  </li>
+                </ul>
+              </p>
               <p>
                 Without reform, the gap between{" "}
                 <strong>available funds and regional needs</strong> will
@@ -113,7 +115,7 @@ const WhatIsThePlan = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-[#cbe5f3] relative">
+        {/* <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto pb-10">
             <div className=" flex items-center w-full p-6 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
@@ -197,8 +199,8 @@ const WhatIsThePlan = () => {
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-full bg-[#eef4fb] relative">
+        </div> */}
+        <div className="w-full bg-[#cbe5f3] relative">
           <div className="border-l-4 border-[#0c2e39] md:w-[68%] mx-auto">
             <div className="flex items-center w-full md:p-6 p-2 relative">
               <Dot className="md:absolute md:block -left-[1.5%] hidden w-[3%] lg:-left-[1.25%] lg:w-[2%]" />
@@ -215,9 +217,8 @@ const WhatIsThePlan = () => {
               </p>
               <p>
                 DVRPC will continue to facilitate dialogue with our planning
-                partners to identify ways to improve and modernize federal and
-                state funding models that are consistent with the Plan’s vision
-                and goals.
+                partners to identify ways to improve and modernize funding
+                models that are consistent with the Plan’s vision and goals.
               </p>
               <p className="text-[#063446]">
                 Click on the Potential Federal and State Funding Options below
@@ -510,12 +511,9 @@ const WhatIsThePlan = () => {
                 taking a <strong>corridor-based approach</strong>—bundling
                 multiple improvements along the same roadway or transit corridor
                 into one coordinated project. By thinking comprehensively and
-                investing strategically, the region can build a{" "}
-                <strong>
-                  safer, more connected, and more resilient transportation
-                  system
-                </strong>{" "}
-                while laying the groundwork for new, viable funding models.
+                investing strategically, the region can build a safer, more
+                connected, and more resilient transportation system while laying
+                the groundwork for new, viable funding models.
               </p>
               <Link
                 className="mx-auto text-white bg-[#063446] p-2 font-bold md:text-2xl text-xl text-center"

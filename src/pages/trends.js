@@ -44,7 +44,7 @@ const Trends = () => {
             </p>
             <p className="md:text-2xl text-lg">
               This research helps DVRPC and its partners anticipate future needs
-              and craft policies that move the region toward its shared vision.
+              and craft programs that move the region toward its shared vision.
               DVRPC continues to monitor trends that will shape how the region
               grows and adapts in the years ahead.
             </p>
@@ -62,14 +62,11 @@ const Trends = () => {
               <p>
                 Remote and hybrid work have reshaped travel behavior across
                 Greater Philadelphia, changing where people live, how they get
-                around, and when they travel.
-              </p>
-
-              <p>
-                The pandemic accelerated a massive shift toward remote and
-                hybrid work. In 2021, about one in four employees in Greater
-                Philadelphia worked from home at least half of the time, which
-                reduced both solo driving and public transit use.
+                around, and when they travel. The pandemic accelerated a massive
+                shift toward remote and hybrid work. In 2021, about one in four
+                employees in Greater Philadelphia worked from home at least half
+                of the time, which reduced both solo driving and public transit
+                use.
               </p>
               <p>
                 Though offices and schools have since reopened, hybrid work
@@ -77,8 +74,8 @@ const Trends = () => {
                 transportation, transit agency finances, and office building
                 occupancy. Congestion has returned to pre-pandemic levels but is
                 now spread more evenly throughout the day, while transit
-                ridership remains roughly <strong>30% below 2019 levels</strong>
-                .
+                ridership remains roughly <strong>30% below 2019 levels</strong>{" "}
+                as of 2026.
               </p>
               <p>
                 Philadelphia’s relative affordability and access to the
@@ -140,8 +137,9 @@ const Trends = () => {
                 It offers new tools with the potential to modernize
                 transportation systems, improve safety, and inform planning
                 decisions. At the same time, it raises important questions
-                around <strong>privacy, copyright, bias, resource use</strong>,
-                and community impact.
+                around security,{" "}
+                <strong>privacy, copyright, bias, resource use</strong>, and
+                community impact.
               </p>
               <p>
                 Beyond transportation, AI can change job tasks and the skills
@@ -152,10 +150,12 @@ const Trends = () => {
               </p>
               <p>
                 The data centers supporting AI also bring planning questions for
-                communities. Their electricity and cooling needs can add demand
-                for energy and water, requiring coordination among local
-                governments, utilities, and residents as communities weigh
-                economic opportunities and infrastructure needs.
+                communities including concerns around aesthetics, noise, and
+                other quality of life impacts. Their electricity and cooling
+                needs can add demand for energy and water, requiring
+                coordination among local governments, utilities, and residents
+                as communities weigh economic opportunities and infrastructure
+                needs.
               </p>
               <h4 className="mx-auto text-[#16819a] font-bold text-lg font-[scriptorama-markdown-jf]">
                 AI PROCESSING FOR TRANSPORTATION
@@ -178,9 +178,9 @@ const Trends = () => {
             </div>
             <div className="flex flex-col space-y-4 md:p-6 md:pt-0 p-2">
               <p>
-                New mobility options—from shared rides to automated shuttles—are
-                expanding access to transportation and redefining how people
-                move through the region.
+                New mobility options—from shared rides to automated shuttles to
+                electric scooters—are expanding access to transportation and
+                redefining how people move through the region.
               </p>
               <p>
                 Governments and private partners are testing{" "}
@@ -217,8 +217,6 @@ const Trends = () => {
                 traditional transit. DVRPC and local partners are exploring how
                 these technologies can improve access to jobs, serve people with
                 disabilities, and connect residents to essential services.
-              </p>
-              <p>
                 Examples include GOTrenton!, the Navy Yard Automated Shuttle,
                 and Conshohocken Cab. While these services show promise, they
                 can be expensive and are designed to complement, rather than
@@ -256,7 +254,7 @@ const Trends = () => {
                 dashboard helps the region measure success and identify where to
                 focus future planning efforts.
               </p>
-              <p className="text-lg">
+              <p>
                 Tracking Progress highlights indicators that show how the region
                 is advancing toward the Plan’s vision. Current trends show
                 improvement in{" "}
@@ -267,8 +265,8 @@ const Trends = () => {
                 <strong>
                   income disparities, transportation safety, and transit
                   ridership
-                </strong>
-                .
+                </strong>{" "}
+                as of 2023.
               </p>
               <h4 className="mx-auto text-[#179650] font-bold text-lg font-[scriptorama-markdown-jf] my-4 py-2">
                 TRACKING PROGRESS DASHBOARD
