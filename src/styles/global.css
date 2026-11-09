@@ -58,6 +58,11 @@ main
   line-height: 1.4;
 }
 
+/* Match bulleted body copy to paragraph line spacing. */
+main ul.list-disc {
+  line-height: 1.4;
+}
+
 main
   :where(
     #bubbles,

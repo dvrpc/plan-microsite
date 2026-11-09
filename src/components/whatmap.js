@@ -3,44 +3,31 @@ import DvrpcMap from "./dvrpcmap"
 import { Source, Layer, Popup } from "react-map-gl/mapbox"
 import AppContext from "./AppContext"
 
-const Circle = ({ color }) => {
-  return (
-    <svg
-      width="30"
-      height="30"
-      viewBox="0 0 100 100"
-      xmlns="http://www.w3.org/2000/svg"
-      fill={color}
-      stroke={color}
-    >
-      <line x1="0" y1="50" x2="100" y2="50" stroke-width="5" />
-    </svg>
-  )
-}
-
 export const Legend = () => {
   return (
-    <div className="[&>*]:bg-white [&>*]:rounded-lg [&>*]:p-2 [&>*]:gap-2 font-[Roboto] [&>*]:m-3 [&>*]:text-xs">
-      <div className="flex flex-col z-[98] absolute">
-        <div className="flex gap-2 items-center">
-          <Circle color="#0159B8" />
-          <span>Regional Rail</span>
-        </div>
-
-        <div className="flex gap-2 items-center">
-          <Circle color="#7F3F98" />
-          <span>Major Subway Lines</span>
-        </div>
-        <div className="flex gap-2 items-center">
-          <Circle color="#019653" />
-          <span>PATCO</span>
-        </div>
-        <div className="flex gap-2 items-center">
-          <Circle color="#F9A13F" />
-          <span>NJ Transit</span>
-        </div>
-      </div>
-    </div>
+    <section
+      aria-label="Map legend"
+      className="absolute top-3 left-3 z-[98] rounded-lg bg-white/95 p-3 font-[Roboto] text-xs shadow"
+    >
+      <h3 className="mb-2 font-bold">Rail Lines and Stations</h3>
+      <ul className="space-y-2">
+        <li className="flex items-center gap-2">
+          <span
+            className="flex h-4 w-6 items-center justify-center"
+            aria-hidden="true"
+          >
+            <span className="h-3 w-3 rounded-full border border-white bg-[#587ca6]" />
+          </span>
+          <span>Rail Station</span>
+        </li>
+        <li className="flex items-center gap-2">
+          <span className="flex h-4 w-6 items-center" aria-hidden="true">
+            <span className="h-0.5 w-full bg-[#7e90a6]" />
+          </span>
+          <span>Rail Line</span>
+        </li>
+      </ul>
+    </section>
   )
 }
 

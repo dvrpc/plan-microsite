@@ -5,7 +5,6 @@ import Bg from "../images/bg.png"
 import Dot from "../images/dot.svg"
 import { ChevronRightIcon } from "@heroicons/react/16/solid"
 import PlanProcess from "../images/plan-process@4x.png"
-import DvrpcMap from "../components/dvrpcmap"
 import WhatMap, { Legend } from "../components/whatmap"
 
 const WhatIsThePlan = () => {
@@ -60,22 +59,20 @@ const WhatIsThePlan = () => {
             </p>
             <div className="relative flex">
               <WhatMap />
+              <Legend />
             </div>
 
             <p>
               Greater Philadelphia is one of the nation’s most historic and
               dynamic regions. Once an industrial powerhouse, it has evolved
-              into a <strong>diverse economic and cultural hub</strong>. The
-              region is a complex mosaic of 350 municipalities, from the
-              nation’s sixth-largest city to small rural hamlets with a wide
-              range of communities in between. Each of these places has
-              different needs and varying levels of resources to respond to
-              them. Today’s regional economy is powered by{" "}
-              <strong>
-                healthcare, education, technology, and creative sectors
-              </strong>
-              , all connected by a robust transportation network linking us to
-              New York, Washington, D.C., and beyond.
+              into a diverse economic and cultural hub. The region is a complex
+              mosaic of 350 municipalities, from the nation’s sixth-largest city
+              to small rural hamlets with a wide range of communities in
+              between. Each of these places has different needs and varying
+              levels of resources to respond to them. Today’s regional economy
+              is powered by healthcare, education, technology, and creative
+              sectors , all connected by a robust transportation network linking
+              us to New York, Washington, D.C., and beyond.
             </p>
             <p>
               <span className="font-bold">
@@ -115,8 +112,8 @@ const WhatIsThePlan = () => {
             <div className="flex flex-col space-y-4 md:pt-0 md:p-6 p-2">
               <p>
                 At its core, the Plan expresses a{" "}
-                <strong>vision for Greater Philadelphia in 2050</strong>—what
-                kind of region we want to become and how we might get there
+                <strong>vision for Greater Philadelphia in 2050</strong>—our
+                collection aspirations for the region and how we might get there
                 together.
               </p>
               <p>
@@ -153,35 +150,37 @@ const WhatIsThePlan = () => {
                 happens every day. DVRPC and its partners move projects forward
                 through two key processes:
               </p>
-              <ul className="list-disc ml-8 space-y-2">
-                <li>
-                  The{" "}
-                  <a
-                    href="https://www.dvrpc.org/tip/"
-                    target="_blank"
-                    className="underline"
-                  >
-                    Transportation Improvement Program (TIP)
-                  </a>
-                  : the region’s short-term list of funded transportation
-                  projects. Larger projects originate from the Plan.
-                </li>
-                <li>
-                  The{" "}
-                  <a
-                    href="https://www.dvrpc.org/workprogram/"
-                    target="_blank"
-                    className="underline"
-                  >
-                    Annual Work Program:
-                  </a>{" "}
-                  ongoing studies, planning initiatives, and technical support
-                  that help local governments advance shared goals. Programs and
-                  activities align with the Plan’s five key elements:
-                  Transportation, Economy, Communities, Environment, and
-                  Infrastructure and Utility Services.
-                </li>
-              </ul>
+              <p>
+                <ul className="list-disc ml-8 space-y-2">
+                  <li>
+                    The{" "}
+                    <a
+                      href="https://www.dvrpc.org/tip/"
+                      target="_blank"
+                      className="underline"
+                    >
+                      Transportation Improvement Program (TIP)
+                    </a>
+                    : the region’s short-term list of funded transportation
+                    projects. Larger projects originate from the Plan.
+                  </li>
+                  <li>
+                    The{" "}
+                    <a
+                      href="https://www.dvrpc.org/workprogram/"
+                      target="_blank"
+                      className="underline"
+                    >
+                      Annual Work Program:
+                    </a>{" "}
+                    ongoing studies, planning initiatives, and technical support
+                    that help local governments advance shared goals. Programs
+                    and activities align with the Plan’s five key elements:
+                    Transportation, Economy, Communities, Environment, and
+                    Infrastructure and Utility Services.
+                  </li>
+                </ul>
+              </p>
               <img
                 src={PlanProcess}
                 className="md:w-2/3"
