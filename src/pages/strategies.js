@@ -222,9 +222,9 @@ const WhatIsThePlan = () => {
                   Search results: {filteredStrategies.length}
                 </div>
 
-                <button className="w-fit underline" onClick={exportToExcel}>
+                {/* <button className="w-fit underline" onClick={exportToExcel}>
                   Download data
-                </button>
+                </button> */}
               </>
             ) : null}
           </div>

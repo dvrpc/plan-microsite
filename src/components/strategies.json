@@ -195,14 +195,14 @@
             "tags": [
               "Municipalities",
               "Transit Agencies",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
             "description": "Support micromobility services like bike share and e-scooters, and implement curbside management to support multimodal use and efficient deliveries.",
             "tags": [
               "Municipalities",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           }
         ]
@@ -224,7 +224,7 @@
             "tags": [
               "Transit Agencies",
               "TMAs",
-              "Private\r\nSector",
+              "Private Sector",
               "DVRPC"
             ]
           },
@@ -288,7 +288,7 @@
             "tags": [
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -298,8 +298,8 @@
               "Counties",
               "State Agencies",
               "School Districts",
-              "Professional\r\nOrganizations",
-              "Private\r\nSector"
+              "Professional Organizations",
+              "Private Sector"
             ]
           }
         ]
@@ -328,7 +328,7 @@
             "description": "Create training programs and policy supports that improve access to local and regional procurement opportunities, especially for underrepresented or early-stage businesses.",
             "tags": [
               "Municipalities",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -337,14 +337,14 @@
               "Counties",
               "Federal Agencies",
               "State Agencies",
-              "Economic Development\r\nOrganizations"
+              "Economic Development Organizations"
             ]
           },
           {
             "description": "Strengthen small business networks and cooperative models that foster industry connections and bolster long-term economic resilience.",
             "tags": [
               "Nonprofits",
-              "Professional\r\nOrganizations"
+              "Professional Organizations"
             ]
           },
           {
@@ -354,7 +354,7 @@
               "Federal Agencies",
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector",
+              "Private Sector",
               "Mission-Driven Lending Institutions"
             ]
           }
@@ -373,7 +373,7 @@
               "Federal Agencies",
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -391,7 +391,7 @@
               "DOTs",
               "Federal Agencies",
               "State Agencies",
-              "Private\r\nSector",
+              "Private Sector",
               "DVRPC"
             ]
           },
@@ -425,8 +425,8 @@
               "Municipalities",
               "Counties",
               "Academia",
-              "Private\r\nSector",
-              "Economic Development\r\nOrganizations"
+              "Private Sector",
+              "Economic Development Organizations"
             ]
           },
           {
@@ -435,7 +435,7 @@
               "Federal Agencies",
               "State Agencies",
               "Academia",
-              "Economic Development\r\nOrganizations"
+              "Economic Development Organizations"
             ]
           },
           {
@@ -454,8 +454,8 @@
               "State Agencies",
               "Nonprofits",
               "Academia",
-              "Private\r\nSector",
-              "Economic Development\r\nOrganizations",
+              "Private Sector",
+              "Economic Development Organizations",
               "DVRPC"
             ]
           }
@@ -488,7 +488,7 @@
             "tags": [
               "Municipalities",
               "Nonprofits",
-              "Professional\r\nOrganizations",
+              "Professional Organizations",
               "Mission-Driven Lending Institutions"
             ]
           },
@@ -497,7 +497,7 @@
             "tags": [
               "Nonprofits",
               "Academia",
-              "Professional\r\nOrganizations",
+              "Professional Organizations",
               "Mission-Driven Lending Institutions"
             ]
           },
@@ -577,14 +577,14 @@
             "tags": [
               "Municipalities",
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
             "description": "Build more housing units with a larger variety of housing types and ownership options.",
             "tags": [
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           }
         ]
@@ -816,7 +816,7 @@
               "Municipalities",
               "Counties",
               "Nonprofits",
-              "Private\r\nSector",
+              "Private Sector",
               "Individuals"
             ]
           },
@@ -866,7 +866,7 @@
               "Municipalities",
               "Counties",
               "State Agencies",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -877,7 +877,7 @@
               "Federal Agencies",
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           }
         ]
@@ -912,7 +912,7 @@
               "Federal Agencies",
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -921,7 +921,7 @@
               "Municipalities",
               "Counties",
               "Nonprofits",
-              "Private\r\nSector",
+              "Private Sector",
               "Utilities"
             ]
           },
@@ -933,7 +933,7 @@
               "Federal Agencies",
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector",
+              "Private Sector",
               "Utilities"
             ]
           }
@@ -999,7 +999,7 @@
               "Municipalities",
               "Counties",
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -1010,7 +1010,7 @@
               "Federal Agencies",
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector",
+              "Private Sector",
               "DVRPC"
             ]
           },
@@ -1033,7 +1033,7 @@
               "Counties",
               "DOTs",
               "Nonprofits",
-              "Private\r\nSector",
+              "Private Sector",
               "Utilities"
             ]
           },
@@ -1047,7 +1047,7 @@
               "Federal Agencies",
               "State Agencies",
               "Nonprofits",
-              "Private\r\nSector",
+              "Private Sector",
               "Utilities",
               "DVRPC"
             ]
@@ -1095,7 +1095,7 @@
           {
             "description": "Evaluate and implement opportunities for more efficient, cleaner, and innovative building portfolios.",
             "tags": [
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -1104,7 +1104,7 @@
               "Municipalities",
               "Counties",
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {
@@ -1132,7 +1132,7 @@
             "description": "Conduct long-term planning and investment to ensure reliable and affordable electric supply, integrate intermittent generation resources, facilitate demand response, and meet the increased demand for electricity. Provide predictable and reliable interconnection data and processes to support the development of grid-scale renewable and battery storage projects. Ensure that rate design and ratemaking practices support integration of grid-scale and aggregated renewables and demand response, while maintaining affordability.",
             "tags": [
               "Utilities",
-              "Regional Transmission\r\nOrganizations"
+              "Regional Transmission Organizations"
             ]
           },
           {
@@ -1146,7 +1146,7 @@
             "description": "Launch community-led power programs, establish cooperative power purchasing, and create workforce development partnerships. ",
             "tags": [
               "Nonprofits",
-              "Private\r\nSector"
+              "Private Sector"
             ]
           },
           {

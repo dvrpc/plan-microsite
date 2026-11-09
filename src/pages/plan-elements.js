@@ -66,8 +66,8 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         <TabPanels className="flex-1 justify-center">
           <TabPanel>
             <div className="text-center bg-[#423d59] text-white md:p-6 p-2">
-              <h2 className="md:text-2xl text-xl font-light">
-                The Transportation Vision for 2050 is:
+              <h2 className="md:text-2xl text-lg">
+                A Greater Philadelphia Region that provides
               </h2>
               <h2 className="md:text-3xl text-xl font-bold">
                 A safe, modern, multimodal, network for all
@@ -91,7 +91,7 @@ transportation network for all."
                     that includes{" "}
                     <strong>
                       transit, roadways, biking and walking paths, freight rail,
-                      and an international port and airport
+                      ports, and airports
                     </strong>
                     . However, many facilities are aging and need modernization.
                     Investments in safety, active transportation, and transit
@@ -191,9 +191,9 @@ transportation network for all."
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#711e53] text-white md:p-6 p-2">
-              <p className="md:text-2xl text-lg">
-                The Economy Vision for 2050 is:
-              </p>
+              <h2 className="md:text-2xl text-lg">
+                A Greater Philadelphia Region that provides
+              </h2>
               <p className="md:text-3xl text-lg font-bold">
                 An innovative and connected economy with opportunity and shared
                 prosperity
@@ -305,9 +305,9 @@ transportation network for all."
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#004c6d] text-white md:p-6 p-2">
-              <p className="md:text-2xl text-lg">
-                The Communities Vision for 2050 is:
-              </p>
+              <h2 className="md:text-2xl text-lg">
+                A Greater Philadelphia Region that provides
+              </h2>
               <p className="md:text-3xl text-lg font-bold">
                 Healthy, walkable, and vibrant communities
               </p>
@@ -410,9 +410,9 @@ transportation network for all."
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#006227] text-white md:p-6 p-2">
-              <p className="md:text-2xl text-lg">
-                The Environment Vision for 2050 is:
-              </p>
+              <h2 className="md:text-2xl text-lg">
+                A Greater Philadelphia Region that provides
+              </h2>
               <p className="md:text-3xl text-lg font-bold">
                 A preserved and restored natural environment with thriving
                 ecological systems
@@ -520,9 +520,9 @@ transportation network for all."
           </TabPanel>
           <TabPanel>
             <div className="text-center bg-[#147272] text-white md:p-6 p-2">
-              <p className="md:text-2xl text-lg">
-                The Infrastructure and Utility Services Vision for 2050 is:
-              </p>
+              <h2 className="md:text-2xl text-lg">
+                A Greater Philadelphia Region that provides
+              </h2>
               <p className="md:text-3xl text-lg font-bold">
                 Clean, reliable, and affordable infrastructure and utility
                 services resilient to the effects of extreme weather
