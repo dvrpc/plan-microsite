@@ -137,8 +137,7 @@ const Trends = () => {
                 It offers new tools with the potential to modernize
                 transportation systems, improve safety, and inform planning
                 decisions. At the same time, it raises important questions
-                around security,{" "}
-                <strong>privacy, copyright, bias, resource use</strong>, and
+                around security, privacy, copyright, bias, resource use, and
                 community impact.
               </p>
               <p>

@@ -220,221 +220,221 @@ const WhatIsThePlan = () => {
                 partners to identify ways to improve and modernize funding
                 models that are consistent with the Plan’s vision and goals.
               </p>
-              <p className="text-[#063446]">
-                Click on the Potential Federal and State Funding Options below
-                to learn about them.
-              </p>
-
-              <div id="flip-cards" className="grid gap-y-4 gap-x-2">
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Mbuf}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Mileage-based User Fees 
-○	Charges drivers by the mile for travel on a defined roadway network. 
-○	Potential benefits: Stabilizes revenue compared with the gas tax, as they are less affected by fuel prices or changes in vehicle fuel efficiency.
-"
-                      />
-                      <p className="md:w-2/3 leading-none">
-                        Mileage Based User Fee
-                      </p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Charges drivers by the mile for travel on a defined
-                      roadway network. <strong>Potential benefits:</strong>{" "}
-                      Stabilizes revenue compared with the gas tax, as it is
-                      less affected by changes in vehicle fuel efficiency.
-                    </span>
-                  }
-                  color="#704775"
-                />
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Cpf}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Commercial Property VMT Fee 
-○	Administers a location-based fee to commercial real estate based on the annual vehicle miles they generate. 
-○	Potential benefits: Promotes more efficient business location decisions.
-"
-                      />
-                      <p className="md:w-2/3 leading-none">
-                        Commercial Property VMT Fee
-                      </p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Administers a location-based fee to commercial real estate
-                      based on the annual vehicle miles they generate.{" "}
-                      <strong>Potential benefits:</strong> Promotes more
-                      efficient business location decisions.
-                    </span>
-                  }
-                  color="#704775"
-                />
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Ht}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Toll Existing Highways 
-○	Exerts a user fee on designated limited-access roads and bridges. 
-○	Potential benefits: Can help to manage demand for finite highway space.
-"
-                      />
-                      <p className="md:w-2/3 leading-none">Highway Tolls</p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Exerts a user fee on designated limited-access roads and
-                      bridges. <strong>Potential benefits:</strong> Can help to
-                      manage demand for finite highway space.
-                    </span>
-                  }
-                  color="#704775"
-                />
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Es}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Electricity Surtax for Home or Public Charging 
-○	Adds a flat fee or surcharge for units of electricity used to power electric vehicles. 
-○	Potential benefits: Replicates the gas for EVs.]
-"
-                      />
-                      <p className="md:w-2/3 leading-none">
-                        Electricity Surtax for Home or Public Charging
-                      </p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Adds a flat fee or surcharge per unit of electricity used
-                      to power electric vehicles.{" "}
-                      <strong>Potential benefits:</strong> Replicates the gas
-                      tax for EVs.
-                    </span>
-                  }
-                  color="#704775"
-                />
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Tdc}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Tradeable Driving Credits 
-○	Allocates a quota of mileage driving rights each year. 
-○	Potential benefits: Provides an incentive to use other modes by allowing those who drive less to sell their credits to those who drive more.
-"
-                      />
-                      <p className="md:w-2/3 leading-none">
-                        Tradeable Driving Credits
-                      </p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Allocates a quota of mileage driving rights each year.{" "}
-                      <strong>Potential benefits:</strong> Provides an incentive
-                      to use other modes by allowing those who drive less to
-                      sell their credits to those who drive more.
-                    </span>
-                  }
-                  color="#704775"
-                />
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Siif}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Safety/Infrastructure Investment Fees
-○	Scales vehicle registration fees based on vehicle weight and size. 
-○	Potential benefits: Charges vehicle owners for societal costs of increased air pollution, road damage, and safety risks that all rise with heavier vehicle weights.
-"
-                      />
-                      <p className="md:w-2/3 leading-none">
-                        Safety/Infrastructure Investment Fees
-                      </p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Scales vehicle registration fees based on vehicle weight
-                      and size. <strong>Potential benefits:</strong> Charges
-                      vehicle owners for societal costs of increased emissions,
-                      road damages, and safety risks that all rise with heavier
-                      vehicle weights.
-                    </span>
-                  }
-                  color="#704775"
-                />
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Pp}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Parking Pricing 
-○	Applies variable charges to on-street parking based on demand, while reducing the cost of off-street spaces. 
-○	Potential benefits: Decreases traffic in central business districts from drivers looking for parking spaces and better accounts for the value of land used for vehicle parking.
-"
-                      />
-                      <p className="md:w-2/3 leading-none">Parking Pricing</p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Applies variable charges to on-street parking based on
-                      demand, while reducing the cost of off-street spaces.{" "}
-                      <strong>Potential benefits:</strong> Decreases traffic in
-                      central business districts from drivers looking for
-                      parking spaces and better accounts for the value of land
-                      used for vehicle parking.
-                    </span>
-                  }
-                  color="#704775"
-                />
-                <Flipcard
-                  front={
-                    <div className="flex flex-col items-center text-center space-y-2">
-                      <img
-                        src={Cgp}
-                        className="md:w-1/3 w-1/2"
-                        alt="●	Congestion Pricing 
-○	Employs variable tolls to manage demand on a facility or within a specific zone. 
-○	Potential benefits: Reduces congestion and encourages more efficient use of transportation infrastructure, while generating revenue to provide more transportation options.
-"
-                      />
-                      <p className="md:w-2/3 leading-none">
-                        Congestion Pricing
-                      </p>
-                    </div>
-                  }
-                  back={
-                    <span>
-                      Employs variable tolls to manage demand on a facility or
-                      within a specific zone.{" "}
-                      <strong>Potential benefits:</strong> Reduces congestion
-                      and encourages more efficient use of transportation
-                      infrastructure, while generating revenue to provide more
-                      transportation options.
-                    </span>
-                  }
-                  color="#704775"
-                />
-              </div>
+              {/*               <p className="text-[#063446]"> */}
+              {/*                 Click on the Potential Federal and State Funding Options below */}
+              {/*                 to learn about them. */}
+              {/*               </p> */}
+              {/**/}
+              {/*               <div id="flip-cards" className="grid gap-y-4 gap-x-2"> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Mbuf} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Mileage-based User Fees  */}
+              {/* ○	Charges drivers by the mile for travel on a defined roadway network.  */}
+              {/* ○	Potential benefits: Stabilizes revenue compared with the gas tax, as they are less affected by fuel prices or changes in vehicle fuel efficiency. */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none"> */}
+              {/*                         Mileage Based User Fee */}
+              {/*                       </p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Charges drivers by the mile for travel on a defined */}
+              {/*                       roadway network. <strong>Potential benefits:</strong>{" "} */}
+              {/*                       Stabilizes revenue compared with the gas tax, as it is */}
+              {/*                       less affected by changes in vehicle fuel efficiency. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Cpf} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Commercial Property VMT Fee  */}
+              {/* ○	Administers a location-based fee to commercial real estate based on the annual vehicle miles they generate.  */}
+              {/* ○	Potential benefits: Promotes more efficient business location decisions. */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none"> */}
+              {/*                         Commercial Property VMT Fee */}
+              {/*                       </p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Administers a location-based fee to commercial real estate */}
+              {/*                       based on the annual vehicle miles they generate.{" "} */}
+              {/*                       <strong>Potential benefits:</strong> Promotes more */}
+              {/*                       efficient business location decisions. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Ht} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Toll Existing Highways  */}
+              {/* ○	Exerts a user fee on designated limited-access roads and bridges.  */}
+              {/* ○	Potential benefits: Can help to manage demand for finite highway space. */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none">Highway Tolls</p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Exerts a user fee on designated limited-access roads and */}
+              {/*                       bridges. <strong>Potential benefits:</strong> Can help to */}
+              {/*                       manage demand for finite highway space. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Es} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Electricity Surtax for Home or Public Charging  */}
+              {/* ○	Adds a flat fee or surcharge for units of electricity used to power electric vehicles.  */}
+              {/* ○	Potential benefits: Replicates the gas for EVs.] */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none"> */}
+              {/*                         Electricity Surtax for Home or Public Charging */}
+              {/*                       </p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Adds a flat fee or surcharge per unit of electricity used */}
+              {/*                       to power electric vehicles.{" "} */}
+              {/*                       <strong>Potential benefits:</strong> Replicates the gas */}
+              {/*                       tax for EVs. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Tdc} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Tradeable Driving Credits  */}
+              {/* ○	Allocates a quota of mileage driving rights each year.  */}
+              {/* ○	Potential benefits: Provides an incentive to use other modes by allowing those who drive less to sell their credits to those who drive more. */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none"> */}
+              {/*                         Tradeable Driving Credits */}
+              {/*                       </p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Allocates a quota of mileage driving rights each year.{" "} */}
+              {/*                       <strong>Potential benefits:</strong> Provides an incentive */}
+              {/*                       to use other modes by allowing those who drive less to */}
+              {/*                       sell their credits to those who drive more. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Siif} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Safety/Infrastructure Investment Fees */}
+              {/* ○	Scales vehicle registration fees based on vehicle weight and size.  */}
+              {/* ○	Potential benefits: Charges vehicle owners for societal costs of increased air pollution, road damage, and safety risks that all rise with heavier vehicle weights. */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none"> */}
+              {/*                         Safety/Infrastructure Investment Fees */}
+              {/*                       </p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Scales vehicle registration fees based on vehicle weight */}
+              {/*                       and size. <strong>Potential benefits:</strong> Charges */}
+              {/*                       vehicle owners for societal costs of increased emissions, */}
+              {/*                       road damages, and safety risks that all rise with heavier */}
+              {/*                       vehicle weights. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Pp} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Parking Pricing  */}
+              {/* ○	Applies variable charges to on-street parking based on demand, while reducing the cost of off-street spaces.  */}
+              {/* ○	Potential benefits: Decreases traffic in central business districts from drivers looking for parking spaces and better accounts for the value of land used for vehicle parking. */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none">Parking Pricing</p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Applies variable charges to on-street parking based on */}
+              {/*                       demand, while reducing the cost of off-street spaces.{" "} */}
+              {/*                       <strong>Potential benefits:</strong> Decreases traffic in */}
+              {/*                       central business districts from drivers looking for */}
+              {/*                       parking spaces and better accounts for the value of land */}
+              {/*                       used for vehicle parking. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*                 <Flipcard */}
+              {/*                   front={ */}
+              {/*                     <div className="flex flex-col items-center text-center space-y-2"> */}
+              {/*                       <img */}
+              {/*                         src={Cgp} */}
+              {/*                         className="md:w-1/3 w-1/2" */}
+              {/*                         alt="●	Congestion Pricing  */}
+              {/* ○	Employs variable tolls to manage demand on a facility or within a specific zone.  */}
+              {/* ○	Potential benefits: Reduces congestion and encourages more efficient use of transportation infrastructure, while generating revenue to provide more transportation options. */}
+              {/* " */}
+              {/*                       /> */}
+              {/*                       <p className="md:w-2/3 leading-none"> */}
+              {/*                         Congestion Pricing */}
+              {/*                       </p> */}
+              {/*                     </div> */}
+              {/*                   } */}
+              {/*                   back={ */}
+              {/*                     <span> */}
+              {/*                       Employs variable tolls to manage demand on a facility or */}
+              {/*                       within a specific zone.{" "} */}
+              {/*                       <strong>Potential benefits:</strong> Reduces congestion */}
+              {/*                       and encourages more efficient use of transportation */}
+              {/*                       infrastructure, while generating revenue to provide more */}
+              {/*                       transportation options. */}
+              {/*                     </span> */}
+              {/*                   } */}
+              {/*                   color="#704775" */}
+              {/*                 /> */}
+              {/*               </div> */}
               <p>
                 In the near term, we can stretch limited funds by focusing on{" "}
                 <strong>

@@ -78,8 +78,7 @@ const WhatIsThePlan = () => {
               <span className="font-bold">
                 Still, our region faces challenges:
               </span>
-              <br />
-              <ul className="list-disc ml-8 space-y-2">
+              <ul className="list-disc ml-8 space-y-2 mt-2">
                 <li>Rising housing costs and affordability pressures</li>
                 <li>Aging infrastructure</li>
                 <li>Shifts in commuting and work patterns</li>

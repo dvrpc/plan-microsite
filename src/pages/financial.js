@@ -310,7 +310,7 @@ const allocationToggleClass =
 const AllocationLegend = () => (
   <div
     aria-label="Funding key"
-    className="text-[#083346] flex flex-wrap justify-end max-w-full w-fit ml-auto gap-y-2 my-2 px-4 sm:px-0"
+    className="text-[#083346] flex flex-wrap justify-end max-w-full w-fit ml-auto gap-y-2 mt-auto px-4 sm:px-0 items-center"
   >
     <div className="flex min-w-0 items-start gap-x-2 pr-2">
       <div
@@ -356,16 +356,19 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
         {states.map(state => (
           <TabPanel key={state.key}>
             <TabGroup selectedIndex={selectedIndex} onChange={setSelectedIndex}>
-              <TabList
-                aria-label={`${state.label} transportation mode`}
-                className="mx-4 mt-4 flex w-56 max-w-[calc(100%-2rem)] rounded-full border border-[#063446]/20 bg-[#eaf3fb] p-1"
-              >
-                {Object.keys(allocations).map(mode => (
-                  <Tab key={mode} className={allocationToggleClass}>
-                    {mode}
-                  </Tab>
-                ))}
-              </TabList>
+              <div className="flex">
+                <TabList
+                  aria-label={`${state.label} transportation mode`}
+                  className="mx-4 mt-4 flex w-56 max-w-[calc(100%-2rem)] rounded-full border border-[#063446]/20 bg-[#eaf3fb] p-1"
+                >
+                  {Object.keys(allocations).map(mode => (
+                    <Tab key={mode} className={allocationToggleClass}>
+                      {mode}
+                    </Tab>
+                  ))}
+                </TabList>
+                <AllocationLegend />
+              </div>
               <TabPanels>
                 {Object.entries(allocations).map(([mode, categories]) => (
                   <TabPanel key={mode} className="p-4">
@@ -435,7 +438,6 @@ const Tabs = ({ selectedIndex, setSelectedIndex }) => {
           </TabPanel>
         ))}
       </TabPanels>
-      <AllocationLegend />
     </TabGroup>
   )
 }
@@ -559,9 +561,14 @@ const WhatIsThePlan = () => {
                   </div>
                   <img src={Block2} />
                 </div>
+                <img
+                  alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
+                  src={Revenue}
+                  className="mx-auto md:w-4/5 lg:w-1/2"
+                />
                 <div
                   id="block-4"
-                  className="absolute right-[4vw] top-[8%] z-10 h-[320px] w-[380px] origin-right scale-[70%] cursor-pointer md:right-[-12vw]"
+                  className="absolute bottom-0 left-0 z-10 h-[320px] w-[380px] max-w-full origin-bottom-left scale-[70%] cursor-pointer"
                   onClick={() =>
                     enlarge("block-4", ["block-1", "block-2", "block-3"])
                   }
@@ -583,11 +590,6 @@ const WhatIsThePlan = () => {
                   </div>
                   <img className="h-full w-full" src={Block1} alt="" />
                 </div>
-                <img
-                  alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
-                  src={Revenue}
-                  className="mx-auto md:w-4/5 lg:w-1/2"
-                />
               </div>
             </div>
           </div>
