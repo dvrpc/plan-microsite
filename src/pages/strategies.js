@@ -97,8 +97,11 @@ const WhatIsThePlan = () => {
   const [filter, setFilter] = useState("")
   useEffect(() => {
     let ret = []
-    if (element.length > 0) {
-      element.map(el => (ret = [...ret, ...strategies[el.value].strategies]))
+    if (element.length > 0 || party.length > 0) {
+      ret =
+        element.length > 0
+          ? element.flatMap(el => strategies[el.value].strategies)
+          : Object.values(strategies).flatMap(group => group.strategies)
       const searchTerm = filter.toLowerCase()
       const selectedParties = party.map(term => term.value)
 
