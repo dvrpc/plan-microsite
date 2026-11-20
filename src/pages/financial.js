@@ -19,6 +19,7 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/16/solid"
 import { Legend } from "../components/popempmap"
 import Revenue from "../images/revenue.png"
+import RevenueNoArrows from "../images/revenue-no-arrows.png"
 import Transit from "../images/transitneeds.png"
 import Roadway from "../images/roadwayneeds.png"
 import PaTransitPm from "../images/pa-transit-pm.png"
@@ -452,8 +453,11 @@ const WhatIsThePlan = () => {
   }, [selectedTab])
 
   const enlarge = (id, others) => {
+    if (!window.matchMedia("(min-width: 1280px)").matches) return
+
     document.querySelector(`#${id}`).classList.toggle("scale-[70%]")
     document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
+    document.querySelector(`#${id}`).classList.toggle("z-20")
 
     others.map(id => {
       if (
@@ -462,6 +466,7 @@ const WhatIsThePlan = () => {
       ) {
         document.querySelector(`#${id}`).classList.toggle("scale-[70%]")
         document.querySelector(`#${id}`).classList.toggle("scale-[125%]")
+        document.querySelector(`#${id}`).classList.remove("z-20")
       }
     })
   }
@@ -515,11 +520,24 @@ const WhatIsThePlan = () => {
               To reach our vision for a{" "}
               <strong>safe, modern, multimodal transportation system</strong>,
               DVRPC estimates how much investment will be needed and compares it
-              to how much funding is available. Click on the text boxes below to
-              learn more.
+              to how much funding is available.
+              <span className="hidden xl:inline">
+                {" "}Click on the text boxes below to learn more.
+              </span>
             </p>
             <div className="py-10">
-              <div className="relative">
+              <div className="needs-chart relative">
+                <picture className="mx-auto block md:w-4/5 lg:w-1/2">
+                  <source
+                    media="(max-width: 1279.98px)"
+                    srcSet={RevenueNoArrows}
+                  />
+                  <img
+                    alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
+                    src={Revenue}
+                    className="w-full"
+                  />
+                </picture>
                 <div
                   id="block-1"
                   className="absolute scale-[70%]"
@@ -561,25 +579,19 @@ const WhatIsThePlan = () => {
                   </div>
                   <img src={Block2} />
                 </div>
-                <img
-                  alt="Two stacked bar charts showing what we need and what we can afford in Billions of dollars. Each bar is split into 4 categories for NJ Transit, NJ Roadway, PA Transit, and PA Roadway. The need bar is double the height of the afford bar."
-                  src={Revenue}
-                  className="mx-auto md:w-4/5 lg:w-1/2"
-                />
                 <div
                   id="block-4"
-                  className="absolute bottom-0 left-0 z-10 h-[320px] w-[380px] max-w-full origin-bottom-left scale-[70%] cursor-pointer"
+                  className="absolute bottom-0 left-0 h-[320px] w-[380px] max-w-full origin-bottom-left scale-[70%] cursor-pointer"
                   onClick={() =>
                     enlarge("block-4", ["block-1", "block-2", "block-3"])
                   }
                 >
                   <div className="absolute inset-0 flex flex-col gap-3 px-8 py-7 text-[clamp(0.75rem,0.9vw,0.875rem)] leading-[1.3] text-[#063446]">
                     <p className="text-[length:inherit]">
-                      Federal and state roadway and transit funding for the
-                      region is allocated primarily through formulas. Projects
-                      in each Pennsylvania and New Jersey subregion are then
-                      programmed using those funds, guided by the Plan’s vision,
-                      goals, policies, and identified needs.
+                      Each subregion in Pennsylvania and New Jersey receives a
+                      portion of reasonably anticipated federal and state roadway
+                      and transit funding based on the Plan’s vision, goals,
+                      policies, and identified needs.
                     </p>
                     <p className="text-[length:inherit]">
                       Roadway and transit funds come from{" "}

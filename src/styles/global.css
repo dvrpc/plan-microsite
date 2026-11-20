@@ -348,6 +348,48 @@ main
   }
 }
 
+/* Keep call-outs in the reading flow until the desktop chart has room for them. */
+@media (max-width: 1279.98px) {
+  .needs-chart {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-width: 0;
+  }
+
+  .needs-chart > picture {
+    width: 100%;
+    max-width: 32rem;
+  }
+
+  .needs-chart > [id] {
+    position: static;
+    width: 100%;
+    height: auto;
+    transform: none;
+    z-index: auto;
+    cursor: auto;
+    border-radius: 0.5rem;
+    background: #b7dfc6;
+  }
+
+  .needs-chart > [id] > img {
+    display: none;
+  }
+
+  .needs-chart > [id] > div {
+    position: static;
+    margin: 0;
+    padding: 1.25rem;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .needs-chart > [id] ul {
+    font-size: 1rem !important;
+  }
+}
+
 @media (min-width: 1536px) {
   #block-1 {
     top: 10%;
@@ -359,7 +401,7 @@ main
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1536px) {
+@media (min-width: 1280px) and (max-width: 1535.98px) {
   #block-1 {
     top: -8%;
     left: 0%;
@@ -367,6 +409,21 @@ main
   #block-2 {
     right: 15%;
     top: -8%;
+  }
+}
+
+/* Keep the lower call-out clear until the full desktop layout has room. */
+@media (min-width: 1280px) and (max-width: 2559.98px) {
+  .needs-chart {
+    margin-bottom: 8rem;
+  }
+
+  .needs-chart > picture {
+    width: 60%;
+  }
+
+  .needs-chart #block-4 {
+    bottom: -8rem;
   }
 }
 
